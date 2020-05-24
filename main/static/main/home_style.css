@@ -3,30 +3,13 @@ body {
   margin: 0;
   background: cornsilk;
 }
-/*--- navigation bar ---*/
-/*.navbar {
-  background: Navy;
-}
-.nav-link,
-.navbar-brand {
-  color: #fff;
-  cursor: pointer;
-}
-.nav-link {
-  margin-right: 1em !important;
-}
-.nav-link:hover {
-  color: #000;
-}
-.navbar-collapse {
-  justify-content: flex-end;
-}*/
 
 /* Sidebar */
 #sidebar-wrapper{
+	padding-top: 15px;
 	z-index: 1;
 	position: absolute;
-	width: 0px;
+	width: 150px;
 	height: 100%;
 	overflow-y: hidden;
 	background: MidnightBlue;
@@ -36,17 +19,20 @@ body {
 /*Rest of the page*/
 #page-wrapper{
 	width: 100%;
+	height: 100%;
 	position: absolute;
 	padding: 15px;
+	padding-left: 150px;
+	background: cornsilk;
 }
 
 #wrapper.menuDisplayed #sidebar-wrapper{
-	width: 150px;
+	width: 0px;
 }
 
 
 #wrapper.menuDisplayed #page-wrapper{
-	padding-left: 150px;
+	padding-left: 15px;
 }
 
 /* sidebar styling*/
@@ -56,6 +42,81 @@ body {
 }
 
 .sidebar-nav li{
-	text-indent: 20px;
+	text-indent: 5px;
 	line-height: 40px;
+}
+
+
+/*other styling*/
+.side-icon{
+	color: cornsilk;
+}
+.side-icon:hover{
+	color: DarkOrange;
+}
+
+.side-text{
+	font: ComicSans;
+	padding-left: 10px;
+	color:cornsilk;
+}
+
+.side-text:hover{
+	color: DarkOrange;
+}
+
+.my-toggle{
+	color:cornsilk;
+}
+
+.my-toggle:hover{
+	color:MidnightBlue;
+}
+
+.toggle-btn{
+	background-color:MidnightBlue;
+}
+.toggle-btn:hover{
+	background-color:cornsilk;
+}
+
+.back-up{
+	color:MidnightBlue;
+	font-size:30px;
+}
+.back-up:hover{
+	color:DarkOrange;
+}
+
+.card.my-card{
+
+	text-align: center;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.card-titles{
+	text-align: center
+}
+.card-description{
+	text-align: left;
+}
+
+.my-pawn{
+	padding-top: 20px;
+	font-size: 50px;
+	color: LightGreen;
+}
+
+.my-queen{
+	padding-top: 20px;
+	font-size: 50px;
+	color: Orange;
+}
+
+.my-king{
+	padding-top: 20px;
+	font-size: 50px;
+	color: Red;
 }

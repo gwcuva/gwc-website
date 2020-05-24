@@ -5,56 +5,28 @@
 	<!-- link to bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-    <!-- link to css file -->
+    <!-- link to og css file -->
     <link rel = "stylesheet" type = "text/css" href = "{% static 'main/home_style.css'%}">
 
-    <link rel="stylesheet" href="{% static 'main/main.js' %}">
-
-    <title>thenewboaton</title>
-    <meta charset="utf-8">
-    <meta name = "viewport" content = "width-device-width, initial-scale=1">
+    <!-- link to bootstrap cdn css & js -->
     <link rel="stylesheet" href = "//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
     <script src = "//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="//maxcdn.bootstrapcdn.com/boostrap/3.3.4/js/bootstrap.min.js"></script>
-
 </head>
 <body>
-	<!-- <nav class="navbar navbar-expand-md">
-	  <a class="navbar-brand" href="#">GirlsWhoCode at UVA</a>
-	  <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
-	    <span class="navbar-toggler-icon"></span>
-	  </button>
-	  <div class="collapse navbar-collapse" id="main-navigation">
-	    <ul class="navbar-nav">
-	      <li class="nav-item">
-	        <a class="nav-link" onclick="window.location.href = '/hackathon';">Hackathon</a>
-	      </li>
-	      <li class="nav-item">
-	        <a class="nav-link" onclick="window.location.href = '/calendar';">Calendar</a>
-	      </li>
-	      <li class="nav-item">
-	        <a class="nav-link" onclick="window.location.href = '/meetTheTeam';">Meet the Team</a>
-	      </li>
-	      <li class="nav-item">
-	        <a class="nav-link" onclick="window.location.href = '/join';">Join now</a>
-	      </li>
-	    </ul>
-	  </div>
-	</nav> -->
-
 	<div id = "wrapper">
 
 		<!-- Sidebar -->
 		<div id = "sidebar-wrapper">
 
 			<ul class = "sidebar-nav">
-				<li><a href='/hackathon'>Hackathon</a>
+				<li><a class = "side-text" href='/hackathon'><span class="glyphicon glyphicon-globe side-icon"></span> Hackathon</a>
 	      		</li>
-	      		<li><a href='/calendar'>Calendar</a>
+	      		<li><a class = "side-text" href='/calendar'><span class="glyphicon glyphicon-calendar side-icon"></span> Calendar</a>
 	      		</li>
-	      		<li><a href='/meetTheTeam'>Meet the Team</a>
+	      		<li><a class = "side-text" href='/meetTheTeam'><span class="glyphicon glyphicon-user side-icon"></span> Meet the Team</a>
 	      		</li>
-	      		<li><a href='/join'>Join now</a>
+	      		<li><a class = "side-text" href='/join'><span class="glyphicon glyphicon-info-sign side-icon"></span> Join now</a>
 	      		</li>
 			</ul>
 		</div>
@@ -62,11 +34,69 @@
 		<!-- Rest of the page -->
 		<div id = "page-wrapper">
 			<div class = "container-fluid">
+
+				<!-- first row -->
 				<div class = "row">
 					<div class = "col">
-						<a href = "#" class = "btn btn-success" id = "menu-toggle"> Toggle Menu</a>
-						<h1> Sidebar Layouts are cool </h1>
-						<p> I love pieI love pieI love pieI love pieI love pieI love pievI love pievI love pieI love pievI love pieI love pieI love pieI love pieI love pieI love pie</p>
+						<a href = "" class = "btn toggle-btn" id = "menu-toggle"><span class="glyphicon glyphicon-th-list my-toggle" aria-hidden="true"></span></a>
+					</div>
+					<div class = "col">
+						<div class = "d-flex justify-content-center">
+							<button type = "button" class = "btn" href='/'>
+							<span class="glyphicon glyphicon-chevron-up back-up" aria-hidden="true"></span>
+							</button>
+						</div>
+					</div>
+					<div class = "col">
+					</div>
+				</div>
+
+
+				<!-- second row -->
+				<div class = "row">
+					<div class = "col">
+					</div>
+					<div class = "col"><h1 style = "font-size: 100px;">Logo</h1> <p style = "float: right;"> Something about us</p>
+					</div>
+					<div class = "col">
+					</div>
+				</div>
+
+
+				<!-- third row -->
+				<div class = "row">
+					<div class = "col">
+						<div class="card my-card">
+							<span class="glyphicon glyphicon-pawn my-pawn" aria-hidden="true"></span>
+  						<div class="card-body card-titles">
+    						<h5 class="card-title ">Lesson 1</h5>
+   							<h6 class="card-subtitle mb-2 text-muted">Binary Conversions</h6>
+    						<p class="card-text card-description">This lesson takes you through the beginnings of binary. Learn conversions, practice problems, and more! </p>
+    						<a href="/lesson1" class="card-link">Go to Lesson 1 > </a>
+  							</div>
+						</div>
+					</div>
+					<div class = "col">
+						<div class="card my-card">
+							<span class="glyphicon glyphicon-queen my-queen" aria-hidden="true"></span>
+  						<div class="card-body card-titles">
+    						<h5 class="card-title ">Lesson 2</h5>
+   							<h6 class="card-subtitle mb-2 text-muted">Binary Conversions</h6>
+    						<p class="card-text card-description">This lesson takes you through the beginnings of binary. Learn conversions, practice problems, and more! </p>
+    						<a href="/lesson2" class="card-link">Go to Lesson 2 > </a>
+  							</div>
+						</div>
+					</div>
+					<div class = "col">
+						<div class="card my-card">
+							<span class="glyphicon glyphicon-king my-king" aria-hidden="true"></span>
+  						<div class="card-body card-titles">
+    						<h5 class="card-title ">Lesson 3</h5>
+   							<h6 class="card-subtitle mb-2 text-muted">Binary Conversions</h6>
+    						<p class="card-text card-description">This lesson takes you through the beginnings of binary. Learn conversions, practice problems, and more! </p>
+    						<a href="/lesson3" class="card-link">Go to Lesson 3 > </a>
+  							</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -76,16 +106,12 @@
 	</div>
 
 
-	<!-- Menu Toggle script -->
-
+	<!-- Sidebar Toggle script -->
 	<script>
 		$("#menu-toggle").click(function(e){
 			e.preventDefault();
 			$("#wrapper").toggleClass("menuDisplayed");
 		});
 	</script>
-
-	<!-- link to javascript -->
-	<!-- <script src="main/main.js"></script> -->
 </body>
 </html>
