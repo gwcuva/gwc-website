@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+	<!-- link to bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- link to og css file -->
+    <link rel = "stylesheet" type = "text/css" href = "{% static 'navBar/meetTheTeam_style.css'%}">
+
+    <!-- link to bootstrap cdn css & js -->
+    <link rel="stylesheet" href = "//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <script src = "//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/boostrap/3.3.4/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div id = "wrapper">
+
+		<!-- Sidebar -->
+		<div id = "sidebar-wrapper">
+
+			<ul class = "sidebar-nav">
+				<li><a class = "side-text" href='/hackathon'><span class="glyphicon glyphicon-globe side-icon"></span> Hackathon</a>
+	      		</li>
+	      		<li><a class = "side-text" href='/calendar'><span class="glyphicon glyphicon-calendar side-icon"></span> Calendar</a>
+	      		</li>
+	      		<li><a class = "side-text" href='/meetTheTeam'><span class="glyphicon glyphicon-user side-icon"></span> Meet the Team</a>
+	      		</li>
+	      		<li><a class = "side-text" href='/join'><span class="glyphicon glyphicon-info-sign side-icon"></span> Join now</a>
+	      		</li>
+			</ul>
+		</div>
+
+		<!-- Rest of the page -->
+		<div id = "page-wrapper">
+			<div class = "container-fluid">
+
+				<!-- first row -->
+				<div class = "row">
+					<div class = "col">
+						<a href = "" class = "btn toggle-btn" id = "menu-toggle"><span class="glyphicon glyphicon-th-list my-toggle" aria-hidden="true"></span></a>
+					</div>
+					<div class = "col">
+						
+					</div>
+					<div class = "col">
+					</div>
+				</div>
+
+
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+
+
+	<!-- Sidebar Toggle script -->
+	<script>
+		$("#menu-toggle").click(function(e){
+			e.preventDefault();
+			$("#wrapper").toggleClass("menuDisplayed");
+		});
+	</script>
+</body>
+</html>
