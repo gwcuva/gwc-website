@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+	<!-- link to bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- link to css file -->
+    <link rel = "stylesheet" type = "text/css" href = "{% static 'main/home_style.css'%}">
+
+    <link rel="stylesheet" href="{% static 'main/main.js' %}">
+
+    <title>thenewboaton</title>
+    <meta charset="utf-8">
+    <meta name = "viewport" content = "width-device-width, initial-scale=1">
+    <link rel="stylesheet" href = "//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <script src = "//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/boostrap/3.3.4/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+	<!-- <nav class="navbar navbar-expand-md">
+	  <a class="navbar-brand" href="#">GirlsWhoCode at UVA</a>
+	  <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
+	    <span class="navbar-toggler-icon"></span>
+	  </button>
+	  <div class="collapse navbar-collapse" id="main-navigation">
+	    <ul class="navbar-nav">
+	      <li class="nav-item">
+	        <a class="nav-link" onclick="window.location.href = '/hackathon';">Hackathon</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" onclick="window.location.href = '/calendar';">Calendar</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" onclick="window.location.href = '/meetTheTeam';">Meet the Team</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" onclick="window.location.href = '/join';">Join now</a>
+	      </li>
+	    </ul>
+	  </div>
+	</nav> -->
+
+	<div id = "wrapper">
+
+		<!-- Sidebar -->
+		<div id = "sidebar-wrapper">
+
+			<ul class = "sidebar-nav">
+				<li><a href='/hackathon'>Hackathon</a>
+	      		</li>
+	      		<li><a href='/calendar'>Calendar</a>
+	      		</li>
+	      		<li><a href='/meetTheTeam'>Meet the Team</a>
+	      		</li>
+	      		<li><a href='/join'>Join now</a>
+	      		</li>
+			</ul>
+		</div>
+
+		<!-- Rest of the page -->
+		<div id = "page-wrapper">
+			<div class = "container-fluid">
+				<div class = "row">
+					<div class = "col">
+						<a href = "#" class = "btn btn-success" id = "menu-toggle"> Toggle Menu</a>
+						<h1> Sidebar Layouts are cool </h1>
+						<p> I love pieI love pieI love pieI love pieI love pieI love pievI love pievI love pieI love pievI love pieI love pieI love pieI love pieI love pieI love pie</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+
+
+	<!-- Menu Toggle script -->
+
+	<script>
+		$("#menu-toggle").click(function(e){
+			e.preventDefault();
+			$("#wrapper").toggleClass("menuDisplayed");
+		});
+	</script>
+
+	<!-- link to javascript -->
+	<!-- <script src="main/main.js"></script> -->
+</body>
+</html>

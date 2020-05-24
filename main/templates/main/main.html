@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+	<!-- link to bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- link to css file -->
+    <link rel = "stylesheet" type = "text/css" href = "{% static 'main/main_style.css'%}">
+
+    <!-- link to bootstrap css -->
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- link to boostrap JavaScipt -->
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+
+	<div class = "container-fluid">
+		<div class = "row-4">
+		</div>
+		<div class = "row">
+			<div class = "col">
+			</div>
+			<div class = "col">
+			</div>
+			<div class = "col">
+				<span class="dot dot-1"></span>
+				<div class = "d-flex justify-content-center">
+					<button type = "button" class = "btn" onclick="window.location.href = '/home';">
+						<span class="glyphicon glyphicon-chevron-down my-gcr" aria-hidden="true"></span>
+					</button>
+				</div>
+			</div>
+			<div class = "col">
+				<span class="dot dot-2"></span>
+			</div>
+			<div class = "col">
+			</div>
+		</div>
+		<div class = "row">
+		</div>
+	</div>
+</body>
+</html>

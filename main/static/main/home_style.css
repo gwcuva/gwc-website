@@ -1,0 +1,61 @@
+body {
+  padding: 0;
+  margin: 0;
+  background: cornsilk;
+}
+/*--- navigation bar ---*/
+/*.navbar {
+  background: Navy;
+}
+.nav-link,
+.navbar-brand {
+  color: #fff;
+  cursor: pointer;
+}
+.nav-link {
+  margin-right: 1em !important;
+}
+.nav-link:hover {
+  color: #000;
+}
+.navbar-collapse {
+  justify-content: flex-end;
+}*/
+
+/* Sidebar */
+#sidebar-wrapper{
+	z-index: 1;
+	position: absolute;
+	width: 0px;
+	height: 100%;
+	overflow-y: hidden;
+	background: MidnightBlue;
+	opacity: .9;
+}
+
+/*Rest of the page*/
+#page-wrapper{
+	width: 100%;
+	position: absolute;
+	padding: 15px;
+}
+
+#wrapper.menuDisplayed #sidebar-wrapper{
+	width: 150px;
+}
+
+
+#wrapper.menuDisplayed #page-wrapper{
+	padding-left: 150px;
+}
+
+/* sidebar styling*/
+.sidebar-nav{
+	padding: 0;
+	list-style: none;
+}
+
+.sidebar-nav li{
+	text-indent: 20px;
+	line-height: 40px;
+}
