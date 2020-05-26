@@ -79,3 +79,54 @@ body {
 .toggle-btn:hover{
 	background-color:cornsilk;
 }
+
+h1.title {
+	font-family: monospace;
+	font-weight: 900;
+	font-size:40px;
+}
+.calendar {
+	margin: 0px 50px;
+}
+[data-toggle="calendar"] > .row > .calendar-day {
+	font-family: 'Roboto', sans-serif;
+	width: 14.27%;
+	border: 1px solid DarkOrange;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	min-height: 120px;
+}
+[data-toggle="calendar"] > .row > .calendar-day.calendar-no-current-month {
+	color: rgb(200, 200, 200);
+}
+[data-toggle="calendar"] > .row > .calendar-day:last-child {
+	border-right-width: 1px;
+}
+
+[data-toggle="calendar"] > .row:last-child > .calendar-day {
+	border-bottom-width: 1px;
+}
+
+.calendar-day > time {
+	position: absolute;
+	display: block;
+	bottom: 0px;
+	left: 0px;
+	font-size: 12px;
+	font-weight: 300;
+	width: 100%;
+	padding: 10px 10px 3px 0px;
+	text-align: right;
+}
+	
+.calendar-day > .events > .event h4 {
+	font-size: 15px;
+	font-weight: 700;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	margin-bottom: auto;
+}
+.the-month{
+	color: MidnightBlue;
+}
