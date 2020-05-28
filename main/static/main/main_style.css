@@ -1,6 +1,6 @@
 body {
   background: url('') no-repeat center center fixed; 
-  /*can add background image here*/
+  /*add background image ? from same static folder*/
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;

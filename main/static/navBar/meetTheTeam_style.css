@@ -8,7 +8,7 @@ body {
 #sidebar-wrapper{
 	padding-top: 15px;
 	z-index: 1;
-	position: absolute;
+	position: fixed;
 	width: 150px;
 	height: 100%;
 	overflow-y: hidden;
@@ -19,7 +19,7 @@ body {
 /*Rest of the page*/
 #page-wrapper{
 	width: 100%;
-	height: 100%;
+	height: auto;
 	position: absolute;
 	padding: 15px;
 	padding-left: 150px;
@@ -79,3 +79,73 @@ body {
 .toggle-btn:hover{
 	background-color:cornsilk;
 }
+
+.row.row-2{
+	background-image: url('rotunda.jpg') no-repeat center center fixed; 
+  /*can add background image here*/
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+.main-img {
+    -webkit-mask-image:-webkit-gradient(linear, left 40%, left top, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+    mask-image: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0));
+
+}
+
+.image-container{
+	position: relative;
+	text-align: center;
+}
+.text-block{
+	margin-left: 15vw;
+	position: absolute;
+	top: 4%;
+	font-size:100%;
+	text-align: center;
+	color: MidnightBlue;
+}
+
+.element{
+	transition: transform 1s ease-out;
+}
+
+.element:hover{
+	transform: scale(1.1);
+}
+
+.element-2{
+	transition: transform .5s ease-out;
+}
+
+.element-2:hover{
+	transform: scale(1.2);
+}
+
+.bio-name{
+	font-size: 35px;
+}
+
+
+.bio-text{
+	font-size: 15px;
+	position: absolute; 
+	/*bottom: 0px;*/
+}
+
+/*.element {
+  width: 100%;
+  height: 100%;
+  animation: pulse 5s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    background-color: #001F3F;
+  }
+  100% {
+    background-color: #FF4136;
+  }
+}*/
