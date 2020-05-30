@@ -121,13 +121,13 @@ body {
 }
 
 .element-2:hover{
-	transform: scale(1.2);
+	transform: scale(1.15);
 }
 
 .bio-name{
+	position: relative;
 	font-size: 35px;
 }
-
 
 .bio-text{
 	font-size: 15px;
