@@ -5,65 +5,100 @@
 	<!-- link to bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-    <!-- link to og css file -->
-    <link rel = "stylesheet" type = "text/css" href = "{% static 'navBar/hackathon_style.css'%}">
+    <!-- link to css file -->
+    <link rel = "stylesheet" type = "text/css" href = "{% static 'main/main_style.css'%}">
 
-    <!-- link to bootstrap cdn css & js -->
-    <link rel="stylesheet" href = "//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-    <script src = "//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="//maxcdn.bootstrapcdn.com/boostrap/3.3.4/js/bootstrap.min.js"></script>
+    <!-- link to bootstrap css -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- link to boostrap JavaScipt -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Container for flexboxes */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Create equal columns */
+.column {
+  flex: 50%;
+  padding: 175px;
+}
+@media screen and (max-width: 992px) {
+  .column {
+    flex: 50%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .row {
+    flex-direction: column;
+  }
+}
+</style>
 </head>
 <body>
-	<div id = "wrapper">
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  		<a class="navbar-brand" href="#"><img class = "nav-logo" src = "static/main/bw-horiz-text.png"></a>
+  		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+    		<span class="navbar-toggler-icon"></span>
+  		</button>
 
-		<!-- Sidebar -->
-		<div id = "sidebar-wrapper">
+  	<div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+    	<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      		<li class="nav-item">
+        		<a class="nav-link" onclick="window.location.href = '/';">Home</a>
+      		</li>
+      		<li class="nav-item active">
+       			<a class="nav-link" href="/hackathon">Hackathon<span class="sr-only">(current)</span></a>
+      		</li>
+      		<li class="nav-item">
+        		<a class="nav-link " href="/calendar">Calendar</a>
+      		</li>
+          <li class="nav-item">
+            <a class="nav-link " href="/meetTheTeam">Meet the Team</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="/join">Join now</a>
+          </li>
+    	</ul>
+  	</div>
+  </nav>
 
-			<ul class = "sidebar-nav">
-				<li><a class = "side-text" href='/home'><span class="glyphicon glyphicon-home side-icon"></span> Home</a>
-	      		</li>
-				<li><a class = "side-text" href='/hackathon'><span class="glyphicon glyphicon-globe side-icon"></span> Hackathon</a>
-	      		</li>
-	      		<li><a class = "side-text" href='/calendar'><span class="glyphicon glyphicon-calendar side-icon"></span> Calendar</a>
-	      		</li>
-	      		<li><a class = "side-text" href='/meetTheTeam'><span class="glyphicon glyphicon-user side-icon"></span> Meet the Team</a>
-	      		</li>
-	      		<li><a class = "side-text" href='/join'><span class="glyphicon glyphicon-info-sign side-icon"></span> Join now</a>
-	      		</li>
-			</ul>
-		</div>
-
-		<!-- Rest of the page -->
-		<div id = "page-wrapper">
-			<div class = "container-fluid">
-
-				<!-- first row -->
-				<div class = "row">
-					<div class = "col">
-						<a href = "" class = "btn toggle-btn" id = "menu-toggle"><span class="glyphicon glyphicon-th-list my-toggle" aria-hidden="true"></span></a>
-					</div>
-					<div class = "col">
-						
-					</div>
-					<div class = "col">
-					</div>
-				</div>
-
-
-				</div>
-			</div>
-		</div>
-
-
-	</div>
-
-
-	<!-- Sidebar Toggle script -->
-	<script>
-		$("#menu-toggle").click(function(e){
-			e.preventDefault();
-			$("#wrapper").toggleClass("menuDisplayed");
-		});
-	</script>
+  <div class="row">
+  <div class="column" style="background-color:#1f9293;">
+    <h1 class = "girls-hoo-hack">Girls Hoo Hack</h1>
+    <p class = "tagline">hosted by Girls Who Code at UVA</p>
+    <div class="container">
+    <div class="field col-md-6 col-md-offset-3">
+        <div class="input-group">
+            <button type="button" class="btn btn-block register-btn" onclick="window.location.href = 'https://forms.gle/i1Qn7pLSmVMPFKVq6';"><b>Register Now!</b></button>
+        </div>
+    </div>
+</div>
+  </div>
+  
+  <div class="column" style="background-color:#e6f3f3;">
+    <h2>Logo</h2>
+    <p>More text?</p>
+  </div>
+  
+  <div class="column" style="background-color:#ccc;">
+    <h2>Girls Hoo Hack is ...</h2>
+    <p>a virtual 48-hour hackathon hosted by Girls Who Code at UVA that aims to foster a community of diverse thought and skill. Coders of all levels of experience have the opportunity to work together with teams and mentors, attend educational workshops, and code action-oriented projects that reflect innovation, diverse perspectives, and empowerment. Girls Who Code at UVA focuses on decreasing the gender disparity in the computing field and encourages the participation of all women and women supporters! </p>
+  </div>
+  
+  <div class="column" style="background-color:#ddd;">
+    <h2>Work on design with Isabelle & Emily</h2>
+  </div>
+</div>
 </body>
 </html>

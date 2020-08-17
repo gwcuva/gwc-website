@@ -1,3 +1,18 @@
 .nav-logo{
   height: 45px;
 }
+
+.girls-hoo-hack{
+	font-size: 70px;
+}
+
+.tagline{
+	float: right;
+}
+
+.btn.btn-block.register-btn{
+	border: 3px solid #f6e45f;
+	background-color: #f6e45f;
+	margin-top: 10%;
+	padding: 5%;
+}
