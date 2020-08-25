@@ -5,65 +5,49 @@
 	<!-- link to bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
+    <!-- link to css file -->
+    <link rel = "stylesheet" type = "text/css" href = "{% static 'main/main_style.css'%}">
+
+    <!-- link to bootstrap css -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- link to boostrap JavaScipt -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <!-- link to css file -->
+    <link rel = "stylesheet" type = "text/css" href = "{% static 'main/main_style.css'%}">
+
     <!-- link to og css file -->
     <link rel = "stylesheet" type = "text/css" href = "{% static 'navBar/join_style.css'%}">
-
-    <!-- link to bootstrap cdn css & js -->
-    <link rel="stylesheet" href = "//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-    <script src = "//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="//maxcdn.bootstrapcdn.com/boostrap/3.3.4/js/bootstrap.min.js"></script>
 </head>
 <body>
-	<div id = "wrapper">
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#"><img class = "nav-logo" src = "static/main/bw-horiz-text.png"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-		<!-- Sidebar -->
-		<div id = "sidebar-wrapper">
-
-			<ul class = "sidebar-nav">
-				<li><a class = "side-text" href='/home'><span class="glyphicon glyphicon-home side-icon"></span> Home</a>
-	      		</li>
-				<li><a class = "side-text" href='/hackathon'><span class="glyphicon glyphicon-globe side-icon"></span> Hackathon</a>
-	      		</li>
-	      		<li><a class = "side-text" href='/calendar'><span class="glyphicon glyphicon-calendar side-icon"></span> Calendar</a>
-	      		</li>
-	      		<li><a class = "side-text" href='/meetTheTeam'><span class="glyphicon glyphicon-user side-icon"></span> Meet the Team</a>
-	      		</li>
-	      		<li><a class = "side-text" href='/join'><span class="glyphicon glyphicon-info-sign side-icon"></span> Join now</a>
-	      		</li>
-			</ul>
-		</div>
-
-		<!-- Rest of the page -->
-		<div id = "page-wrapper">
-			<div class = "container-fluid">
-
-				<!-- first row -->
-				<div class = "row">
-					<div class = "col">
-						<a href = "" class = "btn toggle-btn" id = "menu-toggle"><span class="glyphicon glyphicon-th-list my-toggle" aria-hidden="true"></span></a>
-					</div>
-					<div class = "col">
-						
-					</div>
-					<div class = "col">
-					</div>
-				</div>
-
-
-				</div>
-			</div>
-		</div>
-
-
-	</div>
-
-
-	<!-- Sidebar Toggle script -->
-	<script>
-		$("#menu-toggle").click(function(e){
-			e.preventDefault();
-			$("#wrapper").toggleClass("menuDisplayed");
-		});
-	</script>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/hackathon">Hackathon</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="/calendar">Calendar</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="/meetTheTeam">Meet the Team</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link " href="/join">Join now <span class="sr-only">(current)</span></a>
+          </li>
+      </ul>
+    </div>
+</nav>
 </body>
 </html>
