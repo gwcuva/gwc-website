@@ -26,7 +26,18 @@
       <!-- nav bar -->
       <nav class="navbar sticky-top navbar-light my-nav">
         <a class="navbar-brand" href="#"><img class = "nav-logo" src = "static/navBar/nav-logo.png"></a>
+        <!-- <div class = "col-7">
+        </div>
+        <div class = "col-1">
+          <div class = "sign-flag">
+          </div>
+        </div>
+        <div class = "col-2">
+          <div class = "mlh-flag">
+          </div>
+        </div> -->
       </nav>
+
 
 
       <div class = "container-fluid my-main" style = "background-image: url('static/navBar/orangeWave.png'); background-repeat: no-repeat; background-size: cover;">
@@ -54,7 +65,7 @@
           </div>
           <div class = "col">
             <div class = "v-hack">
-              <b>2020 VIRTUAL<br> HACKATHON</b>
+              2020 VIRTUAL<br> HACKATHON
             </div>
           </div>
           <div class = "col">
@@ -89,28 +100,28 @@
 
 
       </div>
-      <nav class="navbar sticky-top navbar-light my-nav">
-        <!-- TODO - CENTER ITEMS -->
-        <ul class="nav justify-content-center">
+      <nav class="navbar sticky-top navbar-light my-nav" style = "justify-content: space-around;">
+        
+          <ul class="nav justify-content-center">
+            <li class="nav-item">
+            <a class="nav-link my-item" href="#my-about">About</a>
+          </li>
           <li class="nav-item">
-          <a class="nav-link my-item" href="#my-about">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link my-item" href="#my-jumpstart">JumpStart</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link my-item" href="#my-schedule">Schedule</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link my-item" href="#my-prizes">Prizes</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link my-item" href="#my-FAQ">FAQ</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link my-item" href="#my-sponsors">Sponsors</a>
-        </li>
-      </ul>
+            <a class="nav-link my-item" href="#my-jumpstart">JumpStart</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link my-item" href="#my-schedule">Schedule</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link my-item" href="#my-prizes">Prizes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link my-item" href="#my-FAQ">FAQ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link my-item" href="#my-sponsors">Sponsors</a>
+          </li>
+        </ul>
       </nav>
 
       <div class = "container-fluid my-about" id = "my-about">
@@ -263,5 +274,10 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script>
+      $(window).scroll(function(){
+        $('nav').toggleClass('scrolled',$(this).scrollTop() > 1000);
+      });
+    </script>
   </body>
 </html>
