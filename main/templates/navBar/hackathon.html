@@ -1,104 +1,267 @@
 <!DOCTYPE html>
 {% load static %}
-<html>
-<head>
-	<!-- link to bootstrap -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- link to css file -->
-    <link rel = "stylesheet" type = "text/css" href = "{% static 'main/main_style.css'%}">
 
-    <!-- link to bootstrap css -->
+    <!-- link to og css file -->
+    <link rel = "stylesheet" type = "text/css" href = "{% static 'navBar/hackathon_style.css'%}">
+    <!-- Roboto font -->
+     <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+     <link href='https://fonts.googleapis.com/css?family=Roboto Mono' rel='stylesheet'>
+
+    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-    <!-- link to boostrap JavaScipt -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <title>GWC</title>
+  </head>
+  <body>
+    <header>
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-* {
-  box-sizing: border-box;
-}
+      <!-- TODO - ADD FLAGS -->
+      <!-- nav bar -->
+      <nav class="navbar sticky-top navbar-light my-nav">
+        <a class="navbar-brand" href="#"><img class = "nav-logo" src = "static/navBar/nav-logo.png"></a>
+      </nav>
 
-/* Container for flexboxes */
-.row {
-  display: flex;
-  flex-wrap: wrap;
-}
 
-/* Create equal columns */
-.column {
-  flex: 50%;
-  padding: 175px;
-}
-@media screen and (max-width: 992px) {
-  .column {
-    flex: 50%;
-  }
-}
-@media screen and (max-width: 600px) {
-  .row {
-    flex-direction: column;
-  }
-}
-</style>
-</head>
-<body>
-	<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  		<a class="navbar-brand" href="#"><img class = "nav-logo" src = "static/main/bw-horiz-text.png"></a>
-  		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-    		<span class="navbar-toggler-icon"></span>
-  		</button>
-
-  	<div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-    	<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-      		<li class="nav-item">
-        		<a class="nav-link" onclick="window.location.href = '/';">Home</a>
-      		</li>
-      		<li class="nav-item active">
-       			<a class="nav-link" href="/hackathon">Hackathon<span class="sr-only">(current)</span></a>
-      		</li>
-      		<li class="nav-item">
-        		<a class="nav-link " href="/calendar">Calendar</a>
-      		</li>
-          <li class="nav-item">
-            <a class="nav-link " href="/meetTheTeam">Meet the Team</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link " href="/join">Join now</a>
-          </li>
-    	</ul>
-  	</div>
-  </nav>
-
-  <div class="row">
-  <div class="column" style="background-color:#1f9293;">
-    <h1 class = "girls-hoo-hack">Girls Hoo Hack</h1>
-    <p class = "tagline">hosted by Girls Who Code at UVA</p>
-    <div class="container">
-    <div class="field col-md-6 col-md-offset-3">
-        <div class="input-group">
-            <button type="button" class="btn btn-block register-btn" onclick="window.location.href = 'https://forms.gle/i1Qn7pLSmVMPFKVq6';"><b>Register Now!</b></button>
+      <div class = "container-fluid my-main" style = "background-image: url('static/navBar/orangeWave.png'); background-repeat: no-repeat; background-size: cover;">
+        <!-- row 1 -->
+        <div class = "row empty-row">
         </div>
-    </div>
-</div>
-  </div>
-  
-  <div class="column" style="background-color:#e6f3f3;">
-    <h2>Logo</h2>
-    <p>More text?</p>
-  </div>
-  
-  <div class="column" style="background-color:#ccc;">
-    <h2>Girls Hoo Hack is ...</h2>
-    <p>a virtual 48-hour hackathon hosted by Girls Who Code at UVA that aims to foster a community of diverse thought and skill. Coders of all levels of experience have the opportunity to work together with teams and mentors, attend educational workshops, and code action-oriented projects that reflect innovation, diverse perspectives, and empowerment. Girls Who Code at UVA focuses on decreasing the gender disparity in the computing field and encourages the participation of all women and women supporters! </p>
-  </div>
-  
-  <div class="column" style="background-color:#ddd;">
-    <h2>Work on design with Isabelle & Emily</h2>
-  </div>
-</div>
-</body>
+
+        <!-- row 2 -->
+        <div class = "row">
+          <div class = "col">
+            <div class = "title girls">
+              GIRLS
+            </div>
+          </div>
+          <div class = "col">
+          </div>
+        </div>
+
+        <!-- row 3 -->
+        <div class = "row">
+          <div class = "col">
+            <div class = "title hoo">
+              HOO
+            </div>
+          </div>
+          <div class = "col">
+            <div class = "v-hack">
+              <b>2020 VIRTUAL<br> HACKATHON</b>
+            </div>
+          </div>
+          <div class = "col">
+            <div class = "uva">
+              The University<br><p style = "padding-right: 9%;">of Virginia</p>
+            </div>
+            <div class = "date" style = "margin-top: -4%;">
+              October<br><p style = "padding-right: 12%;">17-18</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- row 4 -->
+        <div class = "row">
+          <div class = "col">
+            <div class = "title hack">
+              HACK
+            </div>
+          </div>
+          <div class = "col">
+            <button type="button" class="btn orange-btn" onclick="window.location.href = 'https://forms.gle/i1Qn7pLSmVMPFKVq6';"><b class = "signup">Sign Up</b></button>
+            <!-- <a href="#link" class="btn orange-btn" role="button"><h1 class = "signup">Sign up</h1></a> -->
+          </div>
+        </div>
+
+        <!-- row 5 -->
+        <div class = "row empty-row">
+        </div>
+        <!-- row 1 -->
+        <div class = "row empty-row">
+        </div>
+
+
+      </div>
+      <nav class="navbar sticky-top navbar-light my-nav">
+        <!-- TODO - CENTER ITEMS -->
+        <ul class="nav justify-content-center">
+          <li class="nav-item">
+          <a class="nav-link my-item" href="#">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link my-item" href="#">JumpStart</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link my-item" href="#">Schedule</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link my-item" href="#">Prizes</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link my-item" href="#">FAQ</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link my-item" href="#">Sponsors</a>
+        </li>
+      </ul>
+      </nav>
+
+      <div class = "container-fluid my-about">
+        <div class = "row">
+          <div class = "col left-col">
+            <div class = "title-header" style = "">
+              About
+            </div>
+            <div class = "title-subheader" style = "margin-top: 5%;">
+              Girls Hoo Hack
+            </div>
+            <div class = "title-body" style = "margin-top: 2%;">
+              Girls Hoo Hack is a virtual 48-hour hackathon hosted by Girls Who Code at UVA that aims to foster a community of diverse thought and skill.<br><br> Coders of all levels of experience have the opportunity to work together with teams and mentors, attend educational workshops, and code action-oriented projects that reflect innovation, diverse perspectives, and empowerment.
+            </div>
+          </div>
+          <div class = "col middle-col">
+            <div class = "title-subheader" style = "margin-top: 5%;">
+              GWC @ UVA
+            </div>
+            <div class = "title-body" style = "margin-top: 2%;">
+              Girls Who Code at the University of Virginia (UVA) is a College Loop of the nationwide Girls Who Code nonprofit organization. GWC at UVA aims to close the gender gap in technology by creating opportunities for young women to explore technology.
+            </div>
+          </div>
+          <div class = "col">
+          </div>
+        </div>
+      </div>
+
+      <div class = "container-fluid my-jumpstart">
+        <div class = "row">
+          <div class = "col left-col">
+            <div class = "title-header">
+              Jumpstart
+            </div>
+            <div class = "title-subheader" style = "margin-top: 5%;">
+              What is it?
+            </div>
+            <div class = "title-body" style = "margin-top: 2%;">
+              JumpStart is a beginner’s guide to hackathons for GWC @ UVA members. We’re offering a 1-4 hour workshop each day from October 12 through October 16. There will be recorded and live options for each workshop. <br><br><a href = "url">Sign up to become a member of GWC @ UVA to participate.</a>
+              <!-- TODO - ADD LINK -->
+            </div>
+          </div>
+          <div class = "col-4 middle-col">
+            
+          </div>
+        </div>
+        <div class = "row">
+          <!-- TODO - ADD WORKSHOPS -->
+          <div class = "col left-col">
+            <div class = "title-subheader">
+              Workshops
+            </div>
+
+          </div>
+          <div class = "col">
+          </div>
+          <div class = "col">
+          </div>
+        </div>
+        <div class = "row">
+          <div class = "col">
+          </div>
+          <div class = "col">
+          </div>
+          <div class = "col">
+          </div>
+        </div>
+      </div>
+
+
+      <div class = "container-fluid my-schedule">
+        <div class = "row">
+          <!-- TODO - UPDATE -->
+          <div class = "col left-col">
+            <div class = "title-header">
+              Schedule
+            </div>
+            <div class = "title-subheader" style = "margin-top: 5%;">
+              Saturday, Oct 17
+            </div>
+          </div>
+          <div class = "col">
+          </div>
+          <div class = "col">
+          </div>
+        </div>
+      </div>
+
+      <div class = "container-fluid my-prizes">
+        <div class = "row">
+          <div class = "col left-col">
+            <div class = "title-header">
+              Prizes
+            </div>
+            <div class = "title-subheader" style = "margin-top: 5%;">
+              Best Beginner 
+            </div>
+            <div class = "title-body" style = "margin-top: 2%;">
+              HELLOOOOO
+            </div>
+          </div>
+          <div class = "col">
+          </div>
+          <div class = "col">
+          </div>
+        </div>
+      </div>
+
+      <div class = "container-fluid my-FAQ">
+        <div class = "row">
+         <div class = "col left-col">
+            <div class = "title-header">
+              FAQ
+            </div>
+            <div class = "title-black-bold" style = "margin-top: 5%;">
+              What is a hackathon?
+            </div>
+            <div class = "title-body"  style = "margin-top: 2%;">
+              A hackathon is best described as an “invention marathon”. Anyone who has an interest in technology attends a hackathon to learn, build & share their creations over the course of a weekend in a relaxed and welcoming atmosphere. You don’t have to be a programmer and you certainly don’t have to be majoring in Computer Science.
+            </div>
+         </div>
+         <div class = "col-4">
+         </div>
+        </div>
+      </div>
+
+      <div class = "container-fluid my-sponsors">
+        <div class = "row">
+          sponsors
+        </div>
+      </div>
+      </div>
+
+      
+
+
+    </header>
+
+
+
+
+
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
 </html>

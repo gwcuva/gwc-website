@@ -1,81 +1,221 @@
-body {
-  padding: 0;
-  margin: 0;
-  background: cornsilk;
+html{
+ height: 100%;
+ width: 100%;
+ min-height: 500px;
+  min-width: 1300px;
 }
 
-/* Sidebar */
-#sidebar-wrapper{
-	padding-top: 15px;
-	z-index: 1;
-	position: absolute;
-	width: 150px;
-	height: 100%;
-	overflow-y: hidden;
-	background: MidnightBlue;
-	opacity: .9;
+body{
+ width: 100%;
+ height: 100%;
+ min-height: 500px;
+  min-width: 1300px;
 }
 
-/*Rest of the page*/
-#page-wrapper{
-	width: 100%;
-	height: 100%;
-	position: absolute;
-	padding: 15px;
-	padding-left: 150px;
-	background: cornsilk;
+main{
+  overflow:auto;
 }
 
-#wrapper.menuDisplayed #sidebar-wrapper{
-	width: 0px;
+.my-main{
+  /*position: absolute;*/
+  background: #43D6B9;
+  height: 120%;
+  width: 100%;
+  min-height: 500px;
+  min-width: 1300px;
+}
+
+.my-about{
+  background:#F7F7F7;
+  width: 100%;
+  min-height: 750px;
+}
+
+.my-jumpstart{
+  background:#FFFFFF;
+  width: 100%;
+  min-height: 1170px;
+}
+
+.my-schedule{
+  background:#F7F7F7;
+  width: 100%;
+  min-height: 1618px;
+}
+
+.my-prizes{
+  background:#FFFFFF;
+  width: 100%;
+  min-height: 1164px;
+}
+
+.my-FAQ{
+  background:#F7F7F7;
+  width: 100%;
+  min-height: 1684px;
+}
+
+.my-sponsors{
+  background:#FFFFFF;
+  width: 100%;
+  min-height: 763px;
+}
+
+.my-nav{
+  height: 80px;
+  background: #43D6B9;
+  padding-left: 40px;
 }
 
 
-#wrapper.menuDisplayed #page-wrapper{
-	padding-left: 15px;
+.row{
+  height: 20%;
+  min-height: 100px;
 }
 
-/* sidebar styling*/
-.sidebar-nav{
-	padding: 0;
-	list-style: none;
+.col{
+  min-width: 200px;
 }
 
-.sidebar-nav li{
-	text-indent: 5px;
-	line-height: 40px;
+.empty-row{
+  height: 15%;
+}
+
+.title{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 158px;
+  line-height: 185px;
+  color: white;
+}
+
+.girls{
+  margin-bottom: -5%;
+  padding-left: 38%;
+}
+
+.hoo{
+  float: right;
+}
+
+.hack{
+  margin-top: -12%;
+  padding-left: 38%;
+}
+
+.v-hack{
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 60px;
+line-height: 70px;
+color: #0D38D3;
+padding-top: 5%;
+}
+
+.uva{
+font-family: Roboto Mono;
+font-style: normal;
+font-weight: 300;
+font-size: 24px;
+line-height: 32px;
+color: #0D38D3;
+text-align: center;
+padding-top: 5%;
+}
+
+.date{
+font-family: Roboto Mono;
+font-style: normal;
+font-weight: bold;
+font-size: 50px;
+line-height: 66px;
+color: #0D38D3;
+text-align: center;
+}
+
+.orange-btn{
+  background: #FA7815;
+  border-radius: 35px;
+  width: 334px;
+  height: 122px;
+  float:right;
+  margin-right: 15%;
+  margin-top: 8%;
+}
+
+.orange-btn:hover{
+  background: #fad3a4;
+}
+
+.signup{
+  font-family: Roboto Mono;
+  font-style: normal;
+font-weight: bold;
+font-size: 50px;
+line-height: 66px;
+color: #FFFFFF;
+}
+
+.my-item{
+  font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 20px;
+line-height: 23px;
+display: flex;
+align-items: center;
+text-align: center;
+color: #FFFFFF;
+text-align: center;
 }
 
 
-/*other styling*/
-.side-icon{
-	color: cornsilk;
-}
-.side-icon:hover{
-	color: DarkOrange;
-}
-
-.side-text{
-	font: ComicSans;
-	padding-left: 10px;
-	color:cornsilk;
+.title-header{
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 56px;
+line-height: 66px;
+color: #FA7815;
 }
 
-.side-text:hover{
-	color: DarkOrange;
+.title-subheader{
+  font-family: Roboto Mono;
+font-style: normal;
+font-weight: bold;
+font-size: 32px;
+line-height: 42px;
+display: flex;
+color: #F9B88C;
 }
 
-.my-toggle{
-	color:cornsilk;
+.title-body{
+font-family: Roboto;
+font-style: normal;
+font-weight: 300;
+font-size: 18px;
+line-height: 30px;
+letter-spacing: 0.05em;
+color: #000000;
 }
 
-.my-toggle:hover{
-	color:MidnightBlue;
+.title-black-bold{
+font-family: Roboto Mono;
+font-style: normal;
+font-weight: bold;
+font-size: 24px;
+line-height: 35px;
+color: #000000;
 }
 
-.toggle-btn{
-	background-color:MidnightBlue;
+.left-col{
+  padding-top: 11%;
+  margin-left: 5%;
 }
-.toggle-btn:hover{
-	background-color:cornsilk;
+
+.middle-col{
+  padding-top: 16%;
+  margin-left: 5%;
 }
