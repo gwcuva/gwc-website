@@ -85,6 +85,9 @@ main{
 }
 
 @media screen and (max-width: 430px) {
+  .nav-logo{
+    margin-top: 20% !important;
+  }
   .sign-flag{
     margin-top: 20% !important;
   }
