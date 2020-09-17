@@ -86,10 +86,10 @@ main{
 
 @media screen and (max-width: 430px) {
   .sign-flag{
-    margin-top: -20% !important;
+    margin-top: 20% !important;
   }
   .mlh-flag{
-    margin-top: -20% !important;
+    margin-top: 20% !important;
   }
 }
 
