@@ -80,35 +80,16 @@ main{
 
 .sign-flag{
   width: 24%;
-  margin-top: -4%;
+  margin-top: -12px;
   margin-left: 210%;
 }
 
-.sign-flag.scrolled{
-  opacity: 0;
-}
-
-.sign-flag-2{
-  width: 24%;
-  margin-top: -4%;
-  margin-left: 143%;
-}
 
 .mlh-flag{
   position: relative;
   width: 24%;
-  margin-top: -4%;
+  margin-top: -12px;
   margin-left: 50%;
-}
-
-.mlh-flag.scrolled{
-  opacity: 0;
-}
-
-.mlh-flag-2{
-  width: 24%;
-  margin-top: -4%;
-  margin-left: 55%;
 }
 
 
