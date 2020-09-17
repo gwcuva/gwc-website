@@ -1,7 +1,7 @@
 html{
  height: 100%;
  width: 100%;
- min-height: 1400px;
+ min-height: 1000px;
   min-width: 1300px;
 }
 
@@ -67,7 +67,8 @@ main{
 }
 
 .my-nav{
-  height: 80px;
+  max-height: 80px;
+  min-height: 80px;
   background: #43D6B9;
 }
 
