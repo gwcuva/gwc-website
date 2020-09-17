@@ -21,13 +21,11 @@
   </head>
   <body>
     <header>
-
-      <!-- TODO - ADD FLAGS -->
       <!-- nav bar -->
       <nav class="navbar sticky-top navbar-light my-nav">
         <a class="navbar-brand" href="#"><img class = "nav-logo" src = "static/navBar/nav-logo.png"></a>
-        <a class="navbar-brand" href="https://forms.gle/i1Qn7pLSmVMPFKVq6"><img class = "sign-flag"  style = "z-index:9999;" src = "static/navBar/sign-flag.png"></a>
-        <a class="navbar-brand" href="#"><img class = "mlh-flag" src = "static/navBar/mlh-flag.png"></a>
+        <a style = "z-index:9999;" href="https://forms.gle/i1Qn7pLSmVMPFKVq6"><img style = "z-index:9999;" onclick="window.location.href = 'https://forms.gle/i1Qn7pLSmVMPFKVq6';" class = "sign-flag" src = "static/navBar/sign-flag.png"></a>
+        <a href="#"><img class = "mlh-flag" src = "static/navBar/mlh-flag.png"></a>
       </nav>
 
 
@@ -91,7 +89,7 @@
 
 
       </div>
-      <nav class="navbar sticky-top navbar-light my-nav" style = "justify-content: space-around;">
+      <nav class="navbar sticky-top navbar-light second-nav" style = "justify-content: space-around; z-index:998;">
         
           <ul class="nav justify-content-center">
             <li class="nav-item">
@@ -315,10 +313,10 @@
       </div>
       <div class = "container-fluid my-footer">
           <div class = "row my-social-media">
-            <a class="navbar-brand" href="#"><img class = "nav-logo" src = "static/navBar/instagram.png"></a>
-            <a class="navbar-brand" href="#"><img class = "nav-logo" src = "static/navBar/discord.png"></a>
+            <a class="navbar-brand" href="#"><img class = "nav-logo" src = "static/navBar/Instagram.png"></a>
+            <a class="navbar-brand" href="#"><img class = "nav-logo" src = "static/navBar/Discord.png"></a>
             <a class="navbar-brand" href="#"><img class = "nav-logo" src = "static/navBar/facebook.png"></a>
-            <a class="navbar-brand" href="#"><img class = "nav-logo" src = "static/navBar/email.png"></a>
+            <a class="navbar-brand" href="#"><img class = "nav-logo" src = "static/navBar/Email.png"></a>
           </div>
       </div>
       </div>
@@ -344,7 +342,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script>
       $(window).scroll(function(){
-        $('mlh-flag').toggleClass('scrolled',$(this).scrollTop() > 600);
+        $('nav').toggleClass('scrolled',$(this).scrollTop() > 750);
       });
     </script>
   </body>

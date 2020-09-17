@@ -72,10 +72,24 @@ main{
   background: #43D6B9;
 }
 
+.my-nav.scrolled{
+  background-color: transparent; !important;
+}
+
+.second-nav{
+  max-height: 80px;
+  min-height: 80px;
+  background: #43D6B9;
+}
+
 .nav-logo{
   position: relative;
   margin-left: 90%;
   margin-top: -55%;
+}
+
+.nav-logo.scrolled{
+  opacity: 0 !important;
 }
 
 .sign-flag{
@@ -86,7 +100,7 @@ main{
 
 @media screen and (max-width: 430px) {
   .nav-logo{
-    margin-top: 20% !important;
+    margin-top: 18% !important;
   }
   .sign-flag{
     margin-top: 20% !important;
