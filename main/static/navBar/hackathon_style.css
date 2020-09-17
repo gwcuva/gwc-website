@@ -84,6 +84,14 @@ main{
   margin-left: 210%;
 }
 
+@media screen and (max-width: 375px) {
+  .sign-flag{
+    margin-top: 0 !important;
+  }
+  .mlh-flag{
+    margin-top: 0 !important;
+  }
+}
 
 .mlh-flag{
   position: relative;
