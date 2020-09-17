@@ -84,7 +84,7 @@ main{
   margin-left: 210%;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 430px) {
   .sign-flag{
     margin-top: -20% !important;
   }
