@@ -58,44 +58,56 @@ main{
 .my-sponsors{
   background:#FFFFFF;
   width: 100%;
-  min-height: 763px;
+  height: 500px;
+}
+
+.my-footer{
+  background: #43D6B9;
+  height: 100px;
 }
 
 .my-nav{
   height: 80px;
   background: #43D6B9;
 }
-.my-nav.scrolled{
-  background: white !important;
-}
 
 .nav-logo{
-  margin-left: 70%;
-  z-index: 0;
+  position: relative;
+  margin-left: 90%;
+  margin-top: -55%;
 }
 
 .sign-flag{
-  position:sticky;
-  width:100px;
-  height:100px;
-  background-color:#0D38D3;
-  left:5%;
-  padding: 0;
-  top:0;
-  margin-top: -10%;
-  z-index:9;
+  width: 24%;
+  margin-top: -4%;
+  margin-left: 210%;
+}
+
+.sign-flag.scrolled{
+  opacity: 0;
+}
+
+.sign-flag-2{
+  width: 24%;
+  margin-top: -4%;
+  margin-left: 143%;
 }
 
 .mlh-flag{
-  position:sticky;
-  width:100px;
-  height:100px;
-  background-color:black;
-  left:5%;
-  padding: 0;
-  top:0;
+  position: relative;
+  width: 24%;
   margin-top: -4%;
-  z-index:9;
+  margin-left: 50%;
+}
+
+.mlh-flag.scrolled{
+  opacity: 0;
+}
+
+.mlh-flag-2{
+  width: 24%;
+  margin-top: -4%;
+  margin-left: 55%;
 }
 
 
@@ -202,6 +214,12 @@ color: #FFFFFF;
 text-align: center;
 }
 
+.my-social-media{
+  float: right;
+  padding-right: 10%;
+  margin-top: 2%;
+}
+
 
 .title-header{
 font-family: Roboto;
@@ -241,6 +259,24 @@ line-height: 35px;
 color: #000000;
 }
 
+.title-black-bold-sub{
+font-family: Roboto Mono;
+font-style: normal;
+font-weight: bold;
+font-size: 17px;
+line-height: 34px;
+color: #000000;
+}
+
+.title-schedule-time{
+font-family: Roboto Mono;
+font-style: normal;
+font-weight: 300;
+font-size: 24px;
+line-height: 30px;
+color: #000000;
+}
+
 .left-col{
   padding-top: 11%;
   margin-left: 5%;
@@ -250,3 +286,14 @@ color: #000000;
   padding-top: 16%;
   margin-left: 5%;
 }
+
+.workshop-col{
+  padding-top: 5%;
+  margin-left: 5%;
+}
+
+.workshop-col-2{
+  padding-top: 11%;
+  margin-left: 0%;
+}
+
