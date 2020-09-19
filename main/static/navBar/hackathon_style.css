@@ -1,13 +1,13 @@
 html{
- height: 100%;
- width: 100%;
- min-height: 1600px;
- min-width: 1300px;
+ height: auto;
+ width: auto;
+ min-height: 1000px;
+ min-width: 700px;
 }
 
 body{
- width: 100%;
- height: 100%;
+ width: auto;
+ height: auto;
  min-height: 700px;
  min-width: 1400px;
 }
@@ -22,7 +22,7 @@ main{
   height: 120%;
   width: 100%;
   min-height: 800px;
-  min-width: 1300px;
+  min-width: 100%;
 }
 
 .my-about{
@@ -40,19 +40,22 @@ main{
 .my-schedule{
   background:#F7F7F7;
   width: 100%;
-  min-height: 1618px;
+  min-height: 464px;
+  /*height was 1618*/
 }
 
 .my-prizes{
   background:#FFFFFF;
   width: 100%;
-  min-height: 1164px;
+  min-height: 464px; 
+  /*height was 1164*/
 }
 
 .my-FAQ{
   background:#F7F7F7;
   width: 100%;
-  min-height: 1684px;
+  min-height: 1184px;
+  /*height was 1684*/
 }
 
 .my-sponsors{
@@ -72,14 +75,20 @@ main{
   background: #43D6B9;
 }
 
-.my-nav.scrolled{
+/*.my-nav.scrolled{
   background-color: transparent; !important;
-}
+  z-index: 0;
+}*/
 
 .second-nav{
   max-height: 80px;
   min-height: 80px;
   background: #43D6B9;
+}
+
+.second-nav.scrolled{
+  background: rgb(67,214,185) !important;
+background: linear-gradient(79deg, rgba(67,214,185,1) 70%, rgba(255,255,255,0) 71%) !important;
 }
 
 .nav-logo{
@@ -88,9 +97,10 @@ main{
   margin-top: -55%;
 }
 
-.nav-logo.scrolled{
+/*.nav-logo.scrolled{
   opacity: 0 !important;
-}
+  z-index: 0;
+}*/
 
 .sign-flag{
   width: 24%;
@@ -237,6 +247,15 @@ line-height: 66px;
 color: #FA7815;
 }
 
+.title-coming-soon{
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 56px;
+line-height: 66px;
+color: #43D6B9;
+}
+
 .title-subheader{
   font-family: Roboto Mono;
 font-style: normal;
@@ -255,6 +274,16 @@ font-size: 18px;
 line-height: 30px;
 letter-spacing: 0.05em;
 color: #000000;
+}
+
+.title-small-coming-soon{
+font-family: Roboto;
+font-style: normal;
+font-weight: 300;
+font-size: 18px;
+line-height: 30px;
+letter-spacing: 0.05em;
+color: #43D6B9;
 }
 
 .title-black-bold{
