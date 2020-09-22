@@ -150,6 +150,14 @@ background: linear-gradient(79deg, rgba(67,214,185,1) 70%, rgba(255,255,255,0) 7
   color: white;
 }
 
+.title-subheader, .title-black-bold {
+  margin-top: 5%;
+}
+
+.title-body, .title-coming-soon {
+  margin-top: 2%;
+}
+
 .girls{
   margin-bottom: -5%;
   padding-left: 38%;
@@ -333,3 +341,9 @@ color: #000000;
   margin-left: 0%;
 }
 
+@media only screen and (max-width: 1300px) {
+  /* For mobile phones: */
+  [class*="col-"], [class*="-col"] {
+    width: 100%!important;
+  }
+}
