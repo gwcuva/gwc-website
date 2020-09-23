@@ -44,27 +44,31 @@
           </div>
           <div class = "col">
           </div>
+          <div class = "col">
+            <div class = "col">
+            <div class = "uva">
+              The University<br><p style = "padding-right: 8%;">of Virginia</p>
+            </div>
+            <div class = "date" style = "margin-top: -4%;">
+              October<br><p style = "padding-right: 12%;">17-18</p>
+            </div>
+          </div>
+          </div>
         </div>
 
         <!-- row 3 -->
         <div class = "row">
-          <div class = "col">
+          <div class = "col" style = "margin-top: -4%;">
             <div class = "title hoo">
               HOO
             </div>
           </div>
-          <div class = "col">
+          <div class = "col" style = "margin-top: -4%;">
             <div class = "v-hack">
               2020 VIRTUAL<br> HACKATHON
             </div>
           </div>
           <div class = "col">
-            <div class = "uva">
-              The University<br><p style = "padding-right: 9%;">of Virginia</p>
-            </div>
-            <div class = "date" style = "margin-top: -4%;">
-              October<br><p style = "padding-right: 12%;">17-18</p>
-            </div>
           </div>
         </div>
 
@@ -76,7 +80,7 @@
             </div>
           </div>
           <div class = "col">
-            <button type="button" class="btn orange-btn" onclick="window.location.href = 'https://girlshoohack2020.hackerearth.com/';"><b class = "signup">Sign Up</b></button>
+            <button type="button" class="btn orange-btn" style = "background-image: url(static/navBar/signup_circle.png); background-repeat: no-repeat;" onclick="window.location.href = 'https://girlshoohack2020.hackerearth.com/';"><b class = "signup">SIGN<br> UP</b></button>
           </div>
         </div>
 
@@ -333,11 +337,21 @@
         </div>
       </div>
       <div class = "container-fluid my-footer">
+          
+          <div class = "row">
+            <a class="navbar-brand" href="#"><img class = "footer-logo" src = "static/navBar/footer-logo.png"></a>
+          </div>
           <div class = "row my-social-media">
-            <a class="navbar-brand" href="https://www.instagram.com/gwcuva/?hl=en"><img class = "nav-logo" src = "static/navBar/Instagram.png"></a>
-            <a class="navbar-brand" href="https://discord.com/invite/UbkJcNc"><img class = "nav-logo" src = "static/navBar/Discord.png"></a>
-            <a class="navbar-brand" href="https://www.facebook.com/gwcuva/"><img class = "nav-logo" src = "static/navBar/facebook.png"></a>
-            <a class="navbar-brand" href="mailto: gwcuva@gmail.com"><img class = "nav-logo" src = "static/navBar/Email.png"></a>
+            <div class = "col-8">
+              <a class="navbar-brand" href="https://www.instagram.com/gwcuva/?hl=en"><img class = "nav-logo" src = "static/navBar/Instagram.png"></a>
+              <a class="navbar-brand discord" href="https://discord.com/invite/UbkJcNc"><img class = "nav-logo" src = "static/navBar/Discord.png"></a>
+              <a class="navbar-brand facebook" href="https://www.facebook.com/gwcuva/"><img class = "nav-logo" src = "static/navBar/Facebook.png"></a>
+              <a class="navbar-brand twitter" href="https://twitter.com/gwcuva?lang=en"><img class = "nav-logo" src = "static/navBar/Twitter.png"></a>
+              <!-- <a class="navbar-brand twitter" href="mailto: gwcuva@gmail.com"><img class = "nav-logo" src = "static/navBar/Twitter.png"></a> -->
+            </div>
+            <div class = "col foot footer-text">
+              <a class = "footer-text" href = "static/navBar/sponsor-info.pdf">Interested in Sponsoring? </a> &nbsp || &nbsp <a class="footer-text" href="mailto: gwcuva@gmail.com">Contact Us</a>
+            </div>
           </div>
       </div>
       </div>
@@ -362,7 +376,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script>
-      $(window).scroll(function(){$('nav').toggleClass('scrolled',$(this).scrollTop() > 950);});
+      $(window).scroll(function(){$('nav').toggleClass('scrolled',$(this).scrollTop() > 1000);});
     </script>
   </body>
 </html>
