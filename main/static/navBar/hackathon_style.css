@@ -97,6 +97,14 @@ background: linear-gradient(79deg, rgba(67,214,185,1) 70%, rgba(255,255,255,0) 7
   margin-top: -55%;
 }
 
+@media not all and (min-resolution:.001dpcm) { @media {
+  /* code from https://stackoverflow.com/questions/16348489/is-there-a-css-hack-for-safari-only-not-chrome */
+  .nav-logo { 
+      margin-top: 0;
+      bottom: 0;
+  }
+}}
+
 /*.nav-logo.scrolled{
   opacity: 0 !important;
   z-index: 0;
@@ -125,6 +133,7 @@ background: linear-gradient(79deg, rgba(67,214,185,1) 70%, rgba(255,255,255,0) 7
   width: 24%;
   margin-top: -12px;
   margin-left: 50%;
+  z-index: 25!important;
 }
 
 
@@ -148,6 +157,14 @@ background: linear-gradient(79deg, rgba(67,214,185,1) 70%, rgba(255,255,255,0) 7
   font-size: 158px;
   line-height: 185px;
   color: white;
+}
+
+.title-subheader, .title-black-bold {
+  margin-top: 5%;
+}
+
+.title-body, .title-coming-soon {
+  margin-top: 2%;
 }
 
 .girls{
@@ -333,3 +350,9 @@ color: #000000;
   margin-left: 0%;
 }
 
+@media only screen and (max-width: 1300px) {
+  /* For mobile phones: */
+  [class*="col-"], [class*="-col"] {
+    width: 100%!important;
+  }
+}
