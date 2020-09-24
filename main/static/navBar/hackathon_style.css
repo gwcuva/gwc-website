@@ -65,14 +65,31 @@ main{
 }
 
 .my-footer{
-  background: #43D6B9;
-  height: 100px;
+  background: #003046;
+  height: 220px;
 }
 
 .my-nav{
   max-height: 80px;
   min-height: 80px;
   background: #43D6B9;
+}
+
+.foot{
+  float: right;
+}
+
+.footer-text{
+  font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 15px;
+line-height: 23px;
+display: flex;
+align-items: center;
+text-align: center;
+color: #FFFFFF;
+text-align: center;
 }
 
 /*.my-nav.scrolled{
@@ -95,6 +112,11 @@ background: linear-gradient(79deg, rgba(67,214,185,1) 70%, rgba(255,255,255,0) 7
   position: relative;
   margin-left: 90%;
   margin-top: -55%;
+}
+
+.footer-logo{
+  height: 60%;
+  padding-left: 9%;
 }
 
 @media not all and (min-resolution:.001dpcm) { @media {
@@ -147,7 +169,7 @@ background: linear-gradient(79deg, rgba(67,214,185,1) 70%, rgba(255,255,255,0) 7
 }
 
 .empty-row{
-  height: 15%;
+  height: 8%;
 }
 
 .title{
@@ -177,7 +199,7 @@ background: linear-gradient(79deg, rgba(67,214,185,1) 70%, rgba(255,255,255,0) 7
 }
 
 .hack{
-  margin-top: -12%;
+  margin-top: -6%;
   padding-left: 38%;
 }
 
@@ -195,44 +217,45 @@ padding-top: 5%;
 font-family: Roboto Mono;
 font-style: normal;
 font-weight: 300;
-font-size: 24px;
+font-size: 20px;
 line-height: 32px;
 color: #0D38D3;
 text-align: center;
-padding-top: 5%;
+/*padding-top: 5%;*/
 }
 
 .date{
 font-family: Roboto Mono;
 font-style: normal;
 font-weight: bold;
-font-size: 50px;
+font-size: 45px;
 line-height: 66px;
 color: #0D38D3;
 text-align: center;
 }
 
 .orange-btn{
-  background: #FA7815;
-  border-radius: 35px;
+  background: transparent;
   width: 334px;
-  height: 122px;
+  height: 342px;
   float:right;
   margin-right: 15%;
-  margin-top: 8%;
+  margin-top: -8%;
 }
 
 .orange-btn:hover{
   background: #fad3a4;
+  border-radius: 50%;
 }
 
 .signup{
   font-family: Roboto Mono;
   font-style: normal;
-font-weight: bold;
-font-size: 50px;
-line-height: 66px;
-color: #FFFFFF;
+  font-weight: bold;
+  margin-top: -5%;
+  font-size: 65px;
+  line-height: 66px;
+  color: #FFFFFF;
 }
 
 .my-item{
@@ -249,9 +272,16 @@ text-align: center;
 }
 
 .my-social-media{
-  float: right;
-  padding-right: 10%;
-  margin-top: 2%;
+  float: left;
+  padding-left: -10%;
+  /*margin-top: -6%;*/
+}
+
+.discord{
+  padding-left: 3%;
+}
+.facebook{
+  padding-left: 8%;
 }
 
 
