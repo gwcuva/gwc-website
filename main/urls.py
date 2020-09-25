@@ -15,5 +15,4 @@ urlpatterns = [
     path('meetTheTeam', views.meetTheTeam, name = 'meetTheTeam'),
     path('join', views.join, name = 'join'),
     path('lessonPage', views.lessonPage, name = 'lessonPage'),
-    path('.well-known/acme-challenge/tV3okufb5hY8irucW5-zxrJJWXrh4vK9LLjWq5uNQmg', views.sslCertAuth, name='sslCertAuth')
 ]
