@@ -1,72 +1,53 @@
 html{
  height: auto;
  width: auto;
- min-height: 1000px;
- min-width: 700px;
 }
 
 body{
  width: auto;
  height: auto;
- min-height: 700px;
  min-width: 1400px;
 }
 
-main{
-  overflow:auto;
-}
-
 .my-main{
-  /*position: absolute;*/
   background: #43D6B9;
   height: 120%;
-  width: 100%;
   min-height: 800px;
-  min-width: 100%;
 }
 
 .my-about{
   background:#F7F7F7;
-  width: 100%;
   min-height: 750px;
 }
 
 .my-jumpstart{
   background:#FFFFFF;
-  width: 100%;
   min-height: 1170px;
 }
 
 .my-schedule{
   background:#F7F7F7;
-  width: 100%;
   min-height: 464px;
-  /*height was 1618*/
 }
 
 .my-prizes{
   background:#FFFFFF;
-  width: 100%;
-  min-height: 464px; 
-  /*height was 1164*/
+  min-height: 464px;
 }
 
 .my-FAQ{
   background:#F7F7F7;
-  width: 100%;
   min-height: 1184px;
-  /*height was 1684*/
 }
 
 .my-sponsors{
   background:#FFFFFF;
-  width: 100%;
   height: 500px;
 }
 
 .my-footer{
-  background: #43D6B9;
-  height: 100px;
+  background: #003046;
+  height: 220px;
 }
 
 .my-nav{
@@ -75,10 +56,21 @@ main{
   background: #43D6B9;
 }
 
-/*.my-nav.scrolled{
-  background-color: transparent; !important;
-  z-index: 0;
-}*/
+.foot{
+  float: right;
+}
+
+.footer-text{
+  font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 15px;
+line-height: 23px;
+display: flex;
+align-items: center;
+text-align: center;
+color: #FFFFFF;
+}
 
 .second-nav{
   max-height: 80px;
@@ -97,16 +89,22 @@ background: linear-gradient(79deg, rgba(67,214,185,1) 70%, rgba(255,255,255,0) 7
   margin-top: -55%;
 }
 
-/*.nav-logo.scrolled{
-  opacity: 0 !important;
-  z-index: 0;
-}*/
-
-.sign-flag{
-  width: 24%;
-  margin-top: -12px;
-  margin-left: 210%;
+.footer-logo{
+  height: 60%;
+  padding-left: 9%;
 }
+
+@media not all and (min-resolution:.001dpcm) { @media {
+  /* code from https://stackoverflow.com/questions/16348489/is-there-a-css-hack-for-safari-only-not-chrome */
+  .nav-logo { 
+      margin-top: 0;
+      bottom: 0;
+  }
+  .mlh-flag{
+    margin-top: 0;
+    bottom: 0;
+  }
+}}
 
 @media screen and (max-width: 430px) {
   .nav-logo{
@@ -120,8 +118,15 @@ background: linear-gradient(79deg, rgba(67,214,185,1) 70%, rgba(255,255,255,0) 7
   }
 }
 
+.sign-flag{
+  z-index: 999;
+  width: 24%;
+  margin-top: -12px;
+  margin-left: 210%;
+}
+
 .mlh-flag{
-  position: relative;
+  z-index: 999;
   width: 24%;
   margin-top: -12px;
   margin-left: 50%;
@@ -133,21 +138,8 @@ background: linear-gradient(79deg, rgba(67,214,185,1) 70%, rgba(255,255,255,0) 7
   min-height: 100px;
 }
 
-.col{
-  min-width: 200px;
-}
-
 .empty-row{
-  height: 15%;
-}
-
-.title{
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 158px;
-  line-height: 185px;
-  color: white;
+  height: 8%;
 }
 
 .girls{
@@ -160,7 +152,7 @@ background: linear-gradient(79deg, rgba(67,214,185,1) 70%, rgba(255,255,255,0) 7
 }
 
 .hack{
-  margin-top: -12%;
+  margin-top: -6%;
   padding-left: 38%;
 }
 
@@ -178,44 +170,44 @@ padding-top: 5%;
 font-family: Roboto Mono;
 font-style: normal;
 font-weight: 300;
-font-size: 24px;
+font-size: 20px;
 line-height: 32px;
 color: #0D38D3;
 text-align: center;
-padding-top: 5%;
 }
 
 .date{
 font-family: Roboto Mono;
 font-style: normal;
 font-weight: bold;
-font-size: 50px;
+font-size: 45px;
 line-height: 66px;
 color: #0D38D3;
 text-align: center;
 }
 
 .orange-btn{
-  background: #FA7815;
-  border-radius: 35px;
+  background: transparent;
   width: 334px;
-  height: 122px;
+  height: 342px;
   float:right;
   margin-right: 15%;
-  margin-top: 8%;
+  margin-top: -8%;
 }
 
 .orange-btn:hover{
   background: #fad3a4;
+  border-radius: 50%;
 }
 
 .signup{
   font-family: Roboto Mono;
   font-style: normal;
-font-weight: bold;
-font-size: 50px;
-line-height: 66px;
-color: #FFFFFF;
+  font-weight: bold;
+  margin-top: -5%;
+  font-size: 65px;
+  line-height: 66px;
+  color: #FFFFFF;
 }
 
 .my-item{
@@ -228,15 +220,36 @@ display: flex;
 align-items: center;
 text-align: center;
 color: #FFFFFF;
-text-align: center;
 }
 
 .my-social-media{
-  float: right;
-  padding-right: 10%;
-  margin-top: 2%;
+  float: left;
+  padding-left: -10%;
 }
 
+.discord{
+  padding-left: 3%;
+}
+.facebook{
+  padding-left: 8%;
+}
+
+.title{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 158px;
+  line-height: 185px;
+  color: white;
+}
+
+.title-subheader, .title-black-bold {
+  margin-top: 5%;
+}
+
+.title-body, .title-coming-soon {
+  margin-top: 2%;
+}
 
 .title-header{
 font-family: Roboto;
@@ -333,3 +346,9 @@ color: #000000;
   margin-left: 0%;
 }
 
+@media only screen and (max-width: 1300px) {
+  /* For mobile phones: */
+  [class*="col-"], [class*="-col"] {
+    width: 100%!important;
+  }
+}
