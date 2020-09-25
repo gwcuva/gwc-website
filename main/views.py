@@ -37,3 +37,6 @@ def meetTheTeam(request):
 
 def join(request):
 	return render(request, 'navBar/join.html')
+
+def sslCertAuth(request):
+	return render(request, 'navBar/sslcertauth.html')
