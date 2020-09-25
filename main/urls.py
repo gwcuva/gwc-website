@@ -16,4 +16,8 @@ urlpatterns = [
     path('meetTheTeam', views.meetTheTeam, name = 'meetTheTeam'),
     path('join', views.join, name = 'join'),
     path('lessonPage', views.lessonPage, name = 'lessonPage'),
+    path(
+         '.well-known/pki-validation/26135DB70D3412BDE5E30A182550DCDD.txt',
+         TemplateView.as_view(template_name="26135DB70D3412BDE5E30A182550DCDD.txt", content_type="text/plain"),
+     ),
 ]
