@@ -1,6 +1,7 @@
 from django.urls import path
 
 from . import views
+from django.views.generic.base import TemplateView
 
 app_name ='app'
 
@@ -14,5 +15,9 @@ urlpatterns = [
     path('calendar', views.calendar, name = 'calendar'),
     path('meetTheTeam', views.meetTheTeam, name = 'meetTheTeam'),
     path('join', views.join, name = 'join'),
-    path('lessonPage', views.lessonPage, name = 'lessonPage')
+    path('lessonPage', views.lessonPage, name = 'lessonPage'),
+    path(
+         '.well-known/pki-validation/705E27088967BCDFD6CFB6B8C1D97EF6.txt',
+         TemplateView.as_view(template_name="705E27088967BCDFD6CFB6B8C1D97EF6.txt", content_type="text/plain"),
+     ),
 ]
