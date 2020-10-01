@@ -24,79 +24,17 @@
   <body>
     <header>
       <!-- nav bar -->
-
       <nav class="navbar sticky-top navbar-light my-nav">
         <a class="navbar-brand" href="#"><img class = "nav-logo" src = "static/navBar/nav-logo.png"></a>
-        <a style = "z-index: 999;" href="https://girlshoohack2020.hackerearth.com/"><img class = "sign-flag" src = "static/navBar/sign-flag.png"></a>
-        <a href="https://girls-hoo-hack.webnode.com/_files/200000020-f1eaaf1ead/mlh-code-of-conduct.pdf"><img class = "mlh-flag" src = "static/navBar/mlh-flag.png"></a>
-      </nav>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
 
-      <div class = "container-fluid my-main" style = "background-image: url('static/navBar/orangeWave.png'); background-repeat: no-repeat; background-size: cover;">
-        <!-- row 1 -->
-        <div class = "sticky-top row empty-row">
-        </div>
-
-        <!-- row 2 -->
-        <div class = "row">
-          <div class = "col">
-            <div class = "title girls">
-              GIRLS
-            </div>
-          </div>
-          <div class = "col">
-          </div>
-          <div class = "col">
-            <div class = "col">
-            <div class = "uva">
-              The University<br><p style = "padding-right: 8%;">of Virginia</p>
-            </div>
-            <div class = "date" style = "margin-top: -4%;">
-              October<br><p style = "padding-right: 12%;">17-18</p>
-            </div>
-          </div>
-          </div>
-        </div>
-
-        <!-- row 3 -->
-        <div class = "row">
-          <div class = "col" style = "margin-top: -4%;">
-            <div class = "title hoo">
-              HOO
-            </div>
-          </div>
-          <div class = "col" style = "margin-top: -4%;">
-            <div class = "v-hack">
-              2020 VIRTUAL<br> HACKATHON
-            </div>
-          </div>
-          <div class = "col">
-          </div>
-        </div>
-
-        <!-- row 4 -->
-        <div class = "row">
-          <div class = "col">
-            <div class = "title hack">
-              HACK
-            </div>
-          </div>
-          <div class = "col">
-            <button type="button" class="btn orange-btn" style = "background-image: url(static/navBar/signup_circle.png); background-repeat: no-repeat;" onclick="window.location.href = 'https://girlshoohack2020.hackerearth.com/';"><b class = "signup">SIGN<br> UP</b></button>
-          </div>
-        </div>
-
-        <!-- row 5 -->
-        <div class = "row empty-row">
-        </div>
-        <!-- row 6 -->
-        <div class = "row empty-row">
-        </div>
-
-
-      </div>
-      <nav class="navbar sticky-top navbar-light second-nav" style = "justify-content: space-around; ">
-          <ul class="nav justify-content-center">
+        <div class="collapse navbar-collapse my-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <!-- justify-content-center class potentially -->
+            <!-- TODO add color -->
             <li class="nav-item">
             <a class="nav-link my-item" href="#my-about">About</a>
           </li>
@@ -115,13 +53,86 @@
           <li class="nav-item">
             <a class="nav-link my-item" href="#my-sponsors">Sponsors</a>
           </li>
-        </ul>
-
+          </ul>
+        </div>
       </nav>
+
+
+
+      <!-- <nav class="navbar sticky-top navbar-light my-nav">
+        <ul>
+          <a class="navbar-brand" href="#"><img class = "nav-logo" src = "static/navBar/nav-logo.png"></a>
+          <a style = "z-index: 999;" href="https://girlshoohack2020.hackerearth.com/"><img class = "sign-flag" src = "static/navBar/sign-flag.png"></a>
+          <a href="https://girls-hoo-hack.webnode.com/_files/200000020-f1eaaf1ead/mlh-code-of-conduct.pdf"><img class = "mlh-flag" src = "static/navBar/mlh-flag.png"></a>
+        </ul>
+      </nav> -->
+
+
+      <div class = "container-fluid my-main" style = "background-image: url('static/navBar/orangeWave.png'); background-repeat: no-repeat; background-size: cover;">
+        <!-- row 1 -->
+        <div class = "row empty-row">
+        </div>
+
+        <!-- row 2 -->
+        <div class = "row">
+          <div class = "col-12 col-sm-4">
+            <div class = "title girls">
+              GIRLS
+            </div>
+          </div>
+          <div class = "col-1 col-sm-1">
+          </div>
+          <div class = "col-12 col-sm-7">
+            <div class = "uva">
+              The University<br class="mobile-break"> of Virginia
+            </div>
+            <div class = "date">
+              October <br class="mobile-break"> 17-18
+            </div>
+          </div>
+        </div>
+
+        <!-- row 3 -->
+        <div class = "row my-row-3">
+          <div class = "col-12 col-sm-4">
+            <div class = "title hoo">
+              HOO
+            </div>
+          </div>
+          <div class = "col-11 col-sm-7">
+            <div class = "v-hack">
+              2020 VIRTUAL<br class="mobile-break"> HACKATHON
+            </div>
+          </div>
+          <div class = "col-1 col-sm-1">
+          </div>
+        </div>
+
+        <!-- row 4 -->
+        <div class = "row">
+          <div class = "col-6">
+            <div class = "title hack">
+              HACK
+            </div>
+          </div>
+          <div class = "col-6">
+            <button type="button" class="btn orange-btn" style = "background-size: min(334px, 40vw); background-image: url(static/navBar/signup_circle.png); background-repeat: no-repeat;" onclick="window.location.href = 'https://girlshoohack2020.hackerearth.com/';"><b class = "signup">SIGN<br> UP</b></button>
+          </div>
+        </div>
+
+        <!-- row 5 -->
+        <div class = "row empty-row">
+        </div>
+        <!-- row 6 -->
+        <div class = "row empty-row">
+        </div>
+
+
+      </div>
 
       <div class = "container-fluid my-about" id = "my-about">
         <div class = "row">
-          <div class = "col left-col">
+          <div class = "col-12 col-sm-4 left-col">
             <div class = "title-header" style = "">
               About
             </div>
@@ -132,7 +143,7 @@
               Girls Hoo Hack is a virtual 48-hour hackathon hosted by Girls Who Code at UVA that aims to foster a community of diverse thought and skill.<br><br> Coders of all levels of experience have the opportunity to work together with teams and mentors, attend educational workshops, and code action-oriented projects that reflect innovation, diverse perspectives, and empowerment.
             </div>
           </div>
-          <div class = "col middle-col">
+          <div class = "col-12 col-sm-4 middle-col">
             <div class = "title-subheader">
               GWC @ UVA
             </div>
@@ -140,14 +151,14 @@
               Girls Who Code at the University of Virginia (UVA) is a College Loop of the nationwide Girls Who Code nonprofit organization. GWC at UVA aims to close the gender gap in technology by creating opportunities for young women to explore technology.
             </div>
           </div>
-          <div class = "col">
+          <div class = "col col-sm-4">
           </div>
         </div>
       </div>
 
       <div class = "container-fluid my-jumpstart" id = "my-jumpstart">
         <div class = "row">
-          <div class = "col left-col">
+          <div class = "col-12 col-sm-4 left-col">
             <div class = "title-header">
               Jumpstart
             </div>
@@ -159,13 +170,13 @@
               <!-- TODO - ADD LINK -->
             </div>
           </div>
-          <div class = "col-4 middle-col">
+          <div class = "col-sm-4 middle-col">
             
           </div>
         </div>
         <div class = "row">
           <!-- TODO - ADD WORKSHOPS -->
-          <div class = "col workshop-col">
+          <div class = "col-12 col-sm-4 workshop-col">
             <div class = "title-subheader">
               Workshops
             </div>
@@ -181,7 +192,7 @@
             </div>
 
           </div>
-          <div class = "col">
+          <div class = "col-12 col-sm-4">
             <div class = "title-black-bold" style = "margin-top: 29%;">
               Workshop 2
             </div>
@@ -193,7 +204,7 @@
               Coming soon ...
             </div>
           </div>
-          <div class = "col">
+          <div class = "col-12 col-sm-4">
             <div class = "title-black-bold" style = "margin-top: 29%;">
               Workshop 3
             </div>
@@ -207,7 +218,7 @@
           </div>
         </div>
         <div class = "row">
-          <div class = "col left-col">
+          <div class = "col-12 col-sm-4 left-col">
             <div class = "title-black-bold" style = "margin-top: 3%;">
               Workshop 4
             </div>
@@ -219,7 +230,7 @@
               Coming soon ...
             </div>
           </div>
-          <div class = "col workshop-col-2">
+          <div class = "col-12 col-sm-4 workshop-col-2">
             <div class = "title-black-bold" style = "margin-top: 3%;">
               Workshop 5
             </div>
