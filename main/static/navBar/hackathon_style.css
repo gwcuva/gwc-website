@@ -15,13 +15,11 @@ body{
 
 .my-about{
   background:#F7F7F7;
-  /*min-height: 750px;*/
   min-height: 950px;
 }
 
 .my-jumpstart{
   background:#FFFFFF;
-  /*min-height: 1170px;*/
   min-height: 1570px;
 }
 
@@ -37,10 +35,10 @@ body{
 
 .my-FAQ{
   background:#F7F7F7;
-  /*min-height: 1184px;*/
   min-height: 1384px;
 }
 
+/*TODO - put in sponsors*/
 .my-sponsors{
   background:#FFFFFF;
   height: 500px;
@@ -185,7 +183,6 @@ color: #0D38D3;
   font-style: normal;
   font-weight: bold;
   font-size: 8vw;
-  /*line-height: 66px;*/
   color: #FFFFFF;
 }
 
@@ -251,13 +248,6 @@ color: #FFFFFF;
   font-weight: bold;
   font-size: 15vw;
   color: white;
-
-  /*font-family: Roboto;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 158px;
-  line-height: 185px;
-  color: white;*/
 }
 
 .title-subheader, .title-black-bold {
@@ -269,12 +259,6 @@ color: #FFFFFF;
 }
 
 .title-header{
-  /*font-family: Roboto;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 56px;
-  line-height: 66px;
-  color: #FA7815;*/
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
@@ -293,13 +277,6 @@ color: #43D6B9;
 }
 
 .title-subheader{
-  /*font-family: Roboto Mono;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 32px;
-  line-height: 42px;
-  display: flex;
-  color: #F9B88C;*/
   font-family: Roboto Mono;
   font-style: normal;
   font-weight: bold;
@@ -310,13 +287,6 @@ color: #43D6B9;
 }
 
 .title-body{
-  /*font-family: Roboto;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 18px;
-  line-height: 30px;
-  letter-spacing: 0.05em;
-  color: #000000;*/
   font-family: Roboto;
   font-style: normal;
   font-weight: 300;
@@ -340,7 +310,6 @@ color: #43D6B9;
 font-family: Roboto Mono;
 font-style: normal;
 font-weight: bold;
-/*font-size: 24px;*/
 font-size: 20px;
 line-height: 35px;
 color: #000000;
@@ -350,7 +319,6 @@ color: #000000;
 font-family: Roboto Mono;
 font-style: normal;
 font-weight: bold;
-/*font-size: 17px;*/
 font-size: 15px;
 line-height: 34px;
 color: #000000;
@@ -367,12 +335,10 @@ color: #000000;
 
 .left-col{
   padding-top: 11%;
-  /*margin-left: 5%;*/
 }
 
 .middle-col{
   padding-top: 16%;
-  /*margin-left: 5%;*/
 }
 
 .workshop-col{
@@ -390,7 +356,7 @@ color: #000000;
 .my-row-3{
   margin-top: -8vh;
 }
-
+/*TODO - main adjustment to laptop*/
 .my-about{
   min-height: 750px;
 }
@@ -420,6 +386,7 @@ color: #000000;
 .nav-logo{
 }
 
+/*TODO - add flags if worth it*/
 .sign-flag{
 }
 
@@ -512,18 +479,7 @@ color: #000000;
 }
 
 .title-header{
-  /*font-family: Roboto;
-  font-style: normal;
-  font-weight: bold;
   font-size: 56px;
-  line-height: 66px;
-  color: #FA7815;*/
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 35px;
-  line-height: 66px;
-  color: #FA7815;
 }
 
 .title-coming-soon{
@@ -536,37 +492,12 @@ color: #43D6B9;
 }
 
 .title-subheader{
-  /*font-family: Roboto Mono;
-  font-style: normal;
-  font-weight: bold;
   font-size: 32px;
-  line-height: 42px;
-  display: flex;
-  color: #F9B88C;*/
-  font-family: Roboto Mono;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 25px;
-  line-height: 42px;
-  display: flex;
-  color: #F9B88C;
 }
 
 .title-body{
-  /*font-family: Roboto;
-  font-style: normal;
-  font-weight: 300;
   font-size: 18px;
-  line-height: 30px;
-  letter-spacing: 0.05em;
-  color: #000000;*/
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 15px;
-  line-height: 30px;
-  letter-spacing: 0.05em;
-  color: #000000;
+  
 }
 
 .title-small-coming-soon{
@@ -580,23 +511,11 @@ color: #43D6B9;
 }
 
 .title-black-bold{
-font-family: Roboto Mono;
-font-style: normal;
-font-weight: bold;
-/*font-size: 24px;*/
-font-size: 20px;
-line-height: 35px;
-color: #000000;
+font-size: 24px;
 }
 
 .title-black-bold-sub{
-font-family: Roboto Mono;
-font-style: normal;
-font-weight: bold;
-/*font-size: 17px;*/
-font-size: 15px;
-line-height: 34px;
-color: #000000;
+font-size: 17px;
 }
 
 .title-schedule-time{
