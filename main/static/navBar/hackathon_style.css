@@ -46,10 +46,6 @@ body{
   height: 500px;
 }
 
-.my-footer{
-  background: #003046;
-  height: 220px;
-}
 
 .my-nav{
   height: 10vh;
@@ -206,15 +202,47 @@ color: #0D38D3;
 }
 
 .my-social-media{
+  background: #003046;
   float: left;
-  padding-left: -10%;
+  padding-left: 6%;
+  padding-top: 2%;
 }
 
-.discord{
-  padding-left: 3%;
+.my-footer{
+  background: #003046;
+  min-height: 800px;
+  overflow: hidden;
 }
-.facebook{
-  padding-left: 8%;
+
+.footer-logo{
+  height: 100%;
+  padding-left: 5%;
+  padding-top: 5%;
+}
+
+.foot{
+  text-align: right;
+  float: right;
+  padding-right: 5%;
+}
+
+.my-disclaimer{
+  float: left;
+  padding-top: 5%;
+  padding-left: -30%;
+  margin-left: -68px;
+  margin-top: -5px;
+}
+
+.footer-text{
+  font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 15px;
+line-height: 23px;
+display: flex;
+align-items: center;
+color: #FFFFFF;
 }
 
 .title{

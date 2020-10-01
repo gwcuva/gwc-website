@@ -16,6 +16,8 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Roboto Mono' rel='stylesheet'>
 
+    <link rel="icon" href="{% static 'base/icons/favicon.ico' %}">
+
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
@@ -349,29 +351,39 @@
           </div>
         </div>
       </div>
-      <div class = "container-fluid my-footer">
-          
+
+      <div class = "container-fluid my-footer" style = "background-image: url('static/navBar/Footer/teal\ wave.png'), url('static/navBar/Footer/oragne\ wave.png'), url('static/navBar/Footer/Rectangle\ 9.png');
+      background-size:cover,cover,cover;
+      background-position:bottom, bottom, center;
+      background-repeat: no-repeat, no-repeat, no-repeat;">
+        <div class = "footer-logo">
+          <a class="navbar-brand" href="#"><img class = "footer-logo" src = "static/navBar/Footer/white logo 1.png" ></a>
+        </div>
+        <div class = "row my-social-media" style="float: left;">
           <div class = "row">
-            <a class="navbar-brand" href="#"><img class = "footer-logo" src = "static/navBar/footer-logo.png"></a>
-          </div>
-          <div class = "row my-social-media">
-            <div class = "col-8">
-              <a class="navbar-brand" href="https://www.instagram.com/gwcuva/?hl=en"><img class = "nav-logo" src = "static/navBar/Instagram.png"></a>
-              <a class="navbar-brand discord" href="https://discord.com/invite/UbkJcNc"><img class = "nav-logo" src = "static/navBar/Discord.png"></a>
-              <a class="navbar-brand facebook" href="https://www.facebook.com/gwcuva/"><img class = "nav-logo" src = "Face.png"></a>
-              <a class="navbar-brand twitter" href="https://twitter.com/gwcuva?lang=en"><img class = "nav-logo" src = "static/navBar/Twitter.png"></a>
+            <div class = "column">
+              <a class="navbar-brand instagram" href="https://www.instagram.com/gwcuva/?hl=en"><img class = "nav-logo" src = "static/navBar/Footer/Instagram.png"></a>
             </div>
-            <div class = "col foot footer-text">
-              <a class = "footer-text" href = "sponsor-info.pdf">Interested in Sponsoring? </a> &nbsp || &nbsp <a class="footer-text" href="mailto: gwcuva@gmail.com">Contact Us</a>
+            <div class = "column">
+              <a class="navbar-brand discord" href="https://discord.com/invite/UbkJcNc"><img class = "nav-logo" src = "static/navBar/Footer/Discord.png"></a>
+            </div>
+            <div class = "column">
+              <a class="navbar-brand facebook" href="https://www.facebook.com/gwcuva/"><img class = "nav-logo" src = "static/navBar/Footer/Facebook.png"></a>
+            </div>
+            <div class = "column">
+              <a class="navbar-brand twitter" href="https://twitter.com/gwcuva?lang=en"><img class = "nav-logo" src = "static/navBar/Footer/Twitter.png"></a>
             </div>
           </div>
+        </div>
+        <div class = "my-disclaimer">
+          <a class="disclaimer-text" href="#"><img class = "my-disclaimer" src = "static/navBar/Footer/Disclaimer.png" ></a>
+        </div>
+        <div class = "row foot footer-text">
+          <a class = "footer-text" href = "static/navBar/Footer/sponsor-info.pdf">Interested in Sponsoring? </a> &nbsp || &nbsp <a class="footer-text" href="mailto: gwcuva@gmail.com">Contact Us</a>
+        </div>
       </div>
-      </div>
-
-      
-
-
-    </header>
+    </div>
+    </head>
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
