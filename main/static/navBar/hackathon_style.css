@@ -163,6 +163,7 @@ color: #0D38D3;
   line-height: 66px;*/
 /*no float on desktop*/
   color: #0D38D3;
+  font-size: min(5vw,45px);
   /*text-align: center;*/
 }
 
@@ -410,8 +411,7 @@ color: #000000;
 .v-hack{
   font-family: Roboto;
   font-weight: bold;
-  margin-top: 10%;
-  font-size: min(4vw,60px);
+  font-size: min(2vw,60px);
 }
 
 .uva{
@@ -419,12 +419,6 @@ color: #000000;
   margin-top: 11%;
   padding-right: 10%;
   font-size: min(4vw,20px);
-}
-
-.date{
-  float: right;
-  font-size: min(5vw,45px);
-  margin-left: 100%;
 }
 
 .orange-btn{
