@@ -36,3 +36,8 @@
 .btn-circle.btn-xl:hover{
 	background-color: white;
 }
+
+.row.no-gutter [class*='col-'] {
+  padding-right:0;
+  padding-left:0;
+}
