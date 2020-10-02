@@ -421,10 +421,30 @@ color: #000000;
   font-size: min(4vw,20px);
 }
 
+.circle{
+  display:flex;
+}
+
+.inside-circle{
+  position:absolute;
+  top: 5;
+}
+
+.sign-circle{
+  min-width: 300px;
+  min-height: 300px;
+}
+
+.sign-circle:hover{
+  background: #fad3a4;
+  border-radius: 50%;
+}
+
 .orange-btn{
   background: transparent;
-  width: min(334px, 40vw);
-  height: min(334px, 40vw);
+  width: auto;
+  height: auto;
+  object-fit: contain;
 }
 
 .orange-btn:hover{
