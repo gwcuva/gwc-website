@@ -27,7 +27,7 @@
     <header>
       <!-- nav bar -->
       <!-- TODO - add flags if time -->
-      <nav class="navbar sticky-top navbar-light my-nav">
+      <nav class="navbar sticky-top navbar-dark my-nav">
         <!-- TODO - make logo little bigger and fix placement -->
         <a class="navbar-brand" href="#"><img class = "nav-logo" src = "static/navBar/nav-logo.png"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -360,7 +360,7 @@
       <!-- TODO - make sure image isn't blown up -->
       <!-- TODO - make whole footer shorter in height -->
       <div class = "container-fluid my-footer" style = "background-image: url('static/navBar/Footer/teal\ wave.png'), url('static/navBar/Footer/oragne\ wave.png'), url('static/navBar/Footer/Rectangle\ 9.png');
-      background-size:cover,cover,cover;
+      background-size: cover;
       background-position:bottom, bottom, center;
       background-repeat: no-repeat, no-repeat, no-repeat;">
         <div class = "footer-logo">
@@ -368,25 +368,24 @@
         </div>
         <div class = "row my-social-media" style="float: left;">
           <div class = "row">
-            <div class = "column">
+            <div class = "col-1">
               <a class="navbar-brand instagram" href="https://www.instagram.com/gwcuva/?hl=en"><img class = "nav-logo" src = "static/navBar/Footer/Instagram.png"></a>
             </div>
-            <div class = "column">
+            <div class = "col-1">
               <a class="navbar-brand discord" href="https://discord.com/invite/UbkJcNc"><img class = "nav-logo" src = "static/navBar/Footer/Discord.png"></a>
             </div>
-            <div class = "column">
+            <div class = "col-1">
               <a class="navbar-brand facebook" href="https://www.facebook.com/gwcuva/"><img class = "nav-logo" src = "static/navBar/Footer/Facebook.png"></a>
             </div>
-            <div class = "column">
+            <div class = "col-1">
               <a class="navbar-brand twitter" href="https://twitter.com/gwcuva?lang=en"><img class = "nav-logo" src = "static/navBar/Footer/Twitter.png"></a>
             </div>
           </div>
         </div>
-        <div class = "my-disclaimer">
-          <a class="disclaimer-text" href="#"><img class = "my-disclaimer" src = "static/navBar/Footer/Disclaimer.png" ></a>
-        </div>
         <div class = "row foot footer-text">
-          <a class = "footer-text" href = "static/navBar/Footer/sponsor-info.pdf">Interested in Sponsoring? </a> &nbsp || &nbsp <a class="footer-text" href="mailto: gwcuva@gmail.com">Contact Us</a>
+          <div class = "col-12">
+            <a class = "footer-text" href = "static/navBar/Footer/sponsor-info.pdf">Interested in Sponsoring? </a> &nbsp || &nbsp <a class="footer-text" href="mailto: gwcuva@gmail.com">Contact Us</a>
+          </div>
         </div>
       </div>
     </div>
