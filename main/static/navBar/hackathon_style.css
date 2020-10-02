@@ -429,6 +429,10 @@ color: #000000;
   padding-left: -10%;
 }
 
+.nav-link:hover{
+  color:#0D38D3;
+}
+
 .discord{
   padding-left: 3%;
 }
