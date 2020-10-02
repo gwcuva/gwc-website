@@ -58,6 +58,15 @@ body{
 }
 
 .footer-text{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 23px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #FA7815;
 }
 
 .second-nav{
@@ -188,13 +197,11 @@ color: #0D38D3;
 }
 
 .my-social-media{
-  float: left;
-  padding-left: 6%;
-  padding-top: 9%;
+  position: absolute;
+  margin-top: 17vh;
 }
 
 .my-footer{
-  background: #003046;
   min-height: 600px;
   overflow: hidden;
 }
@@ -203,20 +210,6 @@ color: #0D38D3;
   height: min(120px,15vw);
   padding-left: 5%;
   padding-top: 5%;
-}
-
-.foot{
-}
-
-.footer-text{
-  font-family: Roboto;
-font-style: normal;
-font-weight: bold;
-font-size: 15px;
-line-height: 23px;
-display: flex;
-align-items: center;
-color: #FFFFFF;
 }
 
 .title{
