@@ -49,6 +49,10 @@ body{
   height: 500px;
 }
 
+.sponsor-image{
+  width: min(7vw, 50px);
+  height: min(7vw, 75px);
+}
 
 .my-nav{
   height: 10vh;
@@ -548,6 +552,10 @@ color: #0D38D3;
 .my-social-media{
   position: absolute;
   margin-top: 17vh;
+}
+.my-footer{
+  min-height: 600px;
+  overflow: hidden;
 }
 
 .nav-link:hover{
