@@ -1,3 +1,8 @@
+@media screen and (min-width: 600px)  {
+.mobile{
+  display: none;
+}
+
 html{
  height: 100vh;
  width: 100vw;
@@ -132,6 +137,350 @@ body{
 }
 
 .v-hack{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: min(2vw,60px);
+  color: #0D38D3;
+}
+
+.uva{
+  font-family: Roboto Mono;
+  font-style: normal;
+  font-weight: 300;
+  float: right;
+  margin-top: 11%;
+  padding-right: 10%;
+  font-size: min(4vw,30px);
+  color: #0D38D3;
+}
+
+.date{
+  font-family: Roboto Mono;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 5vw;/*
+  line-height: 66px;*/
+/*no float on desktop*/
+  color: #0D38D3;
+  font-size: min(5vw,45px);
+  /*text-align: center;*/
+}
+
+
+.circle{
+  display:flex;
+}
+
+.inside-circle{
+  position:absolute;
+  top: 5;
+}
+
+.sign-circle{
+  min-width: 300px;
+  min-height: 300px;
+}
+
+.sign-circle:hover{
+  background: #fad3a4;
+  border-radius: 50%;
+}
+
+.orange-btn{
+  background: transparent;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+.orange-btn:hover{
+  background: #fad3a4;
+  border-radius: 50%;
+}
+
+.signup{
+  font-family: Roboto Mono;
+  font-style: normal;
+  font-weight: bold;
+  font-size: min(65px,10vw);
+  color: #FFFFFF;
+}
+
+.my-item{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 23px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.my-social-media{
+  position: absolute;
+  margin-top: 17vh;
+}
+
+.my-footer{
+  min-height: 600px;
+  overflow: hidden;
+}
+
+.footer-logo{
+  height: min(120px,15vw);
+  padding-left: 5%;
+  
+}
+
+.title{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: min(158px,15vw);
+  color: white;
+}
+
+.title-subheader, .title-black-bold {
+  margin-top: 5%;
+}
+
+.title-body, .title-coming-soon {
+  margin-top: 2%;
+}
+
+.title-header{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 35px;
+  line-height: 66px;
+  color: #FA7815;
+}
+
+.title-coming-soon{
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 56px;
+line-height: 66px;
+color: #43D6B9;
+}
+
+.title-subheader{
+  font-family: Roboto Mono;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 42px;
+  display: flex;
+  color: #F9B88C;
+}
+
+.title-body{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 30px;
+  letter-spacing: 0.05em;
+  color: #000000;
+}
+
+.title-small-coming-soon{
+font-family: Roboto;
+font-style: normal;
+font-weight: 300;
+font-size: 18px;
+line-height: 30px;
+letter-spacing: 0.05em;
+color: #43D6B9;
+}
+
+.title-black-bold{
+font-family: Roboto Mono;
+font-style: normal;
+font-weight: bold;
+font-size: 20px;
+line-height: 35px;
+color: #000000;
+}
+
+.title-black-bold-sub{
+font-family: Roboto Mono;
+font-style: normal;
+font-weight: bold;
+font-size: 15px;
+line-height: 34px;
+color: #000000;
+}
+
+.title-schedule-time{
+font-family: Roboto Mono;
+font-style: normal;
+font-weight: 300;
+font-size: 24px;
+line-height: 30px;
+color: #000000;
+}
+
+.left-col{
+  padding-top: 11%;
+}
+
+.middle-col{
+  padding-top: 16%;
+}
+
+.workshop-col{
+}
+
+.workshop-col-2{
+}
+}
+
+@media screen and (max-width: 600px)  {
+.mobile-break { display: none; }
+
+.laptop{
+  display:none;
+}
+
+html{
+ height: 100vh;
+ width: 100vw;
+}
+
+body{
+ width: 100vw;
+ height: 100vh;
+}
+
+.my-main{
+  background: #43D6B9;
+  height: 90vh;
+}
+
+.my-about{
+  background:#F7F7F7;
+  min-height: 950px;
+}
+
+.my-jumpstart{
+  background:#FFFFFF;
+  min-height: 1570px;
+}
+
+.my-schedule{
+  background:#F7F7F7;
+  min-height: 464px;
+}
+
+.my-prizes{
+  background:#FFFFFF;
+  min-height: 464px;
+}
+
+.my-FAQ{
+  background:#F7F7F7;
+  min-height: 1384px;
+}
+
+/*TODO - put in sponsors*/
+.my-sponsors{
+  background:#FFFFFF;
+  height: 500px;
+}
+
+
+.my-nav{
+  height: 10vh;
+  background: #43D6B9;
+}
+
+.my-collapse{
+  background: #43D6B9;
+}
+
+.foot{
+}
+
+.footer-text{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 23px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #FA7815;
+}
+
+.second-nav{
+  max-height: 80px;
+  min-height: 80px;
+  background: #43D6B9;
+}
+
+.second-nav.scrolled{
+  background: rgb(67,214,185) !important;
+  background: linear-gradient(79deg, rgba(67,214,185,1) 70%, rgba(255,255,255,0) 71%) !important;
+}
+
+.nav-logo{
+  padding-left: 10vw;
+}
+
+.footer-logo{
+  height: 40px;
+  padding-left: 9%;
+}
+
+.sign-flag{
+  z-index: 999;
+  width: 24%;
+}
+
+.mlh-flag{
+  z-index: 999;
+  width: 24%;
+  margin-top: -12px;
+  margin-left: 50%;
+}
+
+
+.row{
+  /*height: 20%;*/
+  /*min-height: 100px;*/
+}
+
+.my-row-3{
+  margin-top: -6%;
+}
+
+.empty-row{
+  height: 19vh;
+}
+
+.girls{
+  margin-right: 100PX;
+}
+
+.hoo{
+/*  float: right;*/
+}
+
+.hack{
+  /*margin-top: -6%;
+  padding-left: 38%;*/
+  margin-top: -68%;
+  padding-left: 90%;
+}
+
+.v-hack{
 font-family: Roboto Mono;
 font-style: normal;
 /*font-weight: bold;*/
@@ -201,9 +550,12 @@ color: #0D38D3;
   margin-top: 17vh;
 }
 
-.my-footer{
-  min-height: 600px;
-  overflow: hidden;
+.nav-link:hover{
+  color:#0D38D3;
+}
+
+.discord{
+  padding-left: 3%;
 }
 
 .footer-logo{
@@ -315,207 +667,5 @@ color: #000000;
 }
 
 .workshop-col-2{
-}
-
-@media screen and (max-width: 600px) {
-.mobile-break { display: none; }
-}
-
-@media screen and (min-width: 600px)  {
-
-.my-row-3{
-  margin-top: -8vh;
-}
-/*TODO - main adjustment to laptop*/
-.my-about{
-  min-height: 750px;
-}
-
-.my-jumpstart{
-  min-height: 1170px;
-}
-
-.my-schedule{
-}
-
-.my-prizes{
-}
-
-.my-FAQ{
-  min-height: 1184px;
-}
-
-.my-sponsors{
-  background:#FFFFFF;
-  height: 500px;
-}
-
-.my-footer{
-}
-
-.nav-logo{
-}
-
-/*TODO - add flags if worth it*/
-.sign-flag{
-}
-
-.mlh-flag{
-}
-
-.girls{
-  margin-bottom: -5%;
-  padding-left: 38%;
-}
-
-.hoo{
-  float: right;
-}
-
-.hack{
-  margin-top: -15%;
-  padding-left: 38%;
-}
-
-.v-hack{
-  font-family: Roboto;
-  font-weight: bold;
-  margin-top: 10%;
-  font-size: min(4vw,60px);
-}
-
-.uva{
-  float: right;
-  margin-top: 11%;
-  padding-right: 10%;
-  font-size: min(4vw,20px);
-}
-
-.date{
-  float: right;
-  font-size: min(5vw,45px);
-  margin-left: 100%;
-}
-
-.orange-btn{
-  background: transparent;
-  width: min(334px, 40vw);
-  height: min(334px, 40vw);
-}
-
-.orange-btn:hover{
-  background: #fad3a4;
-  border-radius: 50%;
-}
-
-.signup{
-  font-size: min(65px,10vw);
-}
-
-.my-item{
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 20px;
-  line-height: 23px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  color: #FFFFFF;
-}
-
-.my-social-media{
-  float: left;
-  padding-left: -10%;
-}
-
-.nav-link:hover{
-  color:#0D38D3;
-}
-
-.discord{
-  padding-left: 3%;
-}
-.facebook{
-  padding-left: 8%;
-}
-
-.title{
-  font-size: min(158px,15vw);
-}
-
-.title-subheader, .title-black-bold {
-  margin-top: 5%;
-}
-
-.title-body, .title-coming-soon {
-  margin-top: 2%;
-}
-
-.title-header{
-  font-size: 56px;
-}
-
-.title-coming-soon{
-font-family: Roboto;
-font-style: normal;
-font-weight: bold;
-font-size: 56px;
-line-height: 66px;
-color: #43D6B9;
-}
-
-.title-subheader{
-  font-size: 32px;
-}
-
-.title-body{
-  font-size: 18px;
-  
-}
-
-.title-small-coming-soon{
-font-family: Roboto;
-font-style: normal;
-font-weight: 300;
-font-size: 18px;
-line-height: 30px;
-letter-spacing: 0.05em;
-color: #43D6B9;
-}
-
-.title-black-bold{
-font-size: 24px;
-}
-
-.title-black-bold-sub{
-font-size: 17px;
-}
-
-.title-schedule-time{
-font-family: Roboto Mono;
-font-style: normal;
-font-weight: 300;
-font-size: 24px;
-line-height: 30px;
-color: #000000;
-}
-
-.left-col{
-  margin-left: 5%;
-}
-
-.middle-col{
-  margin-left: 5%;
-}
-
-.workshop-col{
-  /*padding-top: 5%;*/
-  padding-left: 5%;
-}
-
-.workshop-col-2{
-  padding-top: 11%;
-  /*margin-left: 0%;*/
 }
 }
