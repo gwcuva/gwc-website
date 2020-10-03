@@ -225,7 +225,11 @@ body{
 
 .my-social-media{
   position: absolute;
-  margin-top: 17vh;
+  margin-top: 9vh;
+}
+
+.social-icon{
+  margin-left:2vw;
 }
 
 .my-footer{
