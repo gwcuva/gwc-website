@@ -20,7 +20,7 @@ body{
 
 .my-about{
   background:#F7F7F7;
-  min-height: 950px;
+  /*min-height: 950px;*/
 }
 
 .my-jumpstart{
@@ -291,7 +291,7 @@ color: #43D6B9;
   font-family: Roboto;
   font-style: normal;
   font-weight: 300;
-  font-size: 15px;
+  font-size: 19px;
   line-height: 30px;
   letter-spacing: 0.05em;
   color: #000000;
@@ -335,7 +335,7 @@ color: #000000;
 }
 
 .left-col{
-  padding-top: 11%;
+  padding-top: 8%;
 }
 
 .middle-col{
