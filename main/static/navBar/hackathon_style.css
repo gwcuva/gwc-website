@@ -182,7 +182,7 @@ body{
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
-  font-size: min(2vw,60px);
+  font-size: min(5vw,35px);
   color: #0D38D3;
 }
 
@@ -505,11 +505,6 @@ body{
   background: #43D6B9;
 }
 
-.second-nav.scrolled{
-  background: rgb(67,214,185) !important;
-  background: linear-gradient(79deg, rgba(67,214,185,1) 70%, rgba(255,255,255,0) 71%) !important;
-}
-
 .nav-logo{
   padding-left: 10vw;
 }
@@ -531,12 +526,6 @@ body{
   margin-left: 50%;
 }
 
-
-.row{
-  /*height: 20%;*/
-  /*min-height: 100px;*/
-}
-
 .my-row-3{
   margin-top: -6%;
 }
@@ -549,13 +538,7 @@ body{
   margin-right: 100PX;
 }
 
-.hoo{
-/*  float: right;*/
-}
-
 .hack{
-  /*margin-top: -6%;
-  padding-left: 38%;*/
   margin-top: -68%;
   padding-left: 90%;
 }
@@ -564,8 +547,7 @@ body{
 font-family: Roboto Mono;
 font-style: normal;
 /*font-weight: bold;*/
-font-size: 4vw;/*
-line-height: 70px;*/
+font-size: 4vw;
 color: #0D38D3;
 }
 
