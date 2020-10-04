@@ -46,7 +46,45 @@ body{
 /*TODO - put in sponsors*/
 .my-sponsors{
   background:#FFFFFF;
-  height: 500px;
+}
+
+.maxar-logo{
+  height: 80%;
+  width: 70%;
+}
+
+.mule-logo{
+  padding-top: 1vh;
+  width: 30%;
+}
+
+.willow-logo{
+  padding-top: 1vh;
+  width: 85%;
+}
+
+.wolfram-logo{
+  padding-top: 5vh;
+}
+
+.hackerearth-logo{
+  padding-top: 5vh;
+  width: 55%;
+}
+
+.ds-logo{
+  /*height: 58%;*/
+  width: 70%;
+}
+
+.gc-logo{
+  /*margin-top: -10%;*/
+  width: 100%;
+}
+
+.mlh-logo{
+  /*margin-top: -10%;*/
+  width: 50%;
 }
 
 .sponsor-image{
@@ -396,12 +434,46 @@ body{
   min-height: 1384px;
 }
 
-/*TODO - put in sponsors*/
 .my-sponsors{
   background:#FFFFFF;
-  height: 500px;
+  height: 650px;
 }
 
+.maxar-logo{
+  height: 90%;
+  width: 90%;
+}
+
+.mule-logo{
+  padding-top: 3vh;
+  width: 80%;
+}
+
+.willow-logo{
+  padding-top: 3vh;
+  width: 95%;
+}
+
+.wolfram-logo{
+  padding-top: 5vh;
+}
+
+.hackerearth-logo{
+  padding-top: 5vh;
+}
+
+.ds-logo{
+  height: 90%;
+  width: 90%;
+}
+
+.gc-logo{
+  width: 120%;
+}
+
+.mlh-logo{
+  width: 90%;
+}
 
 .my-nav{
   height: 10vh;
