@@ -225,7 +225,11 @@ body{
 
 .my-social-media{
   position: absolute;
-  margin-top: 17vh;
+  margin-top: 9vh;
+}
+
+.social-icon{
+  margin-left:2vw;
 }
 
 .my-footer{
@@ -560,10 +564,6 @@ color: #0D38D3;
 
 .nav-link:hover{
   color:#0D38D3;
-}
-
-.discord{
-  padding-left: 3%;
 }
 
 .footer-logo{
