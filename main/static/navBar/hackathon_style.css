@@ -49,22 +49,24 @@ body{
 }
 
 .maxar-logo{
-  height: 80%;
-  width: 70%;
-}
-
-.mule-logo{
-  padding-top: 1vh;
+  margin-top: -5%;
   width: 30%;
 }
 
+.mule-logo{
+  padding-top: 3vh;
+  width: 60%;
+}
+
 .willow-logo{
+  float: left;
   padding-top: 1vh;
-  width: 85%;
+  width: 65%;
 }
 
 .wolfram-logo{
-  padding-top: 5vh;
+  float: left;
+  padding-top: 6vh;
 }
 
 .hackerearth-logo{
@@ -73,13 +75,20 @@ body{
 }
 
 .ds-logo{
-  /*height: 58%;*/
-  width: 70%;
+  padding-top: 5vh;
+  height: 65%;
+}
+
+.appian-logo{
+  padding-top: 4vh;
+  width: 30%;
+  float: left;
 }
 
 .gc-logo{
-  /*margin-top: -10%;*/
-  width: 100%;
+  padding-top: 6vh;
+  width: 80%;
+  float: left;
 }
 
 .mlh-logo{
@@ -440,11 +449,16 @@ body{
 }
 
 .maxar-logo{
-  height: 90%;
-  width: 90%;
+  height: 100%;
+  width: 100%;
 }
 
 .mule-logo{
+  padding-top: 3vh;
+  width: 80%;
+}
+
+.appian-logo{
   padding-top: 3vh;
   width: 80%;
 }
@@ -463,6 +477,7 @@ body{
 }
 
 .ds-logo{
+  padding-top: 1vh;
   height: 90%;
   width: 90%;
 }
@@ -472,7 +487,7 @@ body{
 }
 
 .mlh-logo{
-  width: 90%;
+  width: 60%;
 }
 
 .my-nav{
