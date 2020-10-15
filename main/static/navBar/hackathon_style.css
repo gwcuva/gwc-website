@@ -305,6 +305,9 @@ body{
 .title-body, .title-coming-soon {
   margin-top: 2%;
 }
+.prize-text{
+  font-weight: bold;
+}
 
 .title-header{
   font-family: Roboto;
@@ -655,6 +658,10 @@ color: #0D38D3;
 
 .title-body, .title-coming-soon {
   margin-top: 2%;
+}
+
+.prize-text{
+  font-weight: bold;
 }
 
 .title-header{
