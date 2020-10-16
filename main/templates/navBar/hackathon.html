@@ -12,6 +12,7 @@
 
     <!-- link to og css file -->
     <link rel = "stylesheet" type = "text/css" href = "{% static 'navBar/hackathon_style.css'%}">
+
     <!-- Roboto font -->
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Roboto Mono' rel='stylesheet'>
@@ -22,6 +23,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
+    
     <title>Girls Hoo Hack</title>
   </head>
   <body>
@@ -59,20 +61,14 @@
             <li class="nav-item">
               <a class="nav-link my-item text-white pl-4" href="#my-sponsors">Sponsors</a>
             </li>
+            <li>
+              <a id="mlh-trust-badge" style="display:block;max-width:100px;min-width:60px;position:fixed;right:50px;top:0;width:10%;z-index:10000" href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf" target="_blank"><img src="https://s3.amazonaws.com/logged-assets/trust-badge/2021/mlh-trust-badge-2021-black.svg" alt="Major League Hacking 2021 Hackathon Season" style="width:70%"></a>
+            </li>
           </ul>
         </div>
       </nav>
 
-
-
-      <!-- <nav class="navbar sticky-top navbar-light my-nav">
-        <ul>
-          <a class="navbar-brand" href="#"><img class = "nav-logo" src = "static/navBar/nav-logo.png"></a>
-          <a style = "z-index: 999;" href="https://girlshoohack2020.hackerearth.com/"><img class = "sign-flag" src = "static/navBar/sign-flag.png"></a>
-          <a href="https://girls-hoo-hack.webnode.com/_files/200000020-f1eaaf1ead/mlh-code-of-conduct.pdf"><img class = "mlh-flag" src = "static/navBar/mlh-flag.png"></a>
-        </ul>
-      </nav> -->
-
+      
       <div class="container-fluid my-main pt-5 laptop" style = "background-image: url('static/navBar/orangeWave.png'); background-repeat: no-repeat; background-size: cover;">
         <div class="row">
           <div class="col-md-8">
@@ -297,38 +293,439 @@
             </div>
           </div>
       </div>
+    </div>
 
 
       <div class = "container-fluid my-schedule" id = "my-schedule">
         <div class = "row">
-          <!-- TODO - UPDATE -->
-          <div class = "col-8 left-col">
-            <div class = "title-header">
+          <div class = "col">
+            <div class = "title-header" style = "margin-top: 9%">
               Schedule
             </div>
+          </div>
+        </div>
+        <div class = "row">
+          <div class = "col-12">
             <div class = "title-subheader">
-              <!-- Saturday, Oct 17 & Sunday, Oct 18 -->
-            </div>
-            <div class = "title-coming-soon">
-              COMING SOON ...
-              
-            </div>
-            <div class = "title-schedule-time">
-              
-            </div>
-            <div class = "title-schedule-time">
-              
+              Saturday, Oct 17
             </div>
           </div>
-          <div class = "col middle-col" style = "margin-top: 4.5%">
-            <div class = "title-black-bold">
-              
+          <div class = "col-12">
+            <div class = "btn btn-light my-schedule-btn" type = "button" data-toggle = "collapse" aria-expanded="false" aria-controls = "schedule-collapse-17" data-target="#schedule-collapse-17">
+            <b class = "plus">+</b>
             </div>
           </div>
+        </div>
+        <div class = "collapse" id = "schedule-collapse-17">
+        <div class = "row schedule-row">
+          <div class = "col-4 col-md-2">
+            <div class = "title-schedule-time">
+              9&nbsp  am
+            </div>
+          </div>
+          <div class = "col-8">
+            <div class = "title-schedule-bold">
+              Opening Ceremony<br>
+            </div>
+            <div class = "title-body">
+              <a class = "zoom-text" href = "https://virginia.zoom.us/j/96885715106?pwd=ZVIzTkVRVStwd1RsZ0p4emtKRk1WUT09">Join Zoom Now&nbsp <span class="glyphicon glyphicon-share-alt"></span> </a>
+            </div>
+          </div>
+        </div>
+        <div class = "row schedule-row">
+          <div class = "col-4 col-md-2">
+            <div class = "title-schedule-time">
+              10 am
+            </div>
+          </div>
+          <div class = "col-8">
+            <div class = "title-schedule-bold">
+              Begin Hacking
+            </div>
+          </div>
+        </div>
+        <div class = "row  schedule-row">
+          <div class = "col-4 col-md-2">
+            <div class = "title-schedule-time">
+              11 am
+            </div>
+          </div>
+          <div class = "col-8">
+            <div class = "title-schedule-bold">
+              Acing Technical Interviews with WillowTree<br>
+            </div>
+            <div class = "title-body">
+              <a class = "zoom-text" href = "https://willowtreeapps.zoom.us/j/92296001792?pwd=bTkyRklNVmhEaTlyNlNwMnZpcW9xUT09">Join Zoom Now&nbsp <span class="glyphicon glyphicon-share-alt"></span> </a>
+            </div>
+          </div>
+        </div>
+        <div class = "row schedule-row">
+          <div class = "col-4 col-md-2">
+            <div class = "title-schedule-time">
+              12 pm
+            </div>
+          </div>
+          <div class = "col-8">
+            <div class = "title-schedule-bold">
+              Social Activity<br>
+            </div>
+            <div class = "title-body">
+              <a class = "zoom-text" href = "https://virginia.zoom.us/j/96885715106?pwd=ZVIzTkVRVStwd1RsZ0p4emtKRk1WUT09">Join Zoom Now&nbsp <span class="glyphicon glyphicon-share-alt"></span> </a>
+            </div>
+          </div>
+        </div>
+        <div class = "row schedule-row">
+          <div class = "col-4 col-md-2">
+            <div class = "title-schedule-time">
+              1&nbsp pm
+            </div>
+          </div>
+          <div class = "col-8">
+            <div class = "title-schedule-bold">
+              What’s all the fuss about Data Science?<br>
+            </div>
+            <!-- <div class = "title-body">
+              <a class = "zoom-text" href = "https://willowtreeapps.zoom.us/j/92296001792?pwd=bTkyRklNVmhEaTlyNlNwMnZpcW9xUT09">Join Zoom Now&nbsp <span class="glyphicon glyphicon-share-alt"></span> </a>
+            </div> -->
+          </div>
+        </div>
+        <div class = "row schedule-row">
+          <div class = "col-4 col-md-2">
+            <div class = "title-schedule-time">
+              1&nbsp pm
+            </div>
+          </div>
+          <div class = "col-8">
+            <div class = "title-schedule-bold">
+              Career Panel with Maxar<br>
+            </div>
+            <div class = "title-body">
+              <a class = "zoom-text" href = "https://maxar.zoom.us/j/87647385055?pwd=SnZwb0Qxb1FUaWI1eW9DOG96QVhxUT09">Join Zoom Now&nbsp <span class="glyphicon glyphicon-share-alt"></span> </a>
+            </div>
+          </div>
+        </div>
+        <div class = "row schedule-row">
+          <div class = "col-4 col-md-2">
+            <div class = "title-schedule-time">
+              2&nbsp pm
+            </div>
+          </div>
+          <div class = "col-8">
+            <div class = "title-schedule-bold">
+              Introduction to Satellites with Maxar<br>
+            </div>
+            <div class = "title-body">
+              <a class = "zoom-text" href = "https://maxar.zoom.us/j/88520487569?pwd=ejB2UDNFL25QbHhQSHZUTWRqdThEdz09">Join Zoom Now&nbsp <span class="glyphicon glyphicon-share-alt"></span> </a>
+            </div>
+          </div>
+        </div>
+        <div class = "row schedule-row">
+          <div class = "col-4 col-md-2">
+            <div class = "title-schedule-time">
+              2&nbsp pm
+            </div>
+          </div>
+          <div class = "col-8">
+            <div class = "title-schedule-bold">
+              Google Cloud Hero<br>
+            </div>
+            <div class = "title-body">
+              <a class = "zoom-text" href = "https://www.youtube.com/watch?v=nCuSesYPIdg">Join YouTube Live Now&nbsp <span class="glyphicon glyphicon-share-alt"></span> </a>
+            </div>
+          </div>
+        </div>
+        <div class = "row schedule-row">
+          <div class = "col-4 col-md-2">
+            <div class = "title-schedule-time">
+              3&nbsp pm
+            </div>
+          </div>
+          <div class = "col-8">
+            <div class = "title-schedule-bold">
+              Introduction to DevOps/DevSecOps with Maxar<br>
+            </div>
+            <div class = "title-body">
+              <a class = "zoom-text" href = "https://maxar.zoom.us/j/85757971837?pwd=ZGRzbmF2d1gxc2pWQzQ2MmdESDMrZz09">Join Zoom Now&nbsp <span class="glyphicon glyphicon-share-alt"></span> </a>
+            </div>
+          </div>
+        </div>
+        <div class = "row schedule-row">
+          <div class = "col-4 col-md-2">
+            <div class = "title-schedule-time">
+              3&nbsp pm
+            </div>
+          </div>
+          <div class = "col-8">
+            <div class = "title-schedule-bold">
+              Free and Open Source Software Overview with Maxar<br>
+            </div>
+            <div class = "title-body">
+             <a class = "zoom-text" href = "https://maxar.zoom.us/j/94639083017?pwd=YjRtdGFOWmhoN2dLVVdSR3dweXR1dz09">Join Zoom Now&nbsp <span class="glyphicon glyphicon-share-alt"></span> </a>
+            </div>
+          </div>
+        </div>
+        <div class = "row schedule-row">
+          <div class = "col-4 col-md-2">
+            <div class = "title-schedule-time">
+              4&nbsp pm
+            </div>
+          </div>
+          <div class = "col-8">
+            <div class = "title-schedule-bold">
+              Data Science Overview with Maxar<br>
+            </div>
+            <div class = "title-body">
+              <a class = "zoom-text" href = "https://maxar.zoom.us/j/84049542278?pwd=Y1ZHRVcvcmpKTlNUS1FINmZTSUZMdz09">Join Zoom Now&nbsp <span class="glyphicon glyphicon-share-alt"></span> </a>
+            </div>
+          </div>
+        </div>
+        <div class = "row schedule-row">
+          <div class = "col-4 col-md-2">
+            <div class = "title-schedule-time">
+              4&nbsp pm
+            </div>
+          </div>
+          <div class = "col-8">
+            <div class = "title-schedule-bold">
+              Front-End Development Overview<br>
+            </div>
+            <div class = "title-body">
+              <a class = "zoom-text" href = "https://maxar.zoom.us/j/84551600470?pwd=TVlPMlRhRjNEZjV2TzFGMVk0S25VUT09">Join Zoom Now&nbsp <span class="glyphicon glyphicon-share-alt"></span> </a>
+            </div>
+          </div>
+        </div>
+        <div class = "row schedule-row">
+          <div class = "col-4 col-md-2">
+            <div class = "title-schedule-time">
+              5&nbsp pm
+            </div>
+          </div>
+          <div class = "col-8">
+            <div class = "title-schedule-bold">
+              Microsoft Azure Chat Bot with GWCUVA<br>
+            </div>
+            <div class = "title-body">
+              <a class = "zoom-text" href = "https://teams.microsoft.com/l/meetup-join/19%3ameeting_MzI2ODRiMDAtZDExNS00ZDZmLTgwYmQtZGYwMDU2YzRjZDcw%40thread.v2/0?context=%7b%22Tid%22%3a%2284c31ca0-ac3b-4eae-ad11-519d80233e6f%22%2c%22Oid%22%3a%2201a09c24-128b-4ff1-8a5c-4599134a5efd%22%7d">Join Teams Now&nbsp <span class="glyphicon glyphicon-share-alt"></span> </a>
+            </div>
+          </div>
+        </div>
+        <div class = "row schedule-row">
+          <div class = "col-4 col-md-2">
+            <div class = "title-schedule-time">
+              7&nbsp pm
+            </div>
+          </div>
+          <div class = "col-8">
+            <div class = "title-schedule-bold">
+              Bob Ross Microsoft Painting with MLH<br>
+            </div>
+            <div class = "title-body">
+              <a class = "zoom-text" href = "https://virginia.zoom.us/j/96885715106?pwd=ZVIzTkVRVStwd1RsZ0p4emtKRk1WUT09">Join Zoom Now&nbsp <span class="glyphicon glyphicon-share-alt"></span> </a>
+            </div>
+          </div>
+        </div>
+        </div>
+
+        <div class = "row">
           <div class = "col">
+            <div class = "title-subheader">
+              Sunday, Oct 18
+            </div>
+          </div>
+          <div class = "col-12">
+            <div class = "btn btn-light my-schedule-btn" data-toggle = "collapse" aria-expanded="false" aria-controls="schedule-collapse-18" data-target="#schedule-collapse-18">
+            <b class = "plus">+</b>
+            </div>
+          </div>
+        </div>
+        <div class = "collapse" id = "schedule-collapse-18">
+        <div class = "row  schedule-row">
+          <div class = "col-4 col-md-2">
+            <div class = "title-schedule-time">
+              930 am
+            </div>
+          </div>
+          <div class = "col-8">
+            <div class = "title-schedule-bold">
+               Morning Yoga<br>
+            </div>
+            <div class = "title-body">
+              <a class = "zoom-text" href = "https://virginia.zoom.us/j/96885715106?pwd=ZVIzTkVRVStwd1RsZ0p4emtKRk1WUT09">Join Zoom Now&nbsp <span class="glyphicon glyphicon-share-alt"></span> </a>
+            </div>
+          </div>
+        </div>
+        <div class = "row schedule-row">
+          <div class = "col-4 col-md-2">
+            <div class = "title-schedule-time">
+              10 am
+            </div>
+          </div>
+          <div class = "col-8">
+            <div class = "title-schedule-bold">
+              Individual Sessions: Resume Review and Interview Tips with Maxar<br>
+            </div>
+            <div class = "title-body">
+              <a class = "zoom-text" href = "https://maxar.zoom.us/j/83544638569?pwd=M3RDV3ByN3U3M3cwVTBBbmJrVGUxQT09">Join Zoom Now with Pat&nbsp <span class="glyphicon glyphicon-share-alt"></span> </a>
+              <a class = "zoom-text" href = "https://maxar.zoom.us/j/85816984888?pwd=NlNKN3JHWmFiYmFiQ3cxVnY1dlczZz09">Join Zoom Now with Larissa&nbsp <span class="glyphicon glyphicon-share-alt"></span> </a>
+            </div>
+          </div>
+        </div>
+        <div class = "row schedule-row">
+          <div class = "col-4 col-md-2">
+            <div class = "title-schedule-time">
+              12 pm
+            </div>
+          </div>
+          <div class = "col-8">
+            <div class = "title-schedule-bold">
+              Introduction to Agile and Scrum with Maxar<br>
+            </div>
+            <div class = "title-body">
+              <a class = "zoom-text" href = "https://maxar.zoom.us/j/86507524147?pwd=MXB5MHdiWjZBNGhKN01zcGNkYnlHQT09">Join Zoom Now&nbsp <span class="glyphicon glyphicon-share-alt"></span> </a>
+            </div>
+          </div>
+        </div>
+        <div class = "row schedule-row">
+          <div class = "col-4 col-md-2">
+            <div class = "title-schedule-time">
+              12 pm
+            </div>
+          </div>
+          <div class = "col-8">
+            <div class = "title-schedule-bold">
+              Firebase Tech Talk with Google Cloud<br>
+            </div>
+            <div class = "title-body">
+              <a class = "zoom-text" href = "https://www.youtube.com/watch?v=nCuSesYPIdg">Join YouTube Live Now&nbsp <span class="glyphicon glyphicon-share-alt"></span> </a>
+            </div>
+          </div>
+        </div>
+        <div class = "row schedule-row">
+          <div class = "col-4 col-md-2">
+            <div class = "title-schedule-time">
+              1&nbsp pm
+            </div>
+          </div>
+          <div class = "col-8">
+            <div class = "title-schedule-bold">
+              Girls Hoo Hack 2020 Networking Event<br>
+            </div>
+            <div class = "title-body">
+              Participating Sponsors: Google Cloud, Maxar, UVA School of Data Science, Willowtree
+              <a class = "zoom-text" href = "https://virginia.zoom.us/j/96885715106?pwd=ZVIzTkVRVStwd1RsZ0p4emtKRk1WUT09">Join Zoom Now&nbsp <span class="glyphicon glyphicon-share-alt"></span> </a>
+            </div>
+          </div>
+        </div>
+        <div class = "row schedule-row">
+          <div class = "col-4 col-md-2">
+            <div class = "title-schedule-time">
+              3&nbsp pm
+            </div>
+          </div>
+          <div class = "col-8">
+            <div class = "title-schedule-bold">
+              Introduction to Artificial Intelligence and Machine Learning with Maxar<br>
+            </div>
+            <div class = "title-body">
+              <a class = "zoom-text" href = "https://maxar.zoom.us/j/83269320896?pwd=QXpaWWtCNUtKL3V2NkZ0SWNBS2hQQT09">Join Zoom Now&nbsp <span class="glyphicon glyphicon-share-alt"></span> </a>
+            </div>
+          </div>
+        </div>
+        <div class = "row schedule-row">
+          <div class = "col-4 col-md-2">
+            <div class = "title-schedule-time">
+              4&nbsp pm
+            </div>
+          </div>
+          <div class = "col-8">
+            <div class = "title-schedule-bold">
+              Working Together on Common Humanitarian Goals with Maxar<br>
+            </div>
+            <div class = "title-body">
+             <a class = "zoom-text" href = "https://maxar.zoom.us/j/82132769271?pwd=eFF1WlExaEQ0SlVldFdPaEtTVFJtZz09">Join Zoom Now&nbsp <span class="glyphicon glyphicon-share-alt"></span> </a>
+            </div>
+          </div>
+        </div>
+        <div class = "row schedule-row">
+          <div class = "col-4 col-md-2">
+            <div class = "title-schedule-time">
+              4&nbsp pm
+            </div>
+          </div>
+          <div class = "col-8">
+            <div class = "title-schedule-bold">
+             Building Effective Communication Skills with Chinmayi Balusu<br>
+            </div>
+            <div class = "title-body">
+              <a class = "zoom-text" href = "https://us04web.zoom.us/j/74847801479?pwd=SUFDNzlZR0lQSGpYTjQ5MzhOU2o4UT09">Join Zoom Now&nbsp <span class="glyphicon glyphicon-share-alt"></span> </a>
+            </div>
+          </div>
+        </div>
+        <div class = "row schedule-row">
+          <div class = "col-4 col-md-2">
+            <div class = "title-schedule-time">
+              530 pm
+            </div>
+          </div>
+          <div class = "col-8">
+            <div class = "title-schedule-bold">
+              Capture the Flag (CTF) with MLH<br>
+            </div>
+            <div class = "title-body">
+              <a class = "zoom-text" href = "https://virginia.zoom.us/j/96885715106?pwd=ZVIzTkVRVStwd1RsZ0p4emtKRk1WUT09">Join Zoom Now&nbsp <span class="glyphicon glyphicon-share-alt"></span> </a>
+            </div>
+          </div>
+        </div>
+        <div class = "row schedule-row">
+          <div class = "col-4 col-md-2">
+            <div class = "title-schedule-time">
+              7&nbsp pm
+            </div>
+          </div>
+          <div class = "col-8">
+            <div class = "title-schedule-bold">
+              Demos<br>
+            </div>
+            <div class = "title-body">
+              <a class = "zoom-text" href = "https://girlshoohack2020.hackerearth.com/">&nbsp <span class="glyphicon glyphicon-share-alt"></span> </a>
+            </div>
+          </div>
+        </div>
+        <div class = "row schedule-row">
+          <div class = "col-4 col-md-2">
+            <div class = "title-schedule-time">
+              830 pm
+            </div>
+          </div>
+          <div class = "col-8">
+            <div class = "title-schedule-bold">
+              Judging<br>
+            </div>
+            <div class = "title-body">
+              <a class = "zoom-text" href = "https://girlshoohack2020.hackerearth.com/">&nbsp <span class="glyphicon glyphicon-share-alt"></span> </a>
+            </div>
+          </div>
+        </div>
+        <div class = "row schedule-row">
+          <div class = "col-4 col-md-2">
+            <div class = "title-schedule-time">
+              10 pm
+            </div>
+          </div>
+          <div class = "col-8">
+            <div class = "title-schedule-bold">
+              Closing Ceremony<br>
+            </div>
+            <div class = "title-body">
+              <a class = "zoom-text" href = "https://virginia.zoom.us/j/96885715106?pwd=ZVIzTkVRVStwd1RsZ0p4emtKRk1WUT09">Join Zoom Now&nbsp <span class="glyphicon glyphicon-share-alt"></span> </a>
+            </div>
           </div>
         </div>
       </div>
+
+      <div class = "empty-row">
+        </div>
+        </div>
 
       <div class = "container-fluid my-prizes" id = "my-prizes">
         <div class = "row">
@@ -342,19 +739,22 @@
                   <h3 class="title-black-bold mb-0 pb-0">
                     Women Empowerment
                   </h3>
-                  <p class="title-small-coming-soon">Join us in our mission to decrease gender disparity in the STEM workforce! Build a project that empowers women and emphasizes diversity. Prize: $150 per team, a year of Wolfram|One Personal Edition, and a one-year subscription to Wolfram|Alpha Pro, valued at $375.</p>
+                  <p class="title-small-coming-soon">Join us in our mission to decrease gender disparity in the STEM workforce! Build a project that empowers women and emphasizes diversity. </br> 
+                  <b class = "prize-text">Prize :</b> $150 per team, a year of Wolfram|One Personal Edition, and a one-year subscription to Wolfram|Alpha Pro, valued at $375.</p>
                 </div>
                 <div class = "col-md-4 col-sm-12">
                   <h3 class="title-black-bold mb-0 pb-0">
                     Best Overall
                   </h3>
-                  <p class="title-small-coming-soon">This prize will be awarded to the project that exhibits creativity, innovation, and diversity of thought. Special consideration will be given to projects that promote women empowerment and the goals of Girls Hoo Hack and Girls Who Code at UVA. Prize: $150 per team, a year of Wolfram|One Personal Edition, and a one-year subscription to Wolfram|Alpha Pro, valued at $375</p>
+                  <p class="title-small-coming-soon">This prize will be awarded to the project that exhibits creativity, innovation, and diversity of thought. Special consideration will be given to projects that promote women empowerment and the goals of Girls Hoo Hack and Girls Who Code at UVA. <br>
+                  <b class = "prize-text"> Prize : </b>$150 per team, a year of Wolfram|One Personal Edition, and a one-year subscription to Wolfram|Alpha Pro, valued at $375</p>
                 </div>
                 <div class = "col-md-4 col-sm-12">
                   <h3 class="title-black-bold mb-0 pb-0">
                     Best Beginner
                   </h3>
-                  <p class="title-small-coming-soon">This prize is reserved for the best project by beginner hackers. A team of beginner hackers is defined as a team with no prior experience at a hackathon. Prize: $150 per team</p>
+                  <p class="title-small-coming-soon">This prize is reserved for the best project by beginner hackers. A team of beginner hackers is defined as a team with no prior experience at a hackathon. <br>
+                  <b class = "prize-text">Prize :</b> $150 per team</p>
                 </div>
               </div>
               <div class = "row">
@@ -362,13 +762,27 @@
                 <!-- TODO - formatting of workshop on laptop size -->
                 <div class = "col-md-4 col-sm-12">
                   <h3 class="title-black-bold mb-0 pb-0">Education</h3>
-                  <p class="title-small-coming-soon">This prize is reserved for a project that helps address obstacles in education today. Special consideration will be given to projects that provide solutions for obstacles to education related to COVID-19 and online learning. Prize: $150 per team.</p>
+                  <p class="title-small-coming-soon">This prize is reserved for a project that helps address obstacles in education today. Special consideration will be given to projects that provide solutions for obstacles to education related to COVID-19 and online learning. <br><b class = "prize-text">Prize :</b> $150 per team.</p>
                 </div>
                 <div class = "col-md-4 col-sm-12">
                   <h3 class="title-black-bold mb-0 pb-0">
                     Best Use of Google Cloud
                   </h3>
-                  <p class="title-small-coming-soon">This prize is reserved for a project that best utilizes any Google Cloud product. Prize: Google Cloud-branded Patagonia backpack, water bottle, and trophy. Select projects may receive an invitation to apply to the Google Cloud COVID-19 hackathon fund awarding up to $5,000 in cloud credits and guidance from Google developers.</p>
+                  <p class="title-small-coming-soon">This prize is reserved for a project that best utilizes any Google Cloud product. 
+                  <br><b class = "prize-text">First Place Prize :</b> Google Cloud-branded Patagonia backpack, water bottle, and trophy. 
+                  <br><b class = "prize-text">Second Place Prize :</b> Google Nest Mini(s)
+                  <br><i>Select projects may receive an invitation to apply to the Google Cloud COVID-19 hackathon fund awarding up to $5,000 in cloud credits and guidance from Google developers. </i>
+                  </p>
+                </div>
+                <div class = "col-md-4 col-sm-12">
+                  <h3 class="title-black-bold mb-0 pb-0">Best Domain Registered with Domain.com</h3>
+                  <p class="title-small-coming-soon">Register a .tech, .space, or .online domain name using Domain.com during the weekend. Each team may submit one entry per person on the team. Each winning team member will receive a PowerSquare Qi wireless phone charger.<br>
+                  <b class = "prize-text">Prize :</b> Power Square Qi wireless phone charger</p>
+                </div>
+                <div class = "col-md-4 col-sm-12">
+                  <h3 class="title-black-bold mb-0 pb-0">Best Hardware Hack Sponsored by Digi-Key</h3>
+                  <p class="title-small-coming-soon">Using your preferred hardware or hardware emulator, build a hack for your chance to win a Grove Beginner Kit, with Arduino Uno R3 included. 1 prize for each winning team member with 2 winning teams per event!<br>
+                  <b class = "prize-text"> Prize :</b> Grove Beginner Kits</p>
                 </div>
               </div>
             </div>
@@ -434,7 +848,7 @@
 
 
                     <a class="col-4 col-sm-4" href="https://willowtreeapps.com/" target="_blank" style = "text-align: center;"><img class=" willow-logo" src="https://skilled.co/wp-content/uploads/2017/01/Willow-Tree-Apps.png"></a>
-                    <a class="col-4 col-sm-2" href="https://www.stickermule.com/" target="_blank" style = "text-align: center;"><img class="mule-logo" src="https://cdn.freebiesupply.com/logos/large/2x/sticker-mule-logo-png-transparent.png"></a>
+                    <a class="col-4 col-sm-2" href="https://www.stickermule.com/" target="_blank" style = "text-align: center;"><img class="mule-logo" src="static/navBar/mule-logo.png"></a>
                     <a class="col-4" href="https://www.appian.com/" target="_blank" style = "text-align: center;"><img class="appian-logo" src = "static/navBar/appian-logo.png"></a>
 
                     <a class="col-6 col-sm-4" href="https://www.wolframalpha.com/" target="_blank" style = "text-align: center;"><img class="wolfram-logo" src="https://www.wolframalpha.com/_next/static/images/Logo_1tof6SJC.svg"></a>
@@ -460,8 +874,8 @@
         <div class = "footer-logo" style = "position:relative;">
           <a class="navbar-brand"><img class = "footer-logo" src = "static/navBar/Footer/white logo 1.png" ></a>
 
-          <a class = "footer-text" href = "static/navBar/Footer/sponsor-info.pdf">Interested in Sponsoring? </a>
-            <a class="footer-text" href="mailto: gwcuva@gmail.com">Need to contact us?</a>
+         <!--  <a class = "footer-text" href = "static/navBar/Footer/sponsor-info.pdf">Interested in Sponsoring? </a>
+            <a class="footer-text" href="mailto: gwcuva@gmail.com">Need to contact us?</a> -->
         </div>
         <div class = "row my-social-media" style="float: left;">
           <div class = "row">
@@ -520,6 +934,8 @@
       });
     });
     </script>
+
+
   </body>
 </html>
 
