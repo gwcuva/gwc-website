@@ -448,7 +448,7 @@ body{
 
 .my-about{
   background:#F7F7F7;
-  min-height: 950px;
+  min-height: 650px;
 }
 
 .my-jumpstart{
@@ -474,7 +474,7 @@ body{
 
 .my-FAQ{
   background:#F7F7F7;
-  min-height: 1384px;
+  min-height: 1184px;
 }
 
 .my-sponsors{
@@ -734,7 +734,7 @@ color: #43D6B9;
   font-family: Roboto;
   font-style: normal;
   font-weight: 300;
-  font-size: 19px;
+  font-size: 14px;
   letter-spacing: 0.05em;
   color: #000000;
 }
