@@ -25,14 +25,13 @@ body{
 
 .my-jumpstart{
   background:#FFFFFF;
-  min-height: 1570px;
+  min-height: 1370px;
 }
 
 .my-schedule{
   background:#F7F7F7;
   min-height: 364px;
 }
-
 
 .plus{
   font-size: 35px;
@@ -47,7 +46,7 @@ body{
 
 .my-FAQ{
   background:#F7F7F7;
-  min-height: 1384px;
+  min-height: 1214px;
 }
 
 /*TODO - put in sponsors*/
