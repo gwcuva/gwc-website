@@ -12,6 +12,8 @@
 
     <!-- link to og css file -->
     <link rel = "stylesheet" type = "text/css" href = "{% static 'navBar/hackathon_style.css'%}">
+
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
     <!-- Roboto font -->
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Roboto Mono' rel='stylesheet'>
@@ -306,23 +308,448 @@
 
       <div class = "container-fluid my-schedule" id = "my-schedule">
         <div class = "row">
+          <div class = "col">
+            <div class = "title-header" style = "margin-top: 9%">
+              Schedule
+            </div>
+          </div>
+        </div>
+        <div class = "row">
+          <div class = "col-12">
+            <div class = "title-subheader">
+              Saturday, Oct 17
+            </div>
+          </div>
+          <div class = "col-12">
+            <div class = "btn btn-light my-schedule-btn" type = "button" data-toggle = "collapse" aria-expanded="false"  data-target="#schedule-collapse-17">
+            <b class = "plus">+</b>
+            </div>
+          </div>
+        </div>
+        <div class = "collapse" id = "schedule-collapse-17">
+        <div class = "row schedule-row">
+          <div class = "col-4 col-md-2">
+            <div class = "title-schedule-time">
+              9&nbsp  am
+            </div>
+          </div>
+          <div class = "col-8">
+            <div class = "title-schedule-bold">
+              Opening Ceremony<br>
+            </div>
+            <div class = "title-body">
+              <a class = "zoom-text" href = "https://virginia.zoom.us/j/96885715106?pwd=ZVIzTkVRVStwd1RsZ0p4emtKRk1WUT09">Join Zoom Now&nbsp <span class="glyphicon glyphicon-share-alt"></span> </a>
+            </div>
+          </div>
+        </div>
+        <div class = "row schedule-row">
+          <div class = "col-4 col-md-2">
+            <div class = "title-schedule-time">
+              10 am
+            </div>
+          </div>
+          <div class = "col-8">
+            <div class = "title-schedule-bold">
+              Begin Hacking
+            </div>
+          </div>
+        </div>
+        <div class = "row  schedule-row">
+          <div class = "col-4 col-md-2">
+            <div class = "title-schedule-time">
+              11 am
+            </div>
+          </div>
+          <div class = "col-8">
+            <div class = "title-schedule-bold">
+              Acing Technical Interviews with WillowTree<br>
+            </div>
+            <div class = "title-body">
+              <a class = "zoom-text" href = "https://willowtreeapps.zoom.us/j/92296001792?pwd=bTkyRklNVmhEaTlyNlNwMnZpcW9xUT09">Join Zoom Now&nbsp <span class="glyphicon glyphicon-share-alt"></span> </a>
+            </div>
+          </div>
+        </div>
+        <div class = "row schedule-row">
+          <div class = "col-4 col-md-2">
+            <div class = "title-schedule-time">
+              12 pm
+            </div>
+          </div>
+          <div class = "col-8">
+            <div class = "title-schedule-bold">
+              Social Activity<br>
+            </div>
+            <div class = "title-body">
+              <a class = "zoom-text" href = "https://virginia.zoom.us/j/96885715106?pwd=ZVIzTkVRVStwd1RsZ0p4emtKRk1WUT09">Join Zoom Now&nbsp <span class="glyphicon glyphicon-share-alt"></span> </a>
+            </div>
+          </div>
+        </div>
+        <div class = "row schedule-row">
+          <div class = "col-4 col-md-2">
+            <div class = "title-schedule-time">
+              1&nbsp pm
+            </div>
+          </div>
+          <div class = "col-8">
+            <div class = "title-schedule-bold">
+              What’s all the fuss about Data Science?<br>
+            </div>
+            <!-- <div class = "title-body">
+              <a class = "zoom-text" href = "https://willowtreeapps.zoom.us/j/92296001792?pwd=bTkyRklNVmhEaTlyNlNwMnZpcW9xUT09">Join Zoom Now&nbsp <span class="glyphicon glyphicon-share-alt"></span> </a>
+            </div> -->
+          </div>
+        </div>
+        <div class = "row schedule-row">
+          <div class = "col-4 col-md-2">
+            <div class = "title-schedule-time">
+              1&nbsp pm
+            </div>
+          </div>
+          <div class = "col-8">
+            <div class = "title-schedule-bold">
+              Career Panel with Maxar<br>
+            </div>
+            <div class = "title-body">
+              <a class = "zoom-text" href = "https://maxar.zoom.us/j/87647385055?pwd=SnZwb0Qxb1FUaWI1eW9DOG96QVhxUT09">Join Zoom Now&nbsp <span class="glyphicon glyphicon-share-alt"></span> </a>
+            </div>
+          </div>
+        </div>
+        <div class = "row schedule-row">
+          <div class = "col-4 col-md-2">
+            <div class = "title-schedule-time">
+              2&nbsp pm
+            </div>
+          </div>
+          <div class = "col-8">
+            <div class = "title-schedule-bold">
+              Introduction to Satellites with Maxar<br>
+            </div>
+            <div class = "title-body">
+              <a class = "zoom-text" href = "https://maxar.zoom.us/j/88520487569?pwd=ejB2UDNFL25QbHhQSHZUTWRqdThEdz09">Join Zoom Now&nbsp <span class="glyphicon glyphicon-share-alt"></span> </a>
+            </div>
+          </div>
+        </div>
+        <div class = "row schedule-row">
+          <div class = "col-4 col-md-2">
+            <div class = "title-schedule-time">
+              2&nbsp pm
+            </div>
+          </div>
+          <div class = "col-8">
+            <div class = "title-schedule-bold">
+              Google Cloud Hero<br>
+            </div>
+            <div class = "title-body">
+              <a class = "zoom-text" href = "https://www.youtube.com/watch?v=nCuSesYPIdg">Join YouTube Live Now&nbsp <span class="glyphicon glyphicon-share-alt"></span> </a>
+            </div>
+          </div>
+        </div>
+        <div class = "row schedule-row">
+          <div class = "col-4 col-md-2">
+            <div class = "title-schedule-time">
+              3&nbsp pm
+            </div>
+          </div>
+          <div class = "col-8">
+            <div class = "title-schedule-bold">
+              Introduction to DevOps/DevSecOps with Maxar<br>
+            </div>
+            <div class = "title-body">
+              <a class = "zoom-text" href = "https://maxar.zoom.us/j/85757971837?pwd=ZGRzbmF2d1gxc2pWQzQ2MmdESDMrZz09">Join Zoom Now&nbsp <span class="glyphicon glyphicon-share-alt"></span> </a>
+            </div>
+          </div>
+        </div>
+        <div class = "row schedule-row">
+          <div class = "col-4 col-md-2">
+            <div class = "title-schedule-time">
+              3&nbsp pm
+            </div>
+          </div>
+          <div class = "col-8">
+            <div class = "title-schedule-bold">
+              Free and Open Source Software Overview with Maxar<br>
+            </div>
+            <div class = "title-body">
+             <a class = "zoom-text" href = "https://maxar.zoom.us/j/94639083017?pwd=YjRtdGFOWmhoN2dLVVdSR3dweXR1dz09">Join Zoom Now&nbsp <span class="glyphicon glyphicon-share-alt"></span> </a>
+            </div>
+          </div>
+        </div>
+        <div class = "row schedule-row">
+          <div class = "col-4 col-md-2">
+            <div class = "title-schedule-time">
+              4&nbsp pm
+            </div>
+          </div>
+          <div class = "col-8">
+            <div class = "title-schedule-bold">
+              Data Science Overview with Maxar<br>
+            </div>
+            <div class = "title-body">
+              <a class = "zoom-text" href = "https://maxar.zoom.us/j/84049542278?pwd=Y1ZHRVcvcmpKTlNUS1FINmZTSUZMdz09">Join Zoom Now&nbsp <span class="glyphicon glyphicon-share-alt"></span> </a>
+            </div>
+          </div>
+        </div>
+        <div class = "row schedule-row">
+          <div class = "col-4 col-md-2">
+            <div class = "title-schedule-time">
+              4&nbsp pm
+            </div>
+          </div>
+          <div class = "col-8">
+            <div class = "title-schedule-bold">
+              Front-End Development Overview<br>
+            </div>
+            <div class = "title-body">
+              <a class = "zoom-text" href = "https://maxar.zoom.us/j/84551600470?pwd=TVlPMlRhRjNEZjV2TzFGMVk0S25VUT09">Join Zoom Now&nbsp <span class="glyphicon glyphicon-share-alt"></span> </a>
+            </div>
+          </div>
+        </div>
+        <div class = "row schedule-row">
+          <div class = "col-4 col-md-2">
+            <div class = "title-schedule-time">
+              5&nbsp pm
+            </div>
+          </div>
+          <div class = "col-8">
+            <div class = "title-schedule-bold">
+              Microsoft Azure Chat Bot with GWCUVA<br>
+            </div>
+            <div class = "title-body">
+              <a class = "zoom-text" href = "https://teams.microsoft.com/l/meetup-join/19%3ameeting_MzI2ODRiMDAtZDExNS00ZDZmLTgwYmQtZGYwMDU2YzRjZDcw%40thread.v2/0?context=%7b%22Tid%22%3a%2284c31ca0-ac3b-4eae-ad11-519d80233e6f%22%2c%22Oid%22%3a%2201a09c24-128b-4ff1-8a5c-4599134a5efd%22%7d">Join Teams Now&nbsp <span class="glyphicon glyphicon-share-alt"></span> </a>
+            </div>
+          </div>
+        </div>
+        <div class = "row schedule-row">
+          <div class = "col-4 col-md-2">
+            <div class = "title-schedule-time">
+              7&nbsp pm
+            </div>
+          </div>
+          <div class = "col-8">
+            <div class = "title-schedule-bold">
+              Bob Ross Microsoft Painting with MLH<br>
+            </div>
+            <div class = "title-body">
+              <a class = "zoom-text" href = "https://virginia.zoom.us/j/96885715106?pwd=ZVIzTkVRVStwd1RsZ0p4emtKRk1WUT09">Join Zoom Now&nbsp <span class="glyphicon glyphicon-share-alt"></span> </a>
+            </div>
+          </div>
+        </div>
+        </div>
+
+        <div class = "row">
+          <div class = "col">
+            <div class = "title-subheader">
+              Saturday, Oct 18
+            </div>
+          </div>
+          <div class = "col-12">
+            <div class = "btn btn-light my-schedule-btn" data-toggle = "collapse" aria-expanded="false" aria-controls="schedule-collapse-18" data-target="#schedule-collapse-18">
+            <b class = "plus">+</b>
+            </div>
+          </div>
+        </div>
+        <div class = "collapse" id = "schedule-collapse-18">
+        <div class = "row  schedule-row">
+          <div class = "col-4 col-md-2">
+            <div class = "title-schedule-time">
+              930 am
+            </div>
+          </div>
+          <div class = "col-8">
+            <div class = "title-schedule-bold">
+               Morning Yoga<br>
+            </div>
+            <div class = "title-body">
+              <a class = "zoom-text" href = "https://virginia.zoom.us/j/96885715106?pwd=ZVIzTkVRVStwd1RsZ0p4emtKRk1WUT09">Join Zoom Now&nbsp <span class="glyphicon glyphicon-share-alt"></span> </a>
+            </div>
+          </div>
+        </div>
+        <div class = "row schedule-row">
+          <div class = "col-4 col-md-2">
+            <div class = "title-schedule-time">
+              10 am
+            </div>
+          </div>
+          <div class = "col-8">
+            <div class = "title-schedule-bold">
+              Individual Sessions: Resume Review and Interview Tips with Maxar<br>
+            </div>
+            <div class = "title-body">
+              <a class = "zoom-text" href = "https://maxar.zoom.us/j/83544638569?pwd=M3RDV3ByN3U3M3cwVTBBbmJrVGUxQT09">Join Zoom Now with Pat&nbsp <span class="glyphicon glyphicon-share-alt"></span> </a>
+              <a class = "zoom-text" href = "https://maxar.zoom.us/j/85816984888?pwd=NlNKN3JHWmFiYmFiQ3cxVnY1dlczZz09">Join Zoom Now with Larissa&nbsp <span class="glyphicon glyphicon-share-alt"></span> </a>
+            </div>
+          </div>
+        </div>
+        <div class = "row schedule-row">
+          <div class = "col-4 col-md-2">
+            <div class = "title-schedule-time">
+              12 pm
+            </div>
+          </div>
+          <div class = "col-8">
+            <div class = "title-schedule-bold">
+              Introduction to Agile and Scrum with Maxar<br>
+            </div>
+            <div class = "title-body">
+              <a class = "zoom-text" href = "https://maxar.zoom.us/j/86507524147?pwd=MXB5MHdiWjZBNGhKN01zcGNkYnlHQT09">Join Zoom Now&nbsp <span class="glyphicon glyphicon-share-alt"></span> </a>
+            </div>
+          </div>
+        </div>
+        <div class = "row schedule-row">
+          <div class = "col-4 col-md-2">
+            <div class = "title-schedule-time">
+              12 pm
+            </div>
+          </div>
+          <div class = "col-8">
+            <div class = "title-schedule-bold">
+              Firebase Tech Talk with Google Cloud<br>
+            </div>
+            <div class = "title-body">
+              <a class = "zoom-text" href = "https://www.youtube.com/watch?v=nCuSesYPIdg">Join YouTube Live Now&nbsp <span class="glyphicon glyphicon-share-alt"></span> </a>
+            </div>
+          </div>
+        </div>
+        <div class = "row schedule-row">
+          <div class = "col-4 col-md-2">
+            <div class = "title-schedule-time">
+              1&nbsp pm
+            </div>
+          </div>
+          <div class = "col-8">
+            <div class = "title-schedule-bold">
+              Girls Hoo Hack 2020 Networking Event<br>
+            </div>
+            <div class = "title-body">
+              Participating Sponsors: Google Cloud, Maxar, UVA School of Data Science, Willowtree
+              <a class = "zoom-text" href = "https://virginia.zoom.us/j/96885715106?pwd=ZVIzTkVRVStwd1RsZ0p4emtKRk1WUT09">Join Zoom Now&nbsp <span class="glyphicon glyphicon-share-alt"></span> </a>
+            </div>
+          </div>
+        </div>
+        <div class = "row schedule-row">
+          <div class = "col-4 col-md-2">
+            <div class = "title-schedule-time">
+              3&nbsp pm
+            </div>
+          </div>
+          <div class = "col-8">
+            <div class = "title-schedule-bold">
+              Introduction to Artificial Intelligence and Machine Learning with Maxar<br>
+            </div>
+            <div class = "title-body">
+              <a class = "zoom-text" href = "https://maxar.zoom.us/j/83269320896?pwd=QXpaWWtCNUtKL3V2NkZ0SWNBS2hQQT09">Join Zoom Now&nbsp <span class="glyphicon glyphicon-share-alt"></span> </a>
+            </div>
+          </div>
+        </div>
+        <div class = "row schedule-row">
+          <div class = "col-4 col-md-2">
+            <div class = "title-schedule-time">
+              4&nbsp pm
+            </div>
+          </div>
+          <div class = "col-8">
+            <div class = "title-schedule-bold">
+              Working Together on Common Humanitarian Goals with Maxar<br>
+            </div>
+            <div class = "title-body">
+             <a class = "zoom-text" href = "https://maxar.zoom.us/j/82132769271?pwd=eFF1WlExaEQ0SlVldFdPaEtTVFJtZz09">Join Zoom Now&nbsp <span class="glyphicon glyphicon-share-alt"></span> </a>
+            </div>
+          </div>
+        </div>
+        <div class = "row schedule-row">
+          <div class = "col-4 col-md-2">
+            <div class = "title-schedule-time">
+              4&nbsp pm
+            </div>
+          </div>
+          <div class = "col-8">
+            <div class = "title-schedule-bold">
+             Building Effective Communication Skills with Chinmayi Balusu<br>
+            </div>
+            <div class = "title-body">
+              <a class = "zoom-text" href = "https://us04web.zoom.us/j/74847801479?pwd=SUFDNzlZR0lQSGpYTjQ5MzhOU2o4UT09">Join Zoom Now&nbsp <span class="glyphicon glyphicon-share-alt"></span> </a>
+            </div>
+          </div>
+        </div>
+        <div class = "row schedule-row">
+          <div class = "col-4 col-md-2">
+            <div class = "title-schedule-time">
+              530 pm
+            </div>
+          </div>
+          <div class = "col-8">
+            <div class = "title-schedule-bold">
+              Capture the Flag (CTF) with MLH<br>
+            </div>
+            <div class = "title-body">
+              <a class = "zoom-text" href = "https://virginia.zoom.us/j/96885715106?pwd=ZVIzTkVRVStwd1RsZ0p4emtKRk1WUT09">Join Zoom Now&nbsp <span class="glyphicon glyphicon-share-alt"></span> </a>
+            </div>
+          </div>
+        </div>
+        <div class = "row schedule-row">
+          <div class = "col-4 col-md-2">
+            <div class = "title-schedule-time">
+              7&nbsp pm
+            </div>
+          </div>
+          <div class = "col-8">
+            <div class = "title-schedule-bold">
+              Demos<br>
+            </div>
+            <div class = "title-body">
+              <a class = "zoom-text" href = "https://girlshoohack2020.hackerearth.com/">&nbsp <span class="glyphicon glyphicon-share-alt"></span> </a>
+            </div>
+          </div>
+        </div>
+        <div class = "row schedule-row">
+          <div class = "col-4 col-md-2">
+            <div class = "title-schedule-time">
+              830 pm
+            </div>
+          </div>
+          <div class = "col-8">
+            <div class = "title-schedule-bold">
+              Judging<br>
+            </div>
+            <div class = "title-body">
+              <a class = "zoom-text" href = "https://girlshoohack2020.hackerearth.com/">&nbsp <span class="glyphicon glyphicon-share-alt"></span> </a>
+            </div>
+          </div>
+        </div>
+        <div class = "row schedule-row">
+          <div class = "col-sm-4 col-md-2">
+            <div class = "title-schedule-time">
+              10 pm
+            </div>
+          </div>
+          <div class = "col-8">
+            <div class = "title-schedule-bold">
+              Closing Ceremony<br>
+            </div>
+            <div class = "title-body">
+              <a class = "zoom-text" href = "https://virginia.zoom.us/j/96885715106?pwd=ZVIzTkVRVStwd1RsZ0p4emtKRk1WUT09">Join Zoom Now&nbsp <span class="glyphicon glyphicon-share-alt"></span> </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class = "empty-row">
+        </div>
+
+
           <!-- TODO - UPDATE -->
-          <div class = "col-8 left-col">
+          <!-- <div class = "col-8 left-col">
             <div class = "title-header">
               Schedule
             </div>
-            <div class = "title-subheader">
-              <!-- Saturday, Oct 17 & Sunday, Oct 18 -->
+            <div class = "title-subheader col">
+              Saturday, Oct 17
             </div>
-            <div class = "title-coming-soon">
-              COMING SOON ...
-              
+            <div class = "title-schedule-time col-sm-6 col-md-4">
             </div>
-            <div class = "title-schedule-time">
-              
+            <div class = "title-black-col col-sm-6 col-md-4">
             </div>
-            <div class = "title-schedule-time">
-              
+            <div class = "title-schedule-time">  
             </div>
           </div>
           <div class = "col middle-col" style = "margin-top: 4.5%">
@@ -331,7 +758,7 @@
             </div>
           </div>
           <div class = "col">
-          </div>
+          </div> -->
         </div>
       </div>
 
@@ -482,8 +909,8 @@
         <div class = "footer-logo" style = "position:relative;">
           <a class="navbar-brand"><img class = "footer-logo" src = "static/navBar/Footer/white logo 1.png" ></a>
 
-          <a class = "footer-text" href = "static/navBar/Footer/sponsor-info.pdf">Interested in Sponsoring? </a>
-            <a class="footer-text" href="mailto: gwcuva@gmail.com">Need to contact us?</a>
+         <!--  <a class = "footer-text" href = "static/navBar/Footer/sponsor-info.pdf">Interested in Sponsoring? </a>
+            <a class="footer-text" href="mailto: gwcuva@gmail.com">Need to contact us?</a> -->
         </div>
         <div class = "row my-social-media" style="float: left;">
           <div class = "row">
