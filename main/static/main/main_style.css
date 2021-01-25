@@ -1,43 +1,7 @@
-.nav-logo{
-  height: 45px;
+@media screen and (min-width: 600px)  {
+
 }
 
-.girls-hoo-hack{
-	font-size: 70px;
-}
+@media screen and (max-width: 600px)  {
 
-.tagline{
-	float: right;
-}
-
-.btn.btn-block.register-btn{
-	border: 3px solid #f6e45f;
-	background-color: #f6e45f;
-	margin-top: 10%;
-	padding: 5%;
-}
-.bckgd{
-	max-width: 117%;
-    height: auto;
-	margin-top: 1%;
-}
-
-.btn-circle.btn-xl { 
-    width: 50px; 
-    height: 50px; 
-    padding: 5px 8px; 
-    border-radius: 100px; 
-    font-size: 15px; 
-    font-weight: 300;
-    text-align: center; 
-    background-color: black;
-    border: 2px solid black;
-} 
-.btn-circle.btn-xl:hover{
-	background-color: white;
-}
-
-.row.no-gutter [class*='col-'] {
-  padding-right:0;
-  padding-left:0;
 }
