@@ -424,7 +424,9 @@ color: #000000;
 }
 
 @media screen and (max-width: 600px)  {
-.mobile-break { display: none; }
+.mobile-break { 
+  display: none; 
+}
 
 .laptop{
   display:none;
