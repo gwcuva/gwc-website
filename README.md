@@ -8,4 +8,4 @@
 5. *If pushing to master, make sure to `yarn build` to prepare for deployment
 
 ## Common Debugging
-* If you're having trouble with modules, try removing the node_modules: `rm -rf node_modules` and then re-install `npm-install`
+* If you're having trouble with modules, try removing the node_modules: `rm -rf node_modules` and then re-install `yarn install`
