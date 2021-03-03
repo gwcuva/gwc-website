@@ -1,5 +1,7 @@
 # GWC Website
-[Website Wireframe](https://www.figma.com/file/3oCYmtWALN20gRkSa5Ew7V/GWC-General-Site?node-id=0%3A1)
+[Website Wireframe](https://www.figma.com/file/3oCYmtWALN20gRkSa5Ew7V/GWC-General-Site?node-id=0%3A1) | [GHH Wireframe](https://www.figma.com/file/fTEjRE0zxWO1uZAVK3QOn1/GWC-Mockups-2?node-id=0%3A1)
+Figma mockups are also saved in this repository.
+
 ## Steps to Get Started:
 1. Git clone this repository (I suggest using GitHub Desktop + Visual Studio Code)
 2. Make sure you have [Yarn](https://classic.yarnpkg.com/en/docs/install), which may require you to have [Node.js](https://nodejs.org/en/)
