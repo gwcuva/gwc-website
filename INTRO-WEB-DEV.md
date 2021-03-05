@@ -2,9 +2,9 @@
 ## An Assortment of References
 
 **Table of Contents**:
-* [New To Web Development](#if-you're-new-to-web-development)
+* [New To Web Development](#if-youre-new-to-web-development)
 * [Know HTML and CSS](#if-you-know-HTML--CSS)
-* [Know JavaScript too!](#if-you-already-know-JavaScript-too)
+* [Know JavaScript too!](#if-you-already-know-javascript-too)
 
 ### If you're new to web development...
 If you're new to web development, **congratulations** on starting your journey!
