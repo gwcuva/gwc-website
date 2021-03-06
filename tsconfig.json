@@ -22,5 +22,5 @@
   },
   "include": [
     "src"
-, "const.tsx"  ]
+, "src/const.tsx"  ]
 }
