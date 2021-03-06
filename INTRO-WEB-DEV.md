@@ -26,6 +26,7 @@ Here are some important things to look up how to do:
 * Change fonts
 * Change color of different headers, paragraph, and links
 * Change image size
+* Learn [Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
 
 If you prefer more of a guided path, check out [freeCodeCamp's Responsive Web Design Curriculum](https://www.freecodecamp.org/learn/responsive-web-design/#basic-html-and-html5). This is a great crash course that covers the practical parts of HTML + CSS!
 
@@ -33,4 +34,8 @@ If you prefer more of a guided path, check out [freeCodeCamp's Responsive Web De
 Time to learn about JavaScript
 
 ### If you already know JavaScript too!
-Time to learn about React
+Time to learn about React, especially within this project
+
+Make small components; no render function should be large and do a lot of computation
+Components go in their own folder
+Make styled components separately and avoid CSS
