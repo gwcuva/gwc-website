@@ -5,9 +5,9 @@ import { color } from '../../const';
 const Navigation = styled.nav`
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
+  justify-content: space-between;
   background: ${color["orange"]};
-  color: ${color["white"]};
+  padding: 30px 45px 25px 45px;
 `;
 
 export default Navigation;
