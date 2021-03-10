@@ -7,7 +7,7 @@ function Navbar() {
     <Navigation>
       {/* TODO: Make this image work, also replace with full-navy image */}
       <img src="../../assets/logo-black-white-horizontal.png" alt="Girls Who Code at the University of Virginia logo"/>
-      <a href="#" target="_blank">Girls Hoo Hack</a>
+      <a href="#" target="_blank" class="mono">Girls Hoo Hack</a>
     </Navigation>
   );
 }
