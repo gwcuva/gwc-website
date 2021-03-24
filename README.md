@@ -44,21 +44,21 @@ This is where all the public-facing files go, i.e. favicon, robots.txt
 ### src
 This is where all the code for running the website goes!
 
-#### assets
+* **assets**
 This is where any images needed will go
 
-#### components
+* **components**
 This is where the different sections of the website will be coded
 
-#### fonts
+* **fonts**
 This is where we store the fonts that we may need
 
-#### misc. files
+* **misc. files**
 
-* App.tsx - Our homepage, essentially. Adding components here will make them show up on the main page
+  * App.tsx - Our homepage, essentially. Adding components here will make them show up on the main page
 
-* index.tsx - You probably won't interact with this. It just sets up the site with App.tsx
+  * index.tsx - You probably won't interact with this. It just sets up the site with App.tsx
 
-* const.tsx - Put any values that can be computed once in here to have access throughout the whole site
+  * const.tsx - Put any values that can be computed once in here to have access throughout the whole site
 
-* index.scss - This is where you store css that is more general instead of styled components. Use the classes in here as often as possible instead of re-writing the same css in a styled component. Notable classes include `mono` and `text-white`
+  * index.scss - This is where you store css that is more general instead of styled components. Use the classes in here as often as possible instead of re-writing the same css in a styled component. Notable classes include `mono` and `text-white`
