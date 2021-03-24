@@ -50,6 +50,9 @@ This is where the different sections of the website will be coded
 This is where we store the fonts that we may need
 
 **App.tsx** - Our homepage, essentially. Adding components here will make them show up on the main page
+
 **index.tsx** - You probably won't interact with this. It just sets up the site with App.tsx
+
 **const.tsx** - Put any values that can be computed once in here to have access throughout the whole site
+
 **index.scss** - This is where you store css that is more general instead of styled components. Use the classes in here as often as possible instead of re-writing the same css in a styled component. Notable classes include `mono` and `text-white`
