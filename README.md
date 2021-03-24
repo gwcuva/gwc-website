@@ -44,24 +44,14 @@ This is where all the public-facing files go, i.e. favicon, robots.txt
 ### src
 This is where all the code for running the website goes!
 
-The following are folders in `src`:
-
----
-
 #### assets
 This is where any images needed will go
-
----
 
 #### components
 This is where the different sections of the website will be coded
 
----
-
 #### fonts
 This is where we store the fonts that we may need
-
----
 
 #### misc. files
 
