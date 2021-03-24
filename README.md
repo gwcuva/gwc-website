@@ -33,22 +33,34 @@ Figma mockups are also saved in this repository.
 ## Getting Acquainted With Our Repo
 ### node_modules
 This is where all the different packages that we need to run our site are stored. You don't need to do anything manually with this. If you're ever having trouble with `npm start` giving you an error with the packages, try deleting this folder and then running `yarn install`
+
 ---
+
 ### public
 This is where all the public-facing files go, i.e. favicon, robots.txt 
+
 ---
+
 ### src
 This is where all the code for running the website goes!
+
 ---
+
 #### assets
 This is where any images needed will go
+
 ---
+
 #### components
 This is where the different sections of the website will be coded
+
 ---
+
 #### fonts
 This is where we store the fonts that we may need
+
 ---
+
 #### misc. files
 
 * App.tsx - Our homepage, essentially. Adding components here will make them show up on the main page
