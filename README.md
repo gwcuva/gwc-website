@@ -6,6 +6,7 @@ Figma mockups are also saved in this repository.
 ## Steps to Get Started:
 * If you are new to web development, React, etc., please check out this [guide](INTRO-WEB-DEV.md) to get started.
 1. Git clone this repository (I suggest using [GitHub Desktop](https://desktop.github.com/) + [Visual Studio Code](https://code.visualstudio.com/Download))
+  * If you get more comfortable with VSCode, look into [GitHub extensions](https://code.visualstudio.com/docs/editor/github) to help minimize desktop clutter
 2. Make sure you have [Yarn](https://classic.yarnpkg.com/en/docs/install), which may require you to have [Node.js](https://nodejs.org/en/)
 2. In the terminal (make sure you're in the correct directory), run `yarn install` to make sure you have all the dependencies
 3. To run the app, type `yarn start` in your terminal. Open [http://localhost:3000](http://localhost:3000) to view it in the browser.

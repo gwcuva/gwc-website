@@ -31,11 +31,16 @@ Here are some important things to look up how to do:
 If you prefer more of a guided path, check out [freeCodeCamp's Responsive Web Design Curriculum](https://www.freecodecamp.org/learn/responsive-web-design/#basic-html-and-html5). This is a great crash course that covers the practical parts of HTML + CSS!
 
 ### If you know HTML + CSS
-Time to learn about JavaScript
+This is an important time to get started with Javascript! [W3Schools](https://www.w3schools.com/js/DEFAULT.asp) has a tutorial on it, but honestly, if you know Java and Python, you can probably just skip to the React section and google anything you need to know in JavaScript. Remember the logic is pretty similar, the syntax is different -- you know when to use a for loop (or check out a `map` method in JavaScript), you'll just need to google the syntax.
 
 ### If you already know JavaScript too!
-Time to learn about React, especially within this project
+Time to learn about React, especially within this project!
 
-Make small components; no render function should be large and do a lot of computation
-Components go in their own folder
-Make styled components separately and avoid CSS
+Here's a [tutorial](https://reactjs.org/tutorial/tutorial.html) to help get you started.
+
+I'd also recommend reading the [React Documentation](https://reactjs.org/docs/getting-started.html) as it's well-documented and answers a lot of questions!
+
+**Some general tips**
+* Make small components; no render function should be large and do a lot of computation. Read about function components [here](https://reactjs.org/docs/components-and-props.html).
+* Components go in their own folder
+* Make styled components separately and avoid CSS *unless* it's a general class that you'd want to apply several places in the code, such as text color or font family
