@@ -63,3 +63,8 @@ This is where we store the fonts that we may need
   * const.tsx - Put any values that can be computed once in here to have access throughout the whole site
 
   * index.scss - This is where you store css that is more general instead of styled components. Use the classes in here as often as possible instead of re-writing the same css in a styled component. Notable classes include `mono` and `text-white`
+
+---
+
+**Website Updated By:**
+* Mara Hart
