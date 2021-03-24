@@ -14,7 +14,7 @@ function Navbar() {
     <Navigation>
       {/* TODO: Make this image work, also replace with full-navy image */}
       <img src="../../assets/logo-black-white-horizontal.png" alt="Girls Who Code at the University of Virginia logo"/>
-      <StyledLink href="#" target="_blank" class="mono text-white">Girls Hoo Hack</StyledLink>
+      <StyledLink href="#" target="_blank" className="mono text-white">Girls Hoo Hack</StyledLink>
     </Navigation>
   );
 }

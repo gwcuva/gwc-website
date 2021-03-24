@@ -29,3 +29,27 @@ Figma mockups are also saved in this repository.
 6. When done, move your PR to the `In Review` column and make sure to notify the appropriate reviewer.
 7. The reviewer will either ask for changes or approve and merge the PR. If changes are needed, move branch back to `In Progress` and repeat steps 5-6.
 8. Once PR is merged, delete the branch to keep repository clean.
+
+## Getting Acquainted With Our Repo
+### node_modules
+This is where all the different packages that we need to run our site are stored. You don't need to do anything manually with this. If you're ever having trouble with `npm start` giving you an error with the packages, try deleting this folder and then running `yarn install`
+
+### public
+This is where all the public-facing files go, i.e. favicon, robots.txt 
+
+### src
+This is where all the code for running the website goes!
+
+#### assets
+This is where any images needed will go
+
+#### components
+This is where the different sections of the website will be coded
+
+#### fonts
+This is where we store the fonts that we may need
+
+**App.tsx** - Our homepage, essentially. Adding components here will make them show up on the main page
+**index.tsx** - You probably won't interact with this. It just sets up the site with App.tsx
+**const.tsx** - Put any values that can be computed once in here to have access throughout the whole site
+**index.scss** - This is where you store css that is more general instead of styled components. Use the classes in here as often as possible instead of re-writing the same css in a styled component. Notable classes include `mono` and `text-white`
