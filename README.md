@@ -44,6 +44,8 @@ This is where all the public-facing files go, i.e. favicon, robots.txt
 ### src
 This is where all the code for running the website goes!
 
+The following are folders in `src`:
+
 ---
 
 #### assets
