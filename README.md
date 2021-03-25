@@ -68,5 +68,6 @@ This is where we store the fonts that we may need
 
 **Website Updated By:**
 * Mara Hart
+* Neha Bagalkot
 * Lilian Zhang
 * Pragnya Pandrate
