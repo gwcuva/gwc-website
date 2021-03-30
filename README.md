@@ -72,3 +72,4 @@ This is where we store the fonts that we may need
 * Lilian Zhang
 * Pragnya Pandrate
 * Maya Tietz
+* Kim Do
