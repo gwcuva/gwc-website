@@ -28,8 +28,9 @@ Figma mockups are also saved in this repository.
 4. Create a pull request for your branch as soon as possible and make sure it's in the `In Progress` column of the appropriate [project](https://github.com/gwcuva/gwc-website/projects)
 5. Commit often on your own branch. Never push to master directly!
 6. When done, move your PR to the `In Review` column and make sure to notify the appropriate reviewer.
-7. The reviewer will either ask for changes or approve and merge the PR. If changes are needed, move branch back to `In Progress` and repeat steps 5-6.
-8. Once PR is merged, delete the branch to keep repository clean.
+7. The reviewer will either ask for changes or approve the PR. If changes are needed, move branch back to `In Progress` and repeat steps 5-6.
+8. Once your PR has been approved, go ahead and merge!
+9. Once PR is merged, delete the branch to keep repository clean.
 
 ## Getting Acquainted With Our Repo
 ### node_modules
@@ -66,7 +67,7 @@ This is where we store the fonts that we may need
 
 ---
 
-**Website Updated By:**
+**Website Built/Maintained By:**
 * Mara Hart
 * Neha Bagalkot
 * Lilian Zhang
