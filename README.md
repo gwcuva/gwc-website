@@ -7,16 +7,16 @@ Figma mockups are also saved in this repository.
 * If you are new to web development, React, etc., please check out this [guide](INTRO-WEB-DEV.md) to get started.
 1. Git clone this repository (I suggest using [GitHub Desktop](https://desktop.github.com/) + [Visual Studio Code](https://code.visualstudio.com/Download))
   * If you get more comfortable with VSCode, look into [GitHub extensions](https://code.visualstudio.com/docs/editor/github) to help minimize desktop clutter
-2. Make sure you have [Yarn](https://classic.yarnpkg.com/en/docs/install), which may require you to have [Node.js](https://nodejs.org/en/)
-2. In the terminal (make sure you're in the correct directory), run `yarn install` to make sure you have all the dependencies
-3. To run the app, type `yarn start` in your terminal. Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+2. Make sure you have `npm`, which requires you to have [Node.js](https://nodejs.org/en/)
+2. In the terminal (make sure you're in the correct directory), run `npm install` to make sure you have all the dependencies
+3. To run the app, type `npm start` in your terminal. Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 ## Additional Steps
-* If running tests, make sure to `yarn test`
-* If pushing to master, make sure to `yarn build` to prepare for deployment
+* If running tests, make sure to `npm test`
+* If pushing to master, make sure to `npm build` to prepare for deployment
 
 ## Common Debugging
-* If you're having trouble with modules, try removing the node_modules: `rm -rf node_modules` and then re-install `yarn install`
+* If you're having trouble with modules, try removing the node_modules: `rm -rf node_modules` and then re-install `npm install`
 
 ## Permissions
 * If you are on the web development committee, make sure to join the [website team](https://github.com/orgs/gwcuva/teams/website) on our organization
@@ -28,12 +28,13 @@ Figma mockups are also saved in this repository.
 4. Create a pull request for your branch as soon as possible and make sure it's in the `In Progress` column of the appropriate [project](https://github.com/gwcuva/gwc-website/projects)
 5. Commit often on your own branch. Never push to master directly!
 6. When done, move your PR to the `In Review` column and make sure to notify the appropriate reviewer.
-7. The reviewer will either ask for changes or approve and merge the PR. If changes are needed, move branch back to `In Progress` and repeat steps 5-6.
-8. Once PR is merged, delete the branch to keep repository clean.
+7. The reviewer will either ask for changes or approve the PR. If changes are needed, move branch back to `In Progress` and repeat steps 5-6.
+8. Once your PR has been approved, go ahead and merge!
+9. Once PR is merged, delete the branch to keep repository clean.
 
 ## Getting Acquainted With Our Repo
 ### node_modules
-This is where all the different packages that we need to run our site are stored. You don't need to do anything manually with this. If you're ever having trouble with `npm start` giving you an error with the packages, try deleting this folder and then running `yarn install`
+This is where all the different packages that we need to run our site are stored. You don't need to do anything manually with this. If you're ever having trouble with `npm start` giving you an error with the packages, try deleting this folder and then running `npm install`
 
 ---
 
@@ -66,6 +67,13 @@ This is where we store the fonts that we may need
 
 ---
 
-**Website Updated By:**
+
+**Website Built/Maintained By:**
 * Mara Hart
+* Neha Bagalkot
+* Lilian Zhang
+* Pragnya Pandrate
+* Maya Tietz
+* Kim Do
+* Jennifer Tcheou
 * Sky Brodowski
