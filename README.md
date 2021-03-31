@@ -74,3 +74,4 @@ This is where we store the fonts that we may need
 * Pragnya Pandrate
 * Maya Tietz
 * Kim Do
+* Jennifer Tcheou
