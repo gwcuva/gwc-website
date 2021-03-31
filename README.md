@@ -67,6 +67,7 @@ This is where we store the fonts that we may need
 
 ---
 
+
 **Website Built/Maintained By:**
 * Mara Hart
 * Neha Bagalkot
@@ -75,3 +76,4 @@ This is where we store the fonts that we may need
 * Maya Tietz
 * Kim Do
 * Jennifer Tcheou
+* Sky Brodowski
