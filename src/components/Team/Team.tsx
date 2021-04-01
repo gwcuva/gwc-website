@@ -8,29 +8,30 @@ import { request } from 'graphql-request';
 
 function Team() {
   const [team, setTeam] = useState([]);
-  console.log(process.env);
+  
+  useEffect(() => {
+    const fetchTeam = async () => {
+      const { executiveMembers } = await request(
+        process.env.REACT_APP_GRAPHCMS_URL ? process.env.REACT_APP_GRAPHCMS_URL : "",
+        `
+          { 
+            executiveMembers {
+              id
+              name
+              position
+              academicYear
+              headshot {
+                url
+              }
+            }
+          }
+        `
+      );
+      setTeam(executiveMembers);
+    };
 
-  // useEffect(() => {
-  //   const fetchTeam = async () => {
-  //     const { team } = await request(
-  //       process.env.GRAPHCMS_URL,
-  //       `
-  //         { 
-  //           ExecutiveMember {
-  //             id
-  //             name
-  //             headshot
-  //             position
-  //             academicYear
-  //           }
-  //         }
-  //       `
-  //     );
-  //     setTeam();
-  //   };
-
-  //   fetchTeam();
-  // }, []);
+    fetchTeam();
+  }, []);
 
   return (
     <div>
