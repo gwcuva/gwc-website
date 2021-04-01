@@ -1,5 +1,4 @@
 import React from 'react';
-import styled from 'styled-components';
 
 // TODO: Add text and link
 // TODO: Add graphic at the end of the page

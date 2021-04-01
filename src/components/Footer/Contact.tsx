@@ -1,5 +1,4 @@
 import React from 'react';
-import styled from 'styled-components';
 
 // TODO: Add top graphic (should be same as header, but flipped)
 // TODO: Add logo
