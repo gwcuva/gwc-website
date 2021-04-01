@@ -1,5 +1,4 @@
 import React from 'react';
-import styled from 'styled-components';
 import Contact from './Contact';
 import Links from './Links';
 

@@ -1,5 +1,4 @@
 import React from 'react';
-import styled from 'styled-components';
 
 // TODO: Add circle background
 // TODO: Add three links

@@ -1,5 +1,4 @@
 import React from 'react';
-import styled from 'styled-components';
 import AboutList from './AboutList';
 
 // TODO: Add Hello World asset on the top (also in branding guide on Google Drive)

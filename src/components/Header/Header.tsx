@@ -1,5 +1,4 @@
 import React from 'react';
-import styled from 'styled-components';
 
 // TODO: Add orange code background (in branding tool-kit graphics)
 // TODO: Add white waves graphic (might need PR help in adding a white background to the wave) -- assets/main-header-wave.svg
