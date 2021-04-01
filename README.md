@@ -3,6 +3,8 @@
 
 Figma mockups are also saved in this repository.
 
+[CodeClimate](https://codeclimate.com/github/gwcuva/gwc-website) - a Code Summary site | [CircleCI](https://app.circleci.com/pipelines/github/gwcuva/gwc-website) - a Continuous Integration tool that makes sure tests run before building
+
 ## Steps to Get Started:
 * If you are new to web development, React, etc., please check out this [guide](INTRO-WEB-DEV.md) to get started.
 1. Git clone this repository (I suggest using [GitHub Desktop](https://desktop.github.com/) + [Visual Studio Code](https://code.visualstudio.com/Download))
