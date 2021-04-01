@@ -69,6 +69,7 @@ This is where we store the fonts that we may need
 
 
 **Website Built/Maintained By:**
+*Girls Who Code at UVA Web Development Committee*
 * Mara Hart
 * Neha Bagalkot
 * Lilian Zhang
