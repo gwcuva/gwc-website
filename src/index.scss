@@ -1,3 +1,5 @@
+// Cool reference for SCSS color variables: https://dev.to/nicolalc/a-cool-way-to-handle-scss-color-variables-3njp
+
 @font-face {
   font-family: 'Roboto';
   src: local('Roboto'), url(./fonts/Roboto/Roboto-Regular.ttf) format('truetype');
@@ -7,6 +9,16 @@
   font-family: 'Roboto Mono';
   src: local('Roboto Mono'), url(./fonts/Roboto_Mono/static/RobotoMono-Regular.ttf) format('truetype');
 }
+
+$programmer-peacock: #003046;
+$tuple-turquoise: #43D6B9;
+$output-orange: #FA7815;
+$binary-blue: #0D38D3;
+$pixel-peach: #F9B88C;
+$wireless-white: #FFF;
+$gigabyte-grey: #7A7A78;
+$gui-grey: #CECECE;
+$wavy-white: #EDEDED;
 
 body {
   margin: 0;
@@ -28,6 +40,22 @@ code {
     sans-serif;
 }
 
-.text-white {
-  color: white;
-}
+.text-white {color: $wireless-white}
+.text-peacock {color: $programmer-peacock}
+.text-turq {color: $tuple-turquoise}
+.text-orange {color: $output-orange}
+.text-blue {color: $binary-blue}
+.text-peach {color: $pixel-peach}
+.text-dark-grey {color: $gigabyte-grey}
+.text-grey {color: $gui-grey}
+.text-light-grey {color: $wavy-white}
+
+.bg-white {background-color: $wireless-white}
+.bg-peacock {background-color: $programmer-peacock}
+.bg-turq {background-color: $tuple-turquoise}
+.bg-orange {background-color: $output-orange}
+.bg-blue {background-color: $binary-blue}
+.bg-peach {background-color: $pixel-peach}
+.bg-dark-grey {background-color: $gigabyte-grey}
+.bg-grey {background-color: $gui-grey}
+.bg-light-grey {background-color: $wavy-white}
