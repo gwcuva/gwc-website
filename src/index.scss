@@ -2,12 +2,12 @@
 
 @font-face {
   font-family: 'Roboto';
-  src: local('Roboto'), url(./fonts/Roboto/Roboto-Regular.ttf) format('truetype');
+  src: local('Roboto'), url(./assets/fonts/Roboto/Roboto-Regular.ttf) format('truetype');
 }
 
 @font-face {
   font-family: 'Roboto Mono';
-  src: local('Roboto Mono'), url(./fonts/Roboto_Mono/static/RobotoMono-Regular.ttf) format('truetype');
+  src: local('Roboto Mono'), url(./assets/fonts/Roboto_Mono/static/RobotoMono-Regular.ttf) format('truetype');
 }
 
 $programmer-peacock: #003046;

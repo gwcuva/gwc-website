@@ -9,7 +9,7 @@ function Header() {
       <h2>HELLO WORLD</h2>
       <h1>WE'RE MAKING WAVES</h1>
       <h2>GWC at UVA</h2>
-      <img src="../../assets/main-header-wave.svg" alt="Orange wave" />
+      <img src="../../assets/images/main-header-wave.svg" alt="Orange wave" />
     </div>
   );
 }
