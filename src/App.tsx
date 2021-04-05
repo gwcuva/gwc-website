@@ -1,23 +1,24 @@
 import React from 'react';
-import Navbar from './components/Main/Navbar/Navbar';
-import Header from './components/Main/Header/Header';
-import Stats from './components/Main/Stats/Stats';
-import DiscordInvite from './components/Main/DiscordInvite/DiscordInvite';
-import Team from './components/Main/Team/Team';
-import About from './components/Main/About/About';
-import Footer from './components/Main/Footer/Footer';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import Main from './components/Main/Main';
+import GirlsHooHack from './components/GirlsHooHack/GirlsHooHack';
+import Branding from './components/Branding/Branding';
 
 function App() {
   return (
-    <div>
-      <Navbar />
-      <Header />
-      <Stats />
-      <About />
-      <DiscordInvite />
-      <Team />
-      <Footer />
-    </div>
+    <BrowserRouter>
+      <Switch>
+        <Route path="/branding">
+          <Branding />
+        </Route>
+        <Route path="/hack">
+          <GirlsHooHack />
+        </Route>
+        <Route path="/">
+          <Main />
+        </Route>
+      </Switch>
+    </BrowserRouter>
   );
 }
 
