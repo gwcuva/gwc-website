@@ -7,7 +7,7 @@ import Links from './Links';
 // TODO: Add contact
 // TODO: Add links (Brand Manual should redirect to Figma since we haven't coded it)
 
-function NavCircle() {
+function Footer() {
   return (
     <div>
       <img src="#" alt="Girls Who Code at the University of Virginia logo" />
@@ -17,4 +17,4 @@ function NavCircle() {
   );
 }
 
-export default NavCircle;
+export default Footer;
