@@ -3,19 +3,23 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Main from './components/Main/Main';
 import GirlsHooHack from './components/GirlsHooHack/GirlsHooHack';
 import Branding from './components/Branding/Branding';
+import NotFound from './components/NotFound';
 
 function App() {
   return (
     <BrowserRouter>
       <Switch>
-        <Route path="/branding">
+        <Route exact path="/branding">
           <Branding />
         </Route>
-        <Route path="/hack">
+        <Route exact path="/hack">
           <GirlsHooHack />
         </Route>
-        <Route path="/">
+        <Route exact path="/">
           <Main />
+        </Route>
+        <Route path="/">
+          <NotFound />
         </Route>
       </Switch>
     </BrowserRouter>
