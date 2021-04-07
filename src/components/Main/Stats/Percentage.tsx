@@ -26,15 +26,21 @@ const FactWrapper = styled.p`
 function Percentage(props: Props) {
   return (
     <div>
-      <TopWrapper>
-        <h4>{props.top}</h4>
-      </TopWrapper>
-      <PercentWrapper>
-        <h2>{props.percent}</h2>
-      </PercentWrapper>
-      <FactWrapper>
-        <p>{props.fact}</p>
-      </FactWrapper>
+      <div className="row d-flex justify-content-center">
+        <TopWrapper>
+          <h4>{props.top}</h4>
+        </TopWrapper>
+      </div>
+      <div className="row d-flex justify-content-center">
+        <PercentWrapper>
+          <h2>{props.percent}</h2>
+        </PercentWrapper>
+      </div>
+      <div className="row d-flex justify-content-center">
+        <FactWrapper>
+          <p>{props.fact}</p>
+        </FactWrapper>
+      </div>
     </div>
   );
 }

@@ -60,15 +60,25 @@ function Stats() {
           <div className="col-3"></div>
       </div>
       <div className="row">
-        
+        <div className="col-3"></div>
+        <div className="col-2">
+          <CaptionedGraphic img="src/assets/images/circles.svg" alt="#" caption="3 out of 4 young girls are interested in CS" />
+        </div>
+        <div className="col-2">
+          <CaptionedGraphic img="src/assets/images/allcaps.svg" alt="#" caption="<20% of CS graduates at big universities in 2016 were women" />
+        </div>
+        <div className="col-2">
+          <CaptionedGraphic img="src/assets/images/dollar.svg" alt="#" caption="Women in tech are paid 71 cents for the male dollar" />
+        </div>
+        <div className="col-3"></div>
       </div>
       
 
       
       
-      <CaptionedGraphic img="src/assets/images/circles.svg" alt="#" caption="3 out of 4 young girls are interested in CS" />
-      <CaptionedGraphic img="src/assets/images/allcaps.svg" alt="#" caption="<20% of CS graduates at big universities in 2016 were women" />
-      <CaptionedGraphic img="src/assets/images/dollar.svg" alt="#" caption="Women in tech are paid 71 cents for the male dollar" />
+      
+      
+      
     </div>
   );
 }
