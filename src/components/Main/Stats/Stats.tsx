@@ -26,28 +26,45 @@ const SecondCaption = styled.h4`
 function Stats() {
   return (
     <div>
-      <FirstCaption>
-        <h3>Let's reprogram the tech world.</h3>
-      </FirstCaption>
       <div className="row">
-        <div className="col-6 d-flex justify-content-center">
+        <div className="col-3"></div>
+        <div className="col-6">
+          <FirstCaption>
+            <h3>Let's reprogram the tech world.</h3>
+          </FirstCaption>
+        </div>
+        <div className="col-3"></div>
+      </div>
+      
+      <div className="row">
+        <div className="col-3"></div>
+        <div className="col-3 d-flex justify-content-center">
           <FirstPercentage>
             <Percentage top="1995" percent="37%" fact="of programmers are women"/>
           </FirstPercentage>
         </div>
-        <div className="col-6 d-flex justify-content-center">
+        <div className="col-3 d-flex justify-content-center">
           <SecondPercentage>
             <Percentage top="2020" percent="24%" fact="of programmers are women"/>
           </SecondPercentage>
         </div>
+        <div className="col-3"></div>
+      </div>
+      <div className="row">
+          <div className="col-3"></div>
+          <div className="col-6">
+            <SecondCaption>
+              <h4>Together, we can close the gender gap in CS.</h4>
+            </SecondCaption>
+          </div>
+          <div className="col-3"></div>
+      </div>
+      <div className="row">
+        
       </div>
       
-      
-      
 
-      <SecondCaption>
-        <h4>Together, we can close the gender gap in CS.</h4>
-      </SecondCaption>
+      
       
       <CaptionedGraphic img="src/assets/images/circles.svg" alt="#" caption="3 out of 4 young girls are interested in CS" />
       <CaptionedGraphic img="src/assets/images/allcaps.svg" alt="#" caption="<20% of CS graduates at big universities in 2016 were women" />
