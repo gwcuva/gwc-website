@@ -4,23 +4,34 @@ import styled from 'styled-components';
 interface Props {
   top: string;
   percent: string;
+  darkBlue: string;
   fact: string;
 }
 
 const TopWrapper = styled.h4`
-  color: black;
   font-size: 18px;
+  font-weight: bold;
+  // color: $programmer-peacock;
+  color: #003046;
+  text-align: center;
+  margin-bottom: -7px;
 `
 
-const PercentWrapper = styled.h2`
-  // color: cyan;
-  font-size: 50px;
-  font-weight: 600;
+const PercentWrapper = styled.p`
+  font-size: 60px;
+  font-weight: bold;
+  color: cyan;
+  
+  text-align: center;
+  margin-top: -13px;
+  margin-bottom: -22px;
 `
 
 const FactWrapper = styled.p`
   color: gray;
   font-size: 12px;
+  text-align: center;
+  margin-top: -10px;
 `;
 
 function Percentage(props: Props) {
@@ -28,12 +39,14 @@ function Percentage(props: Props) {
     <div>
       <div className="row d-flex justify-content-center">
         <TopWrapper>
-          <h4>{props.top}</h4>
+          {/* <h4>{props.top}</h4> */}
+          <p>{props.top}</p>
         </TopWrapper>
       </div>
       <div className="row d-flex justify-content-center">
         <PercentWrapper>
-          <h2>{props.percent}</h2>
+          {/* <h2>{props.percent}</h2> */}
+          <p>{props.percent}</p>
         </PercentWrapper>
       </div>
       <div className="row d-flex justify-content-center">

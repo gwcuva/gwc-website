@@ -10,16 +10,20 @@ interface Props {
 const CaptionWrapper = styled.p`
   color: gray;
   font-size: 12px;
+  text-align: center;
 `;
 
 function CaptionedGraphic(props: Props) {
   return (
     <div>
-      <img src={props.img} alt={props.alt} />
-      <CaptionWrapper>
-        <p>{props.caption}</p>
-      </CaptionWrapper>
-      
+      <div className="d-flex justify-content-center">
+        <img src={props.img} alt={props.alt} />
+      </div>
+      <div className="d-flex justify-content-center">
+        <CaptionWrapper>
+          <p>{props.caption}</p>
+        </CaptionWrapper>
+      </div>
     </div>
   );
 }
