@@ -31,7 +31,7 @@ const FactWrapper = styled.p`
   color: gray;
   font-size: 10px;
   text-align: center;
-  margin-top: -10px;
+  margin-top: -13px;
 `;
 
 function Percentage(props: Props) {
