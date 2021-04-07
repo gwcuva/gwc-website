@@ -1,4 +1,5 @@
 import React from 'react';
+import styled from 'styled-components';
 
 interface Props {
   img: string;
@@ -6,11 +7,19 @@ interface Props {
   caption: string;
 }
 
+const CaptionWrapper = styled.p`
+  color: gray;
+  font-size: 12px;
+`;
+
 function CaptionedGraphic(props: Props) {
   return (
     <div>
       <img src={props.img} alt={props.alt} />
-      <p>{props.caption}</p>
+      <CaptionWrapper>
+        <p>{props.caption}</p>
+      </CaptionWrapper>
+      
     </div>
   );
 }
