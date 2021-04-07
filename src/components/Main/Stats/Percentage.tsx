@@ -13,8 +13,9 @@ const TopWrapper = styled.h4`
 `
 
 const PercentWrapper = styled.h2`
-  color: cyan;
+  // color: cyan;
   font-size: 50px;
+  font-weight: 600;
 `
 
 const FactWrapper = styled.p`

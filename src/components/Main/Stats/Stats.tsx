@@ -10,6 +10,14 @@ const FirstCaption = styled.h3`
   color: green;
 `
 
+const FirstPercentage = styled.div`
+  color: blue;
+`
+
+const SecondPercentage = styled.div`
+  color: cyan;
+`
+
 const SecondCaption = styled.h4`
   font-size: 20px;
   color: green;
@@ -21,9 +29,13 @@ function Stats() {
       <FirstCaption>
         <h3>Let's reprogram the tech world.</h3>
       </FirstCaption>
+      <FirstPercentage>
+        <Percentage top="1995" percent="37%" fact="of programmers are women"/>
+      </FirstPercentage>
+      <SecondPercentage>
+        <Percentage top="2020" percent="24%" fact="of programmers are women"/>
+      </SecondPercentage>
       
-      <Percentage top="1995" percent="37%" fact="of programmers are women"/>
-      <Percentage top="2020" percent="24%" fact="of programmers are women"/>
 
       <SecondCaption>
         <h4>Together, we can close the gender gap in CS.</h4>
