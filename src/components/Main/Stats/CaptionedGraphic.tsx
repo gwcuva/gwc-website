@@ -28,24 +28,10 @@ function CaptionedGraphic(props: Props) {
       <div className="row d-flex justify-content-center">
         <div className="col-10 d-flex justify-content-center">
             <CaptionWrapper>
-              <p>{props.caption}</p>
+              <p className="text-dark-grey">{props.caption}</p>
             </CaptionWrapper>
         </div>
       </div>
-      {/* <div className="row">
-        <div className="col-1"></div>
-        <div className="col-10">
-          <div className="d-flex justify-content-center">
-            <img src={props.img} alt={props.alt} />
-            
-          </div>
-          <div className="d-flex justify-content-center">
-            <CaptionWrapper>
-              <p>{props.caption}</p>
-            </CaptionWrapper>
-          </div>
-        </div>
-      </div> */}
     </div>
   );
 }
