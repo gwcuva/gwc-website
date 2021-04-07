@@ -14,11 +14,11 @@ const TopWrapper = styled.h4`
   // color: $programmer-peacock;
   color: #003046;
   text-align: center;
-  margin-bottom: -7px;
+  margin-bottom: -15px;
 `
 
 const PercentWrapper = styled.p`
-  font-size: 60px;
+  font-size: 70px;
   font-weight: bold;
   color: cyan;
   
@@ -29,7 +29,7 @@ const PercentWrapper = styled.p`
 
 const FactWrapper = styled.p`
   color: gray;
-  font-size: 12px;
+  font-size: 10px;
   text-align: center;
   margin-top: -10px;
 `;

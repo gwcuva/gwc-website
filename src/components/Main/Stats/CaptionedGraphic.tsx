@@ -9,7 +9,7 @@ interface Props {
 
 const CaptionWrapper = styled.p`
   color: gray;
-  font-size: 12px;
+  font-size: 10px;
   text-align: center;
 `;
 
