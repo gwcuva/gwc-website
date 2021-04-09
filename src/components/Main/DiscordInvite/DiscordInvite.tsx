@@ -6,7 +6,7 @@ import React from 'react';
 function DiscordInvite() {
   return (
     <div>
-      <h4>Want to join Girls Who Code at UVA?</h4>
+      <h3>Want to join Girls Who Code at UVA?</h3>
       <a href="#" target="_blank"><h2>Join our Discord server (arrow)</h2></a>
       <img src="#" alt="Orange wave saying 'Get Started'" />
     </div>
