@@ -6,11 +6,13 @@ import DiscordInvite from './DiscordInvite/DiscordInvite';
 import Team from './Team/Team';
 import About from './About/About';
 import Footer from './Footer/Footer';
+import NavCircle from './NavCirle/NavCircle';
 
 function Main() {
   return (
     <div>
       <Navbar />
+      <NavCircle />
       <Header />
       <Stats />
       <About />
