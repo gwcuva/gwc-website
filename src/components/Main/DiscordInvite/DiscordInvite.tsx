@@ -8,7 +8,7 @@ function DiscordInvite() {
     <div>
       <h4>Want to join Girls Who Code at UVA?</h4>
       <a href="#" target="_blank"><h2>Join our Discord server (arrow)</h2></a>
-      <img src="#" alt="Orange wave saying 'Get Started'" />
+      <img src="get started.svg" alt="Orange wave saying 'Get Started'"/>
     </div>
   );
 }
