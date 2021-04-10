@@ -1,4 +1,5 @@
 import React from 'react';
+import './discordstyle.css';
 
 // TODO: Add text and link
 // TODO: Add graphic at the end of the page
@@ -6,8 +7,8 @@ import React from 'react';
 function DiscordInvite() {
   return (
     <div>
-      <h4>Want to join Girls Who Code at UVA?</h4>
-      <a href="https://discord.gg/D8knkzNM8E" target="_blank"><h2>Join our Discord server ---{">"}</h2></a>
+      <h4 className="join"><b>Want to join Girls Who Code at UVA?</b></h4>
+      <a href="https://discord.gg/D8knkzNM8E" target="_blank"><h2 className="discord"><b>Join our Discord <br/>server ---{">"}</b></h2></a>
       <img src="get started.svg" alt="Orange wave saying 'Get Started'"/>
     </div>
   );
