@@ -78,6 +78,8 @@ h3 {
 h4 {
   font-size: 64px;
   font-weight: 500;
+  line-height: 72px;
+  letter-spacing: -3%;
 }
 p {
   font-size: 18px;
@@ -96,4 +98,27 @@ p {
   font-weight: 300;
   line-height: 30px;
   letter-spacing: 5%;
+}
+
+@media only screen and (max-device-width: 480px) {
+  h1 {
+    font-size: 56px;
+    line-height: 65.63px;
+  }
+  h2 {
+    font-size: 32px;
+    line-height: 37.5px;
+  }
+  h3 {
+    font-size: 20px;
+    line-height: 23.44px;
+  }
+  h4 {
+    font-size: 32px;
+    line-height: 42.2px;
+  }
+  p {
+    font-size: 14px;
+    line-height: 24px;
+  }
 }
