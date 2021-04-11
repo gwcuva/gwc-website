@@ -8,7 +8,7 @@ import React from 'react';
 function Contact() {
   return (
     <div>
-      <h5>Contact</h5>
+      <h3>Contact</h3>
       <p>gwcuva@gmail.com</p>
       <img src="#" alt="icon" />
     </div>

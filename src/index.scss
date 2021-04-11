@@ -63,12 +63,37 @@ code {
 h1 {
   font-size: 136px;
   font-weight: 700;
+  line-height: 159.38px;
 }
 h2 {
   font-size: 56px;
   font-weight: 500;
+  line-height: 60px;
 }
 h3 {
   font-size: 32px;
   font-weight: 500;
+  line-height: 37.5px;
+}
+h4 {
+  font-size: 64px;
+  font-weight: 500;
+}
+p {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 50px;
+  letter-spacing: 5%;
+}
+.p2 {
+  font-size: 12px;
+  font-weight: 300px;
+  line-height: 16px;
+  letter-spacing: 5%;
+}
+.interactive {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 30px;
+  letter-spacing: 5%;
 }

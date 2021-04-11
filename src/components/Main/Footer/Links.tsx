@@ -3,7 +3,7 @@ import React from 'react';
 function Links() {
   return (
     <div>
-      <h5>Links</h5>
+      <h3>Links</h3>
       <a href="#" target="_blank">Girls Hoo Hack</a>
     </div>
   );
