@@ -1,6 +1,4 @@
 import React from 'react';
-import { render } from 'react-dom';
-import { ReactSVG } from 'react-svg';
 
 // TODO: Add text and link
 // TODO: Add graphic at the end of the page
