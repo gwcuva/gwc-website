@@ -59,3 +59,66 @@ code {
 .bg-dark-grey {background-color: $gigabyte-grey}
 .bg-grey {background-color: $gui-grey}
 .bg-light-grey {background-color: $wavy-white}
+
+h1 {
+  font-size: 136px;
+  font-weight: 700;
+  line-height: 159.38px;
+}
+h2 {
+  font-size: 56px;
+  font-weight: 500;
+  line-height: 60px;
+}
+h3 {
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 37.5px;
+}
+h4 {
+  font-size: 64px;
+  font-weight: 500;
+  line-height: 72px;
+  letter-spacing: -3%;
+}
+p {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 50px;
+  letter-spacing: 5%;
+}
+.p2 {
+  font-size: 12px;
+  font-weight: 300px;
+  line-height: 16px;
+  letter-spacing: 5%;
+}
+.interactive {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 30px;
+  letter-spacing: 5%;
+}
+
+@media only screen and (max-device-width: 480px) {
+  h1 {
+    font-size: 56px;
+    line-height: 65.63px;
+  }
+  h2 {
+    font-size: 32px;
+    line-height: 37.5px;
+  }
+  h3 {
+    font-size: 20px;
+    line-height: 23.44px;
+  }
+  h4 {
+    font-size: 32px;
+    line-height: 42.2px;
+  }
+  p {
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
