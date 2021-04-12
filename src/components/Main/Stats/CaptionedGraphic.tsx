@@ -7,17 +7,11 @@ interface Props {
   caption: string;
 }
 
-const CaptionWrapper = styled.p`
-  color: gray;
-  font-size: 10px;
-  text-align: center;
-`;
-
 function CaptionedGraphic(props: Props) {
   return (
     <div>
       <div className="row d-flex justify-content-center">
-        <div className="col-9">
+        <div className="col-sm-10 col-9">
           <img src={props.img} alt={props.alt} />
         </div>
       </div>
