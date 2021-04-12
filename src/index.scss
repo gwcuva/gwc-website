@@ -99,6 +99,11 @@ p {
   line-height: 30px;
   letter-spacing: 5%;
 }
+.button-unstyled {
+  border: 0px;
+  box-shadow: none;
+  background: none;
+}
 
 @media only screen and (max-device-width: 480px) {
   h1 {
