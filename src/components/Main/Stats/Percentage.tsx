@@ -10,7 +10,7 @@ interface Props {
 
 function Percentage(props: Props) {
   return (
-    <div>
+    <div className="col">
       <h3 className="text-peacock text-center font-weight-bold">{props.top}</h3>
       <div className={props.color}>
           <h1 className="text-center font-weight-bold">{props.percent}</h1>
