@@ -35,7 +35,7 @@ function Team() {
 
   return (
     <div>
-      <h4>The best work...</h4>
+      <h2>The best work...</h2>
       <p>Our leadership team...</p>
       {/* iterate through team for the profile. hint: console.log() to see what the data structure looks like and how you can use it */}
       <Profile name="Emily" img="" position="President" />
