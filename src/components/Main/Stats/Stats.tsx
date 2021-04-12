@@ -2,8 +2,9 @@ import React from 'react';
 import styled from 'styled-components';
 import CaptionedGraphic from './CaptionedGraphic';
 import Percentage from './Percentage';
-import Circles from 'src/assets/images/circles.svg';
-import Allcaps from './allcaps.svg';
+import Circles from '../../../assets/images/circles.svg';
+import Allcaps from '../../../assets/images/allcaps.svg';
+import Dollar from '../../../assets/images/dollar.svg';
 // TODO: Add graphics
 
 function Stats() {
@@ -27,15 +28,11 @@ function Stats() {
             <h3 className="text-peacock font-weight-bold">Together, we can close the gender gap in CS.</h3>
           </div>
           <div className="row">
-            <div className="col-sm-4 col-6">
               <CaptionedGraphic img={Circles} alt="#" caption="3 out of 4 young girls are interested in CS." />
-            </div>
-            <div className="col-sm-4 col-6">
-                <CaptionedGraphic img={Allcaps} alt="#" caption="<20% of CS graduates at big universities in 2016 were women." />
-            </div>
-            <div className="col-sm-4 col-6">
-                <CaptionedGraphic img={Allcaps} alt="#" caption="Women in tech are paid 71 cents for the male dollar." />
-            </div>
+            
+              <CaptionedGraphic img={Allcaps} alt="#" caption="<20% of CS graduates at big universities in 2016 were women." />
+          
+              <CaptionedGraphic img={Dollar} alt="#" caption="Women in tech are paid 71 cents for the male dollar." />
           </div>
         </div>
       </div>
