@@ -36,23 +36,22 @@ function Percentage(props: Props) {
     <div>
       <div className="row d-flex justify-content-center">
         {/* <TopWrapper> */}
-        <strong>
-          <h4 className="text-peacock">{props.top}</h4>
-        </strong>
+        <h4 className="text-peacock text-center font-weight-bold">{props.top}</h4>
         
           {/* <p>{props.top}</p> */}
         {/* </TopWrapper> */}
       </div>
       <div className="row d-flex justify-content-center">
         {/* <PercentWrapper> */}
-        <h2 className={props.color}>{props.percent}</h2>
+        <div className={props.color}>
+          <h2 className="text-center font-weight-bold">{props.percent}</h2>
+        </div>
+        
           {/* <p className={props.color}>{props.percent}</p> */}
         {/* </PercentWrapper> */}
       </div>
       <div className="row d-flex justify-content-center">
-        <FactWrapper>
-          <p className="text-dark-grey">{props.fact}</p>
-        </FactWrapper>
+          <p className="text-dark-grey text-center">{props.fact}</p>
       </div>
     </div>
   );

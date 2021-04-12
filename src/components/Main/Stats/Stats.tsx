@@ -51,50 +51,34 @@ function Stats() {
       <div className="row">
         <div className="col-2"></div>
         <div className="col-6">
-          <FirstCaption>
-            {/* <h3>Let's reprogram the tech world.</h3> */}
-            <p>Let's reprogram the tech world.</p>
-          </FirstCaption>
+          <h3>Let's reprogram the tech world.</h3>
         </div>
       </div>
       <div className="row">
         <div className="col-2"></div>
         <div className="col-3 d-flex justify-content-center">
-          <FirstPercentage>
-            <Percentage top="1995" percent="37%" color="text-blue" fact="of programmers are women."/>
-          </FirstPercentage>
+          <Percentage top="1995" percent="37%" color="text-blue" fact="of programmers are women."/>
         </div>
         <div className="col-3 d-flex justify-content-center">
-          <SecondPercentage>
-            <Percentage top="2020" percent="24%" color="text-turq" fact="of programmers are women."/>
-          </SecondPercentage>
+          <Percentage top="2020" percent="24%" color="text-turq" fact="of programmers are women."/>
         </div>
       </div>
       <div className="row">
           <div className="col-2"></div>
           <div className="col-6">
-            <SecondCaption>
-              {/* <h4>Together, we can close the gender gap in CS.</h4> */}
-              <p>Together, we can close the gender gap in CS.</p>
-            </SecondCaption>
+            <h4>Together, we can close the gender gap in CS.</h4>
           </div>
       </div>
       <div className="row no-gutters">
         <div className="col-2"></div>
         <div className="col-2">
-          <L_GraphicWrapper>
-            <CaptionedGraphic img={Allcaps} alt="#" caption="3 out of 4 young girls are interested in CS." />
-          </L_GraphicWrapper>
+          <CaptionedGraphic img={Allcaps} alt="#" caption="3 out of 4 young girls are interested in CS." />
         </div>
         <div className="col-2">
-          <M_GraphicWrapper>
             <CaptionedGraphic img={Allcaps} alt="#" caption="<20% of CS graduates at big universities in 2016 were women." />
-          </M_GraphicWrapper>
         </div>
         <div className="col-2">
-          <R_GraphicWrapper>
             <CaptionedGraphic img={Allcaps} alt="#" caption="Women in tech are paid 71 cents for the male dollar." />
-          </R_GraphicWrapper>
         </div>
       </div>
     </div>
