@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import CaptionedGraphic from './CaptionedGraphic';
 import Percentage from './Percentage';
+import Circles from 'src/assets/images/circles.svg';
 import Allcaps from './allcaps.svg';
 // TODO: Add graphics
 
@@ -14,7 +15,7 @@ function Stats() {
           <div className="row">
             <h2 className="text-peacock font-weight-bold">Let's reprogram the tech world.</h2>
           </div>
-          <div className="row">
+          <div className="row mb-5">
             <div className="col">
               <Percentage top="1995" percent="37%" color="text-blue" fact="of programmers are women."/>
             </div>
@@ -27,7 +28,7 @@ function Stats() {
           </div>
           <div className="row">
             <div className="col-sm-4 col-6">
-              <CaptionedGraphic img={Allcaps} alt="#" caption="3 out of 4 young girls are interested in CS." />
+              <CaptionedGraphic img={Circles} alt="#" caption="3 out of 4 young girls are interested in CS." />
             </div>
             <div className="col-sm-4 col-6">
                 <CaptionedGraphic img={Allcaps} alt="#" caption="<20% of CS graduates at big universities in 2016 were women." />
