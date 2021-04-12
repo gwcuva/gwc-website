@@ -17,15 +17,11 @@ function CaptionedGraphic(props: Props) {
   return (
     <div>
       <div className="row d-flex justify-content-center">
-        <div className="col-8">
+        <div className="col-9">
           <img src={props.img} alt={props.alt} />
         </div>
       </div>
-      <div className="row d-flex justify-content-center">
-        <div className="col-10 d-flex justify-content-center">
-          <p className="text-dark-grey text-center">{props.caption}</p>
-        </div>
-      </div>
+      <p className="text-dark-grey text-center">{props.caption}</p>
     </div>
   );
 }

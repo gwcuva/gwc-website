@@ -51,7 +51,37 @@ function Stats() {
       <div className="row">
         <div className="col-2"></div>
         <div className="col-6">
-          <h3>Let's reprogram the tech world.</h3>
+          <div className="row">
+            <h2 className="text-peacock font-weight-bold">Let's reprogram the tech world.</h2>
+          </div>
+          <div className="row">
+            <div className="col-6">
+              <Percentage top="1995" percent="37%" color="text-blue" fact="of programmers are women."/>
+            </div>
+            <div className="col-6">
+              <Percentage top="2020" percent="24%" color="text-turq" fact="of programmers are women."/>
+            </div>
+          </div>
+          <div className="row">
+            <h3 className="text-peacock font-weight-bold">Together, we can close the gender gap in CS.</h3>
+          </div>
+          <div className="row">
+            <div className="col-4">
+              <CaptionedGraphic img={Allcaps} alt="#" caption="3 out of 4 young girls are interested in CS." />
+            </div>
+            <div className="col-4">
+                <CaptionedGraphic img={Allcaps} alt="#" caption="<20% of CS graduates at big universities in 2016 were women." />
+            </div>
+            <div className="col-4">
+                <CaptionedGraphic img={Allcaps} alt="#" caption="Women in tech are paid 71 cents for the male dollar." />
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* <div className="row">
+        <div className="col-2"></div>
+        <div className="col-6">
+          <h2 className="text-peacock font-weight-bold">Let's reprogram the tech world.</h2>
         </div>
       </div>
       <div className="row">
@@ -66,7 +96,7 @@ function Stats() {
       <div className="row">
           <div className="col-2"></div>
           <div className="col-6">
-            <h4>Together, we can close the gender gap in CS.</h4>
+            <h3 className="text-peacock font-weight-bold">Together, we can close the gender gap in CS.</h3>
           </div>
       </div>
       <div className="row no-gutters">
@@ -80,7 +110,7 @@ function Stats() {
         <div className="col-2">
             <CaptionedGraphic img={Allcaps} alt="#" caption="Women in tech are paid 71 cents for the male dollar." />
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }
