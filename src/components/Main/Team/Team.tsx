@@ -5,8 +5,11 @@ import { request } from 'graphql-request';
 // TODO: Make a profile component with photo, name, position
 // TODO: Add beginning copy
 // TODO: (can be separate PR), have an archive of old exec
+interface Props {
+  id: string;
+}
 
-function Team() {
+function Team(props: Props) {
   const [team, setTeam] = useState([]);
   
   useEffect(() => {
@@ -34,7 +37,7 @@ function Team() {
   }, []);
 
   return (
-    <div>
+    <div id={props.id}>
       <h2>The best work...</h2>
       <p>Our leadership team...</p>
       {/* iterate through team for the profile. hint: console.log() to see what the data structure looks like and how you can use it */}
