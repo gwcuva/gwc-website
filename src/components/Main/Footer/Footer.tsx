@@ -14,8 +14,8 @@ import logo from '../../../assets/images/gwcuva-logo.png'
 function Footer() {
   return (
     <div>
-      <img src={footerWaves} style={{ transform: 'rotate(180deg)'}}/>
-      <div className="bg-orange row" style={{paddingBottom: 100, paddingTop: 60}}>
+      <img src={footerWaves} style={{ transform: 'rotate(180deg)', marginBottom:-1}}/>
+      <div className="bg-orange d-flex flex-row" style={{paddingBottom: 100, paddingTop: 60}}>
         <div className="col-4">
           <img src={logo} style={{ height: 80, paddingLeft:50 }}alt="Girls Who Code at the University of Virginia logo"/>
         </div>
