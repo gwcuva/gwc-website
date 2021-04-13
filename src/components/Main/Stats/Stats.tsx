@@ -13,7 +13,7 @@ interface Props {
 function Stats(props: Props) {
   return (
     <Row className="m-4 d-flex justify-content-center">
-      <Col lg={6} md={8} sm={12} xs={12}>
+      <Col lg={6} md={8} sm={10}>
         <Row>
           <h2 className="text-peacock font-weight-bold">Let's reprogram the tech world.</h2>
         </Row>
@@ -24,7 +24,7 @@ function Stats(props: Props) {
         <Row>
           <h3 className="text-peacock font-weight-bold">Together, we can close the gender gap in CS.</h3>
         </Row>
-        <Row>
+        <Row className="mb-4">
             <CaptionedGraphic img={Circles} alt="#" caption="3 out of 4 young girls are interested in CS." />
             <CaptionedGraphic img={Allcaps} alt="#" caption="<20% of CS graduates at big universities in 2016 were women." />
             <CaptionedGraphic img={Dollar} alt="#" caption="Women in tech are paid 71 cents for the male dollar." />

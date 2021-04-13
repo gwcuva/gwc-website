@@ -1,4 +1,5 @@
 import React from 'react';
+import {isMobile} from 'react-device-detect';
 import {Col} from 'react-bootstrap';
 
 interface Props {
@@ -10,7 +11,7 @@ interface Props {
 
 function Percentage(props: Props) {
   return (
-    <Col xs={6} className="mt-2 mb-4">
+    <Col xs={6} className={isMobile ? "mt-1 mb-3" : "mt-2 mb-4"}>
       <h3 className="text-peacock text-center font-weight-bold">{props.top}</h3>
       <div className={props.color}>
           <h1 className="text-center font-weight-bold">{props.percent}</h1>

@@ -14,7 +14,7 @@ function CaptionedGraphic(props: Props) {
       <div className="d-flex justify-content-center">
         <img src={props.img} width={isMobile ? "100px" : "140px"} height={isMobile ? "100px" : "140px"} alt={props.alt} style={{objectFit: "contain"}}/>
       </div>
-      <p className="text-dark-grey text-center">{props.caption}</p>
+      <p className="text-dark-grey text-center mb-0 pb-0">{props.caption}</p>
     </Col>
   );
 }
