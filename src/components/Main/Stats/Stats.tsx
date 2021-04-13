@@ -1,13 +1,17 @@
 import React from 'react';
 import styled from 'styled-components';
+import { isPropertySignature } from 'typescript';
 import CaptionedGraphic from './CaptionedGraphic';
 import Percentage from './Percentage';
 
 // TODO: Add graphics
+interface Props {
+  id: string;
+}
 
-function Stats() {
+function Stats(props: Props) {
   return (
-    <div>
+    <div id={props.id}>
       <h2>Let's reprograming the tech world.</h2>
       <Percentage top="1995" percent="37%" fact="of programmers are women"/>
       <Percentage top="2020" percent="24%" fact="of programmers are women"/>

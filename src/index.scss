@@ -27,7 +27,6 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  overflow: hidden;
 }
 
 code {
@@ -104,6 +103,9 @@ p {
   border: 0px;
   box-shadow: none;
   background: none;
+}
+.full-screen {
+  height: 100vh;
 }
 
 @media only screen and (max-device-width: 480px) {

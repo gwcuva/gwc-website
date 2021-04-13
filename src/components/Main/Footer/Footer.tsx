@@ -9,11 +9,14 @@ import logo from '../../../assets/images/gwcuva-logo.png'
 // TODO: Add logo
 // TODO: Add contact
 // TODO: Add links (Brand Manual should redirect to Figma since we haven't coded it)
+interface Props {
+  id: string;
+}
 
 
-function Footer() {
+function Footer(props: Props) {
   return (
-    <div>
+    <div id={props.id}>
       <img src={footerWaves} style={{ transform: 'rotate(180deg)', marginBottom:-1}}/>
       <div className="bg-orange d-flex flex-row" style={{paddingBottom: 100, paddingTop: 60}}>
         <div className="col-4">
@@ -27,8 +30,6 @@ function Footer() {
         </div>
       </div>
     </div>
-  
-   
   );
 }
 
