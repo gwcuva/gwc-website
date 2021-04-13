@@ -6,10 +6,13 @@ import Links from './Links';
 // TODO: Add logo
 // TODO: Add contact
 // TODO: Add links (Brand Manual should redirect to Figma since we haven't coded it)
+interface Props {
+  id: string;
+}
 
-function Footer() {
+function Footer(props: Props) {
   return (
-    <div>
+    <div id={props.id}>
       <img src="#" alt="Girls Who Code at the University of Virginia logo" />
       <Contact />
       <Links />
