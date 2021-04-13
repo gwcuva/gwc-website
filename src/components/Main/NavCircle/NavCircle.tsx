@@ -33,7 +33,7 @@ const Circle = () => {
 function NavCircle() {
   return (
 
-    <div>
+    <div className="float-right">
       <Circle />
       <a href="#" target="_blank">the gap</a>
       <a href="#" target="_blank">the mission</a>

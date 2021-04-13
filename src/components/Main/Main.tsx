@@ -12,13 +12,13 @@ function Main() {
   return (
     <div>
       <Navbar />
+      <NavCircle />
       <Header />
       <Stats />
       <About />
       <DiscordInvite />
       <Team />
       <Footer />
-      <NavCircle />
     </div>
   );
 }
