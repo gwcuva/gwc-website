@@ -1,4 +1,3 @@
-import React from 'react';
 import CaptionedGraphic from './CaptionedGraphic';
 import Percentage from './Percentage';
 import Circles from '../../../assets/images/circles.svg';
@@ -6,7 +5,6 @@ import Allcaps from '../../../assets/images/allcaps.svg';
 import Dollar from '../../../assets/images/dollar.svg';
 import {isMobile} from 'react-device-detect';
 import {Row, Col} from 'react-bootstrap';
-// TODO: Add graphics
 interface Props {
   id: string;
 }

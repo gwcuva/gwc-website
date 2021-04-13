@@ -1,4 +1,3 @@
-import React from 'react';
 import {isMobile} from 'react-device-detect';
 import {Col} from 'react-bootstrap';
 
