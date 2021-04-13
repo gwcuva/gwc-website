@@ -1,5 +1,6 @@
 import React from 'react';
-import styled from 'styled-components';
+import {isMobile} from 'react-device-detect';
+import {Col} from 'react-bootstrap';
 
 interface Props {
   img: string;
@@ -9,20 +10,12 @@ interface Props {
 
 function CaptionedGraphic(props: Props) {
   return (
-    <div className="col-md-4 col-sm-6">
+    <Col md={4} xs={6}>
       <div className="d-flex justify-content-center">
-        <img src={props.img} width="140px" height="140px" alt={props.alt} style={{objectFit: "contain"}}/>
+        <img src={props.img} width={isMobile ? "100px" : "140px"} height={isMobile ? "100px" : "140px"} alt={props.alt} style={{objectFit: "contain"}}/>
       </div>
       <p className="text-dark-grey text-center">{props.caption}</p>
-    </div>
-    // <div className="col-sm-4 col-6">
-    //   <div className="row d-flex justify-content-center">
-    //     <div className="col-sm-10 col-9">
-    //       <img src={props.img} alt={props.alt} />
-    //     </div>
-    //   </div>
-    //   <p className="text-dark-grey text-center">{props.caption}</p>
-    // </div>
+    </Col>
   );
 }
 
