@@ -3,8 +3,13 @@ import {Row, Col} from 'react-bootstrap';
 import { ArrowRight } from 'react-feather';
 import GetStarted from '../../../assets/images/get started.svg';
 
-function DiscordInvite() {
+interface Props {
+  id: string;
+}
+
+function DiscordInvite(props: Props) {
   return (
+    <div id={props.id}>
       <Row>
         <Col sm={12}>
           <h4 className="text-turq pl-5 ml-5">Want to join Girls Who Code at UVA?</h4>
@@ -12,6 +17,7 @@ function DiscordInvite() {
           <img src={GetStarted} alt="Orange wave saying 'Get Started'" />
         </Col>
       </Row>
+    </div>
   );
 }
 
