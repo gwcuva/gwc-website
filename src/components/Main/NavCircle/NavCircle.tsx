@@ -25,6 +25,21 @@ position: absolute;
     margin-right: -50%;
     transform: translate(-50%, -50%)
 `
+const StyledLinkFour = styled.div`
+position: absolute;
+    top: 60%;
+    left: 40%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+`
+
+const StyledLinkFive = styled.div`
+position: absolute;
+    top: 60%;
+    left: 60%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+`
 // TODO: Add circle background (done)
 // TODO: Add three links 
 // TODO: Add social media links (done)
@@ -145,9 +160,12 @@ function NavCircle() {
       <StyledLinkOne href="#" target="_blank">the gap</StyledLinkOne>
       <StyledLinkTwo href="#" target="_blank">the mission</StyledLinkTwo>
       <StyledLinkThree href="#" target="_blank">the team</StyledLinkThree>
-      <Insta />
+      <StyledLinkFour>
+        <Insta />
+      </StyledLinkFour>
+      <StyledLinkFive >
       <Discord />
-      
+      </StyledLinkFive>
     </div>
   );
 }
