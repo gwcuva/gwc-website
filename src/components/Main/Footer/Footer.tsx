@@ -1,32 +1,32 @@
 import React from 'react';
-import styled from 'styled-components';
 import Contact from './Contact';
 import Links from './Links';
+import footerWaves from '../../../assets/images/footer-wave.svg'
+import logo from '../../../assets/images/gwcuva-logo.png'
+//import {isMobile} from 'react-device-detect';
 
 // TODO: Add top graphic (should be same as header, but flipped)
 // TODO: Add logo
 // TODO: Add contact
 // TODO: Add links (Brand Manual should redirect to Figma since we haven't coded it)
 
-const FooterSection =  styled.section`
-  background-image: url(/src/assets/images/main-header-wave.svg);
-`;
 
 function Footer() {
   return (
-    <FooterSection>
-      <div className="row ml-2">
+    <div>
+      <img src={footerWaves} style={{ transform: 'rotate(180deg)'}}/>
+      <div className="bg-orange row" style={{paddingBottom: 100, paddingTop: 60}}>
         <div className="col-4">
-          <img src="/src/assets/images/logo-black-white-horizontal.png" alt="Girls Who Code at the University of Virginia logo"/>
+          <img src={logo} style={{ height: 80, paddingLeft:50 }}alt="Girls Who Code at the University of Virginia logo"/>
         </div>
-        <div className="col-2">
+        <div className="col-2 text-white">
           <Contact />
         </div>
-        <div className="col-2">
+        <div className="col-2 text-white">
           <Links />
         </div>
       </div>
-    </FooterSection>
+    </div>
   
    
   );
