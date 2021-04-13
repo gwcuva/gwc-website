@@ -4,13 +4,16 @@ import AboutList from './AboutList';
 // TODO: Add Hello World asset on the top (also in branding guide on Google Drive)
 // TODO: Add the copy
 // TODO: Make sure that you're not just adding "#", make the bullets consistent
+interface Props {
+  id: string;
+}
 
-function About() {
+function About(props: Props) {
 
   const socialEvents = ["Biweekly socials", "S'mores bonfire"]
 
   return (
-    <div>
+    <div id={props.id}>
       <img src="#" alt="Hello World banner" />
       <h2>Girls Who Code at the University of Virginia...</h2>
       <p>Together, we're breaking down barriers...</p>
