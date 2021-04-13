@@ -9,8 +9,8 @@ interface Props {
 function Percentage(props: Props) {
   return (
     <div>
-      <h4>{props.top}</h4>
-      <h2>{props.percent}</h2>
+      <h3>{props.top}</h3>
+      <h1>{props.percent}</h1>
       <p>{props.fact}</p>
     </div>
   );

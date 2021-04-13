@@ -8,12 +8,13 @@ import twitterSocial from '../../../assets/images/twitter-icon.svg'
 // TODO: Add logo
 // TODO: Add contact
 // TODO: Add links (Brand Manual should redirect to Figma since we haven't coded it)
+// TODO: Make the gwcuva@gmail.com a link to automatically send an email
 
 function Contact() {
   return (
     <div>
-      <h5 style={{paddingBottom: 10}}><strong>Contact</strong></h5>
-      <p className="mono">gwcuva@gmail.com</p>
+      <h3 style={{paddingBottom: 10}}><strong>Contact</strong></h3>
+      <p className="mono interactive">gwcuva@gmail.com</p>
       <div style={{ paddingLeft: 15}}>
         <div className="row" style={{paddingBottom:20, paddingTop:10}}>
           <a href="https://www.instagram.com/gwcuva/" target="_blank"><img src={instagramSocial} alt="Instagram icon" style={{paddingRight:20}}/></a>
@@ -24,6 +25,10 @@ function Contact() {
           <a href="https://twitter.com/gwcuva?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank"><img src={twitterSocial} alt="Twitter icon"/></a>
         </div>
       </div>
+      {/*
+      <h3>Contact</h3>
+      <p className="interactive">gwcuva@gmail.com</p>
+      <img src="#" alt="icon" />*/}
     </div>
   );
 }
