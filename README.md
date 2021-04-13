@@ -79,3 +79,4 @@ This is where we store the fonts that we may need
 * Kim Do
 * Jennifer Tcheou
 * Sky Brodowski
+* Belle Tran
