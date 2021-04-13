@@ -22,7 +22,7 @@ function Stats(props: Props) {
           <Percentage top="1995" percent="37%" color="text-blue" fact="of programmers are women."/>
           <Percentage top="2020" percent="24%" color="text-turq" fact="of programmers are women."/>
         </Row>
-        <Row className={isMobile ? "mt-0" : "mt-4 mb-4"}>
+        <Row className={isMobile ? "mt-1" : "mt-4 mb-4"}>
           <h3 className="text-peacock font-weight-bold">Together, we can close the gender gap in CS.</h3>
         </Row>
         <Row className="mb-4">
