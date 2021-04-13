@@ -3,6 +3,8 @@ import {Row, Col} from 'react-bootstrap';
 import { ArrowRight } from 'react-feather';
 import GetStarted from '../../../assets/images/get started.svg';
 
+// TODO: Add text and link
+// TODO: Add graphic at the end of the page
 interface Props {
   id: string;
 }
