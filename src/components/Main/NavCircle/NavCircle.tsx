@@ -9,40 +9,44 @@ import styled from 'styled-components';
 
 const StyledLinkOne = styled.a`
   position: absolute;
-    top: 20%;
-    left: 50%;
+    top: 25%;
+    left: 48%;
     margin-right: -50%;
+    margin-left: 0.5%;
     transform: translate(-50%, -50%)
     
 
 `
 const StyledLinkTwo = styled.a`
 position: absolute;
-    top: 30%;
-    left: 50%;
-    margin-right: -50%;
+    top: 40%;
+    left: 53.5%;
+    
+    margin-right: -60%;
+    margin-left: 1%;
     transform: translate(-50%, -50%)
 `
 
 const StyledLinkThree = styled.a`
 position: absolute;
-    top: 40%;
+    top: 55%;
     left: 50%;
+    
     margin-right: -50%;
     transform: translate(-50%, -50%)
 `
 const StyledLinkFour = styled.div`
 position: absolute;
-    top: 60%;
-    left: 40%;
+    top: 70%;
+    left: 42%;
     margin-right: -50%;
     transform: translate(-50%, -50%)
 `
 
 const StyledLinkFive = styled.div`
 position: absolute;
-    top: 60%;
-    left: 60%;
+    top: 70%;
+    left: 57%;
     margin-right: -50%;
     transform: translate(-50%, -50%)
 `
@@ -52,10 +56,10 @@ const Insta = () => {
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 48 48"
-      width={48}
-      height={48}
+      width={36}
+      height={36}
     >
-    <a href="https://www.instagram.com/gwcuva/?hl=en" target="_blank"><img src="#" alt="Instagram" />
+    <a href="https://www.instagram.com/gwcuva/?hl=en" target="_blank" rel="noreferrer"><img src="#" alt="Instagram" />
       <path
         d="M16 6C10.477 6 6 10.477 6 16v16c0 5.523 4.477 10 10 10h16c5.523 0 10-4.477 10-10V16c0-5.523-4.477-10-10-10zm20 4a1.999 1.999 0 110 4 1.999 1.999 0 110-4zm-12 4c5.523 0 10 4.477 10 10s-4.477 10-10 10-10-4.477-10-10 4.477-10 10-10zm0 4c-3.313 0-6 2.688-6 6 0 3.313 2.688 6 6 6 3.313 0 6-2.688 6-6 0-3.313-2.688-6-6-6zm0 0"
         fill="#003046"
@@ -71,10 +75,10 @@ const Discord = () => {
       xmlns="http://www.w3.org/2000/svg"
       xmlnsXlink="http://www.w3.org/1999/xlink"
       viewBox="0 0 48 48"
-      width={48}
-      height={48}
+      width={36}
+      height={36}
     >
-    <a href="https://discord.gg/PmER5Fvp" target="_blank"><img src="#" alt="Discord" />
+    <a href="https://discord.gg/PmER5Fvp" target="_blank" rel="noreferrer"><img src="#" alt="Discord" />
       <defs>
         <image
           id="prefix__b"
@@ -131,15 +135,16 @@ const Circle = () => {
   return (
 <svg  
       xmlns="http://www.w3.org/2000/svg"
-      width={303}
-      height={303}
+      width="100%"
+      height="100%"
       viewBox="0 0 303 303"
       overflow="visible"
+      
     >
       <circle
         cx={151.5}
         cy={151.5}
-        r={150}
+        r={125}
         fill="none"
         stroke="#43d6b9"
         strokeWidth={3}
@@ -152,11 +157,11 @@ const Circle = () => {
 
 function NavCircle() {
   return (
-    <div id = "navCircle" className = "card sticky-top float-right text-center " >
+    <div id = "navCircle" className = "image sticky-top float-right " >
       <Circle />
-      <StyledLinkOne href="#" target="_blank" className="mono">the gap</StyledLinkOne>
-      <StyledLinkTwo href="#" target="_blank" className="mono">the mission</StyledLinkTwo>
-      <StyledLinkThree href="#" target="_blank" className="mono ">the team</StyledLinkThree>
+      <StyledLinkOne href="#" target="_blank"  className="mono">the gap</StyledLinkOne>
+      <StyledLinkTwo href="#" target="_blank"  className="mono">the mission</StyledLinkTwo>
+      <StyledLinkThree href="#" target="_blank"  className="mono ">the team</StyledLinkThree>
       <StyledLinkFour>
         <Insta />
       </StyledLinkFour>
