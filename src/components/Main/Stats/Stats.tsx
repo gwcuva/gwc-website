@@ -5,6 +5,7 @@ import Allcaps from '../../../assets/images/allcaps.svg';
 import Dollar from '../../../assets/images/dollar.svg';
 import {isMobile} from 'react-device-detect';
 import {Row, Col} from 'react-bootstrap';
+
 interface Props {
   id: string;
 }
