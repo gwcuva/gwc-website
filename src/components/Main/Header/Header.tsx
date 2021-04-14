@@ -12,7 +12,7 @@ function Header(props: Props) {
   return (
     <div id={props.id}> 
 
-    <div className="container-fluid bg-orange">
+    <div className="container-fluid m-0 bg-orange">
       <Row lg={2}>
       <Col lg={1}><h4></h4></Col>
       </Row>
@@ -42,7 +42,11 @@ function Header(props: Props) {
       </Row>
     </div>
     
-    <img src={Waves} alt="Orange wave" />
+    <div className="img-fluid">
+      <Row>
+        <img src={Waves} alt="Orange wave" />
+      </Row>
+    </div>
     
     </div>
   );
