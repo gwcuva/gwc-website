@@ -21,12 +21,14 @@ function Main() {
       <MobileView>
         <MobileNavbar />
       </MobileView>
-      <Header />
-      <Stats />
-      <About />
-      <DiscordInvite />
-      <Team />
-      <Footer />
+      <div className="overflow-auto">
+        <Header id="header"/>
+        <Stats id="stats"/>
+        <About id="about"/>
+        <DiscordInvite id="discord-invite"/>
+        <Team id="team"/>
+        <Footer id="footer"/>
+      </div>
     </div>
   );
 }
