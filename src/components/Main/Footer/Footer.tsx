@@ -13,7 +13,7 @@ interface Props {
 function Footer(props: Props) {
   return (
     <div id={props.id}>
-      <img src={footerWaves} style={{ transform: 'rotate(180deg)', marginBottom:-1}}/>
+      <img src={footerWaves} style={{ transform: 'rotate(180deg)', marginBottom:-1}} alt="Orange wave"/>
       <div className="bg-orange d-flex flex-row" style={{paddingBottom: 50, paddingTop: 60}}>
         <Col md={4} sm={3}>
           <img src={logo} width="50%" style={{paddingLeft:"10%"}} alt="Girls Who Code at the University of Virginia logo"/>
