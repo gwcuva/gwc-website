@@ -5,12 +5,6 @@ import facebookSocial from '../../../assets/images/facebook-icon.svg'
 import twitterSocial from '../../../assets/images/twitter-icon.svg'
 import {Row, Col} from 'react-bootstrap';
 
-// TODO: Add top graphic (should be same as header, but flipped)
-// TODO: Add logo
-// TODO: Add contact
-// TODO: Add links (Brand Manual should redirect to Figma since we haven't coded it)
-// TODO: Make the gwcuva@gmail.com a link to automatically send an email
-
 function Contact() {
   return (
     <div>

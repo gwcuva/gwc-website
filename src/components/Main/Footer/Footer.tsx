@@ -5,10 +5,6 @@ import footerWaves from '../../../assets/images/footer-wave.svg';
 import logo from '../../../assets/images/peacock-logo.svg';
 import {Row, Col} from 'react-bootstrap';
 
-// TODO: Add top graphic (should be same as header, but flipped)
-// TODO: Add logo
-// TODO: Add contact
-// TODO: Add links (Brand Manual should redirect to Figma since we haven't coded it)
 interface Props {
   id: string;
 }
