@@ -4,8 +4,6 @@ import { request } from 'graphql-request';
 import {Row, Col} from 'react-bootstrap';
 import { isMobile } from 'react-device-detect';
 
-// TODO: Make a profile component with photo, name, position
-// TODO: Add beginning copy
 // TODO: (can be separate PR), have an archive of old exec
 interface Props {
   id: string;
@@ -56,6 +54,7 @@ function Team(props: Props) {
   }
   for(let i = 0; i<team.length; i+=3) {
     arrays[count] = [team[i],team[i+1],team[i+2]];
+    count++;
   }
 
   return (
@@ -66,7 +65,6 @@ function Team(props: Props) {
           <p className="text-dark-grey pt-3">Our leadership team works together to disrupt the image of stereotypical programmer. Meet our wave-makers!</p>
         </Col>
       </Row>
-      {/* iterate through team for the profile. hint: console.log() to see what the data structure looks like and how you can use it */}
       {arrays.map(mem => 
         <div className={isMobile ? "container pt-1 pb-1" : "container pt-3 pb-3"}>
           <Row className="pl-4 justify-content-center">
