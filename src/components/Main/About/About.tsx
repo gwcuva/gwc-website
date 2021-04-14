@@ -12,7 +12,7 @@ function About() {
   return (
     <div>
       <img src="#" alt="Hello World banner" />
-      <h3>Girls Who Code at the University of Virginia...</h3>
+      <h2>Girls Who Code at the University of Virginia...</h2>
       <p>Together, we're breaking down barriers...</p>
 
       <AboutList header="Social Events" items={socialEvents}/>
