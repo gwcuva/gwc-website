@@ -56,10 +56,7 @@ function Team(props: Props) {
   }
   for(let i = 0; i<team.length; i+=3) {
     arrays[count] = [team[i],team[i+1],team[i+2]];
-    count++;
-    //arrays.push(team.slice(i, i+3))
   }
-  console.log(arrays.length);
 
   return (
     <div id={props.id}>
