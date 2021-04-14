@@ -6,10 +6,6 @@ import discordLogo from '../../../assets/images/discord-logo.svg'
 // TODO: Add three links 
 // TODO: (if needed in a future PR) depending on scroll position, change the color of circle border
 
-
-
-
-
 const Circle = () => {
   return (
 <svg  
@@ -18,6 +14,7 @@ const Circle = () => {
       height="100%"
       viewBox="0 0 303 303"
       overflow="visible"
+      preserveAspectRatio="xMinYMin meet"
       
     >
       <circle
@@ -38,14 +35,17 @@ function NavCircle() {
   return (
     <div id = "navCircle" className = "img sticky-top float-right " >
       
-      <Circle></Circle>
-      <a href="../Stats/Stats.tsx" target="_blank"  className="mono">the gap</a><br/>
-      <a href="../About/About.tsx" target="_blank"  className="mono">the mission</a><br/>
-      <a href="../Team/Team.tsx" target="_blank"  className="mono ">the team</a><br/>
+      <Circle/>
+    
+      <a href="../Stats/Stats.tsx" target="_blank"  className="mono row text-peacock">the gap</a><br/>
+      <a href="../About/About.tsx" target="_blank"  className="mono row text-peacock">the mission</a><br/>
+      <a href="../Team/Team.tsx" target="_blank"  className="mono row text-peacock">the team</a><br/>
       <a href="https://www.instagram.com/gwcuva/?hl=en" target="_blank" rel="noreferrer"><img src={instaLogo} alt="Instagram"/>
       </a>
       <a href="https://discord.gg/PmER5Fvp" target="_blank" rel="noreferrer"><img src={discordLogo} alt="Discord" />
       </a>
+      </div>
+      
     </div>
   );
 }
