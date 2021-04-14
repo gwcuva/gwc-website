@@ -15,8 +15,8 @@ function Contact() {
   return (
     <div>
       <h3 style={{paddingBottom: 10}}><strong>Contact</strong></h3>
-      <p className="mono interactive">gwcuva@gmail.com</p>
-      <Col md={10} style={{marginLeft:-15}}>
+      <a href="mailto:gwcuva@gmail.com" className="mono text-white interactive">gwcuva@gmail.com</a>
+      <Col md={10} style={{marginLeft:-15, marginTop:25}}>
           <a href="https://www.instagram.com/gwcuva/" target="_blank"><img src={instagramSocial} alt="Instagram icon" style={{paddingRight:15, paddingBottom:15}}/></a>
           <a href="https://discord.com/invite/rKbWyuDNyG" target="_blank"><img src={discordSocial} alt="Discord icon" style={{paddingRight:15, paddingBottom:15}}/></a>
           <a href="https://www.facebook.com/gwcuva/" target="_blank"><img src={facebookSocial} alt="Facebook icon" style={{paddingRight:15, paddingBottom:15}}/></a>
