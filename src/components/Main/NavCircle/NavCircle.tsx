@@ -6,49 +6,7 @@ import discordLogo from '../../../assets/images/discord-logo.svg'
 // TODO: Add three links 
 // TODO: (if needed in a future PR) depending on scroll position, change the color of circle border
 
-const StyledLinkOne = styled.a`
-  position: absolute;
-    top: 25%;
-    left: 48%;
-    margin-right: -50%;
-    margin-left: 0.5%;
-    transform: translate(-50%, -50%)
-    
 
-`
-const StyledLinkTwo = styled.a`
-position: absolute;
-    top: 40%;
-    left: 53.5%;
-    
-    margin-right: -60%;
-    margin-left: 1%;
-    transform: translate(-50%, -50%)
-`
-
-const StyledLinkThree = styled.a`
-position: absolute;
-    top: 55%;
-    left: 50%;
-    
-    margin-right: -50%;
-    transform: translate(-50%, -50%)
-`
-const StyledLinkFour = styled.div`
-position: absolute;
-    top: 70%;
-    left: 42%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%)
-`
-
-const StyledLinkFive = styled.div`
-position: absolute;
-    top: 70%;
-    left: 57%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%)
-`
 
 
 
@@ -88,11 +46,6 @@ function NavCircle() {
       </a>
       <a href="https://discord.gg/PmER5Fvp" target="_blank" rel="noreferrer"><img src={discordLogo} alt="Discord" />
       </a>
-      <StyledLinkFour>
-        
-      </StyledLinkFour>
-      <StyledLinkFive >
-      </StyledLinkFive>
     </div>
   );
 }
