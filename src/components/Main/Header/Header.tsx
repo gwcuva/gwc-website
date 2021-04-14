@@ -43,7 +43,7 @@ function Header(props: Props) {
     </div>
     
     <div className="img-fluid">
-      <Row>
+      <Row className="d-flex justify-content-center">
         <img src={Waves} alt="Orange wave" />
       </Row>
     </div>
