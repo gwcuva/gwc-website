@@ -8,34 +8,6 @@ import circle from '../../../assets/images/circle.svg'
 // TODO: Add three links 
 // TODO: (if needed in a future PR) depending on scroll position, change the color of circle border
 
-const Circle = () => {
-  return (
-<svg  
-      xmlns="http://www.w3.org/2000/svg"
-      width="100%"
-      height="100%"
-      viewBox="0 0 303 303"
-      overflow="visible"
-      preserveAspectRatio="xMinYMin meet"
-      
-      
-    >
-      <circle
-        cx={151.5}
-        cy={151.5}
-        r={125}
-        fill="none"
-        stroke="#43d6b9"
-        strokeWidth={3}
-        strokeMiterlimit={10}
-        
-      />
-    </svg>
-    
-
-  )
-}
-
 
 function NavCircle() {
   return (
