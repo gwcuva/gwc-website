@@ -1,11 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 
-// TODO: Add circle background (done)
 // TODO: Add three links 
-// TODO: Add social media links (done)
 // TODO: (if needed in a future PR) depending on scroll position, change the color of circle border
-// TODO: Make absolute on the page so it follows the screen (done)
 
 const StyledLinkOne = styled.a`
   position: absolute;
@@ -157,11 +154,12 @@ const Circle = () => {
 
 function NavCircle() {
   return (
-    <div id = "navCircle" className = "image sticky-top float-right " >
-      <Circle />
-      <StyledLinkOne href="#" target="_blank"  className="mono">the gap</StyledLinkOne>
-      <StyledLinkTwo href="#" target="_blank"  className="mono">the mission</StyledLinkTwo>
-      <StyledLinkThree href="#" target="_blank"  className="mono ">the team</StyledLinkThree>
+    <div id = "navCircle" className = "img sticky-top float-right " >
+      
+      <Circle></Circle>
+      <a href="../Stats/Stats.tsx" target="_blank"  className="mono">the gap</a><br/>
+      <a href="../About/About.tsx" target="_blank"  className="mono">the mission</a><br/>
+      <a href="../Team/Team.tsx" target="_blank"  className="mono ">the team</a>
       <StyledLinkFour>
         <Insta />
       </StyledLinkFour>
