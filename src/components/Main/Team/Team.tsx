@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Profile from './Profile';
 import { request } from 'graphql-request';
 import {Row, Col} from 'react-bootstrap';
+import { isMobile } from 'react-device-detect';
 
 // TODO: Make a profile component with photo, name, position
 // TODO: Add beginning copy
@@ -62,21 +63,23 @@ function Team(props: Props) {
 
   return (
     <div id={props.id}>
-      <div className="container pt-4 w-55">
-        <h2 className="text-peacock font-weight-bold">The best work is produced when diverse voices help create it.</h2>
-        <p className="text-peacock pt-2">Our leadership team works together to disrupt the image of stereotypical programmer. Meet our wave-makers!</p>
-      </div>
+      <Row className="m-3 d-flex justify-content-center">
+        <Col lg={6} md={8} sm={10}>
+          <h2 className="text-peacock font-weight-bold">The best work is produced when diverse voices help create it.</h2>
+          <p className="text-peacock pt-3">Our leadership team works together to disrupt the image of stereotypical programmer. Meet our wave-makers!</p>
+        </Col>
+      </Row>
       {/* iterate through team for the profile. hint: console.log() to see what the data structure looks like and how you can use it */}
       {arrays.map(mem => 
-        <div className="container w-55 pt-4">
-          <Row>
-            <Col className="mx-auto">
+        <div className={isMobile ? "container pt-1 pb-1" : "container pt-3 pb-3"}>
+          <Row className="pl-4 justify-content-center">
+            <Col xs={4} lg={3} md={4} sm={5}>
               <Profile name={mem[0].name} img={mem[0].headshot.url} position={mem[0].position}></Profile>
             </Col>
-            <Col>
+            <Col xs={4} lg={3} md={4} sm={5}>
               <Profile name={mem[1].name} img={mem[1].headshot.url} position={mem[1].position}></Profile>
             </Col>
-            <Col>
+            <Col xs={4} lg={3} md={4} sm={5}>
               <Profile name={mem[2].name} img={mem[2].headshot.url} position={mem[2].position}></Profile>
             </Col>
           </Row>
