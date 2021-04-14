@@ -10,8 +10,8 @@ function Profile(props: Props) {
   return (
     <div>
       <img src="#" alt={`Headshot of ${props.name}`} />
-      <h6>{props.name}</h6>
-      <p>{props.position}</p>
+      <p>{props.name}</p>
+      <p className="p2">{props.position}</p>
     </div>
   );
 }
