@@ -2,6 +2,7 @@ import React from 'react';
 import {Row, Col} from 'react-bootstrap';
 import GetStarted from '../../../assets/images/get started.svg';
 import Arrow from '../../../assets/images/arrow-right.svg';
+import {isMobile} from 'react-device-detect';
 
 // TODO: Add text and link
 // TODO: Add graphic at the end of the page
@@ -15,7 +16,7 @@ function DiscordInvite(props: Props) {
       <Row>
         <Col>
           <h3 className="text-turq pl-5 ml-5">Want to join Girls Who Code at UVA?</h3>
-          <a href="https://discord.gg/D8knkzNM8E" target="_blank" rel="noopener noreferrer"><h4 className="text-peacock discord pl-5 ml-5">
+          <a href="https://discord.gg/D8knkzNM8E" target="_blank" rel="noopener noreferrer"><h4 className="text-peacock discord pl-5 ml-5 mono">
             Join our Discord <br />server <img src={Arrow} alt="Orange wave saying 'Get Started'" /></h4></a>
           <img src={GetStarted} alt="Orange wave saying 'Get Started'" />
         </Col>
