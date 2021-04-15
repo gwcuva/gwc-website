@@ -15,18 +15,19 @@ function Schedule() {
     <div className="container-fluid bg-light-grey pt-4 pb-4">
       {isMobile ? 
         <Row>
-          <Col xs={11} className="ml-1">
+          <Col xs={12} className="ml-1">
             <h2 className="text-orange font-weight-bold">Schedule</h2>
 
             <Row className="mt-4">
-              <Col className="d-flex justify-content-start">
+              <Col xs={9} className="d-flex justify-content-start">
                 <h3 className="text-peach mono font-weight-bold">Saturday, Oct 17</h3>
               </Col>
-              <Col className="d-flex justify-content-end text-peach">
-                <button onClick={() => setOpen1(!open1)} 
+              <Col xs={2} className="d-flex justify-content-end text-peach ml-3">
+                <div onClick={() => setOpen1(!open1)} 
                   aria-controls="collapse-day1" aria-expanded={open1}>
-                  <FontAwesomeIcon icon={faPlus}></FontAwesomeIcon>
-                </button>
+                    {open1 ? <FontAwesomeIcon icon={faMinus}></FontAwesomeIcon> : 
+                    <FontAwesomeIcon icon={faPlus}></FontAwesomeIcon>}
+                </div>
               </Col>
             </Row>
 
@@ -41,14 +42,15 @@ function Schedule() {
             </Collapse>
             
             <Row className="mt-4">
-              <Col className="d-flex justify-content-start">
+              <Col xs={9} className="d-flex justify-content-start">
                 <h3 className="text-peach mono font-weight-bold">Sunday, Oct 18</h3>
               </Col>
-              <Col className="d-flex justify-content-end text-peach">
-                <button onClick={() => setOpen2(!open2)} 
-                  aria-controls="collapse-day2" aria-expanded={open2} className="text-peach">
-                  <FontAwesomeIcon icon={faMinus}></FontAwesomeIcon>
-                </button>
+              <Col xs={2} className="d-flex justify-content-end text-peach ml-3">
+                <div onClick={() => setOpen2(!open2)} 
+                  aria-controls="collapse-day2" aria-expanded={open2}>
+                    {open2 ? <FontAwesomeIcon icon={faMinus}></FontAwesomeIcon> : 
+                      <FontAwesomeIcon icon={faPlus}></FontAwesomeIcon>}
+                </div>
               </Col>
             </Row>
 
@@ -57,9 +59,9 @@ function Schedule() {
               <Activity time="11am - 12pm" name="How to Work from Home and Virtual Pair Programming Workshop"></Activity>
               <Activity time="1pm" name="Hacking ends"></Activity>
             </Collapse>
-            
           </Col>
         </Row> : 
+
         <Row className="m-5 pt-5 pb-5">
           <Col md={7} sm={10} xs={12} className="ml-5">
             <h2 className="text-orange font-weight-bold">Schedule</h2>
@@ -80,9 +82,7 @@ function Schedule() {
           </Col>
         </Row>
       }
-      
     </div>
-    
   );
 }
 
