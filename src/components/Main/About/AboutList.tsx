@@ -10,7 +10,7 @@ function AboutList(props: Props) {
   return (
     <Col sm={6}>
       <h3 className="text-orange">{props.header}</h3>
-      {props.items.map((item) => <p># {item}</p>)}
+      {props.items.map((item) => <p className="text-peacock"># {item}</p>)}
     </Col>
   );
 }
