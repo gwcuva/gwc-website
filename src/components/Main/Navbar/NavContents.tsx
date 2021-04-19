@@ -23,10 +23,10 @@ function NavContents(props: Props) {
         </Row>
       </div>
       <Row className={`${props.circle ? "justify-content-center" : "justify-content-end pr-3"} mt-3`}>
-        <a href="https://discord.gg/D8knkzNM8E" target="_blank" rel="noreferrer" onClick={props.toggle}>
+        <a href="https://discord.gg/D8knkzNM8E" target="_blank" noopener rel="noreferrer" onClick={props.toggle}>
           <img src={Discord} width="28px" alt="Discord logo"/>
         </a>
-        <a href="https://instagram.com/gwcuva" target="_blank" rel="noreferrer" onClick={props.toggle}>
+        <a href="https://instagram.com/gwcuva" target="_blank" noopener rel="noreferrer" onClick={props.toggle}>
           <img src={Instagram} width="28px" alt="Instagram logo" className="ml-4"/>
         </a>
       </Row>
