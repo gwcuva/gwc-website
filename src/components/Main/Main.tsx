@@ -9,6 +9,7 @@ import About from './About/About';
 import Footer from './Footer/Footer';
 import NavCircle from './Navbar/NavCircle';
 import MobileNavbar from './Navbar/MobileNavbar';
+import HelloWorld from '../../assets/images/hello-world.svg';
 
 function Main() {
   return (
@@ -23,6 +24,7 @@ function Main() {
       <div className="overflow-auto">
         <Header id="header"/>
         <Stats id="stats"/>
+        <img src={HelloWorld} alt="Hello World banner" />
         <About id="about"/>
         <DiscordInvite id="discord-invite"/>
         <Team id="team"/>

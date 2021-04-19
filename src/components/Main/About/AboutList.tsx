@@ -1,4 +1,5 @@
 import React from 'react';
+import { Col } from 'react-bootstrap';
 
 interface Props {
   header: string;
@@ -7,10 +8,10 @@ interface Props {
 
 function AboutList(props: Props) {
   return (
-    <div>
-      <h3>{props.header}</h3>
-      {/* take in a list (items) and .map() through it to create the bulleted list ites */}
-    </div>
+    <Col sm={6}>
+      <h3 className="text-orange">{props.header}</h3>
+      {props.items.map((item) => <p># {item}</p>)}
+    </Col>
   );
 }
 
