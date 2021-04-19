@@ -1,6 +1,5 @@
 import React from 'react';
 import {Row, Col} from 'react-bootstrap'
-import styled from 'styled-components';
 import instaLogo from '../../../assets/images/instagram-logo.svg'
 import discordLogo from '../../../assets/images/discord-logo.svg'
 import circle from '../../../assets/images/circle.svg'
@@ -14,7 +13,7 @@ function NavCircle() {
     <div id = "navCircle" className = "img sticky-top float-right" >
       <div style={{ backgroundImage:`url(${circle})`, width:'303px', height:'303px', position: 'sticky',}} className = "img sticky-top float-right">
       <Col className="">
-        <Row  className="pt-20 pb-3 d-flex justify-content-center">
+        <Row className="pt-20 pb-3 d-flex justify-content-center">
         <a href="./Stats/Stats.tsx" target="_blank"  rel='noreferrer noopener' className="mono row text-peacock">the gap</a>
         </Row>
         <Row className="pb-3 d-flex justify-content-center">

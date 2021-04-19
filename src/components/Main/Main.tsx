@@ -7,20 +7,19 @@ import DiscordInvite from './DiscordInvite/DiscordInvite';
 import Team from './Team/Team';
 import About from './About/About';
 import Footer from './Footer/Footer';
-import NavCircle from './NavCircle/NavCircle';
+import NavCircle from './Navbar/NavCircle';
 import MobileNavbar from './Navbar/MobileNavbar';
 
 function Main() {
   return (
     <div>
-      <Navbar />
-      <NavCircle />
       <BrowserView>
         <Navbar />
       </BrowserView>
       <MobileView>
         <MobileNavbar />
       </MobileView>
+      <NavCircle />
       <div className="overflow-auto">
         <Header id="header"/>
         <Stats id="stats"/>
