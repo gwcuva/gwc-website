@@ -8,9 +8,9 @@ interface Props {
 
 function AboutList(props: Props) {
   return (
-    <Col sm={6}>
+    <Col xs={6} className="mb-4">
       <h3 className="text-orange">{props.header}</h3>
-      {props.items.map((item) => <p className="text-peacock"># {item}</p>)}
+      {props.items.map((item) => <p className="text-peacock mb-0"># {item}</p>)}
     </Col>
   );
 }
