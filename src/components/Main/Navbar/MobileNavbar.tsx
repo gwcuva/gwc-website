@@ -3,8 +3,6 @@ import Logo from '../../../assets/images/peacock-logo.svg';
 import ReactModal from 'react-modal';
 import { Col, Row } from 'react-bootstrap';
 import { X } from 'react-feather';
-import Discord from '../../../assets/images/discord-logo.svg';
-import Instagram from '../../../assets/images/instagram-logo.svg';
 import NavContents from './NavContents';
 
 function MobileNavbar() {
