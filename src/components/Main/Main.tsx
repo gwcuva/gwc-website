@@ -15,11 +15,11 @@ function Main() {
     <div>
       <BrowserView>
         <Navbar />
+        <NavCircle />
       </BrowserView>
       <MobileView>
         <MobileNavbar />
       </MobileView>
-      <NavCircle />
       <div className="overflow-auto">
         <Header id="header"/>
         <Stats id="stats"/>

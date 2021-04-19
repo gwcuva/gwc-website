@@ -3,6 +3,7 @@ import {Row, Col} from 'react-bootstrap'
 import instaLogo from '../../../assets/images/instagram-logo.svg'
 import discordLogo from '../../../assets/images/discord-logo.svg'
 import circle from '../../../assets/images/circle.svg'
+import NavContents from './NavContents';
 
 // TODO: Add three links 
 // TODO: (if needed in a future PR) depending on scroll position, change the color of circle border
@@ -12,7 +13,8 @@ function NavCircle() {
   return (
     <div id = "navCircle" className = "img sticky-top float-right" >
       <div style={{ backgroundImage:`url(${circle})`, width:'303px', height:'303px', position: 'sticky',}} className = "img sticky-top float-right">
-      <Col className="">
+      <NavContents circle />
+      {/* <Col className="">
         <Row className="pt-20 pb-3 d-flex justify-content-center">
         <a href="./Stats/Stats.tsx" target="_blank"  rel='noreferrer noopener' className="mono row text-peacock">the gap</a>
         </Row>
@@ -28,7 +30,7 @@ function NavCircle() {
       <a href="https://discord.gg/PmER5Fvp" target="_blank" rel="noreferrer noopener"><img src={discordLogo} alt="Discord" />
       </a>
         </Row>
-      </Col>
+      </Col> */}
       
       </div>
       

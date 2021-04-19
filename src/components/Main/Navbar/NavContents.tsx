@@ -4,24 +4,25 @@ import Instagram from '../../../assets/images/instagram-logo.svg';
 
 interface Props {
   toggle? : () => void;
+  circle? : boolean;
 }
 
 function NavContents(props: Props) {
 
   return (
     <div>
-      <div className="pr-4 pt-5 pb-3">
-        <Row className="justify-content-end pb-4">
+      <div className={`${!props.circle && "pr-4"} pt-5 pb-3`}>
+        <Row className={`${props.circle ? "justify-content-center" : "justify-content-end"} pb-4`}>
           <a href='#stats' onClick={props.toggle} className="mono text-peacock interactive">the gap</a>
         </Row>
-        <Row className="justify-content-end pb-4">
+        <Row className={`${props.circle ? "justify-content-center" : "justify-content-end"} pb-4`}>
           <a href='#about' onClick={props.toggle} className="mono text-peacock interactive">the mission</a>
         </Row>
-        <Row className="justify-content-end">
+        <Row className={`${props.circle ? "justify-content-center" : "justify-content-end"}`}>
           <a href='#team' onClick={props.toggle} className="mono text-peacock interactive">the team</a>
         </Row>
       </div>
-      <Row className="justify-content-end pr-3 mt-3">
+      <Row className={`${props.circle ? "justify-content-center" : "justify-content-end"} pr-3 mt-3`}>
         <a href="https://discord.gg/D8knkzNM8E" target="_blank" rel="noreferrer" onClick={props.toggle}>
           <img src={Discord} width="28px" alt="Discord logo"/>
         </a>
