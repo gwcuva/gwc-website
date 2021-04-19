@@ -7,6 +7,7 @@ import DiscordInvite from './DiscordInvite/DiscordInvite';
 import Team from './Team/Team';
 import About from './About/About';
 import Footer from './Footer/Footer';
+import NavCircle from './Navbar/NavCircle';
 import MobileNavbar from './Navbar/MobileNavbar';
 
 function Main() {
@@ -14,6 +15,7 @@ function Main() {
     <div>
       <BrowserView>
         <Navbar />
+        <NavCircle />
       </BrowserView>
       <MobileView>
         <MobileNavbar />
