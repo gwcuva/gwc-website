@@ -22,7 +22,7 @@ function NavContents(props: Props) {
           <a href='#team' onClick={props.toggle} className="mono text-peacock interactive">the team</a>
         </Row>
       </div>
-      <Row className={`${props.circle ? "justify-content-center" : "justify-content-end"} pr-3 mt-3`}>
+      <Row className={`${props.circle ? "justify-content-center" : "justify-content-end pr-3"} mt-3`}>
         <a href="https://discord.gg/D8knkzNM8E" target="_blank" rel="noreferrer" onClick={props.toggle}>
           <img src={Discord} width="28px" alt="Discord logo"/>
         </a>
