@@ -132,17 +132,9 @@ p {
 }
 
 .teamImg {
-  width: 75%;
   border-radius: 50%;
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
   -o-border-radius: 50%;
-}
-
-.teamImgMob {
-  width: 95%;
-  border-radius: 50%;
-  -moz-border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -o-border-radius: 50%;
+  object-fit: cover;
 }
