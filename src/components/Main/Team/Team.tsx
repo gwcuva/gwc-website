@@ -59,7 +59,7 @@ function Team(props: Props) {
 
   return (
     <div id={props.id}>
-      <Row className="m-3 d-flex justify-content-center">
+      <Row className="mt-5 d-flex justify-content-center">
         <Col lg={6} md={8} sm={10}>
           <h2 className="text-peacock font-weight-bold">The best work is produced when diverse voices help create it.</h2>
           <p className="text-dark-grey pt-3">Our leadership team works together to disrupt the image of stereotypical programmer. Meet our wave-makers!</p>
