@@ -12,7 +12,6 @@ interface Props {
 function Team(props: Props) {
   //const [team, setTeam] = useState([]);
   const [team, setTeam] = useState<any[]>([]);
-  var arrays: any[][] = [];
 
   useEffect(() => {
     const fetchTeam = async () => {
@@ -38,7 +37,7 @@ function Team(props: Props) {
     fetchTeam();
   }, []);
 
-  var count = 0;
+  
   var empty = {
     name:"",
     id:"empty",
@@ -48,38 +47,36 @@ function Team(props: Props) {
       url:"",
     }
   }
-  console.log(arrays.length);
-  while(team.length%3 !== 0) {
-    team.push(empty);
+  if(!isMobile) {
+    while(team.length%3 !== 0) {
+      team.push(empty);
+    }
   }
-  for(let i = 0; i<team.length; i+=3) {
-    arrays[count] = [team[i],team[i+1],team[i+2]];
-    count++;
+  else {
+    while(team.length%2 !== 0) {
+      team.push(empty);
+    }
   }
 
   return (
     <div id={props.id}>
       <Row className="mt-5 d-flex justify-content-center">
-        <Col lg={6} md={8} sm={10}>
+        <Col xs={11} lg={6} md={8} sm={10}>
           <h2 className="text-peacock font-weight-bold">The best work is produced when diverse voices help create it.</h2>
-          <p className="text-dark-grey pt-3">Our leadership team works together to disrupt the image of stereotypical programmer. Meet our wave-makers!</p>
+          <p className="text-peacock pt-3">Our leadership team works together to disrupt the image of stereotypical programmer. Meet our wave-makers!</p>
         </Col>
       </Row>
-      {arrays.map(mem => 
-        <div className={isMobile ? "container pt-1 pb-1" : "container pt-3 pb-3"}>
-          <Row className="pl-4 justify-content-center">
-            <Col xs={4} lg={3} md={4} sm={5}>
-              <Profile name={mem[0].name} img={mem[0].headshot.url} position={mem[0].position}></Profile>
-            </Col>
-            <Col xs={4} lg={3} md={4} sm={5}>
-              <Profile name={mem[1].name} img={mem[1].headshot.url} position={mem[1].position}></Profile>
-            </Col>
-            <Col xs={4} lg={3} md={4} sm={5}>
-              <Profile name={mem[2].name} img={mem[2].headshot.url} position={mem[2].position}></Profile>
-            </Col>
+      <Row className="mt-5 d-flex justify-content-center">
+        <Col xs={11} lg={6} md={8} sm={10}>
+          <Row className="pl-1 justify-content-center">
+            {team.map(mem => 
+              <Col xs={6} md={4}>
+                <Profile name={mem.name} img={mem.headshot.url} position={mem.position}></Profile>
+              </Col>
+            )}
           </Row>
-        </div>
-      )}
+        </Col>
+      </Row>
     </div>
   );
 }
