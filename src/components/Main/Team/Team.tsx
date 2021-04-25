@@ -66,7 +66,7 @@ function Team(props: Props) {
           <p className="text-peacock pt-3">Our leadership team works together to disrupt the image of stereotypical programmer. Meet our wave-makers!</p>
         </Col>
       </Row>
-      <Row className="mt-5 d-flex justify-content-center">
+      <Row className={isMobile ? "mt-3 d-flex justify-content-center" : "mt-5 d-flex justify-content-center"}>
         <Col xs={11} lg={6} md={8} sm={10}>
           <Row className="pl-1 justify-content-center">
             {team.map(mem => 
