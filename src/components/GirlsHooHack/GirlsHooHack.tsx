@@ -7,10 +7,18 @@ import JumpStart from './JumpStart/JumpStart';
 import Prizes from './Prizes/Prizes';
 import Schedule from './Schedule/Schedule';
 import Sponsors from './Sponsors/Sponsors';
+import {BrowserView, isMobile, MobileView} from 'react-device-detect';
+import Navbar from './Navbar/Navbar';
 
 function GirlsHooHack() {
   return (
     <div>
+      <BrowserView>
+        <Navbar />
+      </BrowserView>
+      <MobileView>
+        {/*Add in mobile view*/}
+      </MobileView> 
       <Header />
       <About />
       <JumpStart />
