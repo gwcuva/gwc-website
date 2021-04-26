@@ -9,6 +9,7 @@ import Schedule from './Schedule/Schedule';
 import Sponsors from './Sponsors/Sponsors';
 import {BrowserView, isMobile, MobileView} from 'react-device-detect';
 import Navbar from './Navbar/Navbar';
+import MobileNavbar from './Navbar/MobileNavbar';
 
 function GirlsHooHack() {
   return (
@@ -18,7 +19,7 @@ function GirlsHooHack() {
         <Navbar />
       </BrowserView>
       <MobileView>
-        {/*Add in mobile view*/}
+        <MobileNavbar/>
       </MobileView> 
       <About />
       <JumpStart />
