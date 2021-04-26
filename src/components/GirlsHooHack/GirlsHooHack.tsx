@@ -13,13 +13,13 @@ import Navbar from './Navbar/Navbar';
 function GirlsHooHack() {
   return (
     <div>
+      <Header />
       <BrowserView>
         <Navbar />
       </BrowserView>
       <MobileView>
         {/*Add in mobile view*/}
       </MobileView> 
-      <Header />
       <About />
       <JumpStart />
       <Schedule />
