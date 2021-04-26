@@ -1,10 +1,9 @@
 import React from 'react';
 import { Nav } from 'react-bootstrap';
-import Logo from '../../../assets/images/peacock-logo.svg'
 
 function Navbar() {
     return (
-        <nav className="bg-turq d-flex flex-row pr-2 pt-3 pb-3 pl-3 align-items-center justify-content-center">
+        <nav className="bg-turq d-flex flex-row pt-3 pb-3 align-items-center justify-content-center">
             <Nav.Item>
                 <Nav.Link href="#" className="mono text-blue"><b>About</b></Nav.Link>
             </Nav.Item>
