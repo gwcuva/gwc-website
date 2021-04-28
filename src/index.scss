@@ -120,7 +120,6 @@ p {
   background: $wireless-white;
   color: $programmer-peacock;
 }
-
 .circleImg {
   border-radius: 50%;
   -moz-border-radius: 50%;
@@ -149,5 +148,8 @@ p {
   p {
     font-size: 14px;
     line-height: 24px;
+  }
+  .mobile-upper {
+    text-transform: uppercase;
   }
 }
