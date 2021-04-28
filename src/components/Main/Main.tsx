@@ -12,6 +12,8 @@ import MobileNavbar from './Navbar/MobileNavbar';
 import HelloWorld from '../../assets/images/hello-world.svg';
 import MobileHelloWorld from '../../assets/images/mobile-hello-world.svg';
 
+import GetStarted from '../../assets/images/get started.svg';
+
 function Main() {
   return (
     <div>
@@ -28,6 +30,7 @@ function Main() {
         <img src={isMobile ? MobileHelloWorld : HelloWorld} alt="Hello World banner" />
         <About id="about"/>
         <DiscordInvite id="discord-invite"/>
+        <img src={GetStarted} alt="Orange wave saying 'Get Started'" width={isMobile ? "150%" : "100%"}/>
         <Team id="team"/>
         <Footer id="footer"/>
       </div>
