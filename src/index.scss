@@ -116,10 +116,17 @@ p {
   background: $programmer-peacock;
   color: $wireless-white;
 }
-
 .link-button:hover, .link-button:active {
   background: $wireless-white;
   color: $programmer-peacock;
+}
+
+.circleImg {
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -o-border-radius: 50%;
+  object-fit: cover;
 }
 
 @media only screen and (max-device-width: 480px) {
