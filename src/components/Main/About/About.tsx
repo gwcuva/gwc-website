@@ -25,7 +25,6 @@ function About(props: Props) {
         `
       );
       setAboutLists(aboutLists);
-      console.log(aboutLists)
     };
 
     fetchAboutLists();
