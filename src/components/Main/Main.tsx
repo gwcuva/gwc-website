@@ -13,7 +13,6 @@ import HelloWorld from '../../assets/images/hello-world.svg';
 import MobileHelloWorld from '../../assets/images/mobile-hello-world.svg';
 
 import GetStarted from '../../assets/images/get started.svg';
-import {isMobile} from 'react-device-detect';
 
 function Main() {
   return (

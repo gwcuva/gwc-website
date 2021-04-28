@@ -9,8 +9,8 @@ interface Props {
 
 function DiscordInvite(props: Props) {
   return (
-    <Row id={props.id} className="ml-1 justify-content-center">
-      <Col sm={10} xs={12}>
+    <Row id={props.id} className="justify-content-center">
+      <Col lg={6} md={8} sm={10} xs={11}>
         <h3 className="text-turq">Want to join Girls Who Code at UVA?</h3>
         <a href="https://discord.gg/D8knkzNM8E" target="_blank" rel="noopener noreferrer">
           <h4 className="text-peacock mono">
