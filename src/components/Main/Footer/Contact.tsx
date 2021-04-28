@@ -1,9 +1,8 @@
 import React from 'react';
-import discordSocial from '../../../assets/images/discord-icon.svg'
-import instagramSocial from '../../../assets/images/instagram-icon.svg'
-import facebookSocial from '../../../assets/images/facebook-icon.svg'
-import twitterSocial from '../../../assets/images/twitter-icon.svg'
-import {Row, Col} from 'react-bootstrap';
+import discordSocial from '../../../assets/images/discord-icon.svg';
+import instagramSocial from '../../../assets/images/instagram-icon.svg';
+import facebookSocial from '../../../assets/images/facebook-icon.svg';
+import twitterSocial from '../../../assets/images/twitter-icon.svg';
 import {isMobile} from 'react-device-detect';
 
 function Contact() {
