@@ -13,7 +13,7 @@ interface Props {
 function Stats(props: Props) {
   return (
     <Row className="m-4 d-flex justify-content-center">
-      <Col lg={6} md={8} sm={10}>
+      <Col lg={6} md={8} sm={10} xs={11}>
         <Row>
           <h2 className="text-peacock">Let's reprogram the tech world.</h2>
         </Row>

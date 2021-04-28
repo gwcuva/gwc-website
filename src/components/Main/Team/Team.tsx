@@ -61,18 +61,16 @@ function Team(props: Props) {
   return (
     <div id={props.id}>
       <Row className="mt-5 d-flex justify-content-center">
-        <Col xs={11} lg={6} md={8} sm={10}>
+        <Col lg={6} md={8} sm={10} xs={11}>
           <h2 className="text-peacock font-weight-bold">The best work is produced when diverse voices help create it.</h2>
-          <p className="text-peacock pt-3">Our leadership team works together to disrupt the image of stereotypical programmer. Meet our wave-makers!</p>
+          <p className="text-peacock pt-3">The best work is produced when diverse voices help create it. Our leadership team works together to disrupt the image of the stereotypical programmer. Meet our wave-makers!</p>
         </Col>
       </Row>
-      <Row className={isMobile ? "mt-3 d-flex justify-content-center" : "mt-5 d-flex justify-content-center"}>
-        <Col xs={11} lg={6} md={8} sm={10}>
-          <Row className="pl-1 justify-content-center">
+      <Row className={`${isMobile ? "mt-3" : "mt-5"} d-flex justify-content-center`}>
+        <Col lg={6} md={8} sm={10} xs={11}>
+          <Row className="justify-content-around">
             {team.map(mem => 
-              <Col xs={6} md={4}>
-                <Profile name={mem.name} img={mem.headshot.url} position={mem.position}></Profile>
-              </Col>
+              <Profile name={mem.name} img={mem.headshot.url} position={mem.position}></Profile>
             )}
           </Row>
         </Col>
