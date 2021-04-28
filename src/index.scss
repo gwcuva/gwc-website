@@ -111,6 +111,16 @@ p {
 .full-screen {
   height: 100vh;
 }
+.link-button {
+  border: 0px;
+  background: $programmer-peacock;
+  color: $wireless-white;
+}
+
+.link-button:hover, .link-button:active {
+  background: $wireless-white;
+  color: $programmer-peacock;
+}
 
 @media only screen and (max-device-width: 480px) {
   h1 {
