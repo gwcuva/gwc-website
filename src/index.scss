@@ -64,6 +64,7 @@ code {
 
 .bg-hack-grey {background-color: #f7f7f7}
 
+// MAIN SITE FONTS
 h1 {
   font-size: 136px;
   font-weight: 700;
@@ -103,6 +104,31 @@ p {
   line-height: 30px;
   letter-spacing: 5%;
 }
+
+// GHH SITE FONTS
+h2.hack {
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 66px;
+}
+h3.hack {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 42px;
+}
+p.hack {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 30px;
+  letter-spacing: 5%;
+}
+.nav .hack {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: 5%;
+}
+
 .button-unstyled {
   border: 0px;
   box-shadow: none;
@@ -129,6 +155,7 @@ p {
 }
 
 @media only screen and (max-device-width: 480px) {
+  // MAIN SITE FONTS
   h1 {
     font-size: 56px;
     line-height: 65.63px;
@@ -149,7 +176,26 @@ p {
     font-size: 14px;
     line-height: 24px;
   }
-  .mobile-upper {
+
+  // GHH SITE FONTS
+  h2.hack {
+    font-size: 32px;
+    line-height: 37px;
     text-transform: uppercase;
+  }
+  h3.hack {
+    font-size: 20px;
+    line-height: 26px;
+  }
+  p.hack {
+    font-size: 12px;
+    line-height: 24px;
+    letter-spacing: 5%;
+  }
+  .nav .hack {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 5%;
   }
 }
