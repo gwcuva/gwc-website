@@ -1,14 +1,16 @@
 // Cool reference for SCSS color variables: https://dev.to/nicolalc/a-cool-way-to-handle-scss-color-variables-3njp
 
-@font-face {
-  font-family: 'Roboto';
-  src: local('Roboto'), url(./assets/fonts/Roboto/Roboto-Regular.ttf) format('truetype');
-}
+// @font-face {
+//   font-family: 'Roboto';
+//   src: local('Roboto'), url(./assets/fonts/Roboto/Roboto-Regular.ttf) format('truetype');
+// }
 
-@font-face {
-  font-family: 'Roboto Mono';
-  src: local('Roboto Mono'), url(./assets/fonts/Roboto_Mono/static/RobotoMono-Regular.ttf) format('truetype');
-}
+// @font-face {
+//   font-family: 'Roboto Mono';
+//   src: local('Roboto Mono'), url(./assets/fonts/Roboto_Mono/static/RobotoMono-Regular.ttf) format('truetype');
+// }
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 $programmer-peacock: #003046;
 $tuple-turquoise: #43D6B9;
@@ -60,6 +62,9 @@ code {
 .bg-grey {background-color: $gui-grey}
 .bg-light-grey {background-color: $wavy-white}
 
+.bg-hack-grey {background-color: #f7f7f7}
+
+// MAIN SITE FONTS
 h1 {
   font-size: 136px;
   font-weight: 700;
@@ -67,17 +72,17 @@ h1 {
 }
 h2 {
   font-size: 56px;
-  font-weight: 700;
+  font-weight: 500;
   line-height: 60px;
 }
 h3 {
   font-size: 32px;
-  font-weight: 700;
+  font-weight: 500;
   line-height: 37.5px;
 }
 h4 {
   font-size: 64px;
-  font-weight: 700;
+  font-weight: 500;
   line-height: 72px;
   letter-spacing: -3%;
 }
@@ -99,6 +104,31 @@ p {
   line-height: 30px;
   letter-spacing: 5%;
 }
+
+// GHH SITE FONTS
+h2.hack {
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 66px;
+}
+h3.hack {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 42px;
+}
+p.hack {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 30px;
+  letter-spacing: 5%;
+}
+.nav .hack {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: 5%;
+}
+
 .button-unstyled {
   border: 0px;
   box-shadow: none;
@@ -116,7 +146,6 @@ p {
   background: $wireless-white;
   color: $programmer-peacock;
 }
-
 .circleImg {
   border-radius: 50%;
   -moz-border-radius: 50%;
@@ -126,6 +155,7 @@ p {
 }
 
 @media only screen and (max-device-width: 480px) {
+  // MAIN SITE FONTS
   h1 {
     font-size: 56px;
     line-height: 65.63px;
@@ -145,5 +175,27 @@ p {
   p {
     font-size: 14px;
     line-height: 24px;
+  }
+
+  // GHH SITE FONTS
+  h2.hack {
+    font-size: 32px;
+    line-height: 37px;
+    text-transform: uppercase;
+  }
+  h3.hack {
+    font-size: 20px;
+    line-height: 26px;
+  }
+  p.hack {
+    font-size: 12px;
+    line-height: 24px;
+    letter-spacing: 5%;
+  }
+  .nav .hack {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 5%;
   }
 }
