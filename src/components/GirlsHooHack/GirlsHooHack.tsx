@@ -11,7 +11,7 @@ import Sponsors from './Sponsors/Sponsors';
 function GirlsHooHack() {
   return (
     <div>
-      <Header />
+      <Header id="header"/>
       <About />
       <JumpStart />
       <Schedule />
