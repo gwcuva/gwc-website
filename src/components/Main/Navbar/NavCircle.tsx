@@ -10,7 +10,8 @@ function NavCircle() {
       height:'303px', 
       position: 'fixed', 
       top: 200, 
-      right: 100}}>
+      right: 100,
+      zIndex: 10}}>
       <NavContents circle />
     </div>
   );

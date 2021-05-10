@@ -1,18 +1,24 @@
 import React from 'react';
+import {Row, Col} from 'react-bootstrap';
+import Arrow from '../../../assets/images/arrow-right.svg';
+import {isMobile} from 'react-device-detect';
 
-// TODO: Add text and link
-// TODO: Add graphic at the end of the page
 interface Props {
   id: string;
 }
 
 function DiscordInvite(props: Props) {
   return (
-    <div id={props.id}>
-      <h3>Want to join Girls Who Code at UVA?</h3>
-      <a href="#" target="_blank"><h4>Join our Discord server (arrow)</h4></a>
-      <img src="#" alt="Orange wave saying 'Get Started'" />
-    </div>
+    <Row id={props.id} className="justify-content-center">
+      <Col lg={6} md={8} sm={10} xs={11}>
+        <h3 className="text-turq">Want to join Girls Who Code at UVA?</h3>
+        <a href="https://discord.gg/D8knkzNM8E" target="_blank" rel="noopener noreferrer">
+          <h4 className="text-peacock mono">
+            Join our Discord server <img src={Arrow} width={isMobile ? "41px" : "72px"} alt="Orange wave saying 'Get Started'" />
+          </h4>
+        </a>
+      </Col>
+    </Row>
   );
 }
 
