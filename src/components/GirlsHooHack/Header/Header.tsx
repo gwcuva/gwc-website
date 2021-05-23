@@ -1,8 +1,7 @@
-import React from 'react';
 import {Row, Col} from 'react-bootstrap';
 import {isMobile} from 'react-device-detect';
 import logo from '../../../assets/images/peacock-logo.svg';
-import Waves from '../../../assets/images/hack-header-waves.svg';
+import Waves from '../../../assets/images/hack-header-desktop-wave.svg';
 import SignUpCircle from '../../../assets/images/sign-up-hack-circle.svg';
 import UVA from '../../../assets/images/uva.svg';
 import SignUpText from '../../../assets/images/sign-up-text.svg';
@@ -16,10 +15,10 @@ interface Props {
 
 function Header(props: Props) {
   return (
-    <div id={props.id} className="container-fluid m-0 bg-turq"
+    <div id={props.id} className="container-fluid m-0 bg-turq" 
     style={{backgroundImage: `url(${Waves})`, 
               backgroundRepeat: "no-repeat",
-              backgroundPosition: "0px 375px",
+              backgroundPosition: "0px 325px",
               width:"100%" }}>
 
         <Row>
@@ -70,7 +69,7 @@ function Header(props: Props) {
         <Row xs={12} className="pt-5 pb-5"></Row>
         <Row xs={12} className="pt-5 pb-5"></Row>
         <Row xs={12} className="pt-5 pb-5"></Row>
-
+        
         <Row xs={12}>
           <Col xs={2}></Col>
           <Col xs={2}><h5>About</h5></Col>
