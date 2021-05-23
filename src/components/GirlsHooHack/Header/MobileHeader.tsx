@@ -1,4 +1,4 @@
-import { Col, Row } from 'react-bootstrap';
+import {Row} from 'react-bootstrap';
 import logo from '../../../assets/images/peacock-logo.svg';
 import SignUpCircle from '../../../assets/images/sign-up-hack-circle.svg';
 import SignUpMobile from '../../../assets/images/sign-up-mobile.svg';

@@ -41,7 +41,7 @@ function Header(props: Props) {
             <Col md={8}><h1 className="text-white pl-5">GIRLS</h1></Col>         
 
             <Col xs={3} className="text-blue">
-              <img src={UVA}/>
+              <img src={UVA} alt="UVA text"/>
               <h3>November</h3>
               <h3>06-07</h3>
             </Col>
