@@ -1,12 +1,12 @@
 import {Row, Col} from 'react-bootstrap';
 import {isMobile} from 'react-device-detect';
-import logo from '../../../assets/images/peacock-logo.svg';
+//import logo from '../../../assets/images/peacock-logo.svg';
 import Waves from '../../../assets/images/hack-header-desktop-wave.svg';
 import SignUpCircle from '../../../assets/images/sign-up-hack-circle.svg';
 import UVA from '../../../assets/images/uva.svg';
 import SignUpText from '../../../assets/images/sign-up-text.svg';
-import SignUpBanner from '../../../assets/images/sign-up-banner.svg';
-import MLHBanner from '../../../assets/images/mlh-banner.svg';
+//import SignUpBanner from '../../../assets/images/sign-up-banner.svg';
+//import MLHBanner from '../../../assets/images/mlh-banner.svg';
 
 interface Props {
   toggle? : () => void;
@@ -20,18 +20,12 @@ function Header(props: Props) {
               backgroundRepeat: "no-repeat",
               backgroundPosition: "0px 325px",
               width:"100%" }}>
-
-        <Row>
-          <Col xs={9} className="pt-2 pr-5">
-            <img src={logo} width="208px" height="82px" className="pl-5" alt="Girls Who Code at the University of Virginia logo"/>
-          </Col>
-          <Col xs={1} className="pl-5">
-            <img src={SignUpBanner} alt="Sign up banner"/>
-          </Col>
-          <Col xs={1} className="pl-5">
-            <img src={MLHBanner} alt="MLH banner"/>
-          </Col>
-        </Row>
+        
+        {/*<nav className="bg-turq d-flex flex-row pr-2 pb-3 pl-3 align-items-center">
+          //<img src={logo} width="208px" height="82px" alt="Girls Who Code at the University of Virginia logo"/>
+          //<img src={SignUpBanner} alt="Sign up banner"/>
+          //<img src={MLHBanner} alt="MLH banner"/>
+        </nav>*/}
 
         <Row xs={12} className="pt-5"></Row>
         <Row xs={12} className="pt-5"></Row>
@@ -60,7 +54,7 @@ function Header(props: Props) {
           style={{backgroundImage: `url(${SignUpText})`, 
           backgroundRepeat:"no-repeat",
           backgroundPosition: "95px 100px"}}>
-            <a href="https://discord.gg/D8knkzNM8E" onClick={props.toggle}>
+            <a href="https://forms.gle/ChhpzSwMjC8gZNm38" onClick={props.toggle}>
               <img src={SignUpCircle} alt="Sign Up Circle"/>
             </a>
           </Col>
@@ -70,6 +64,7 @@ function Header(props: Props) {
         <Row xs={12} className="pt-5 pb-5"></Row>
         <Row xs={12} className="pt-5 pb-5"></Row>
         
+        {/*
         <Row xs={12}>
           <Col xs={2}></Col>
           <Col xs={2}><h5>About</h5></Col>
@@ -78,6 +73,7 @@ function Header(props: Props) {
           <Col xs={2}><h5>Sponsors</h5></Col>
           <Col xs={2}><h5>FAQ</h5></Col>
         </Row>
+        */}
 
     </div>
   );
