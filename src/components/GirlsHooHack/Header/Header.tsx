@@ -1,12 +1,9 @@
 import {Row, Col} from 'react-bootstrap';
 import {isMobile} from 'react-device-detect';
-//import logo from '../../../assets/images/peacock-logo.svg';
 import Waves from '../../../assets/images/hack-header-desktop-wave.svg';
 import SignUpCircle from '../../../assets/images/sign-up-hack-circle.svg';
 import UVA from '../../../assets/images/uva.svg';
 import SignUpText from '../../../assets/images/sign-up-text.svg';
-//import SignUpBanner from '../../../assets/images/sign-up-banner.svg';
-//import MLHBanner from '../../../assets/images/mlh-banner.svg';
 
 interface Props {
   toggle? : () => void;
@@ -20,12 +17,6 @@ function Header(props: Props) {
               backgroundRepeat: "no-repeat",
               backgroundPosition: "0px 325px",
               width:"100%" }}>
-        
-        {/*<nav className="bg-turq d-flex flex-row pr-2 pb-3 pl-3 align-items-center">
-          //<img src={logo} width="208px" height="82px" alt="Girls Who Code at the University of Virginia logo"/>
-          //<img src={SignUpBanner} alt="Sign up banner"/>
-          //<img src={MLHBanner} alt="MLH banner"/>
-        </nav>*/}
 
         <Row xs={12} className="pt-5"></Row>
         <Row xs={12} className="pt-5"></Row>
@@ -63,17 +54,6 @@ function Header(props: Props) {
         <Row xs={12} className="pt-5 pb-5"></Row>
         <Row xs={12} className="pt-5 pb-5"></Row>
         <Row xs={12} className="pt-5 pb-5"></Row>
-        
-        {/*
-        <Row xs={12}>
-          <Col xs={2}></Col>
-          <Col xs={2}><h5>About</h5></Col>
-          <Col xs={2}><h5>JumpStart</h5></Col>
-          <Col xs={2}><h5>Schedule</h5></Col>
-          <Col xs={2}><h5>Sponsors</h5></Col>
-          <Col xs={2}><h5>FAQ</h5></Col>
-        </Row>
-        */}
 
     </div>
   );

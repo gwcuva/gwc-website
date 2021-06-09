@@ -1,8 +1,6 @@
 import {Row} from 'react-bootstrap';
-//import logo from '../../../assets/images/peacock-logo.svg';
 import SignUpCircle from '../../../assets/images/sign-up-hack-circle.svg';
 import SignUpMobile from '../../../assets/images/sign-up-mobile.svg';
-//import SignUpBanner from '../../../assets/images/sign-up-banner.svg';
 
 interface Props {
     toggle? : () => void;
@@ -12,11 +10,6 @@ interface Props {
 function MobileHeader(props: Props) {
     return(
         <div id={props.id} className="container-fluid bg-turq">
-
-            {/*<Row className="justify-content-between align-items-center">
-                //<img src={logo} className="pl-2" width="75px" height="41px" alt="Girls Who Code at the University of Virginia logo"/>
-                //<img src={SignUpBanner} className="pr-4" width="80px" height="100px" alt="Sign up banner"/>
-            </Row>*/}
 
             <Row className="text-blue pt-5 pl-4 pb-n5" style={{fontSize:13, letterSpacing: 2}}>
                 <text><big>2021 Virtual Hackathon</big></text>
