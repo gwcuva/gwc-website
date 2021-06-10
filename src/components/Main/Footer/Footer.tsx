@@ -1,4 +1,3 @@
-import React from 'react';
 import Contact from './Contact';
 import Links from './Links';
 import footerWaves from '../../../assets/images/footer-wave.svg';
@@ -27,6 +26,18 @@ function Footer(props: Props) {
             <Col md={3} sm={4} className="text-white" style={{marginBottom:60}}>
               <Links />
             </Col>
+            <Row sm={2} className="text-white">
+              <text> Although this organization has members who are 
+                University of Virginia students and may have, University
+                employees associated or engaged in its activities 
+                and affairs, the organization is not a part of or an agency. 
+                It is a separate and independent organization, which is 
+                responsible for and manages its own activities and affairs. 
+                The University does not direct, supervise or control the 
+                organization and is not responsible for the organization’s 
+                contracts, acts or omissions.
+              </text>
+            </Row>
           </Row>
         </Col>
       </div>

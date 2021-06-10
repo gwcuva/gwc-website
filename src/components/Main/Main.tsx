@@ -4,7 +4,7 @@ import Navbar from './Navbar/Navbar';
 import Header from './Header/Header';
 import Stats from './Stats/Stats';
 import DiscordInvite from './DiscordInvite/DiscordInvite';
-import Team from './Team/Team';
+//import Team from './Team/Team';
 import About from './About/About';
 import Footer from './Footer/Footer';
 import NavCircle from './Navbar/NavCircle';
@@ -32,7 +32,7 @@ function Main() {
         <About id="about"/>
         <DiscordInvite id="discord-invite"/>
         <img src={GetStarted} alt="Orange wave saying 'Get Started'" width={isMobile ? "150%" : "100%"}/>
-        <Team id="team"/>
+        {/*<Team id="team"/>}  */}
         <Footer id="footer"/>
       </div>
     </div>
