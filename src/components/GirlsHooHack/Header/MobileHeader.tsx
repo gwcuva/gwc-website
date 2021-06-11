@@ -1,4 +1,3 @@
-import { CompleterResult } from 'node:readline';
 import {Row} from 'react-bootstrap';
 import {Col} from 'react-bootstrap';
 import SignUpCircle from '../../../assets/images/sign-up-hack-circle.svg';
