@@ -1,5 +1,4 @@
 import {Row} from 'react-bootstrap';
-import {Col} from 'react-bootstrap';
 import SignUpCircle from '../../../assets/images/sign-up-hack-circle.svg';
 import SignUpMobile from '../../../assets/images/sign-up-mobile.svg';
 
@@ -32,20 +31,17 @@ function MobileHeader(props: Props) {
                 <h3>November 06-07</h3>
             </Row>
 
-            <Row>
-                <Col xs={12} className="text-blue text-right" 
-                    style={{backgroundImage: `url(${SignUpMobile})`, 
-                    backgroundRepeat:"no-repeat",
-                    backgroundSize: "95px",
-                    backgroundPosition: "right 43px center",
-                    zIndex: 99
-                    }}>
+            <Row xs={12} className="pr-3" style={{
+                display: 'block', 
+                backgroundImage: `url(${SignUpMobile})`,
+                backgroundRepeat: "no-repeat",
+                backgroundPosition: "243px 55px",
+                flexDirection: 'row', 
+                justifyContent: 'flex-end'}}>
                     <a href="https://forms.gle/ChhpzSwMjC8gZNm38" target="_blank" rel="noreferrer noopener" onClick={props.toggle}>
-                        <img src={SignUpCircle} height="150px" width="150px" alt="Sign Up Circle"/>
+                    <img src={SignUpCircle} height="175px" width="150px" alt="Sign Up Circle"/>
                     </a>
-                </Col>
-            </Row>
-            
+            </Row> 
         </div>
     );
 }

@@ -44,8 +44,8 @@ function Header(props: Props) {
           <Col 
           style={{backgroundImage: `url(${SignUpText})`, 
           backgroundRepeat:"no-repeat",
-          backgroundPosition: "95px 100px"}}>
-            <a href="https://forms.gle/ChhpzSwMjC8gZNm38" onClick={props.toggle}>
+          backgroundPosition: "right 150px center"}}>
+            <a href="https://forms.gle/ChhpzSwMjC8gZNm38" target="_blank" rel="noreferrer noopener" onClick={props.toggle}>
               <img src={SignUpCircle} alt="Sign Up Circle"/>
             </a>
           </Col>
