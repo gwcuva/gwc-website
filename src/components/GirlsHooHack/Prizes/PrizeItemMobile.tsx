@@ -15,7 +15,7 @@ function PrizeItemMobile(props: Props) {
     const [dropdownOpen, setDropdownOpen] = useState(false);
 
   return (
-    <div className="mt-3">
+    <div className="mt-4">
         <Row>
             <Col xs={9} className="d-flex justify-content-start">
             <h3 className="mono font-weight-bold">{props.name}</h3>
