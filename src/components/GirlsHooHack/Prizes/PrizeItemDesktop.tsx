@@ -1,6 +1,7 @@
 import { Col } from 'react-bootstrap';
 
 interface Props {
+  key: string;
   name: string;
   detail: string;
 }

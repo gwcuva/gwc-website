@@ -1,11 +1,12 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { request } from 'graphql-request';
 import { Col, Row } from 'react-bootstrap';
 import { isMobile } from 'react-device-detect';
+import PrizeItemMobile from './PrizeItemMobile';
 import PrizeItemDesktop from './PrizeItemDesktop';
 
 function Prizes() {
-  const [prizes, setPrizes] = useState([{'prizeName': '', 'description': ''}]);
+  const [prizes, setPrizes] = useState([{'id': '', 'prizeName': '', 'description': ''}]);
 
   useEffect(() => {
     const fetchPrizes = async () => {
@@ -14,6 +15,7 @@ function Prizes() {
         `
           { 
             hackathonPrizes {
+              id
               prizeName
               description
             }
@@ -27,24 +29,23 @@ function Prizes() {
     fetchPrizes();
   }, []);
 
-  console.log("num events: " + prizes.length);
-  for (let i = 0; i < prizes.length; i++) {
-    console.log(prizes[i].prizeName);
-    console.log(prizes[i].description);
-  }
-
   return (
   <Row className={`bg-white justify-content-center py-5`}>
     <Col sm={10} xs={11} className={isMobile ? "my-3" : "py-5"}>
       <Row className={isMobile ? "" : "my-5"}>
-        {isMobile ? <Col></Col> 
-        
+        {isMobile ? <Col>
+          <h2 className="text-orange hack">PRIZES</h2>
+          
+          {prizes.map((prize) => 
+            <PrizeItemMobile key={prize.id} name={prize.prizeName} detail={prize.description} ></PrizeItemMobile>)}
+          
+        </Col> 
         : 
         <Col>
           <h2 className="text-orange hack">Prizes</h2>
           <Row>
             {prizes.map((prize) => 
-              <PrizeItemDesktop name={prize.prizeName} detail={prize.description} ></PrizeItemDesktop>)}
+              <PrizeItemDesktop key={prize.id} name={prize.prizeName} detail={prize.description} ></PrizeItemDesktop>)}
           </Row>
         </Col>}
       </Row>
