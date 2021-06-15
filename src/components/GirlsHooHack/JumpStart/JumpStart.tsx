@@ -79,7 +79,6 @@ function JumpStart() {
           <p>JumpStart is a beginner’s guide to hackathons for GWC @ UVA members. We’re offering a 1-4 hour workshop each day from October 12 through October 16. There will be recorded and live options for each workshop.</p>
           <p><a href="google.com"><u>Sign up to become a member of GWC @ UVA</u>&#8599;</a> to participate.</p>
           
-
           <Row className="mt-4">
             <Col xs={9} className="d-flex justify-content-start">
               <h3 className="mono text-peach mb-4">Workshops</h3>
@@ -104,7 +103,7 @@ function JumpStart() {
           <h2 className="text-orange">JumpStart</h2>
           <h3 className="mono text-peach mb-4">What is it?</h3>
           <p>JumpStart is a beginner’s guide to hackathons for GWC @ UVA members. We’re offering a 1-4 hour workshop each day from October 12 through October 16. There will be recorded and live options for each workshop.</p>
-          <p><a href="google.com"><u>Sign up to become a member of GWC @ UVA</u>&#8599;</a> to participate.</p>
+          <p><a href="google.com" className="text-blue link"><u>Sign up to become a member of GWC @ UVA</u>&#8599;</a> to participate.</p>
           <Row>
             {workshops.map((workshop) => 
               <Col xs={4} className="hack">
