@@ -73,44 +73,43 @@ function JumpStart() {
   <Row className={`bg-white justify-content-center py-5`}>
     <Col sm={10} xs={11} className={isMobile ? "my-3" : "py-5"}>
       <Row className={isMobile ? "" : "my-5"}>
-        {isMobile ? <Col>
+        <Col className="hack">
           <h2 className="text-orange">JUMPSTART</h2>
           <h3 className="mono text-peach mt-4 mb-4">What is it?</h3>
           <p>JumpStart is a beginner’s guide to hackathons for GWC @ UVA members. We’re offering a 1-4 hour workshop each day from October 12 through October 16. There will be recorded and live options for each workshop.</p>
-          <p><a href="google.com"><u>Sign up to become a member of GWC @ UVA</u>&#8599;</a> to participate.</p>
-          
-          <Row className="mt-4">
-            <Col xs={9} className="d-flex justify-content-start">
-              <h3 className="mono text-peach mb-4">Workshops</h3>
-            </Col>
-            <Col xs={2} className="d-flex justify-content-end text-peach ml-3">
-              <div onClick={() => setDropdownOpen(!dropdownOpen)} 
-                aria-controls="collapse-workshops" aria-expanded={dropdownOpen}>
-                  {dropdownOpen ? <FontAwesomeIcon icon={faMinus}></FontAwesomeIcon> : 
-                  <FontAwesomeIcon icon={faPlus}></FontAwesomeIcon>}
-              </div>
-            </Col>
-          </Row>
-
-          <Collapse isOpened={dropdownOpen}>
-          {workshops.map((workshop) => 
-              <Workshop key={workshop.id} name={workshop.workshopName} date={workshop.workshopDate.substring(0, workshop.workshopDate.length - 24)} detail={workshop.description} ></Workshop>)}
-          </Collapse>
-        </Col> 
-        
-        : 
-        <Col className="hack">
-          <h2 className="text-orange">JumpStart</h2>
-          <h3 className="mono text-peach mb-4">What is it?</h3>
-          <p>JumpStart is a beginner’s guide to hackathons for GWC @ UVA members. We’re offering a 1-4 hour workshop each day from October 12 through October 16. There will be recorded and live options for each workshop.</p>
           <p><a href="google.com" className="text-blue link"><u>Sign up to become a member of GWC @ UVA</u>&#8599;</a> to participate.</p>
-          <Row>
-            {workshops.map((workshop) => 
-              <Col xs={4} className="hack">
-                <Workshop key={workshop.id} name={workshop.workshopName} date={workshop.workshopDate.substring(0, workshop.workshopDate.length - 8)} detail={workshop.description}></Workshop>
-              </Col>)}
-          </Row>
-        </Col>}
+        
+          {isMobile? 
+            <div>
+              <Row className="mt-4">
+                <Col xs={9} className="d-flex justify-content-start">
+                  <h3 className="mono text-peach mb-4">Workshops</h3>
+                </Col>
+                <Col xs={2} className="d-flex justify-content-end text-peach ml-3">
+                  <div onClick={() => setDropdownOpen(!dropdownOpen)} 
+                    aria-controls="collapse-workshops" aria-expanded={dropdownOpen}>
+                      {dropdownOpen ? <FontAwesomeIcon icon={faMinus}></FontAwesomeIcon> : 
+                      <FontAwesomeIcon icon={faPlus}></FontAwesomeIcon>}
+                  </div>
+                </Col>
+              </Row>
+              <Collapse isOpened={dropdownOpen}>
+              {workshops.map((workshop) => 
+                  <Workshop key={workshop.id} name={workshop.workshopName} date={workshop.workshopDate.substring(0, workshop.workshopDate.length - 24)} detail={workshop.description} ></Workshop>)}
+              </Collapse>
+            </div>
+            :
+            <div>
+              <h3 className="text-peach mt-5">Workshops</h3>
+              <Row className="pt-2">                
+                {workshops.map((workshop) => 
+                  <Col xs={4} className="hack">
+                    <Workshop key={workshop.id} name={workshop.workshopName} date={workshop.workshopDate.substring(0, workshop.workshopDate.length - 8)} detail={workshop.description}></Workshop>
+                  </Col>)}
+              </Row>
+            </div>
+          }
+        </Col>
       </Row>
     </Col>
   </Row>
