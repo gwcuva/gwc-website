@@ -76,7 +76,11 @@ function JumpStart() {
         <Col className="hack">
           <h2 className="text-orange">JUMPSTART</h2>
           <h3 className="mono text-peach mt-4 mb-4">What is it?</h3>
-          <p>JumpStart is a beginner’s guide to hackathons for GWC @ UVA members. We’re offering a 1-4 hour workshop each day from October 12 through October 16. There will be recorded and live options for each workshop.</p>
+          <Row>
+            <Col xs={8}>
+            <p>JumpStart is a beginner’s guide to hackathons for GWC @ UVA members. We’re offering a 1-4 hour workshop each day from October 12 through October 16. There will be recorded and live options for each workshop.</p>
+            </Col>
+          </Row>
           <p><a href="google.com" className="text-blue link"><u>Sign up to become a member of GWC @ UVA</u>&#8599;</a> to participate.</p>
         
           {isMobile? 
