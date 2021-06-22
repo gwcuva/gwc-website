@@ -1,6 +1,6 @@
 //import React from 'react';
 import About from './About/About';
-//import FAQ from './FAQ/FAQ';
+import FAQ from './FAQ/FAQ';
 //import Footer from './Footer/Footer';
 import Header from './Header/Header';
 import MobileHeader from './Header/MobileHeader';
@@ -22,6 +22,7 @@ function GirlsHooHack() {
         <img src={Waves} style={{marginTop:"-215px", marginBottom:"-120px"}} width = "100%" alt="Orange wave" />
       </MobileView>
       <About />
+      <FAQ />
       {/*
       <JumpStart />
       <Schedule />
