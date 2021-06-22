@@ -4,6 +4,7 @@ import Main from './components/Main/Main';
 import GirlsHooHack from './components/GirlsHooHack/GirlsHooHack';
 import Branding from './components/Branding/Branding';
 import NotFound from './components/NotFound';
+import Links from './components/Links/Links';
 
 function App() {
   return (
@@ -17,6 +18,9 @@ function App() {
         </Route>
         <Route exact path="/">
           <Main />
+        </Route>
+        <Route exact path="/links">
+          <Links />
         </Route>
         <Route path="/">
           <NotFound />
