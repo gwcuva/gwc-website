@@ -19,17 +19,17 @@ function FAQComponent(props: Props) {
   return (
     <div className={isMobile ? "mt-2" : "mt-4"}>
       <Row>
-        <Col md={11} xs={11}>
-          <p className="mono font-weight-bold">{props.question}</p>
+        <Col md={11} xs={10}>
+          {isMobile ? <h3 className="mono font-weight-bold hack">{props.question}</h3> : <p className="mono font-weight-bold hack">{props.question}</p>}
         </Col>
-        <Col md={1} xs={1}
+        <Col md={1} xs={2}
           onClick={() => setOpen(!open)}
         >
-          {open ? <FaMinus color={`${hovColor&&!isMobile ? "#FA7815" : "#0D38D3"}`} onMouseOver={() => setHovColor(true)} onMouseOut={() => setHovColor(false)} /> : <FaPlus color={`${hovColor&&!isMobile ? "#FA7815" : "#0D38D3"}`} onMouseOver={() => setHovColor(true)} onMouseOut={() => setHovColor(false)} />}
+          {open ? <FaMinus color={`${hovColor&& !isMobile ? "#FA7815" : "#0D38D3"}`} onMouseOver={() => setHovColor(true)} onMouseOut={() => setHovColor(false)} /> : <FaPlus color={`${hovColor&&!isMobile ? "#FA7815" : "#0D38D3"}`} onMouseOver={() => setHovColor(true)} onMouseOut={() => setHovColor(false)} />}
         </Col>
       </Row>
       <Collapse isOpened={open}>
-        <p className="text-dark-grey">{props.answer}</p>
+        <p className="hack">{props.answer}</p>
       </Collapse>
     </div>
   );
