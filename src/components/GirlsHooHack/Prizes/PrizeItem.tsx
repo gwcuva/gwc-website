@@ -3,7 +3,7 @@ import { Col, Row } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPlus } from '@fortawesome/free-solid-svg-icons'
 import { faMinus } from '@fortawesome/free-solid-svg-icons'
-import {Collapse } from 'react-collapse';
+import { Collapse } from 'react-collapse';
 import { isMobile } from 'react-device-detect';
 
 interface Props {
