@@ -12,7 +12,7 @@ interface Props {
   detail: string;
 }
 
-function PrizeItem(props: Props) {
+function PrizeItem(props: Props): JSX.Element {
     const [dropdownOpen, setDropdownOpen] = useState(false);
 
     if(isMobile) {

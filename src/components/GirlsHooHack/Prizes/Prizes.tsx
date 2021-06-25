@@ -4,7 +4,7 @@ import { Col, Row } from 'react-bootstrap';
 import { isMobile } from 'react-device-detect';
 import PrizeItem from './PrizeItem';
 
-function Prizes() {
+function Prizes(): JSX.Element {
   const [prizes, setPrizes] = useState([{'id': '', 'prizeName': '', 'description': ''}]);
 
   useEffect(() => {
