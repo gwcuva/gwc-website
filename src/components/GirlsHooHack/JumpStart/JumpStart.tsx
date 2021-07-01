@@ -69,6 +69,10 @@ function JumpStart() {
     workshops[i].workshopDate += ", " + day.toString().substring(4, 10);
   }
 
+  for (let i = 0; i < workshops.length; i++) {
+    console.log(workshops[i].id);
+  }
+
   return (
   <Row className={`bg-white justify-content-center py-5`}>
     <Col sm={10} xs={11} className={isMobile ? "my-3" : "py-5"}>
@@ -106,8 +110,8 @@ function JumpStart() {
               <h3 className="text-peach mt-4">Workshops</h3>
               <Row className="pt-2">                
                 {workshops.map((workshop) => 
-                  <Col xs={4} className="hack">
-                    <Workshop key={workshop.id} name={workshop.workshopName} date={workshop.workshopDate.substring(0, workshop.workshopDate.length - 8)} detail={workshop.description}></Workshop>
+                  <Col xs={4} className="hack" key={workshop.id}>
+                    <Workshop name={workshop.workshopName} date={workshop.workshopDate.substring(0, workshop.workshopDate.length - 8)} detail={workshop.description}></Workshop>
                   </Col>)}
               </Row>
             </div>

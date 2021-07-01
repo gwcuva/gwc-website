@@ -1,11 +1,11 @@
 interface Props {
-    key: string;
     name: string;
     date: string;
     detail: string;
 }
 
 function Workshop(props: Props) {
+
     return (
       <div className="pb-3">
         <h4 className="hack"><b>{props.name}</b></h4>
