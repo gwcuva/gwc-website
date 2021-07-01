@@ -5,7 +5,7 @@ import { isMobile } from 'react-device-detect';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPlus } from '@fortawesome/free-solid-svg-icons'
 import { faMinus } from '@fortawesome/free-solid-svg-icons'
-import {Collapse } from 'react-collapse';
+import { Collapse } from 'react-collapse';
 import Workshop from './Workshop';
 
 function JumpStart() {
@@ -81,8 +81,7 @@ function JumpStart() {
             <p>JumpStart is a beginner’s guide to hackathons for GWC @ UVA members. We’re offering a 1-4 hour workshop each day from October 12 through October 16. There will be recorded and live options for each workshop.</p>
             </Col>
           </Row>
-          <p><a href="google.com" className="text-blue link"><u>Sign up to become a member of GWC @ UVA</u>&#8599;</a> to participate.</p>
-        
+          
           {isMobile? 
             <div>
               <Row className="mt-4">
@@ -104,7 +103,7 @@ function JumpStart() {
             </div>
             :
             <div>
-              <h3 className="text-peach mt-5">Workshops</h3>
+              <h3 className="text-peach mt-4">Workshops</h3>
               <Row className="pt-2">                
                 {workshops.map((workshop) => 
                   <Col xs={4} className="hack">
