@@ -32,15 +32,15 @@ function JumpStart() {
     fetchWorkshops();
   }, []);
 
-  let months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+  const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 
   for (let i = 0; i < workshops.length; i++) {
-    let secondDash = workshops[i].workshopDate.lastIndexOf('-');
-    let year = workshops[i].workshopDate.substring(0, 4);
-    let month = months[parseInt(workshops[i].workshopDate.substring(5, secondDash))-1];
-    let dayOfMonth = workshops[i].workshopDate.substring(secondDash+1);
+    const secondDash = workshops[i].workshopDate.lastIndexOf('-');
+    const year = workshops[i].workshopDate.substring(0, 4);
+    const month = months[parseInt(workshops[i].workshopDate.substring(5, secondDash))-1];
+    const dayOfMonth = workshops[i].workshopDate.substring(secondDash+1);
 
-    let day = new Date(month + " " + dayOfMonth + ", " + year + " 23:15:30");
+    const day = new Date(month + " " + dayOfMonth + ", " + year + " 23:15:30");
     
     switch(day.toString().substring(0, 3)) {
       case "Sun":
