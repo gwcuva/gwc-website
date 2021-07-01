@@ -20,7 +20,7 @@ function PrizeItem(props: Props): JSX.Element {
             <div className="mt-4">
                 <Row>
                     <Col xs={9} className="d-flex justify-content-start">
-                    <h3 className="mono font-weight-bold">{props.name}</h3>
+                        <h3 className="mono font-weight-bold">{props.name}</h3>
                     </Col>
                     <Col xs={2} className="d-flex justify-content-end ml-3">
                     <div onClick={() => setDropdownOpen(!dropdownOpen)} 
