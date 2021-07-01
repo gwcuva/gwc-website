@@ -1,7 +1,6 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { isMobile } from 'react-device-detect';
 import { Collapse } from 'react-collapse';
-import { FaFontAwesome } from "react-icons/fa";
 import { FaPlus } from "react-icons/fa";
 import { FaMinus } from "react-icons/fa";
 import {Row, Col} from 'react-bootstrap';
