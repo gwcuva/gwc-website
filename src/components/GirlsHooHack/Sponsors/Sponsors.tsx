@@ -7,6 +7,7 @@ import hackerearth from '../../../assets/images/hackerearth.png';
 import uvads from '../../../assets/images/uva-datascience.png';
 import {Row, Col} from 'react-bootstrap';
 import {isMobile} from 'react-device-detect';
+import Image from 'react-bootstrap/Image'
 
 function Sponsors() {
 
@@ -22,6 +23,8 @@ function Sponsors() {
               sponsorImage {
                 url
               }
+              sponsorName
+              sponsorUrl
             }
           }
         `
@@ -33,21 +36,19 @@ function Sponsors() {
   }, []);
 
   return (
-    <div className="mx-auto pt-1 mt-1" style={{width:"85%"}}>
-      <h2 className="text-orange hack py-5">Sponsors</h2>
-      <Row className={`${isMobile ? "mt-3" : "mt-1"} d-flex justify-content-center`}>
-        <Row className="justify-content-around">
+    <Row className={`justify-content-center py-5`}>
+      <Col sm={10} xs={11} className={isMobile ? "my-3" : "my-5 py-5"}>
+        <h2 className="text-orange hack mb-5">Sponsors</h2>
+      {/*<div className="mx-auto" style={{width:"85%"}}>*/}
+        <Row className={`${isMobile ? "mt-5" : "mt-1"} d-flex justify-content-around`}>
           {sponsors.map(simg => 
-          <img src={simg.sponsorImage.url} alt={``} />)}
+            <Col md={2} xs={6} className="my-auto mr-3">
+              <a href={simg.sponsorUrl} target="_blank" rel="noreferrer"><Image src={simg.sponsorImage.url} alt={simg.sponsorName} fluid /></a>
+            </Col>
+          )}
         </Row>
-      </Row>
-      {sponsors.map(simg => <img width="150px" src={simg.sponsorImage.url} alt={``} />)}
-      <img src={googleCloud} className={isMobile ? "row mx-auto" : ""} width="132.6px" height="132.6px" style={{marginRight:"8%"}} alt=""/>
-      <img src={stickerMule} className={isMobile ? "row mx-auto mt-3 mb-4" : ""} width="220.61px" height="75px"style={{marginRight:"8%"}} alt=""/>
-      <img src={wolfram} className={isMobile ? "row mx-auto mb-4" : ""} width="115px" height="91px" style={{marginRight:"10%"}} alt=""/>
-      <img src={hackerearth} className={isMobile ? "row mx-auto mt-5 mb-5" : ""} width="149px" height="30px" style={{marginRight:"10%"}} alt=""/>
-      <img src={uvads} className={isMobile ? "row mx-auto my-5" : ""} width="100.21px" height="100.21px" alt=""/>
-    </div>
+      </Col>
+    </Row>
   );
 }
 
