@@ -8,6 +8,7 @@ import MobileHeader from './Header/MobileHeader';
 //import Prizes from './Prizes/Prizes';
 //import Schedule from './Schedule/Schedule';
 //import Sponsors from './Sponsors/Sponsors';
+import Speakers from './Speakers/Speakers';
 import {BrowserView, MobileView} from 'react-device-detect';
 import Waves from '../../assets/images/hack-header-mobile-wave.svg';
 
@@ -22,6 +23,7 @@ function GirlsHooHack() {
         <img src={Waves} style={{marginTop:"-215px", marginBottom:"-120px"}} width = "100%" alt="Orange wave" />
       </MobileView>
       <About />
+      <Speakers />
       {/*
       <JumpStart />
       <Schedule />
