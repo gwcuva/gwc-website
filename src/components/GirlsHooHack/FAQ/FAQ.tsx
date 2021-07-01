@@ -13,7 +13,7 @@ import {Collapse } from 'react-collapse';
 
 function FAQ() {
 
-  const [faq, setFaq] = useState<any[]>([]);
+  const [faq, setFaq] = useState([{'question': '', 'answer': ''}]);
 
   useEffect(() => {
     const fetchFaq = async () => {
@@ -41,7 +41,7 @@ function FAQ() {
           <h2 className="text-orange hack">FAQ</h2>
           <Row>
             <Col md={8} xs={24}>
-              {faq.map(mem => <FAQComponent question={mem.question} answer={mem.answer}></FAQComponent>)}
+              {faq.map((mem, index) => <FAQComponent key={index} Question={mem.question} Answer={mem.answer}></FAQComponent>)}
             </Col>
           </Row>
         </Col>
