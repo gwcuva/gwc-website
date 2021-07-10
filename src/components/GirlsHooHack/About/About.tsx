@@ -1,8 +1,11 @@
 import React from 'react';
+import { useState } from 'react';
 import { Col, Row } from 'react-bootstrap';
 import { isMobile } from 'react-device-detect';
 
 function About() {
+  const [hovered, setHovered] = useState(false);
+  const toggleHover = () => setHovered(!hovered);
   return (
   <Row className={`bg-hack-grey justify-content-center py-5`}>
     <Col sm={10} xs={11} className={isMobile ? "my-3" : "my-5 py-5"}>
