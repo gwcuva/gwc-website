@@ -1,0 +1,10 @@
+<svg version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 30" width="29" height="30">
+	<title>instagram-icon-svg</title>
+	<defs>
+		<image  width="29" height="30" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB0AAAAeAQMAAADqyYfiAAAAAXNSR0IB2cksfwAAAAZQTFRF////DTjTVV9/uAAAAAJ0Uk5TAP9bkSK1AAAAW0lEQVR4nHXNsRGAIBQD0Nw5ACMwyl/JDT4buBKdpSvQ2VriHUcMh5ameF0SYCSQgJEZTpYJ2VbRL0FRvIIpihCEHRXdTuE/0HYRt6+WTdz89gb+UuZ5JBMWNjznbFtHib23SgAAAABJRU5ErkJggg=="/>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+	</style>
+	<use id="Layer" href="#img1" x="0" y="0" />
+</svg>

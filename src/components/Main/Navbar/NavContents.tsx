@@ -1,8 +1,8 @@
 import { Row } from 'react-bootstrap';
 import Discord from '../../../assets/images/discord-logo.svg';
 import Instagram from '../../../assets/images/instagram-logo.svg';
-import Discord_Blue from '../../../assets/images/discord-icon.svg';
-import Instagram_Blue from '../../../assets/images/instagram-icon.svg';
+import Discord_Blue from '../../../assets/images/discord-icon-svg.svg';
+import Instagram_Blue from '../../../assets/images/instagram-icon-svg.svg';
 
 interface Props {
   toggle? : () => void;

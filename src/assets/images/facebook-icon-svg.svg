@@ -1,0 +1,10 @@
+<svg version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 29" width="29" height="29">
+	<title>facebook-icon-svg</title>
+	<defs>
+		<image  width="29" height="29" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB0AAAAdAQMAAABsXfVMAAAAAXNSR0IB2cksfwAAAAZQTFRF////DTjTVV9/uAAAAAJ0Uk5TAP9bkSK1AAAAXklEQVR4nF3OsQ2AMAxE0Y8oUnqEjJKV2CAZLaNkBJcpEIcJDaJ5kuXT2VA6oAm7TkgSmNTID0Xq1NMGdS6qR1aB/5mo2SLGlr/b6hovxaNvkT3qzeNa8gs2jw84BjdMok+9d2jWpwAAAABJRU5ErkJggg=="/>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+	</style>
+	<use id="Layer" href="#img1" x="0" y="0" />
+</svg>
