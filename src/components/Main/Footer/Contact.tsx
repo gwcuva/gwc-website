@@ -4,10 +4,10 @@ import discordSocial from '../../../assets/images/discord-icon.svg';
 import instagramSocial from '../../../assets/images/instagram-icon.svg';
 import facebookSocial from '../../../assets/images/facebook-icon.svg';
 import twitterSocial from '../../../assets/images/twitter-icon.svg';
-import discordSocialBlue from '../../../assets/images/discord-icon-svg.svg';
-import instagramSocialBlue from '../../../assets/images/instagram-icon-svg.svg';
-import facebookSocialBlue from '../../../assets/images/facebook-icon-svg.svg';
-import twitterSocialBlue from '../../../assets/images/twitter-icon-svg.svg';
+import discordSocialBlue from '../../../assets/images/discord-icon-blue.svg';
+import instagramSocialBlue from '../../../assets/images/instagram-icon-blue.svg';
+import facebookSocialBlue from '../../../assets/images/facebook-icon-blue.svg';
+import twitterSocialBlue from '../../../assets/images/twitter-icon-blue.svg';
 import {isMobile} from 'react-device-detect';
 
 function Contact() {
