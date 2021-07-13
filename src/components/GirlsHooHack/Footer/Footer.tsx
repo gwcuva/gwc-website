@@ -26,7 +26,6 @@ function Footer() {
           </div>
         </div>
         <img src={blueWaves} alt="" style={{width: "100%", position: 'relative'}}/>
-        
       </div>
     </div>
   );
