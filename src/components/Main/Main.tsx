@@ -32,7 +32,7 @@ function Main() {
         <About id="about"/>
         <DiscordInvite id="discord-invite"/>
         <img src={GetStarted} alt="Orange wave saying 'Get Started'" width={isMobile ? "150%" : "100%"}/>
-        {/*<Team id="team"/>}  */}
+        {/*<Team id="team"/>*/} 
         <Footer id="footer"/>
       </div>
     </div>
