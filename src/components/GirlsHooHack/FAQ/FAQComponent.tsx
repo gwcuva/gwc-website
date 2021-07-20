@@ -13,7 +13,6 @@ interface Props {
 function FAQComponent(props: Props): JSX.Element {
 
   const [open, setOpen] = useState(false);
-  const [hovColor, setHovColor] = useState(false);
 
   return (
     <div className={isMobile ? "mt-2" : "mt-4"}>
@@ -24,7 +23,7 @@ function FAQComponent(props: Props): JSX.Element {
         <Col md={1} xs={2}
           onClick={() => setOpen(!open)}
         >
-          {open ? <FaMinus color={`${hovColor&& !isMobile ? "#FA7815" : "#0D38D3"}`} onMouseOver={() => setHovColor(true)} onMouseOut={() => setHovColor(false)} /> : <FaPlus color={`${hovColor&&!isMobile ? "#FA7815" : "#0D38D3"}`} onMouseOver={() => setHovColor(true)} onMouseOut={() => setHovColor(false)} />}
+          {open ? <FaMinus className="text-blue dropdownIcon"/> : <FaPlus className="text-blue dropdownIcon" />}
         </Col>
       </Row>
       <Collapse isOpened={open}>
