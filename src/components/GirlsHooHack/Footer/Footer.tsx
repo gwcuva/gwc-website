@@ -6,7 +6,7 @@ import instagram from '../../../assets/images/instagram-square-brands.svg';
 import discord from '../../../assets/images/discord-brands.svg';
 import facebook from '../../../assets/images/facebook-f-brands.svg';
 import twitter from '../../../assets/images/twitter-brands.svg';
-import {Row, Col} from 'react-bootstrap';
+import {Row} from 'react-bootstrap';
 import {isMobile} from 'react-device-detect';
  
 function Footer() {
