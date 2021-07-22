@@ -1,10 +1,5 @@
 import React , { useEffect, useState } from 'react';
 import { request } from 'graphql-request';
-import googleCloud from '../../../assets/images/google-cloud.png';
-import stickerMule from '../../../assets/images/sticker-mule.png';
-import wolfram from '../../../assets/images/wolfram.png';
-import hackerearth from '../../../assets/images/hackerearth.png';
-import uvads from '../../../assets/images/uva-datascience.png';
 import {Row, Col} from 'react-bootstrap';
 import {isMobile} from 'react-device-detect';
 import Image from 'react-bootstrap/Image'
