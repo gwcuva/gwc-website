@@ -5,7 +5,7 @@ import { isMobile } from 'react-device-detect';
 import PrizeItem from './PrizeItem';
 
 function Prizes(): JSX.Element {
-  const [prizes, setPrizes] = useState([{'id': '', 'prizeName': '', 'description': ''}]);
+  const [prizes, setPrizes] = useState([{'id': '', 'prizeName': '', 'prizeObject': '', 'description': ''}]);
 
   useEffect(() => {
     const fetchPrizes = async () => {
@@ -16,6 +16,7 @@ function Prizes(): JSX.Element {
             hackathonPrizes {
               id
               prizeName
+              prizeObject
               description
             }
           }
@@ -35,14 +36,14 @@ function Prizes(): JSX.Element {
               <div>
                 <h2 className="text-orange hack">PRIZES</h2>
                 {prizes.map((prize) => 
-                <PrizeItem key={prize.id} name={prize.prizeName} detail={prize.description} ></PrizeItem>)}
+                <PrizeItem key={prize.id} name={prize.prizeName} object={prize.prizeObject} detail={prize.description} ></PrizeItem>)}
               </div>
               :
               <div>
                 <h2 className="text-orange hack pb-3">Prizes</h2>
                 <Row>
                   {prizes.map((prize) => 
-                    <PrizeItem key={prize.id} name={prize.prizeName} detail={prize.description} ></PrizeItem>)}
+                    <PrizeItem key={prize.id} name={prize.prizeName} object={prize.prizeObject} detail={prize.description} ></PrizeItem>)}
                 </Row>
               </div>}
         </Col>
