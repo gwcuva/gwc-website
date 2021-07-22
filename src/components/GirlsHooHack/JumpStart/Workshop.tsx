@@ -6,6 +6,7 @@ interface Props {
 
 function Workshop(props: Props) {
 
+  console.log(props.date);
     return (
       <div className="pb-3">
         <h4 className="hack"><b>{props.name}</b></h4>
