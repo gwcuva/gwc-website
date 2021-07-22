@@ -14,14 +14,17 @@ function Footer() {
     <div>
       <div className="bg-peacock" style={{width:"100%"}}>
         <div className={isMobile ? "" : "pt-6 bg-white"}>
-          <div className="ml-4">
-            <img src={whiteLogo} className="mb-4" width={isMobile ? "112px" : "359px"} height={isMobile ? "35.57px" : "114px"} alt="logo" style={{position:'relative', zIndex: 100, top:'370px', left:'100px'}}/>
-            <Row style={{position:'relative', top:'370px', left:'115px'}}>
-              <a href="mailto:gwcuva@gmail.com" className="mono text-white interactive"><img src={email} className="mr-4" alt="logo"/></a>
-              <a href="https://www.instagram.com/gwcuva/" target="_blank" rel="noreferrer noopener"><img src={instagram} className="mr-4" alt="logo"/></a>
-              <a href="https://discord.com/invite/rKbWyuDNyG" target="_blank" rel="noreferrer noopener"><img src={discord} className="mr-4" alt="logo"/></a>
-              <a href="https://www.facebook.com/gwcuva/" target="_blank" rel="noreferrer noopener"><img src={facebook} className="mr-4" alt="logo"/></a>
-              <a href="https://twitter.com/gwcuva" target="_blank" rel="noreferrer noopener"><img src={twitter} className="mr-4" alt="logo"/></a>
+          <div className={isMobile ? "ml-3" : "ml-4"}>
+            <img 
+              src={whiteLogo} className={!isMobile ? "mb-4" : ""} width={isMobile ? "125px" : "359px"} height={isMobile ? "39.7px" : "114px"} 
+              alt="logo" style={ isMobile ? {position:'relative', top:'75px'} : {position:'relative', zIndex: 100, top:'370px', left:'100px'} }
+            />
+            <Row style={ isMobile ? {position:'relative', top:'75px', left:'15px'} : {position:'relative', zIndex: 100, top:'370px', left:'115px'} }>
+              <a href="mailto:gwcuva@gmail.com" className="mono text-white interactive"><img src={email} className={isMobile ? "w-75" : "mr-4"} alt="logo"/></a>
+              <a href="https://www.instagram.com/gwcuva/" target="_blank" rel="noreferrer noopener"><img src={instagram} className={isMobile ? "w-75 mt-1" : "mr-4"} alt="logo"/></a>
+              <a href="https://discord.com/invite/rKbWyuDNyG" target="_blank" rel="noreferrer noopener"><img src={discord} className={isMobile ? "w-75 mt-1" : "mr-4"} alt="logo"/></a>
+              <a href="https://www.facebook.com/gwcuva/" target="_blank" rel="noreferrer noopener"><img src={facebook} className={isMobile ? "w-75 my-2" : "mr-4"} alt="logo"/></a>
+              <a href="https://twitter.com/gwcuva" target="_blank" rel="noreferrer noopener"><img src={twitter} className={isMobile ? "w-75 my-2" : "mr-4"} alt="logo"/></a>
             </Row>
           </div>
         </div>
