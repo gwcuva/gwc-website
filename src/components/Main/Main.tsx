@@ -31,7 +31,7 @@ function Main() {
         <img src={isMobile ? MobileHelloWorld : HelloWorld} alt="Hello World banner" />
         <About id="about"/>
         <DiscordInvite id="discord-invite"/>
-        <img src={GetStarted} alt="Orange wave saying 'Get Started'" width={isMobile ? "100%" : "100%"}/>
+        <img src={GetStarted} alt="Orange wave saying 'Get Started'" width="100%"/>
         {/*<Team id="team"/>}  */}
         <Footer id="footer"/>
       </div>
