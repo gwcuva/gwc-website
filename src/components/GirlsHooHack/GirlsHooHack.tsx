@@ -22,18 +22,14 @@ function GirlsHooHack() {
         <img src={Waves} style={{marginTop:"-215px", marginBottom:"-120px"}} width = "100%" alt="Orange wave" />
       </MobileView>
       <About />
-      <Sponsors />
-      <Footer />
       <Prizes />
       {/*
       <JumpStart />
       <Schedule /> 
       */}
       <FAQ />
-      {/*
       <Sponsors />
       <Footer />
-      */}
     </div>
   );
 }
