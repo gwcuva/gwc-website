@@ -41,7 +41,7 @@ function PrizeItem(props: Props): JSX.Element {
         return (
             <Col xs={4} className="mb-4">
                 <h4 className="hack">{props.name}</h4>
-                <h4 className="hack">{props.object}</h4>
+                <p className="font-italic">{props.object}</p>
                 <p>{props.detail}</p>
             </Col>
         );
