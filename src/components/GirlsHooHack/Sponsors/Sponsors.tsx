@@ -2,7 +2,7 @@ import React , { useEffect, useState } from 'react';
 import { request } from 'graphql-request';
 import {Row, Col} from 'react-bootstrap';
 import {isMobile} from 'react-device-detect';
-import Image from 'react-bootstrap/Image'
+import Image from 'react-bootstrap/Image';
 
 function Sponsors() {
 
