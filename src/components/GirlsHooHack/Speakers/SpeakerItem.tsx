@@ -14,12 +14,10 @@ function SpeakerItem(props: Props): JSX.Element {
         );
     } else {
         return (
-            <div>
-                <Col xs={4} className="mb-4">
-                    <h4 className="hack">{props.name}</h4>
-                    <p>{props.bio}</p>
-                </Col>
-            </div>
+            <Col xs={4} className="mb-4">
+                <h4 className="hack">{props.name}</h4>
+                <p>{props.bio}</p>
+            </Col>
         );
     }
 }

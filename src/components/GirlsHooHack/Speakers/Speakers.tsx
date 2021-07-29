@@ -33,13 +33,13 @@ function Speakers() {
             <Col>
             {isMobile ? 
                 <div>
-                    <h2 className="text-orange hack">PRIZES</h2>
+                    <h2 className="text-orange hack">SPEAKERS</h2>
                     {speakers.map((speaker) => 
                     <SpeakerItem key={speaker.id} name={speaker.name} bio={speaker.bio} ></SpeakerItem>)}
                 </div>
                 :
                 <div>
-                    <h2 className="text-orange hack pb-3">Prizes</h2>
+                    <h2 className="text-orange hack pb-3">Speakers</h2>
                     <Row>
                     {speakers.map((speaker) => 
                         <SpeakerItem key={speaker.id} name={speaker.name} bio={speaker.bio} ></SpeakerItem>)}
