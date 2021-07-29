@@ -4,7 +4,7 @@ interface Props {
     detail: string;
 }
 
-function Workshop(props: Props) {
+function Workshop(props: Props): JSX.Element {
 
   console.log(props.date);
     return (

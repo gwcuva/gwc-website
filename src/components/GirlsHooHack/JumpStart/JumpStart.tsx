@@ -70,9 +70,14 @@ function JumpStart() {
     //     break;
     // }
     console.log(workshops[i].workshopDate);
-    console.log(day.toString().substring(4, 10));
+    console.log(day.toString().substring(4, 10) + ".....");
     workshops[i].workshopDate += ", " + day.toString().substring(4, 10);
     console.log(workshops[i].workshopDate + "***");
+  }
+
+  console.log("_______");
+  for (let i = 0; i < workshops.length; i++) {
+    console.log(workshops[i].workshopName + " " + workshops[i].workshopDate);
   }
 
   return (
@@ -104,7 +109,7 @@ function JumpStart() {
               </Row>
               <Collapse isOpened={dropdownOpen}>
               {workshops.map((workshop) => 
-                  <Workshop key={workshop.id} name={workshop.workshopName} date={workshop.workshopDate.substring(0, workshop.workshopDate.length - 24)} detail={workshop.description} ></Workshop>)}
+                  <Workshop key={workshop.id} name={workshop.workshopName} date={workshop.workshopDate} detail={workshop.description} ></Workshop>)}
               </Collapse>
             </div>
             :
