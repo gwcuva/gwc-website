@@ -35,7 +35,7 @@ function Sponsors() {
     <Row className={`justify-content-center py-5`}>
       <Col sm={10} xs={11} className={isMobile ? "my-3" : "my-5 py-5"}>
         <h2 className="text-orange hack">Sponsors</h2>
-        <Row className={`${!isMobile && "mt-1"} d-flex justify-content-around`}>
+        <Row className={`${!isMobile && "mt-1 mb-5"} d-flex justify-content-around`}>
           {sponsors.map(sponsor => 
             <Col md={2} xs={12} className={`${isMobile ? "mx-auto" : "pt-5"} my-auto mr-3`}>
               <a href={sponsor.sponsorUrl} target="_blank" rel="noreferrer">
