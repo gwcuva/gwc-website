@@ -33,15 +33,15 @@ function Footer() {
         </div>
       </div>
       <img className="w-100" src={blueWaves} alt=""/>*/}
-      <img className="position-absolute footerLogo" src={whiteLogo} width={isMobile ? "125px" : "359px"} 
-        height={isMobile ? "39.7px" : "114px"} alt=""
+      <img className={`${isMobile ? "footerLogoMobile" : "position-absolute footerLogoDesktop"}`} src={whiteLogo} 
+        width={isMobile ? "125px" : "359px"} height={isMobile ? "39.7px" : "114px"} alt=""
       />
-      <Row className="position-absolute footerIconRow">
-        <a href="mailto:gwcuva@gmail.com" className="mono text-white interactive"><img src={email} className={isMobile ? "w-75 pr-1" : "mr-4"} alt="logo"/></a>
-        <a href="https://www.instagram.com/gwcuva/" target="_blank" rel="noreferrer noopener"><img src={instagram} className="mr-4" alt="logo"/></a>
-        <a href="https://discord.com/invite/rKbWyuDNyG" target="_blank" rel="noreferrer noopener"><img src={discord} className="mr-4" alt="logo"/></a>
-        <a href="https://www.facebook.com/gwcuva/" target="_blank" rel="noreferrer noopener"><img src={facebook} className="mr-4" alt="logo"/></a>
-        <a href="https://twitter.com/gwcuva" target="_blank" rel="noreferrer noopener"><img src={twitter} className="mr-4" alt="logo"/></a>
+      <Row className={`position-absolute ${isMobile ? "footerIconRowMobile" : "footerIconRowDesktop"}`}>
+        <a href="mailto:gwcuva@gmail.com" className="mono text-white interactive"><img src={email} className={`${isMobile ? "mt-n1 footerIconMobile" : "footerIconDesktop"}`} alt="logo"/></a>
+        <a href="https://www.instagram.com/gwcuva/" target="_blank" rel="noreferrer noopener"><img src={instagram} className={`${isMobile ? "footerIconMobile" : "footerIconDesktop"}`} alt="logo"/></a>
+        <a href="https://discord.com/invite/rKbWyuDNyG" target="_blank" rel="noreferrer noopener"><img src={discord} className={`${isMobile ? "footerIconMobile" : "footerIconDesktop"}`} alt="logo"/></a>
+        <a href="https://www.facebook.com/gwcuva/" target="_blank" rel="noreferrer noopener"><img src={facebook} className={`${isMobile ? "footerIconMobile" : "footerIconDesktop"}`} alt="logo"/></a>
+        <a href="https://twitter.com/gwcuva" target="_blank" rel="noreferrer noopener"><img src={twitter} className={`${isMobile ? "footerIconMobile" : "footerIconDesktop"}`} alt="logo"/></a>
       </Row>
       <img className="w-100 position-relative" src={blueWaves} alt=""/>
     </div>

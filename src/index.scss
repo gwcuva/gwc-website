@@ -215,12 +215,31 @@ p.hack {
   color: $output-orange
 }
 
-.footerLogo {
+.footerLogoDesktop {
   margin-top: 195px;
   margin-left: 140px
 }
 
-.footerIconRow {
+.footerLogoMobile {
+  margin-top: 85px;
+  margin-bottom: -40px;
+  margin-left: 25px
+}
+
+.footerIconRowDesktop {
   margin-top: 340px;
   margin-left: 140px
+}
+
+.footerIconRowMobile {
+  margin-top: 50px;
+  margin-left: 25px
+}
+
+.footerIconDesktop {
+  margin-right: 24px
+}
+
+.footerIconMobile {
+  width: 65%;
 }
