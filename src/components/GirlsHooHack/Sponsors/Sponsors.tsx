@@ -41,11 +41,12 @@ function Sponsors() {
               <a href={sponsor.sponsorUrl} target="_blank" rel="noreferrer">
                 {isMobile ?
                   <Image 
-                    className={`${sponsor.size==="Small" ? "w-75 pb-3" : "w-50 pb-2"} mx-auto d-block pt-5`} 
+                    className={`${sponsor.size==="Small" ? "w-75 pb-3" : "w-50 pb-2"} mx-auto d-block pt-5 sponsorImage`} 
                     src={sponsor.sponsorImage.url} alt={sponsor.sponsorName} fluid
                   />
                   :
-                  <Image className={`${sponsor.size==="Small" ? "w-100" : "w-75"} sponsorImage`} src={sponsor.sponsorImage.url} alt={sponsor.sponsorName} fluid />
+                  <Image className={`${sponsor.size==="Small" ? "w-100" : "w-75"} sponsorImage`} src={sponsor.sponsorImage.url} 
+                  alt={sponsor.sponsorName} fluid />
                 }
               </a>
             </Col>
