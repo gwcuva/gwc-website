@@ -13,7 +13,7 @@ function MobileHeader(props: Props) {
         <div id={props.id} className="container-fluid bg-turq">
 
             <Row className="mono text-blue pt-5 pl-4 pb-n5" style={{fontSize:13.5}}>
-                <text><big>2021 Virtual Hackathon</big></text>
+                <text><big>2021 Hybrid Hackathon</big></text>
             </Row>
 
             <Row xs={8} className="text-white pl-3 pt-n5">
