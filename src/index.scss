@@ -215,7 +215,12 @@ p.hack {
   color: $output-orange
 }
 
-.signUpText {
+.signUpTextDesktop {
   margin-top: 105px;
   margin-left: 80px;
+}
+
+.signUpTextMobile {
+  margin-top: 47px;
+  margin-left: 34px
 }
