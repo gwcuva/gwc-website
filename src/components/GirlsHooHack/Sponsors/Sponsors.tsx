@@ -45,7 +45,7 @@ function Sponsors() {
                     src={sponsor.sponsorImage.url} alt={sponsor.sponsorName} fluid
                   />
                   :
-                  <Image className={sponsor.size==="Small" ? "w-100" : "w-75"} src={sponsor.sponsorImage.url} alt={sponsor.sponsorName} fluid />
+                  <Image className={`${sponsor.size==="Small" ? "w-100" : "w-75"} sponsorImage`} src={sponsor.sponsorImage.url} alt={sponsor.sponsorName} fluid />
                 }
               </a>
             </Col>

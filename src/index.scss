@@ -239,9 +239,18 @@ p.hack {
 }
 
 .footerIconDesktop {
-  margin-right: 24px
+  margin-right: 24px;
 }
 
 .footerIconMobile {
   width: 65%;
+}
+
+.sponsorImage {
+  transition: transform .2s;
+}
+
+.sponsorImage:hover {
+  transition: transform .2s;
+  transform: scale(1.1);
 }
