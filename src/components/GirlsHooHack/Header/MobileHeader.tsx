@@ -12,7 +12,7 @@ function MobileHeader(props: Props) {
     return(
         <div id={props.id} className="container-fluid bg-turq">
 
-            <Row className="text-blue pt-5 pl-4 pb-n5" style={{fontSize:13, letterSpacing: 2}}>
+            <Row className="mono text-blue pt-5 pl-4 pb-n5" style={{fontSize:13.5}}>
                 <text><big>2021 Virtual Hackathon</big></text>
             </Row>
 
@@ -24,7 +24,7 @@ function MobileHeader(props: Props) {
                 <h1>HACK</h1>
             </Row>
 
-            <Row xs={10} className="text-blue pl-3" style={{fontSize:13, letterSpacing: 2}}>
+            <Row xs={10} className="mono text-blue pl-3" style={{fontSize:13}}>
                 <text><big>The University of Virginia</big></text>
             </Row>
 
@@ -33,17 +33,6 @@ function MobileHeader(props: Props) {
             </Row>
 
             <Row>
-                {/*<Col xs={12} className="text-blue text-right" 
-                    style={{backgroundImage: `url(${SignUpMobile})`, 
-                    backgroundRepeat:"no-repeat",
-                    backgroundSize: "95px",
-                    backgroundPosition: "right 43px center",
-                    zIndex: 99
-                    }}>
-                    <a href="https://forms.gle/ChhpzSwMjC8gZNm38" target="_blank" rel="noreferrer noopener" onClick={props.toggle}>
-                        <img src={SignUpCircle} height="150px" width="150px" alt="Sign Up Circle"/>
-                    </a>
-                </Col>*/}
                 <Col xs={12} className="text-blue text-right">
                     <img className="position-absolute signUpTextMobile" src={SignUpMobile} alt="Sign Up text" />
                     <a href="https://forms.gle/ChhpzSwMjC8gZNm38" target="_blank" rel="noreferrer noopener" onClick={props.toggle}>
@@ -51,6 +40,8 @@ function MobileHeader(props: Props) {
                     </a>
                 </Col>
             </Row>
+
+            <Row xs={12} className="pt-5"></Row>
             
         </div>
     );
