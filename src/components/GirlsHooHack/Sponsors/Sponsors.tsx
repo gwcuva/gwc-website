@@ -6,7 +6,7 @@ import Image from 'react-bootstrap/Image';
 
 function Sponsors() {
 
-  const [sponsors, setSponsors] = useState<any[]>([]);
+  const [sponsors, setSponsors] = useState([{'sponsorImage': {'url': ''}, 'sponsorName': '', 'sponsorUrl': '', 'size': ''}]);
 
   useEffect(() => {
     const fetchSponsors = async () => {
