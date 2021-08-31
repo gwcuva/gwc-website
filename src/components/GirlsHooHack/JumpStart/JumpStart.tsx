@@ -32,52 +32,41 @@ function JumpStart() {
     fetchWorkshops();
   }, []);
 
-  const weekdays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+  const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 
   for (let i = 0; i < workshops.length; i++) {
-    console.log(workshops[i].workshopDate);
-    console.log(workshops[i].workshopDate.substring(0, 4) + "/ " + 
-      workshops[i].workshopDate.substring(5, workshops[i].workshopDate.lastIndexOf('-')) + "/ " + 
-      workshops[i].workshopDate.substring(workshops[i].workshopDate.lastIndexOf('-') + 1));
-    const day = new Date(parseInt(workshops[i].workshopDate.substring(0, 4)),
-                          parseInt(workshops[i].workshopDate.substring(5, workshops[i].workshopDate.lastIndexOf('-'))) - 1,
-                          parseInt(workshops[i].workshopDate.substring(workshops[i].workshopDate.lastIndexOf('-') + 1)));
+    const secondDash = workshops[i].workshopDate.lastIndexOf('-');
+    const year = workshops[i].workshopDate.substring(0, 4);
+    const month = months[parseInt(workshops[i].workshopDate.substring(5, secondDash))-1];
+    const dayOfMonth = workshops[i].workshopDate.substring(secondDash+1);
+
+    const day = new Date(month + " " + dayOfMonth + ", " + year + " 23:15:30");
     
-    console.log(day.getDay());
-    workshops[i].workshopDate = weekdays[day.getDay()];
+    switch(day.toString().substring(0, 3)) {
+      case "Sun":
+        workshops[i].workshopDate = "Sunday";
+        break;
+      case "Mon":
+        workshops[i].workshopDate = "Monday";
+        break;
+      case "Tue":
+        workshops[i].workshopDate = "Tuesday";
+        break;
+      case "Wed":
+        workshops[i].workshopDate = "Wednesday";
+        break;
+      case "Thu":
+        workshops[i].workshopDate = "Thursday";
+        break;
+      case "Fri":
+        workshops[i].workshopDate = "Friday";
+        break;
+      case "Sat":
+        workshops[i].workshopDate = "Saturday";
+        break;
+    }
 
-    // switch(day.toString().substring(0, 3)) {
-    //   case "Sun":
-    //     workshops[i].workshopDate = "Sunday";
-    //     break;
-    //   case "Mon":
-    //     workshops[i].workshopDate = "Monday";
-    //     break;
-    //   case "Tue":
-    //     workshops[i].workshopDate = "Tuesday";
-    //     break;
-    //   case "Wed":
-    //     workshops[i].workshopDate = "Wednesday";
-    //     break;
-    //   case "Thu":
-    //     workshops[i].workshopDate = "Thursday";
-    //     break;
-    //   case "Fri":
-    //     workshops[i].workshopDate = "Friday";
-    //     break;
-    //   case "Sat":
-    //     workshops[i].workshopDate = "Saturday";
-    //     break;
-    // }
-    console.log(workshops[i].workshopDate);
-    console.log(day.toString().substring(4, 10) + ".....");
     workshops[i].workshopDate += ", " + day.toString().substring(4, 10);
-    console.log(workshops[i].workshopDate + "***");
-  }
-
-  console.log("_______");
-  for (let i = 0; i < workshops.length; i++) {
-    console.log(workshops[i].workshopName + " " + workshops[i].workshopDate);
   }
 
   return (
@@ -109,7 +98,7 @@ function JumpStart() {
               </Row>
               <Collapse isOpened={dropdownOpen}>
               {workshops.map((workshop) => 
-                  <Workshop key={workshop.id} name={workshop.workshopName} date={workshop.workshopDate} detail={workshop.description} ></Workshop>)}
+                  <Workshop key={workshop.id} name={workshop.workshopName} date={workshop.workshopDate.substring(0, workshop.workshopDate.length - 24)} detail={workshop.description} ></Workshop>)}
               </Collapse>
             </div>
             :
@@ -118,7 +107,7 @@ function JumpStart() {
               <Row className="pt-2">                
                 {workshops.map((workshop) => 
                   <Col xs={4} className="hack" key={workshop.id}>
-                    <Workshop name={workshop.workshopName} date={workshop.workshopDate} detail={workshop.description}></Workshop>
+                    <Workshop name={workshop.workshopName} date={workshop.workshopDate.substring(0, workshop.workshopDate.length - 8)} detail={workshop.description}></Workshop>
                   </Col>)}
               </Row>
             </div>
