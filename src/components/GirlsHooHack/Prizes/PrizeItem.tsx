@@ -9,6 +9,7 @@ import { isMobile } from 'react-device-detect';
 interface Props {
   key: string;
   name: string;
+  object: string;
   detail: string;
 }
 
@@ -21,6 +22,7 @@ function PrizeItem(props: Props): JSX.Element {
                 <Row>
                     <Col xs={9} className="d-flex justify-content-start">
                         <h3 className="mono font-weight-bold">{props.name}</h3>
+                        {/* <h4 className="mono font-weight-bold">{props.object}</h4> */}
                     </Col>
                     <Col xs={2} className="d-flex justify-content-end ml-3">
                     <div onClick={() => setDropdownOpen(!dropdownOpen)} 
@@ -31,6 +33,7 @@ function PrizeItem(props: Props): JSX.Element {
                     </Col>
                 </Row>
                 <Collapse isOpened={dropdownOpen}>
+                    <p className="font-italic">{props.object}</p>
                     <p>{props.detail}</p>
                 </Collapse>
             </div>
@@ -39,6 +42,7 @@ function PrizeItem(props: Props): JSX.Element {
         return (
             <Col xs={4} className="mb-4">
                 <h4 className="hack">{props.name}</h4>
+                <p className="font-italic">{props.object}</p>
                 <p>{props.detail}</p>
             </Col>
         );
