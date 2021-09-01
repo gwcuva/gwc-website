@@ -1,3 +1,4 @@
+// test comment
 import {Row, Col} from 'react-bootstrap';
 import {isMobile} from 'react-device-detect';
 import Waves from '../../../assets/images/hack-header-desktop-wave.svg';
