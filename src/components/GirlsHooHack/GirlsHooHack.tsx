@@ -5,7 +5,7 @@ import FAQ from './FAQ/FAQ';
 import Header from './Header/Header';
 import MobileHeader from './Header/MobileHeader';
 import JumpStart from './JumpStart/JumpStart';
-import Prizes from './Prizes/Prizes';
+//import Prizes from './Prizes/Prizes';
 //import Schedule from './Schedule/Schedule';
 //import Sponsors from './Sponsors/Sponsors';
 import {BrowserView, MobileView} from 'react-device-detect';
