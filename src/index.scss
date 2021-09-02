@@ -214,3 +214,59 @@ p.hack {
 .dropdownIcon:hover {
   color: $output-orange
 }
+
+.footerLogoDesktop {
+  margin-top: 195px;
+  margin-left: 140px
+}
+.footerLogoMobile {
+  margin-top: 85px;
+  margin-bottom: -40px;
+  margin-left: 25px
+}
+
+.footerIconRowDesktop {
+  margin-top: 340px;
+  margin-left: 140px;
+  z-index: 100
+}
+.footerIconRowMobile {
+  margin-top: 50px;
+  margin-left: 25px;
+  z-index: 100;
+}
+
+.footerIconDesktop {
+  margin-right: 24px;
+}
+.footerIconMobile {
+  width: 65%;
+  display: inline;
+}
+.hovIcon {
+  display: none;
+}
+.normIcon:hover {
+  display: none;
+}
+.normIcon:active {
+  display: none;
+}
+.normIcon:hover + .hovIcon {
+  display: block;
+}
+.normIcon:active + .hovIcon {
+  display: block;
+}
+
+.sponsorImage {
+  transition: transform .2s;
+}
+.sponsorImage:hover {
+  transition: transform .2s;
+  transform: scale(1.1);
+}
+.sponsorImage:active {
+  transition: transform .2s;
+  transform: scale(1.1);
+}
