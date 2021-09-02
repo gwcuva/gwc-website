@@ -5,7 +5,7 @@ import {isMobile} from 'react-device-detect';
 import SpeakerItem from './SpeakerItem';
 
 function Speakers() {
-    const [speakers, setSpeakers] = useState([{'id': '', 'name': '', 'image': '', 'bio': ''}]);
+    const [speakers, setSpeakers] = useState([{'id': '', 'name': '', 'image': '', 'bio': '', 'headshot': {'url': ''}}]);
 
     useEffect(() => {
       const fetchSpeakers = async () => {
@@ -17,6 +17,9 @@ function Speakers() {
                 id
                 name
                 bio
+                headshot {
+                  url
+                }
               }
             }
           `
@@ -35,14 +38,16 @@ function Speakers() {
                 <div>
                     <h2 className="text-orange hack">SPEAKERS</h2>
                     {speakers.map((speaker) => 
-                    <SpeakerItem key={speaker.id} name={speaker.name} bio={speaker.bio} ></SpeakerItem>)}
+                    // <SpeakerItem key={speaker.id} name={speaker.name} bio={speaker.bio} headshot.url={speaker.headshot.url} ></SpeakerItem>)}
+                    <SpeakerItem mem={speaker} />)}
                 </div>
                 :
                 <div>
                     <h2 className="text-orange hack pb-3">Speakers</h2>
                     <Row>
                     {speakers.map((speaker) => 
-                        <SpeakerItem key={speaker.id} name={speaker.name} bio={speaker.bio} ></SpeakerItem>)}
+                        // <SpeakerItem key={speaker.id} name={speaker.name} bio={speaker.bio} headshot.url={speaker.headshot.url} ></SpeakerItem>)}
+                        <SpeakerItem mem={speaker} />)}
                     </Row>
                 </div>}
             </Col>
