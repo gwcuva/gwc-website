@@ -2,44 +2,21 @@ import React, { useEffect, useState } from 'react';
 import { request } from 'graphql-request';
 import {Row, Col} from 'react-bootstrap';
 import { isMobile } from 'react-device-detect';
-import FAQComponent from './FAQComponent';
 
 function SponsorshipProspectus() {
 
-  const [faq, setFaq] = useState([{'question': '', 'answer': ''}]);
-
-  useEffect(() => {
-    const fetchFaq = async () => {
-      const { hackathonFaqs } = await request(
-        process.env.REACT_APP_GRAPHCMS_URL ? process.env.REACT_APP_GRAPHCMS_URL : "",
-        `
-          { 
-            hackathonFaqs {
-              question
-              answer
-            }
-          }
-        `
-      );
-      setFaq(hackathonFaqs);
-    };
-
-    fetchFaq();
-  }, []);
-
   return (
-    <div>
-      <Row className="justify-content-center bg-hack-grey py-5">
-        <Col md={10} xs={11} className={isMobile ? "my-3" : "my-5 py-5"}>
-          <h2 className="text-orange hack">FAQ</h2>
-          <Row>
-            <Col md={8} xs={24}>
-              {faq.map((mem, index) => <FAQComponent key={index} Question={mem.question} Answer={mem.answer}></FAQComponent>)}
-            </Col>
-          </Row>
-        </Col>
-      </Row>
-    </div>
+    <Row className={`bg-hack-grey justify-content-center py-5`}>
+      <Col sm={10} xs={11} className={isMobile ? "my-3" : "my-5 py-5"}>
+        <h2 className="text-orange hack">Sponsorship Prospectus</h2>
+        <Row className={isMobile ? "" : "my-5"}>
+          <Col md={10} xs={11} className={isMobile ? "my-3" : "mr-5"}>
+            <h3 className="mono text-peach mt-4 mb-4">Interested in sponsoring us? Check out our Sponsorship Prospectus!</h3>
+            <iframe className="sponsorshipProspectus" title="Sponsorship Prospectus" src="https://cdn.kutasoftware.com/Worksheets/Calc/01%20-%20Limits%20by%20Direct%20Evaluation.pdf"></iframe>
+          </Col>
+        </Row>
+      </Col>
+    </Row>
   );
 }
 
