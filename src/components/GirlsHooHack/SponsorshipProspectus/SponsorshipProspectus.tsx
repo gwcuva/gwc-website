@@ -13,6 +13,7 @@ function SponsorshipProspectus() {
           <Col md={10} xs={11} className={isMobile ? "my-3" : "mr-5"}>
             <h3 className="mono text-peach mt-4 mb-4">Interested in sponsoring us? Check out our Sponsorship Prospectus!</h3>
             <iframe className="sponsorshipProspectus" title="Sponsorship Prospectus" src="https://girls-hoo-hack.webnode.com/_files/200000013-94ee994eec/GHH%202020%20Sponsorship%20Prospectus-7.pdf"></iframe>
+            <a href="https://github.com/gwcuva/gwc-website/blob/nb3jg-sponsorship-prospectus/src/components/GirlsHooHack/SponsorshipProspectus/GHH%20Sponsorship%20Prospectus%202021.pdf">test</a>
           </Col>
         </Row>
       </Col>
