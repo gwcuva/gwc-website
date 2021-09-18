@@ -11,9 +11,13 @@ function SponsorshipProspectus() {
         <h2 className="text-orange hack">Sponsorship Prospectus</h2>
         <Row className={isMobile ? "" : "mt-4 mb-5"}>
           <Col md={10} xs={11} className={isMobile ? "my-3" : "mr-5"}>
-            <h3 className="mono text-peach mt-4 mb-4">Interested in sponsoring us? Check out our Sponsorship Prospectus!</h3>
-            <iframe className="sponsorshipProspectus" title="Sponsorship Prospectus" src="https://girls-hoo-hack.webnode.com/_files/200000013-94ee994eec/GHH%202020%20Sponsorship%20Prospectus-7.pdf"></iframe>
-            <a href="https://github.com/gwcuva/gwc-website/blob/nb3jg-sponsorship-prospectus/src/components/GirlsHooHack/SponsorshipProspectus/GHH%20Sponsorship%20Prospectus%202021.pdf">test</a>
+            <h3 className="mono text-peach mt-4 mb-4" white-space="pre">Interested in sponsoring us? Check out our&nbsp;
+              <a href="https://drive.google.com/file/d/1zCGhSBKaAHCGX-zT2KnA7yCuNUpgtfoN/view" 
+                target="_blank" rel="noreferrer noopener" className="hoverColor">
+                Sponsorship Prospectus
+              </a>
+              !
+            </h3>
           </Col>
         </Row>
       </Col>
