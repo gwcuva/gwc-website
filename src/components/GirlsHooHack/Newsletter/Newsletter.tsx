@@ -8,7 +8,7 @@ function Newsletter() {
     // const emailInput = useRef(null);
     const emailInput = useRef<HTMLInputElement>(null);
     function signUp(e: any) {
-        e.preventDefault()
+        e.preventDefault();
         console.log("sign up");
         if(emailInput && emailInput.current) {
             console.log(emailInput.current.value);
@@ -30,10 +30,6 @@ function Newsletter() {
                 <div>
                     <h2 className="text-orange hack pb-3">Sign up for our newsletter below</h2>
                     <form onSubmit={signUp}>
-                        {/* <Row>
-                            <Col>
-                            </Col>
-                        </Row> */}
                         <input type="text" ref={emailInput} placeholder="Enter email"></input>
                         <button type="submit" className="btn btn-primary ml-3">Sign up</button>
                     </form>
