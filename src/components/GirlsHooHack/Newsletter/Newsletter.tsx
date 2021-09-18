@@ -12,7 +12,9 @@ function Newsletter() {
         console.log("sign up");
         if(emailInput && emailInput.current) {
             console.log(emailInput.current.value);
+            emailInput.current.value = "";
         }
+        
             
     }
   return (
