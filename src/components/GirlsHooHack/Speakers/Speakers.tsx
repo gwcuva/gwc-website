@@ -2,18 +2,19 @@ import { useEffect, useState } from 'react';
 import { request } from 'graphql-request';
 import {Row, Col} from 'react-bootstrap';
 import {isMobile} from 'react-device-detect';
-import SpeakerItem from './SpeakerItem';
+import KeynoteItem from './KeynoteItem';
+import PanelistItem from './PanelistItem';
 
 function Speakers() {
-    const [speakers, setSpeakers] = useState([{'id': '', 'name': '', 'image': '', 'bio': '', 'headshot': {'url': ''}}]);
-
+    const [keynotes, setKeynotes] = useState([{'id': '', 'name': '', 'image': '', 'bio': '', 'headshot': {'url': ''}}]);
+    const [panelists, setPanelists] = useState([{'id': '', 'name': '', 'image': '', 'bio': '', 'headshot': {'url': ''}}]);
     useEffect(() => {
-      const fetchSpeakers = async () => {
-        const { hackathonSpeakers } = await request(
+      const fetchKeynotes = async () => {
+        const { hackathonKeynotes } = await request(
           process.env.REACT_APP_GRAPHCMS_URL ? process.env.REACT_APP_GRAPHCMS_URL : "",
           `
             { 
-              hackathonSpeakers {
+              hackathonKeynotes {
                 id
                 name
                 bio
@@ -24,9 +25,29 @@ function Speakers() {
             }
           `
         );
-        setSpeakers(hackathonSpeakers);
+        setKeynotes(hackathonKeynotes);
       };
-      fetchSpeakers();
+      fetchKeynotes();
+
+      const fetchPanelists = async () => {
+        const { hackathonPanelists } = await request(
+          process.env.REACT_APP_GRAPHCMS_URL ? process.env.REACT_APP_GRAPHCMS_URL : "",
+          `
+            { 
+                hackathonPanelists {
+                id
+                name
+                bio
+                headshot {
+                  url
+                }
+              }
+            }
+          `
+        );
+        setPanelists(hackathonPanelists);
+      };
+      fetchPanelists();
     }, []);
 
     return (
@@ -37,17 +58,27 @@ function Speakers() {
             {isMobile ? 
                 <div>
                     <h2 className="text-orange hack">SPEAKERS</h2>
-                    {speakers.map((speaker) => 
-                    // <SpeakerItem key={speaker.id} name={speaker.name} bio={speaker.bio} headshot.url={speaker.headshot.url} ></SpeakerItem>)}
-                    <SpeakerItem mem={speaker} />)}
+                    <h3 className="mono text-peach hack">KEYNOTE SPEAKERS</h3>
+                    
+                    {keynotes.map((keynote) => 
+                      <KeynoteItem mem={keynote} />)}
+                    <h3 className="mono text-peach hack mb-4">PANELISTS</h3>
+                    {panelists.map((panelists) => 
+                        <PanelistItem mem={panelists} />)}
+
                 </div>
                 :
                 <div>
                     <h2 className="text-orange hack pb-3">Speakers</h2>
+                    <h3 className="mono text-peach hack mb-4">Keynote Speakers</h3>
+                    <Row className="justify-content-center">
+                    {keynotes.map((keynote) => 
+                        <KeynoteItem mem={keynote} />)}
+                    </Row>
+                    <h3 className="mono text-peach hack mb-4">Panelists</h3>
                     <Row>
-                    {speakers.map((speaker) => 
-                        // <SpeakerItem key={speaker.id} name={speaker.name} bio={speaker.bio} headshot.url={speaker.headshot.url} ></SpeakerItem>)}
-                        <SpeakerItem mem={speaker} />)}
+                    {panelists.map((panelists) => 
+                        <PanelistItem mem={panelists} />)}
                     </Row>
                 </div>}
             </Col>

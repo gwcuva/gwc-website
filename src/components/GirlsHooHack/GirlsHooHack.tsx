@@ -9,7 +9,7 @@ import MobileHeader from './Header/MobileHeader';
 //import Schedule from './Schedule/Schedule';
 //import Sponsors from './Sponsors/Sponsors';
 import Speakers from './Speakers/Speakers';
-import Panelists from './Panelists/Panelists';
+//import Panelists from './Panelists/Panelists';
 import {BrowserView, MobileView} from 'react-device-detect';
 import Waves from '../../assets/images/hack-header-mobile-wave.svg';
 
@@ -25,7 +25,6 @@ function GirlsHooHack() {
       </MobileView>
       <About />
       <Speakers />
-      <Panelists />
       {/*
       <JumpStart />
       <Schedule />

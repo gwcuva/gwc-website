@@ -10,7 +10,7 @@ interface Props {
     }
 }
 
-function SpeakerItem(props: Props): JSX.Element {
+function KeynoteItem(props: Props): JSX.Element {
     const mem = props.mem;
     if(isMobile) {
         return (
@@ -39,4 +39,4 @@ function SpeakerItem(props: Props): JSX.Element {
     }
 }
 
-export default SpeakerItem;
+export default KeynoteItem;

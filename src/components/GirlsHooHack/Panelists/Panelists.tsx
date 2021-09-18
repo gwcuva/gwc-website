@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { request } from 'graphql-request';
 import {Row, Col} from 'react-bootstrap';
 import {isMobile} from 'react-device-detect';
-import PanelistItem from './PanelistItem';
+//import PanelistItem from '../Speakers/PanelistItem';
 
 function Panelists() {
     const [panelists, setPanelists] = useState([{'id': '', 'name': '', 'image': '', 'bio': '', 'headshot': {'url': ''}}]);
@@ -37,15 +37,15 @@ function Panelists() {
             {isMobile ? 
                 <div>
                     <h2 className="text-orange hack">PANELISTS</h2>
-                    {panelists.map((panelists) => 
-                        <PanelistItem mem={panelists} />)}
+                    {/* {panelists.map((panelists) => 
+                        <PanelistItem mem={panelists} />)} */}
                 </div>
                 :
                 <div>
                     <h2 className="text-orange hack pb-3">Panelists</h2>
                     <Row>
-                    {panelists.map((panelists) => 
-                        <PanelistItem mem={panelists} />)}
+                    {/* {panelists.map((panelists) => 
+                        <PanelistItem mem={panelists} />)} */}
                     </Row>
                 </div>}
             </Col>
