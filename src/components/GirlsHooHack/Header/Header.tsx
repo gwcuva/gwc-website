@@ -12,14 +12,12 @@ interface Props {
 
 function Header(props: Props) {
   return (
-    <div id={props.id} className="container-fluid m-0 bg-turq" 
-    style={{backgroundImage: `url(${Waves})`, 
-              backgroundRepeat: "no-repeat",
-              backgroundPosition: "0px 325px",
-              width:"100%" }}>
+    <div id={props.id} className="container-fluid m-0 bg-turq" >
 
         <Row xs={12} className="pt-5"></Row>
         <Row xs={12} className="pt-5"></Row>
+
+        <img className="w-100 position-absolute ml-n3 mt-4" src={Waves} alt="Orange waves"/>
 
         <Row xs={12} className="pl-5">
             <Col xs={1}></Col>
@@ -35,23 +33,20 @@ function Header(props: Props) {
         <Row xs={12} className="mt-n5">
           <Col xs={1}></Col>
           <Col xs={3}><h1 className={isMobile ? "text-white":"text-white"}>HOO</h1></Col>
-          <Col xs={4}><h2 className={isMobile ? "text-blue":"text-blue font-weight-bold pt-4"}>2021 VIRTUAL HACKATHON</h2></Col>
+          <Col xs={4}><h2 className={isMobile ? "text-blue":"text-blue font-weight-bold pt-4"}>2021 HYBRID HACKATHON</h2></Col>
         </Row>
 
         <Row className="pt-0 mt-n5 pb-5">
           <Col xs={2}></Col>
           <Col xs={6}><h1 className="text-white">HACK</h1></Col>
-          <Col 
-          style={{backgroundImage: `url(${SignUpText})`, 
-          backgroundRepeat:"no-repeat",
-          backgroundPosition: "right 150px center"}}>
-            <a href="https://girls-hoo-hack-2021.devpost.com/" target="_blank" rel="noreferrer noopener" onClick={props.toggle}>
-              <img src={SignUpCircle} alt="Sign Up Circle"/>
+          <Col>
+            <img className="position-absolute signUpTextDesktop" src={SignUpText} alt="Sign Up text" />
+            <a href="https://forms.gle/ChhpzSwMjC8gZNm38" target="_blank" rel="noreferrer noopener" onClick={props.toggle}>
+              <img className="position-relative" src={SignUpCircle} alt="Sign Up Circle"/>
             </a>
           </Col>
         </Row>
 
-        <Row xs={12} className="pt-5 pb-5"></Row>
         <Row xs={12} className="pt-5 pb-5"></Row>
         <Row xs={12} className="pt-5 pb-5"></Row>
 
