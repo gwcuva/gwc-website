@@ -6,8 +6,8 @@ import KeynoteItem from './KeynoteItem';
 import PanelistItem from './PanelistItem';
 
 function Speakers() {
-    const [keynotes, setKeynotes] = useState([{'id': '', 'name': '', 'image': '', 'bio': '', 'headshot': {'url': ''}}]);
-    const [panelists, setPanelists] = useState([{'id': '', 'name': '', 'image': '', 'bio': '', 'headshot': {'url': ''}}]);
+    const [keynotes, setKeynotes] = useState([{'id': '', 'name': '', 'image': '', 'bio': '', 'headshot': {'url': ''}, 'linkedIn': ''}]);
+    const [panelists, setPanelists] = useState([{'id': '', 'name': '', 'image': '', 'bio': '', 'headshot': {'url': ''}, 'linkedIn': ''}]);
     useEffect(() => {
       const fetchKeynotes = async () => {
         const { hackathonKeynotes } = await request(
@@ -21,6 +21,7 @@ function Speakers() {
                 headshot {
                   url
                 }
+                linkedIn
               }
             }
           `
@@ -41,6 +42,7 @@ function Speakers() {
                 headshot {
                   url
                 }
+                linkedIn
               }
             }
           `
@@ -72,13 +74,13 @@ function Speakers() {
                     <h2 className="text-orange hack pb-3">Speakers</h2>
                     <h3 className="mono text-peach hack mb-4">Keynote Speakers</h3>
                     <Row className="justify-content-center">
-                    {keynotes.map((keynote) => 
-                        <KeynoteItem mem={keynote} />)}
+                      {keynotes.map((keynote) => 
+                          <KeynoteItem mem={keynote} />)}
                     </Row>
                     <h3 className="mono text-peach hack mb-4">Panelists</h3>
                     <Row>
-                    {panelists.map((panelists) => 
-                        <PanelistItem mem={panelists} />)}
+                      {panelists.map((panelists) => 
+                          <PanelistItem mem={panelists} />)}
                     </Row>
                 </div>}
             </Col>

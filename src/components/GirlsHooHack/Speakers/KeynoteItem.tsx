@@ -7,6 +7,7 @@ interface Props {
         name: string;
         bio: string;
         headshot: { url: string }
+        linkedIn: string;
     }
 }
 
@@ -14,26 +15,20 @@ function KeynoteItem(props: Props): JSX.Element {
     const mem = props.mem;
     if(isMobile) {
         return (
-            <div>
-                <Row className="justify-content-center">{mem.headshot.url && <img width="150px" height="150px" className="circleImg" src={mem.headshot.url} alt={`Headshot of ${mem.name}`} />}</Row>
-                <Row className="justify-content-center">
-                    <h4 className="hack">{mem.name}</h4>
-                </Row>
-                <Row className="justify-content-center">
-                    <p>{mem.bio}</p>
-                </Row>
-            </div>
+            <a href={`https://linkedin.com/in/${mem.linkedIn}`} target="_blank" rel="noopener noreferrer">
+                <Row className="justify-content-center">{mem.headshot.url && <img width="200px" height="200px" className="circleImg" src={mem.headshot.url} alt={`Headshot of ${mem.name}`} />}</Row>
+                <p className="text-peacock mt-2 mb-0 text-center">{mem.name}</p>
+                <p className="text-peacock p2 text-center">{mem.bio}</p>
+            </a>
         );
     } else {
         return (
-            <Col xs={4} className="mb-4 justify-content-center">
-                <Row className="justify-content-center">{mem.headshot.url && <img width="200px" height="200px" className="circleImg" src={mem.headshot.url} alt={`Headshot of ${mem.name}`} />}</Row>
-                <Row className="justify-content-center">
-                    <h4 className="hack">{mem.name}</h4>
-                </Row>
-                <Row className="justify-content-center">
-                    <p>{mem.bio}</p>
-                </Row>
+            <Col xs={5} className="mb-4 justify-content-center">
+                <a  href={`https://linkedin.com/in/${mem.linkedIn}`} target="_blank" rel="noopener noreferrer">
+                    <Row className="justify-content-center">{mem.headshot.url && <img width="230px" height="230px" className="circleImg" src={mem.headshot.url} alt={`Headshot of ${mem.name}`} />}</Row>
+                    <p className="text-peacock mt-2 mb-0 text-center">{mem.name}</p>
+                    <p className="text-peacock p2 text-center">{mem.bio}</p>
+                </a>
             </Col>
         );
     }
