@@ -21,19 +21,21 @@ function GirlsHooHack() {
         <MobileHeader id="MobileHeader"/>
         <img src={Waves} style={{marginTop:"-215px", marginBottom:"-120px"}} width = "100%" alt="Orange wave" />
       </MobileView>
-      <About />
-      <JumpStart />
-      {/*
-      <Schedule />
-      <Prizes />
-      <Prizes />
-      {/*
-      <JumpStart />
-      <Schedule /> 
-      */}
-      <FAQ />
-      <Sponsors />
-      <Footer />
+      <div  className="overflow-hidden">
+        <About />
+        <JumpStart />
+        {/*
+        <Schedule />
+        <Prizes />
+        <Prizes />
+        {/*
+        <JumpStart />
+        <Schedule /> 
+        */}
+        <FAQ />
+        <Sponsors />
+        <Footer />
+      </div>
     </div>
   );
 }
