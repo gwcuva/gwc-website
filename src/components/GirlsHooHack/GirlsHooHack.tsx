@@ -6,6 +6,7 @@ import Header from './Header/Header';
 import MobileHeader from './Header/MobileHeader';
 //import JumpStart from './JumpStart/JumpStart';
 import Prizes from './Prizes/Prizes';
+import Newsletter from './Newsletter/Newsletter';
 //import Schedule from './Schedule/Schedule';
 import Sponsors from './Sponsors/Sponsors';
 import {BrowserView, MobileView} from 'react-device-detect';
@@ -28,6 +29,7 @@ function GirlsHooHack() {
       <Schedule /> 
       */}
       <FAQ />
+      <Newsletter />
       <Sponsors />
       <Footer />
     </div>
