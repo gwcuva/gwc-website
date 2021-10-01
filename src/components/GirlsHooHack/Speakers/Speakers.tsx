@@ -75,12 +75,12 @@ function Speakers() {
                     <h3 className="mono text-peach hack mb-4">Keynote Speakers</h3>
                     <Row className="justify-content-center">
                       {keynotes.map((keynote) => 
-                          <KeynoteItem mem={keynote} />)}
+                          <KeynoteItem key={keynote.id} mem={keynote} />)}
                     </Row>
                     <h3 className="mono text-peach hack mb-4">Panelists</h3>
                     <Row>
-                      {panelists.map((panelists) => 
-                          <PanelistItem mem={panelists} />)}
+                      {panelists.map((panelist) => 
+                          <PanelistItem key={panelist.id} mem={panelist} />)}
                     </Row>
                 </div>}
             </Col>
