@@ -63,10 +63,10 @@ function Speakers() {
                     <h3 className="mono text-peach hack">KEYNOTE SPEAKERS</h3>
                     
                     {keynotes.map((keynote) => 
-                      <KeynoteItem mem={keynote} />)}
+                      <KeynoteItem key={keynote.id} mem={keynote} />)}
                     <h3 className="mono text-peach hack mb-4">PANELISTS</h3>
-                    {panelists.map((panelists) => 
-                        <PanelistItem mem={panelists} />)}
+                    {panelists.map((panelist) => 
+                        <PanelistItem key={panelist.id} mem={panelist} />)}
 
                 </div>
                 :
