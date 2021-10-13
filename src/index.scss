@@ -211,7 +211,7 @@ p.hack {
   }
 }
 
-.dropdownIcon:hover {
+.hoverColor:hover {
   color: $output-orange
 }
 
@@ -279,4 +279,9 @@ p.hack {
 .sponsorImage:active {
   transition: transform .2s;
   transform: scale(1.1);
+}
+
+.sponsorshipProspectus {
+  width: 800px;
+  height: 600px;
 }
