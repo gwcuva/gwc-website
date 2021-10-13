@@ -4,7 +4,7 @@ import { isMobile } from 'react-device-detect';
 
 function About() {
   return (
-  <Row className={`bg-hack-grey justify-content-center py-5`}>
+  <Row id="hackAbout" className={`bg-hack-grey justify-content-center py-5`}>
     <Col sm={10} xs={11} className={isMobile ? "my-3" : "my-5 py-5"}>
       <h2 className="text-orange hack">About</h2>
       <Row className={isMobile ? "" : "my-5"}>

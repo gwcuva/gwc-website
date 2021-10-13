@@ -32,7 +32,7 @@ function Sponsors() {
   }, []);
 
   return (
-    <Row className={`justify-content-center py-5`}>
+    <Row id="sponsors" className={`justify-content-center py-5`}>
       <Col sm={10} xs={11} className={isMobile ? "my-3" : "my-5 py-5"}>
         <h2 className="text-orange hack">Sponsors</h2>
         <Row className={`${!isMobile && "mt-1 mb-5"} d-flex justify-content-around`}>

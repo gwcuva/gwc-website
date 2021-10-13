@@ -5,7 +5,7 @@ import FAQ from './FAQ/FAQ';
 import Header from './Header/Header';
 import MobileHeader from './Header/MobileHeader';
 import JumpStart from './JumpStart/JumpStart';
-//import Prizes from './Prizes/Prizes';
+import Prizes from './Prizes/Prizes';
 //import Schedule from './Schedule/Schedule';
 import Sponsors from './Sponsors/Sponsors';
 import Navbar from './Navbar/Navbar';
@@ -22,9 +22,9 @@ function GirlsHooHack() {
         <MobileHeader id="MobileHeader"/>
         <img src={Waves} style={{marginTop:"-215px", marginBottom:"-120px"}} width = "100%" alt="Orange wave" />
       </MobileView>
+      <Navbar />
       <About />
       <JumpStart />
-      <Navbar />
       {/*
       <Schedule />
       <Prizes />

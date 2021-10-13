@@ -28,7 +28,7 @@ function Prizes(): JSX.Element {
   }, []);
 
   return (
-  <Row className={`bg-white justify-content-center py-5`}>
+  <Row id="hackPrizes" className={`bg-white justify-content-center py-5`}>
     <Col sm={10} xs={11} className={isMobile ? "my-3" : "py-5"}>
       <Row className={isMobile ? "" : "my-5"}>
         <Col>

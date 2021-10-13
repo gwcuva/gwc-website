@@ -5,22 +5,22 @@ function Navbar() {
     return (
         <nav className="bg-turq d-flex flex-row pt-3 pb-3 align-items-center justify-content-center">
             <Nav.Item>
-                <Nav.Link href="#" className="mono text-blue"><b>About</b></Nav.Link>
+                <Nav.Link href="#hackAbout" className="mono text-white mr-4"><b className="navItem">About</b></Nav.Link>
             </Nav.Item>
             <Nav.Item>
-                <Nav.Link href="#" className="mono text-white"><b>JumpStart</b></Nav.Link>
+                <Nav.Link href="#jumpstart" className="mono text-white mr-4"><b className="navItem">JumpStart</b></Nav.Link>
             </Nav.Item>
             <Nav.Item>
-                <Nav.Link href="#" className="mono text-white"><b>Schedule</b></Nav.Link>
+                <Nav.Link href="#" className="mono text-white mr-4"><b className="navItem">Schedule</b></Nav.Link>
             </Nav.Item>
             <Nav.Item>
-                <Nav.Link href="#" className="mono text-white"><b>Prizes</b></Nav.Link>
+                <Nav.Link href="#hackPrizes" className="mono text-white mr-4"><b className="navItem">Prizes</b></Nav.Link>
             </Nav.Item>
             <Nav.Item>
-                <Nav.Link href="#" className="mono text-white"><b>FAQ</b></Nav.Link>
+                <Nav.Link href="#faq" className="mono text-white mr-4"><b className="navItem">FAQ</b></Nav.Link>
             </Nav.Item>
             <Nav.Item>
-                <Nav.Link href="#" className="mono text-white"><b>Sponsors</b></Nav.Link>
+                <Nav.Link href="#sponsors" className="mono text-white mr-4"><b className="navItem">Sponsors</b></Nav.Link>
             </Nav.Item>
         </nav>
     );
