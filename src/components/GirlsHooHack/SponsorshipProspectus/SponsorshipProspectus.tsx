@@ -1,9 +1,8 @@
-import React, { useEffect, useState } from 'react';
-import { request } from 'graphql-request';
+import React from 'react';
 import {Row, Col} from 'react-bootstrap';
 import { isMobile } from 'react-device-detect';
 
-function SponsorshipProspectus() {
+function SponsorshipProspectus(): JSX.Element {
 
   return (
     <Row className={`bg-hack-grey justify-content-center py-5`}>
