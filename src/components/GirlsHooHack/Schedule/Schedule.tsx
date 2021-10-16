@@ -1,6 +1,6 @@
-import React, { useEffect, useState} from 'react';
+import React, {useState} from 'react';
 import Activity from './Activity';
-import { request } from 'graphql-request';
+//import { request } from 'graphql-request';
 import { isMobile } from 'react-device-detect';
 import { Row, Col } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -9,8 +9,8 @@ import { faMinus } from '@fortawesome/free-solid-svg-icons'
 import {Collapse } from 'react-collapse';
 
 function Schedule() {
-  const [events, setEvents] = useState([{'id': '', 'eventName': '', 'link': '', 'time': '', 'description': ''}]);
-  const [dates, setDates] = useState(['']);
+  // const [events, setEvents] = useState([{'id': '', 'eventName': '', 'link': '', 'time': '', 'description': ''}]);
+  // const [dates, setDates] = useState(['']);
 
   const [open1, setOpen1] = useState(false);
   const [open2, setOpen2] = useState(false);

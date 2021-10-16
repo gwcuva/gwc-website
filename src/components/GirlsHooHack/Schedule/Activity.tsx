@@ -1,4 +1,3 @@
-import {isMobile} from 'react-device-detect';
 import {Row, Col} from 'react-bootstrap';
 
 interface Props {
