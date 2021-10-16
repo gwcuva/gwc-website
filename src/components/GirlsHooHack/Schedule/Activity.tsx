@@ -7,7 +7,7 @@ interface Props {
   link?: string;
 }
 
-function Activity(props: Props) {
+function Activity(props: Props): JSX.Element {
   return (
     <Row className="mb-2">
         <Col>
