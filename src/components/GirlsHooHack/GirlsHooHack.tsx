@@ -3,6 +3,7 @@ import MobileHeader from './Header/MobileHeader';
 import About from './About/About';
 import JumpStart from './JumpStart/JumpStart';
 import Schedule from './Schedule/Schedule';
+import Speakers from './Speakers/Speakers'
 import FAQ from './FAQ/FAQ';
 import Sponsors from './Sponsors/Sponsors';
 //import Prizes from './Prizes/Prizes';
@@ -24,6 +25,7 @@ function GirlsHooHack() {
         <About />
         <JumpStart />
         <Schedule />
+        <Speakers />
         <FAQ />
         <Sponsors />
         <Footer />
