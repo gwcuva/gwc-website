@@ -24,14 +24,14 @@ function Main() {
       <MobileView>
         <MobileNavbar />
       </MobileView>
-      <div className="overflow-auto">
+      <div className="overflow-hidden">
         <Header id="header"/>
         <img src={Waves} className="mt-n2" width = "100%" alt="Orange wave" /> 
         <Stats id="stats"/>
         <img src={isMobile ? MobileHelloWorld : HelloWorld} alt="Hello World banner" />
         <About id="about"/>
         <DiscordInvite id="discord-invite"/>
-        <img src={GetStarted} alt="Orange wave saying 'Get Started'" width={isMobile ? "150%" : "100%"}/>
+        <img src={GetStarted} alt="Orange wave saying 'Get Started'" width="100%"/>
         <Team id="team"/>
         <Footer id="footer"/>
       </div>
