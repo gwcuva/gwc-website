@@ -4,7 +4,7 @@ import Navbar from './Navbar/Navbar';
 import Header from './Header/Header';
 import Stats from './Stats/Stats';
 import DiscordInvite from './DiscordInvite/DiscordInvite';
-//import Team from './Team/Team';
+import Team from './Team/Team';
 import About from './About/About';
 import Footer from './Footer/Footer';
 import NavCircle from './Navbar/NavCircle';
@@ -24,15 +24,15 @@ function Main() {
       <MobileView>
         <MobileNavbar />
       </MobileView>
-      <div className="overflow-auto">
+      <div className="overflow-hidden">
         <Header id="header"/>
         <img src={Waves} className="mt-n2" width = "100%" alt="Orange wave" /> 
         <Stats id="stats"/>
         <img src={isMobile ? MobileHelloWorld : HelloWorld} alt="Hello World banner" />
         <About id="about"/>
         <DiscordInvite id="discord-invite"/>
-        <img src={GetStarted} alt="Orange wave saying 'Get Started'" width={isMobile ? "150%" : "100%"}/>
-        {/*<Team id="team"/>}  */}
+        <img src={GetStarted} alt="Orange wave saying 'Get Started'" width="100%"/>
+        <Team id="team"/>
         <Footer id="footer"/>
       </div>
     </div>
