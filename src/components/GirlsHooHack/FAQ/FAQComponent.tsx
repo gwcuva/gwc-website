@@ -23,7 +23,7 @@ function FAQComponent(props: Props): JSX.Element {
         <Col md={1} xs={2}
           onClick={() => setOpen(!open)}
         >
-          {open ? <FaMinus className="text-blue dropdownIcon"/> : <FaPlus className="text-blue dropdownIcon" />}
+          {open ? <FaMinus className="text-blue hoverColor"/> : <FaPlus className="text-blue hoverColor" />}
         </Col>
       </Row>
       <Collapse isOpened={open}>
