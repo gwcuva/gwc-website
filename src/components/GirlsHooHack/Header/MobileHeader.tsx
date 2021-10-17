@@ -2,6 +2,7 @@ import {Row} from 'react-bootstrap';
 import {Col} from 'react-bootstrap';
 import SignUpCircle from '../../../assets/images/sign-up-hack-circle.svg';
 import SignUpMobile from '../../../assets/images/sign-up-mobile.svg';
+import MLHBanner from '../../../assets/images/mlh-banner.svg';
 
 interface Props {
     toggle? : () => void;
@@ -11,6 +12,8 @@ interface Props {
 function MobileHeader(props: Props) {
     return(
         <div id={props.id} className="container-fluid bg-turq">
+
+            <img className="mlhbannermobile" src={MLHBanner} alt="MLH Banner"/>
 
             <Row className="mono text-blue pt-5 pl-4 pb-n5" style={{fontSize:13.5}}>
                 <text><big>2021 Hybrid Hackathon</big></text>
