@@ -5,6 +5,7 @@ import JumpStart from './JumpStart/JumpStart';
 import Schedule from './Schedule/Schedule';
 import FAQ from './FAQ/FAQ';
 import Sponsors from './Sponsors/Sponsors';
+import SponsorshipProspectus from './SponsorshipProspectus/SponsorshipProspectus';
 //import Prizes from './Prizes/Prizes';
 import {BrowserView, MobileView} from 'react-device-detect';
 import Waves from '../../assets/images/hack-header-mobile-wave.svg';
@@ -26,6 +27,7 @@ function GirlsHooHack() {
         <Schedule />
         <FAQ />
         <Sponsors />
+        <SponsorshipProspectus />
         <Footer />
       </div>
     </div>
