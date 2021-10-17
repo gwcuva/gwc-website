@@ -10,9 +10,9 @@ function Navbar() {
             <Nav.Item>
                 <Nav.Link href="#jumpstart" className="mono text-white mr-4"><b className="navItem">JumpStart</b></Nav.Link>
             </Nav.Item>
-            <Nav.Item>
+            {/*<Nav.Item>
                 <Nav.Link href="#" className="mono text-white mr-4"><b className="navItem">Schedule</b></Nav.Link>
-            </Nav.Item>
+            </Nav.Item>*/}
             <Nav.Item>
                 <Nav.Link href="#hackPrizes" className="mono text-white mr-4"><b className="navItem">Prizes</b></Nav.Link>
             </Nav.Item>

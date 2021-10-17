@@ -25,6 +25,7 @@ function GirlsHooHack() {
       <Navbar />
       <About />
       <JumpStart />
+      <Prizes />
       {/*
       <Schedule />
       <Prizes />
