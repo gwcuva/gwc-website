@@ -226,22 +226,22 @@ p.hack {
 }
 
 .footerLogoDesktop {
-  margin-top: 195px;
-  margin-left: 140px
+  margin-top: 100px;
+  margin-left: 140px;
 }
 .footerLogoMobile {
-  margin-top: 85px;
+  margin-top: 20px;
   margin-bottom: -40px;
   margin-left: 25px
 }
 
 .footerIconRowDesktop {
-  margin-top: 340px;
+  margin-top: 250px;
   margin-left: 140px;
   z-index: 100
 }
 .footerIconRowMobile {
-  margin-top: 50px;
+  margin-top: 70px;
   margin-left: 25px;
   z-index: 100;
 }
@@ -249,10 +249,22 @@ p.hack {
 .footerIconDesktop {
   margin-right: 24px;
 }
+
 .footerIconMobile {
   width: 65%;
   display: inline;
 }
+
+.footerMLHCodeDesktop{
+  margin-top: 300px;
+  margin-left: 140px;
+}
+
+.footerMLHCodeMobile{
+  margin-top: 100px;
+  margin-left: 25px;
+}
+
 .hovIcon {
   display: none;
 }
