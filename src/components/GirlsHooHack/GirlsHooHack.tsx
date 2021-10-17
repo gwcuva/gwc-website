@@ -24,7 +24,7 @@ function GirlsHooHack() {
       </MobileView>
       <About />
       <JumpStart />
-      <Schedule /> 
+      {/*<Schedule /> */}
       <FAQ />
       <Sponsors />
       <SponsorshipProspectus />
