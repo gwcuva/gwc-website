@@ -1,6 +1,6 @@
-import React from 'react';
 import blueWaves from '../../../assets/images/footerWaveGHH.png';
 import whiteLogo from '../../../assets/images/whitelogo.png';
+
 import email from '../../../assets/images/envelope-solid.svg';
 import emailPeach from '../../../assets/images/envelope-solid-peach.svg';
 import instagram from '../../../assets/images/instagram-square-brands.svg';
@@ -11,12 +11,16 @@ import facebook from '../../../assets/images/facebook-f-brands.svg';
 import facebookPeach from '../../../assets/images/facebook-f-brands-peach.svg';
 import twitter from '../../../assets/images/twitter-brands.svg';
 import twitterPeach from '../../../assets/images/twitter-brands-peach.svg';
-import {Row} from 'react-bootstrap';
+import {Row, Col} from 'react-bootstrap';
 import {isMobile} from 'react-device-detect';
  
 function Footer() {
   return (
     <div className="bg-peacock">
+      
+        <Col xs={1}></Col>
+        
+      
       <img className={`${isMobile ? "footerLogoMobile" : "position-absolute footerLogoDesktop"}`} src={whiteLogo} 
         width={isMobile ? "125px" : "359px"} height={isMobile ? "39.7px" : "114px"} alt="Girls Who Code at the University of Virginia logo"
       />
@@ -40,6 +44,12 @@ function Footer() {
         <a href="https://twitter.com/gwcuva" target="_blank" rel="noreferrer noopener">
           <img src={twitter} className={`${isMobile ? "footerIconMobile" : "footerIconDesktop"} normIcon`} alt="Twitter icon"/>
           <img src={twitterPeach} className={`${isMobile ? "mt-1 footerIconMobile" : "footerIconDesktop"} hovIcon`} alt="Twitter icon"/>
+        </a>
+        <text className = "text-white">
+        We abide by the &nbsp;
+        </text>
+        <a className = "text-white font-weight-bold" href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf" target="_blank" rel="noreferrer noopener"> 
+          MLH Code of Conduct 
         </a>
       </Row>
       <img className="w-100 position-relative" src={blueWaves} alt="Blue waves"/>
