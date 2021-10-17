@@ -120,7 +120,7 @@ function Schedule() {
             <h3>{events[2].description}</h3> */}
 
             <h3 className="text-peach mono font-weight-bold mt-4">Saturday, Oct 17</h3>
-            <Activity time="9am - 10am" name="Check-in" link="Join Discord"></Activity>
+            <Activity time="9am - 10am" name="Check-in" linkname="Join Discord" link="https://discord.gg/rKbWyuDNyG"></Activity>
             <Activity time="10am - 11am" name="Opening Ceremony"></Activity>
             <Activity time="11am" name="Hacking starts" detail="Team formation"></Activity>
             <Activity time="11am - 12pm" name="Sustainability workshop"></Activity>
