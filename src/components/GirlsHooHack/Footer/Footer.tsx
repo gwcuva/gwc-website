@@ -18,9 +18,6 @@ function Footer() {
   return (
     <div className="bg-peacock">
       
-        <Col xs={1}></Col>
-        
-      
       <img className={`${isMobile ? "footerLogoMobile" : "position-absolute footerLogoDesktop"}`} src={whiteLogo} 
         width={isMobile ? "125px" : "359px"} height={isMobile ? "39.7px" : "114px"} alt="Girls Who Code at the University of Virginia logo"
       />
@@ -33,7 +30,7 @@ function Footer() {
           <img src={instagram} className={`${isMobile ? "footerIconMobile" : "footerIconDesktop"} normIcon`} alt="Instagram icon"/>
           <img src={instagramPeach} className={`${isMobile ? "mt-1 footerIconMobile" : "footerIconDesktop"} hovIcon`} alt="Instagram icon"/>
         </a>
-        <a href="https://discord.com/invite/rKbWyuDNyG" target="_blank" rel="noreferrer noopener">
+        <a href="https://discord.com/invite/VwGgsvnbKd" target="_blank" rel="noreferrer noopener">
           <img src={discord} className={`${isMobile ? "footerIconMobile" : "footerIconDesktop"} normIcon`} alt="Discord icon"/>
           <img src={discordPeach} className={`${isMobile ? "mt-1 footerIconMobile" : "footerIconDesktop"} hovIcon`} alt="Discord icon"/>
         </a>
