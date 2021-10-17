@@ -11,7 +11,7 @@ import facebook from '../../../assets/images/facebook-f-brands.svg';
 import facebookPeach from '../../../assets/images/facebook-f-brands-peach.svg';
 import twitter from '../../../assets/images/twitter-brands.svg';
 import twitterPeach from '../../../assets/images/twitter-brands-peach.svg';
-import {Row, Col} from 'react-bootstrap';
+import {Row} from 'react-bootstrap';
 import {isMobile} from 'react-device-detect';
  
 function Footer() {
