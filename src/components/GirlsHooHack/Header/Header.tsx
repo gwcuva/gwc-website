@@ -4,6 +4,7 @@ import Waves from '../../../assets/images/hack-header-desktop-wave.svg';
 import SignUpCircle from '../../../assets/images/sign-up-hack-circle.svg';
 import UVA from '../../../assets/images/uva.svg';
 import SignUpText from '../../../assets/images/sign-up-text.svg';
+import MLHBanner from '../../../assets/images/mlh-banner.svg';
 
 interface Props {
   toggle? : () => void;
@@ -13,6 +14,8 @@ interface Props {
 function Header(props: Props) {
   return (
     <div id={props.id} className="container-fluid m-0 bg-turq" >
+
+        <img className="mlhbanner" src={MLHBanner} alt="MLH Banner"/>
 
         <Row xs={12} className="pt-5"></Row>
         <Row xs={12} className="pt-5"></Row>
