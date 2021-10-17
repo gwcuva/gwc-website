@@ -78,7 +78,7 @@ function JumpStart() {
           <h3 className="mono text-peach mt-4 mb-4">What is it?</h3>
           <Row>
             <Col xs={8}>
-            <p>JumpStart is a beginner’s guide to hackathons for GWC @ UVA members. We’re offering a 1-4 hour workshop each day from October 12 through October 16. There will be recorded and live options for each workshop.</p>
+            <p>JumpStart is a beginner’s guide to hackathons. More information coming soon!</p>
             </Col>
           </Row>
           

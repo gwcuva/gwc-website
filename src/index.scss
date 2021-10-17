@@ -211,8 +211,18 @@ p.hack {
   }
 }
 
-.dropdownIcon:hover {
+.hoverColor:hover {
   color: $output-orange
+}
+
+.signUpTextDesktop {
+  margin-top: 105px;
+  margin-left: 83px;
+}
+
+.signUpTextMobile {
+  margin-top: 47px;
+  margin-left: 34px
 }
 
 .footerLogoDesktop {
@@ -277,4 +287,8 @@ p.hack {
 
 .scrolled{
   position: fixed;
+}
+.sponsorshipProspectus {
+  width: 800px;
+  height: 600px;
 }
