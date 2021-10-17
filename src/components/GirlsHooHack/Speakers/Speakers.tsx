@@ -5,7 +5,7 @@ import {isMobile} from 'react-device-detect';
 import KeynoteItem from './KeynoteItem';
 import PanelistItem from './PanelistItem';
 
-function Speakers() {
+function Speakers(): JSX.Element {
     const [keynotes, setKeynotes] = useState([{'id': '', 'name': '', 'image': '', 'bio': '', 'headshot': {'url': ''}, 'linkedIn': ''}]);
     const [panelists, setPanelists] = useState([{'id': '', 'name': '', 'image': '', 'bio': '', 'headshot': {'url': ''}, 'linkedIn': ''}]);
     useEffect(() => {
