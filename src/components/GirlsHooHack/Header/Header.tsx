@@ -20,7 +20,7 @@ function Header(props: Props) {
             <img className="mlhbanner" src={MLHBanner} alt="MLH banner"/>
           </a>
         </Row>
-
+        
         <Row xs={12} className="pt-5"></Row>
 
         <img className="w-100 position-absolute ml-n3 mt-4" src={Waves} alt="Orange waves"/>
