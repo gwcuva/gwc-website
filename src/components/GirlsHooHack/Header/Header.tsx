@@ -4,7 +4,7 @@ import Waves from '../../../assets/images/hack-header-desktop-wave.svg';
 import SignUpCircle from '../../../assets/images/sign-up-hack-circle.svg';
 import UVA from '../../../assets/images/uva.svg';
 import SignUpText from '../../../assets/images/sign-up-text.svg';
-import MLHBanner from '../../../assets/images/mlh-banner.svg';
+import MLHBanner from '../../../assets/images/mlh-banner.png';
 
 interface Props {
   toggle? : () => void;
@@ -15,9 +15,12 @@ function Header(props: Props) {
   return (
     <div id={props.id} className="container-fluid m-0 bg-turq" >
 
-        <Row xs={12} className="pl-5">
-          <img src={MLHBanner} alt="MLH Banner"/>
+        <Row xs={12}>
+          <a href="https://mlh.io/seasons/2022/events" target="_blank" rel="noreferrer noopener">
+            <img className="mlhbanner" src={MLHBanner} alt="MLH banner"/>
+          </a>
         </Row>
+
         <Row xs={12} className="pt-5"></Row>
 
         <img className="w-100 position-absolute ml-n3 mt-4" src={Waves} alt="Orange waves"/>
