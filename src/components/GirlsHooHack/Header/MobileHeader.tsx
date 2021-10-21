@@ -12,8 +12,10 @@ interface Props {
 function MobileHeader(props: Props) {
     return(
         <div id={props.id} className="container-fluid bg-turq">
-
-            <img className="mlhbannermobile" src={MLHBanner} alt="MLH Banner"/>
+            <meta id="viewport" name="viewport" content="width=320; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;"></meta>
+            <Row>
+                <img className="pl-3 mlhbannermobile" src={MLHBanner} alt="MLH Banner"/>
+            </Row>
 
             <Row className="mono text-blue pt-5 pl-4 pb-n5" style={{fontSize:13.5}}>
                 <text><big>2021 Hybrid Hackathon</big></text>
