@@ -51,7 +51,7 @@ function Footer() {
         <text className = "text-white p.hack">
         We abide by the &nbsp;
         </text>
-        <a className = "text-white font-weight-bold p.hack" href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf" target="_blank" rel="noreferrer noopener"> 
+        <a className = "footerLink text-white font-weight-bold p.hack" href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf" target="_blank" rel="noreferrer noopener"> 
           MLH Code of Conduct 
         </a>
       </Row>

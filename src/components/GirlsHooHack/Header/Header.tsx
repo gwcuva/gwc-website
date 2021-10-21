@@ -15,9 +15,9 @@ function Header(props: Props) {
   return (
     <div id={props.id} className="container-fluid m-0 bg-turq" >
 
-        <img className="mlhbanner" src={MLHBanner} alt="MLH Banner"/>
-
-        <Row xs={12} className="pt-5"></Row>
+        <Row xs={12} className="pl-5">
+          <img src={MLHBanner} alt="MLH Banner"/>
+        </Row>
         <Row xs={12} className="pt-5"></Row>
 
         <img className="w-100 position-absolute ml-n3 mt-4" src={Waves} alt="Orange waves"/>
