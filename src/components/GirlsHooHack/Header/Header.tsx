@@ -47,7 +47,7 @@ function Header(props: Props) {
           <Col xs={6}><h1 className="text-white">HACK</h1></Col>
           <Col>
             <img className="position-absolute signUpTextDesktop" src={SignUpText} alt="Sign Up text" />
-            <a href="https://forms.gle/ChhpzSwMjC8gZNm38" target="_blank" rel="noreferrer noopener" onClick={props.toggle}>
+            <a href="https://girls-hoo-hack-2021.devpost.com/" target="_blank" rel="noreferrer noopener" onClick={props.toggle}>
               <img className="position-relative" src={SignUpCircle} alt="Sign Up Circle"/>
             </a>
           </Col>
