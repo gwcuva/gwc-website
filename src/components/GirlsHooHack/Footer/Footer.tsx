@@ -34,7 +34,7 @@ function Footer() {
           <img src={instagram} className={`${isMobile ? "footerIconMobile" : "footerIconDesktop"} normIcon`} alt="Instagram icon"/>
           <img src={instagramPeach} className={`${isMobile ? "mt-1 footerIconMobile" : "footerIconDesktop"} hovIcon`} alt="Instagram icon"/>
         </a>
-        <a href="https://discord.com/invite/VwGgsvnbKd" target="_blank" rel="noreferrer noopener">
+        <a href="https://discord.gg/bFX5nTAxVz" target="_blank" rel="noreferrer noopener">
           <img src={discord} className={`${isMobile ? "footerIconMobile" : "footerIconDesktop"} normIcon`} alt="Discord icon"/>
           <img src={discordPeach} className={`${isMobile ? "mt-1 footerIconMobile" : "footerIconDesktop"} hovIcon`} alt="Discord icon"/>
         </a>
