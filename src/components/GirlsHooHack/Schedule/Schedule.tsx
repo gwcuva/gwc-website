@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import Activity from './Activity';
+// import Activity from './Activity';
 //import { request } from 'graphql-request';
 import { isMobile } from 'react-device-detect';
 import { Row, Col } from 'react-bootstrap';
@@ -121,19 +121,22 @@ function Schedule() {
             <h2>{events[2].time}</h2>
             <h3>{events[2].description}</h3> */}
 
-            <h3 className="text-peach mono font-weight-bold mt-4">Saturday, Oct 17</h3>
-            <Activity time="9am - 10am" name="Check-in" linkname="Join Discord" link="https://discord.gg/rKbWyuDNyG"></Activity>
+            <h3 className="text-peach mono font-weight-bold mt-4">Saturday, Nov 6: TBD</h3>
+            {/*<Activity time="9am - 10am" name="Check-in" linkname="Join Discord" link="https://discord.gg/rKbWyuDNyG"></Activity>
             <Activity time="10am - 11am" name="Opening Ceremony"></Activity>
             <Activity time="11am" name="Hacking starts" detail="Team formation"></Activity>
             <Activity time="11am - 12pm" name="Sustainability workshop"></Activity>
             <Activity time="11am - 12pm" name="How to Work from Home and Virtual Pair Programming Workshop"></Activity>
             <Activity time="12pm - 1pm" name="Intro to Hacking Workshop"></Activity>
             <Activity time="1:30pm - 2:30pm" name="Sponsorship Fair" detail="Google Cloud, Wolfram"></Activity>
-
-            <h3 className="text-peach mono font-weight-bold mt-5">Sunday, Oct 18</h3>
+            */}
+            
+            <h3 className="text-peach mono font-weight-bold mt-5">Sunday, Nov 7: TBD</h3>
+            {/*
             <Activity time="11am - 12pm" name="Sustainability workshop"></Activity>
             <Activity time="11am - 12pm" name="How to Work from Home and Virtual Pair Programming Workshop"></Activity>
             <Activity time="1pm" name="Hacking ends"></Activity>
+            */}
           </Col>
         </Row>
       }
