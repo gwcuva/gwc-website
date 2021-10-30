@@ -5,6 +5,7 @@ import SignUpCircle from '../../../assets/images/sign-up-hack-circle.svg';
 import UVA from '../../../assets/images/uva.svg';
 import SignUpText from '../../../assets/images/sign-up-text.svg';
 import MLHBanner from '../../../assets/images/mlh-banner.svg';
+import SignUpBanner from '../../../assets/images/sign-up-banner.svg';
 
 interface Props {
   toggle? : () => void;
@@ -16,6 +17,7 @@ function Header(props: Props) {
     <div id={props.id} className="container-fluid m-0 bg-turq" >
 
         <img className="mlhbanner" src={MLHBanner} alt="MLH Banner"/>
+        <img className = "signupbanner" src={SignUpBanner} alt = "Sign Up Banner"/>
 
         <Row xs={12} className="pt-5"></Row>
         <Row xs={12} className="pt-5"></Row>
