@@ -89,7 +89,7 @@ function Sponsors() {
         {othersponsors.length>0 && <h3 className="mono text-peach hack mt-3">Partners</h3>}
         {othersponsors.length>0 &&
         <Row className={`${!isMobile && "mt-1 mb-5"} d-flex justify-content-around`}>
-          {sponsors.map((sponsor) => 
+          {othersponsors.map((sponsor) => 
             <Col md={2} xs={12} className={`${isMobile ? "mx-auto" : "pt-5"} my-auto mr-3`} key={sponsor.sponsorName}>
               <a href={sponsor.sponsorUrl} target="_blank" rel="noreferrer">
                 {isMobile ?
