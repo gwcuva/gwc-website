@@ -3,11 +3,11 @@ import { request } from 'graphql-request';
 import {Row, Col} from 'react-bootstrap';
 import {isMobile} from 'react-device-detect';
 import KeynoteItem from './KeynoteItem';
-import PanelistItem from './PanelistItem';
+//import PanelistItem from './PanelistItem';
 
 function Speakers(): JSX.Element {
     const [keynotes, setKeynotes] = useState([{'id': '', 'name': '', 'image': '', 'bio': '', 'headshot': {'url': ''}, 'linkedIn': ''}]);
-    const [panelists, setPanelists] = useState([{'id': '', 'name': '', 'image': '', 'bio': '', 'headshot': {'url': ''}, 'linkedIn': ''}]);
+    //const [panelists, setPanelists] = useState([{'id': '', 'name': '', 'image': '', 'bio': '', 'headshot': {'url': ''}, 'linkedIn': ''}]);
     useEffect(() => {
       const fetchKeynotes = async () => {
         const { hackathonKeynotes } = await request(
@@ -30,7 +30,7 @@ function Speakers(): JSX.Element {
       };
       fetchKeynotes();
 
-      const fetchPanelists = async () => {
+      /*const fetchPanelists = async () => {
         const { hackathonPanelists } = await request(
           process.env.REACT_APP_GRAPHCMS_URL ? process.env.REACT_APP_GRAPHCMS_URL : "",
           `
@@ -49,7 +49,7 @@ function Speakers(): JSX.Element {
         );
         setPanelists(hackathonPanelists);
       };
-      fetchPanelists();
+      fetchPanelists();*/
     }, []);
 
     return (
