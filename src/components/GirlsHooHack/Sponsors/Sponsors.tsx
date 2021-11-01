@@ -32,13 +32,13 @@ function Sponsors() {
     fetchSponsors();
   }, []);
 
-  let goldsponsors = sponsors.filter( function (s) {
+  const goldsponsors = sponsors.filter( function (s) {
     return s.level === "Gold"
   });
-  let silversponsors = sponsors.filter( function (s) {
+  const silversponsors = sponsors.filter( function (s) {
     return s.level === "Silver"
   });
-  let othersponsors = sponsors.filter( function (s) {
+  const othersponsors = sponsors.filter( function (s) {
     return (s.level !== "Gold" && s.level !=="Silver")
   });
 
