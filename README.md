@@ -81,5 +81,7 @@ This is where we store the fonts that we may need
 * Jennifer Tcheou
 * Sky Brodowski
 * Belle Tran
+* Arya Ganesan
 *****
 *****
+
