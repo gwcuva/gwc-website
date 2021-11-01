@@ -60,28 +60,28 @@ function Speakers(): JSX.Element {
             {isMobile ? 
                 <div>
                     <h2 className="text-orange hack">SPEAKERS</h2>
-                    <h3 className="mono text-peach hack">KEYNOTE SPEAKERS</h3>
+                    {/*<h3 className="mono text-peach hack">KEYNOTE SPEAKERS</h3>*/}
                     
                     {keynotes.map((keynote) => 
                       <KeynoteItem key={keynote.id} mem={keynote} />)}
-                    <h3 className="mono text-peach hack mb-4">PANELISTS</h3>
+                    {/*<h3 className="mono text-peach hack mb-4">PANELISTS</h3>
                     {panelists.map((panelist) => 
-                        <PanelistItem key={panelist.id} mem={panelist} />)}
+                    <PanelistItem key={panelist.id} mem={panelist} />)}*/}
 
                 </div>
                 :
                 <div>
-                    <h2 className="text-orange hack pb-3">Speakers</h2>
-                    <h3 className="mono text-peach hack mb-4">Keynote Speakers</h3>
-                    <Row className="justify-content-center">
+                    <h2 className="text-orange hack">Speakers</h2>
+                    {/*<h3 className="mono text-peach hack mb-4">Keynote Speakers</h3>*/}
+                    <Row className="justify-content-center mt-5">
                       {keynotes.map((keynote) => 
                           <KeynoteItem key={keynote.id} mem={keynote} />)}
                     </Row>
-                    <h3 className="mono text-peach hack mb-4">Panelists</h3>
+                    {/*<h3 className="mono text-peach hack mb-4">Panelists</h3>
                     <Row>
                       {panelists.map((panelist) => 
                           <PanelistItem key={panelist.id} mem={panelist} />)}
-                    </Row>
+                      </Row>*/}
                 </div>}
             </Col>
         </Row>
