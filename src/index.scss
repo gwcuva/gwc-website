@@ -246,6 +246,10 @@ p.hack {
   z-index: 100;
 }
 
+.footerLink {
+  z-index: 100;
+}
+
 .footerIconDesktop {
   margin-right: 24px;
 }
@@ -294,14 +298,11 @@ p.hack {
 }
 
 .mlhbanner {
-  margin-left: 1260px;
-  margin-bottom: -30px;
+  width: 40%;
 }
 
 .mlhbannermobile {
-  margin-left: 310px;
-  width:15%;
-  height:15%;
+  width: 15%;
 }
 
 .sponsorshipProspectus {

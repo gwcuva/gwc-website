@@ -4,7 +4,7 @@ import Waves from '../../../assets/images/hack-header-desktop-wave.svg';
 import SignUpCircle from '../../../assets/images/sign-up-hack-circle.svg';
 import UVA from '../../../assets/images/uva.svg';
 import SignUpText from '../../../assets/images/sign-up-text.svg';
-import MLHBanner from '../../../assets/images/mlh-banner.svg';
+import MLHBanner from '../../../assets/images/mlh-banner.png';
 
 interface Props {
   toggle? : () => void;
@@ -15,9 +15,12 @@ function Header(props: Props) {
   return (
     <div id={props.id} className="container-fluid m-0 bg-turq" >
 
-        <img className="mlhbanner" src={MLHBanner} alt="MLH Banner"/>
-
-        <Row xs={12} className="pt-5"></Row>
+        <Row xs={12}>
+          <a href="https://mlh.io/seasons/2022/events" target="_blank" rel="noreferrer noopener">
+            <img className="mlhbanner" src={MLHBanner} alt="MLH banner"/>
+          </a>
+        </Row>
+        
         <Row xs={12} className="pt-5"></Row>
 
         <img className="w-100 position-absolute ml-n3 mt-4" src={Waves} alt="Orange waves"/>
@@ -44,7 +47,7 @@ function Header(props: Props) {
           <Col xs={6}><h1 className="text-white">HACK</h1></Col>
           <Col>
             <img className="position-absolute signUpTextDesktop" src={SignUpText} alt="Sign Up text" />
-            <a href="https://forms.gle/ChhpzSwMjC8gZNm38" target="_blank" rel="noreferrer noopener" onClick={props.toggle}>
+            <a href="https://girls-hoo-hack-2021.devpost.com/" target="_blank" rel="noreferrer noopener" onClick={props.toggle}>
               <img className="position-relative" src={SignUpCircle} alt="Sign Up Circle"/>
             </a>
           </Col>
