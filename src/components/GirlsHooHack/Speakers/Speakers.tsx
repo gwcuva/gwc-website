@@ -64,9 +64,9 @@ function Speakers(): JSX.Element {
                     
                     {keynotes.map((keynote) => 
                       <KeynoteItem key={keynote.id} mem={keynote} />)}
-                    <h3 className="mono text-peach hack mb-4">PANELISTS</h3>
+                    {/* <h3 className="mono text-peach hack mb-4">PANELISTS</h3>
                     {panelists.map((panelist) => 
-                        <PanelistItem key={panelist.id} mem={panelist} />)}
+                        <PanelistItem key={panelist.id} mem={panelist} />)} */}
 
                 </div>
                 :
@@ -77,11 +77,11 @@ function Speakers(): JSX.Element {
                       {keynotes.map((keynote) => 
                           <KeynoteItem key={keynote.id} mem={keynote} />)}
                     </Row>
-                    <h3 className="mono text-peach hack mb-4">Panelists</h3>
+                    {/* <h3 className="mono text-peach hack mb-4">Panelists</h3>
                     <Row>
                       {panelists.map((panelist) => 
                           <PanelistItem key={panelist.id} mem={panelist} />)}
-                    </Row>
+                    </Row> */}
                 </div>}
             </Col>
         </Row>
