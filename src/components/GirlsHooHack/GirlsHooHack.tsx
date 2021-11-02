@@ -4,7 +4,8 @@ import About from './About/About';
 import JumpStart from './JumpStart/JumpStart';
 //import Prizes from './Prizes/Prizes';
 import Schedule from './Schedule/Schedule';
-import Speakers from './Speakers/Speakers'
+import Speakers from './Speakers/Speakers';
+import Location from './Location/Location';
 import FAQ from './FAQ/FAQ';
 import Sponsors from './Sponsors/Sponsors';
 import SponsorshipProspectus from './SponsorshipProspectus/SponsorshipProspectus';
@@ -28,6 +29,7 @@ function GirlsHooHack() {
         <JumpStart />
         <Schedule />
         <Speakers />
+        <Location />
         <FAQ />
         <Sponsors />
         <SponsorshipProspectus />
