@@ -4,7 +4,7 @@ import {Row, Col} from 'react-bootstrap';
 function Location() {
   return (
     <div>
-        <Row className="bg-light-grey justify-content-center pb-5 pt-5">
+        <Row className="bg-hack-grey justify-content-center pb-5 pt-5">
             <Col xs={1}>
             </Col>
             <Col>
