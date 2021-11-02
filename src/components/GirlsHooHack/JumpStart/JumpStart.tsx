@@ -74,7 +74,7 @@ function JumpStart() {
     <Col sm={10} xs={11} className={isMobile ? "my-3" : "py-5"}>
       <Row className={isMobile ? "" : "my-5"}>
         <Col className="hack">
-          <h2 className="text-orange">JUMPSTART</h2>
+          <h2 className="text-orange font-weight-bold">JUMPSTART</h2>
           <h3 className="mono text-peach mt-4 mb-4">What is it?</h3>
           <Row>
             <Col xs={8}>

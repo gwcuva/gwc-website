@@ -44,7 +44,9 @@ function Header(props: Props) {
 
         <Row className="pt-0 mt-n5 pb-5">
           <Col xs={2}></Col>
-          <Col xs={6}><h1 className="text-white">HACK</h1></Col>
+          <Col xs={6}>
+            <h1 className="text-white">HACK</h1>
+          </Col>
           <Col>
             <img className="position-absolute signUpTextDesktop" src={SignUpText} alt="Sign Up text" />
             <a href="https://girls-hoo-hack-2021.devpost.com/" target="_blank" rel="noreferrer noopener" onClick={props.toggle}>
