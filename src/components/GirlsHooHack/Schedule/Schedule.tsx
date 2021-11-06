@@ -82,18 +82,18 @@ function Schedule() {
               <Activity time="11am - 12pm" name="How to Work from Home and Virtual Pair Programming Workshop"></Activity>
               <Activity time="12pm - 1pm" name="Intro to Hacking Workshop"></Activity>
               <Activity time="1:30pm - 2:30pm" name="Sponsorship Fair" detail="Google Cloud, Wolfram"></Activity>*/}
-              <Activity time="9am" name="Opening Ceremony + Keynote Speech"></Activity>
-              <Activity time="10am" name="Hacking Begins + Pitch a Thon"></Activity>
-              <Activity time="12pm" name="Intro to Python I"></Activity>
-              <Activity time="1pm" name="Intro to Python II"></Activity>
-              <Activity time="2pm" name="Poker 101 Social Event" detail="w/ Poker Power"></Activity>
-              <Activity time="3pm" name="Intro to Cloud Agnostic Design" detail="w/ Booz Allen"></Activity>
-              <Activity time="4pm" name="Interview Advice" detail="w/ HooHacks"></Activity>
-              <Activity time="5pm" name="Sponsor Networking Event"></Activity>
-              <Activity time="6pm" name="U.S. Airforce Cybsersecurity Challenge" detail="w/ MLH"></Activity>
-              <Activity time="7pm" name="Building a Personal Website" detail="w/ Forge"></Activity>
-              <Activity time="8pm" name="Infrastructure as Code: Terraforming" detail="w/ UVA ACM"></Activity>
-              <Activity time="10pm" name="Late Night Podcast Recording" detail="w/ Girl Hoo Code: the Podcast"></Activity>
+              <Activity time="9am" name="Opening Ceremony + Keynote Speech (Hybrid)"></Activity>
+              <Activity time="10am" name="Hacking Begins + Pitch a Thon (Hybrid)"></Activity>
+              <Activity time="12pm" name="Intro to Python I (Hybrid)"></Activity>
+              <Activity time="1pm" name="Intro to Python II (Hybrid)"></Activity>
+              <Activity time="2pm" name="Poker 101 Social Event (Virtual)" detail="w/ Poker Power"></Activity>
+              <Activity time="3pm" name="Intro to Cloud Agnostic Design (Virtual)" detail="w/ Booz Allen"></Activity>
+              <Activity time="4pm" name="Interview Advice (Hybrid)" detail="w/ HooHacks"></Activity>
+              <Activity time="5pm" name="Sponsor Networking Event (Virtual)"></Activity>
+              <Activity time="6pm" name="U.S. Airforce Cybsersecurity Challenge (Virtual)" detail="w/ MLH"></Activity>
+              <Activity time="7pm" name="Building a Personal Website (Hybrid)" detail="w/ Forge"></Activity>
+              <Activity time="8pm" name="Infrastructure as Code: Terraforming (Hybrid)" detail="w/ UVA ACM"></Activity>
+              <Activity time="10pm" name="Late Night Podcast Recording (Hybrid)" detail="w/ Girl Hoo Code: the Podcast"></Activity>
             </Collapse>
             
             <Row className="mt-4">
@@ -113,17 +113,17 @@ function Schedule() {
               {/* <Activity time="11am - 12pm" name="Sustainability workshop"></Activity>
               <Activity time="11am - 12pm" name="How to Work from Home and Virtual Pair Programming Workshop"></Activity>
               <Activity time="1pm" name="Hacking ends"></Activity> */}
-              <Activity time="8am" name="Guided Meditation De-stressor"></Activity>
-              <Activity time="10am" name="Three Powerful Google Cloud Products for Your Project" detail="w/ Google Cloud"></Activity>
-              <Activity time="11am" name="Intro to AI" detail="w/ Maxar"></Activity>
-              <Activity time="12pm" name="Women in Industry Panel"></Activity>
-              <Activity time="1pm" name="Resume & Cover Letters Workshop" detail="w/ UVA Career Center"></Activity>
-              <Activity time="2pm" name="Strangers to Best Friends in 45 Minutes"></Activity>
-              <Activity time="3pm" name="Introduction to How and Why to Invest" detail="w/ YieldStreet"></Activity>
-              <Activity time="4pm" name="Bob Ross MS Paint" detail="w/ MLH"></Activity>
-              <Activity time="6pm" name="Hacking Ends"></Activity>
-              <Activity time="7pm" name="Live Demos"></Activity>
-              <Activity time="9pm" name="Closing Ceremony + Keynote Speech"></Activity>
+              <Activity time="8am" name="Guided Meditation De-stressor (Virtual)"></Activity>
+              <Activity time="10am" name="Three Powerful Google Cloud Products for Your Project (Virtual)" detail="w/ Google Cloud"></Activity>
+              <Activity time="11am" name="Intro to AI (Virtual)" detail="w/ Maxar"></Activity>
+              <Activity time="12pm" name="Women in Industry Panel (Virtual)"></Activity>
+              <Activity time="1pm" name="Resume & Cover Letters Workshop (Hybrid)" detail="w/ UVA Career Center"></Activity>
+              <Activity time="2pm" name="Strangers to Best Friends in 45 Minutes (Hybrid)"></Activity>
+              <Activity time="3pm" name="Introduction to How and Why to Invest (Virtual)" detail="w/ YieldStreet"></Activity>
+              <Activity time="4pm" name="Bob Ross MS Paint (Virtual)" detail="w/ MLH"></Activity>
+              <Activity time="6pm" name="Hacking Ends (Virtual)"></Activity>
+              <Activity time="7pm" name="Live Demos (Virtual)"></Activity>
+              <Activity time="9pm" name="Closing Ceremony + Keynote Speech (Hybrid)"></Activity>
             </Collapse>
           </Col>
         </Row> : 
@@ -152,18 +152,18 @@ function Schedule() {
             <Activity time="12pm - 1pm" name="Intro to Hacking Workshop"></Activity>
           <Activity time="1:30pm - 2:30pm" name="Sponsorship Fair" detail="Google Cloud, Wolfram"></Activity>*/}
             
-            <Activity time="9am" name="Opening Ceremony + Keynote Speech"></Activity>
-            <Activity time="10am" name="Hacking Begins + Pitch a Thon"></Activity>
-            <Activity time="12pm" name="Intro to Python I"></Activity>
-            <Activity time="1pm" name="Intro to Python II"></Activity>
-            <Activity time="2pm" name="Poker 101 Social Event" detail="w/ Poker Power"></Activity>
-            <Activity time="3pm" name="Intro to Cloud Agnostic Design" detail="w/ Booz Allen"></Activity>
-            <Activity time="4pm" name="Interview Advice" detail="w/ HooHacks"></Activity>
-            <Activity time="5pm" name="Sponsor Networking Event"></Activity>
-            <Activity time="6pm" name="U.S. Airforce Cybsersecurity Challenge" detail="w/ MLH"></Activity>
-            <Activity time="7pm" name="Building a Personal Website" detail="w/ Forge"></Activity>
-            <Activity time="8pm" name="Infrastructure as Code: Terraforming" detail="w/ UVA ACM"></Activity>
-            <Activity time="10pm" name="Late Night Podcast Recording" detail="w/ Girl Hoo Code: the Podcast"></Activity>
+            <Activity time="9am" name="Opening Ceremony + Keynote Speech (Hybrid)"></Activity>
+            <Activity time="10am" name="Hacking Begins + Pitch a Thon (Hybrid)"></Activity>
+            <Activity time="12pm" name="Intro to Python I (Hybrid)"></Activity>
+            <Activity time="1pm" name="Intro to Python II (Hybrid)"></Activity>
+            <Activity time="2pm" name="Poker 101 Social Event (Virtual)" detail="w/ Poker Power"></Activity>
+            <Activity time="3pm" name="Intro to Cloud Agnostic Design (Virtual)" detail="w/ Booz Allen"></Activity>
+            <Activity time="4pm" name="Interview Advice (Hybrid)" detail="w/ HooHacks"></Activity>
+            <Activity time="5pm" name="Sponsor Networking Event (Virtual)"></Activity>
+            <Activity time="6pm" name="U.S. Airforce Cybsersecurity Challenge (Virtual)" detail="w/ MLH"></Activity>
+            <Activity time="7pm" name="Building a Personal Website (Hybrid)" detail="w/ Forge"></Activity>
+            <Activity time="8pm" name="Infrastructure as Code: Terraforming (Hybrid)" detail="w/ UVA ACM"></Activity>
+            <Activity time="10pm" name="Late Night Podcast Recording (Hybrid)" detail="w/ Girl Hoo Code: the Podcast"></Activity>
             
             <h3 className="text-peach mono font-weight-bold mt-5">Sunday, Nov 7</h3>
             {/*
@@ -171,17 +171,17 @@ function Schedule() {
             <Activity time="11am - 12pm" name="How to Work from Home and Virtual Pair Programming Workshop"></Activity>
             <Activity time="1pm" name="Hacking ends"></Activity>
             */}
-            <Activity time="8am" name="Guided Meditation De-stressor"></Activity>
-            <Activity time="10am" name="Three Powerful Google Cloud Products for Your Project" detail="w/ Google Cloud"></Activity>
-            <Activity time="11am" name="Intro to AI" detail="w/ Maxar"></Activity>
-            <Activity time="12pm" name="Women in Industry Panel"></Activity>
-            <Activity time="1pm" name="Resume & Cover Letters Workshop" detail="w/ UVA Career Center"></Activity>
-            <Activity time="2pm" name="Strangers to Best Friends in 45 Minutes"></Activity>
-            <Activity time="3pm" name="Introduction to How and Why to Invest" detail="w/ YieldStreet"></Activity>
-            <Activity time="4pm" name="Bob Ross MS Paint" detail="w/ MLH"></Activity>
-            <Activity time="6pm" name="Hacking Ends"></Activity>
-            <Activity time="7pm" name="Live Demos"></Activity>
-            <Activity time="9pm" name="Closing Ceremony + Keynote Speech"></Activity>
+            <Activity time="8am" name="Guided Meditation De-stressor (Virtual)"></Activity>
+            <Activity time="10am" name="Three Powerful Google Cloud Products for Your Project (Virtual)" detail="w/ Google Cloud"></Activity>
+            <Activity time="11am" name="Intro to AI (Virtual)" detail="w/ Maxar"></Activity>
+            <Activity time="12pm" name="Women in Industry Panel (Virtual)"></Activity>
+            <Activity time="1pm" name="Resume & Cover Letters Workshop (Hybrid)" detail="w/ UVA Career Center"></Activity>
+            <Activity time="2pm" name="Strangers to Best Friends in 45 Minutes (Hybrid)"></Activity>
+            <Activity time="3pm" name="Introduction to How and Why to Invest (Virtual)" detail="w/ YieldStreet"></Activity>
+            <Activity time="4pm" name="Bob Ross MS Paint (Virtual)" detail="w/ MLH"></Activity>
+            <Activity time="6pm" name="Hacking Ends (Virtual)"></Activity>
+            <Activity time="7pm" name="Live Demos (Virtual)"></Activity>
+            <Activity time="9pm" name="Closing Ceremony + Keynote Speech (Hybrid)"></Activity>
           </Col>
         </Row>
       }
