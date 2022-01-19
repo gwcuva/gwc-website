@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Main from './components/Main/Main';
 import GirlsHooHack from './components/GirlsHooHack/GirlsHooHack';
 import Branding from './components/Branding/Branding';
+import CareerFair from './components/CareerFair/CareerFair';
 import NotFound from './components/NotFound';
 import Links from './components/Links/Links';
 
@@ -21,6 +22,9 @@ function App() {
         </Route>
         <Route exact path="/links">
           <Links />
+        </Route>
+        <Route exact path="/careerfair">
+          <CareerFair />
         </Route>
         <Route path="/">
           <NotFound />
