@@ -1,6 +1,5 @@
 import blueWaves from '../../../assets/images/footerWaveGHH.png';
 import whiteLogo from '../../../assets/images/whitelogo.png';
-import GHHLogo from '../../../assets/images/logo_ghh.svg';
 import email from '../../../assets/images/envelope-solid.svg';
 import emailPeach from '../../../assets/images/envelope-solid-peach.svg';
 import instagram from '../../../assets/images/instagram-square-brands.svg';

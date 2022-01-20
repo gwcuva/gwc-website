@@ -25,7 +25,7 @@ function CareerFair() {
         <Sponsors />
         <Schedule />
         <FAQ />
-        {/* <Footer /> */}
+        <Footer />
       </div>
     </div>
   );

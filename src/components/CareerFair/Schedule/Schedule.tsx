@@ -1,12 +1,12 @@
-import React, {useState} from 'react';
+// import React, {useState} from 'react';
 // import Activity from './Activity';
 //import { request } from 'graphql-request';
 import { isMobile } from 'react-device-detect';
 import { Row, Col } from 'react-bootstrap';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faPlus } from '@fortawesome/free-solid-svg-icons'
-import { faMinus } from '@fortawesome/free-solid-svg-icons'
-import {Collapse } from 'react-collapse';
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+// import { faPlus } from '@fortawesome/free-solid-svg-icons'
+// import { faMinus } from '@fortawesome/free-solid-svg-icons'
+// import {Collapse } from 'react-collapse';
 
 function Schedule() {
   return (
