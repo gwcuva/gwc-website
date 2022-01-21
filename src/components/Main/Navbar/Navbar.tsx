@@ -1,5 +1,4 @@
-import React from 'react';
-import {Col, Row} from 'react-bootstrap'
+import {Row} from 'react-bootstrap'
 import Logo from '../../../assets/images/peacock-logo.svg'
 
 function Navbar() {
