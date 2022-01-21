@@ -1,4 +1,4 @@
-import {Row} from 'react-bootstrap';
+import {Row, Col} from 'react-bootstrap';
 
 interface Props {
     toggle? : () => void;
@@ -25,8 +25,9 @@ function MobileHeader(props: Props) {
                 <text><big>The University of Virginia</big></text>
             </Row>
 
-            <Row xs={10} className="text-blue pl-3 pt-n5">
+            <Row xs={10} className="text-blue pl-3 pt-n5 justify-content-between align-items-center">
                 <h3>February 11th</h3>
+                <Col xs={5} className="h3"> <a className="text-white font-weight-bold" href="https://forms.gle/JbkndWdHQCLwDuo68" target="_blank" rel="noreferrer noopener"> <u>REGISTER</u> </a> </Col>
             </Row>
 
 
