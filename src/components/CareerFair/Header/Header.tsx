@@ -29,7 +29,7 @@ function Header(props: Props) {
         <Row xs={12} className="mt-n5">
           <Col xs={1}></Col>
           <Col xs={3}><h1 className={isMobile ? "text-white":"text-white"}>HOO</h1></Col>
-          <Col xs={4}><h2 className={isMobile ? "text-blue":"text-blue font-weight-bold pt-4"}>2021 HYBRID CAREER FAIR</h2></Col>
+          <Col xs={4}><h2 className={isMobile ? "text-blue":"text-blue font-weight-bold pt-4"}>2022 HYBRID CAREER FAIR</h2></Col>
         </Row>
 
         <Row className="pt-0 mt-n5 pb-5">
