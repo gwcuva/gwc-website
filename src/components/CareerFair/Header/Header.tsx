@@ -32,6 +32,7 @@ function Header(props: Props) {
           <Col xs={4}><h2 className={isMobile ? "text-blue":"text-blue font-weight-bold pt-4"}>2022 HYBRID CAREER FAIR</h2></Col>
           <Col xs={1}></Col>
           <Col xs={3} className="h1 pl-4 pt-4"> <a className="text-white font-weight-bold" href="https://forms.gle/JbkndWdHQCLwDuo68" target="_blank" rel="noreferrer noopener"> <u>REGISTER</u> </a> </Col>
+
         </Row>
 
         <Row className="pt-0 mt-n5 pb-5">
