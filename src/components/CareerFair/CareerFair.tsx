@@ -3,6 +3,7 @@ import MobileHeader from './Header/MobileHeader';
 import About from './About/About';
 import Schedule from './Schedule/Schedule';
 import Location from './Location/Location';
+import Signup from './Signup/Signup';
 import FAQ from './FAQ/FAQ';
 import Sponsors from './Sponsors/Sponsors';
 import Waves from '../../assets/images/hack-header-mobile-wave.svg';
@@ -24,6 +25,7 @@ function CareerFair() {
         <Location />
         <Sponsors />
         <Schedule />
+        <Signup />
         <FAQ />
         <Footer />
       </div>
