@@ -13,7 +13,8 @@ function Schedule() {
     <Row className={`justify-content-center py-5`}>
       <Col sm={10} xs={11} className={isMobile ? "my-3" : "my-5 py-5"}>
         <h2 className="text-orange hack">Schedule</h2>
-        <h3 className="text-peach mono font-weight-bold">TBA in early February</h3>
+        <h3 className="text-peach mono font-weight-bold">February 11th 11 am - 3 pm</h3>
+        <h3 className="text-peach">Details about 1:1 sessions, career panels, and sign-ups TBA in early February</h3>
       </Col>
     </Row>
   // // const [events, setEvents] = useState([{'id': '', 'eventName': '', 'link': '', 'time': '', 'description': ''}]);
