@@ -18,9 +18,11 @@ function Footer() {
   return (
     <div className="bg-peacock">
       <Row className={`${isMobile ? "footerLogoMobile" : "footerLogoDesktop"} position-absolute`}>
-        <img src={whiteLogo} 
-          width={isMobile ? "125px" : "359px"} height={isMobile ? "39.7px" : "114px"} alt="Girls Who Code at the University of Virginia logo"
-        />
+        <a href="/" className="mono text-white interactive">
+          <img src={whiteLogo} 
+            width={isMobile ? "125px" : "359px"} height={isMobile ? "39.7px" : "114px"} alt="Girls Who Code at the University of Virginia logo"
+          />
+        </a>
         <img src={GHHLogo} className = "pl-n5"
           width={isMobile ? "75px" : "125px"} height={isMobile ? "40px" : "100px"} alt="GHH at the University of Virginia logo"
         />
