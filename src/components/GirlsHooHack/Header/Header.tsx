@@ -16,8 +16,9 @@ function Header(props: Props) {
     <div id={props.id} className="container-fluid m-0 bg-turq" >
 
         <Row xs={12}>
+          <Col xs={10}></Col>
           <a href="https://mlh.io/seasons/2022/events" target="_blank" rel="noreferrer noopener">
-            <img className="mlhbanner" src={MLHBanner} alt="MLH banner"/>
+            <img src={MLHBanner} alt="MLH banner" width="100" height="170"/>
           </a>
         </Row>
         
