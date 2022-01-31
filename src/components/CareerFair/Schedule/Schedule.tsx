@@ -9,7 +9,7 @@ import { isMobile } from 'react-device-detect';
 import Activity from './Activity';
 
 function Schedule() {
-  const [workshops, setWorkshops] = useState([{'id': '', 'eventName': '', 'eventDetail': '', 'startTime': '', 'zoomLink': ''}]);
+  const [workshops, setWorkshops] = useState([{'id': '', 'eventName': '', 'eventDetail': '', 'startTime': '', 'zoomLink': '', 'inPerson': ''}]);
   // const [dropdownOpen, setDropdownOpen] = useState(false);
 
   useEffect(() => {
@@ -24,6 +24,7 @@ function Schedule() {
               eventDetail
               startTime
               zoomLink
+              inPerson
             }
           }
         `
@@ -46,7 +47,7 @@ function Schedule() {
         <h3 className="text-peach mono font-weight-bold">February 11th 11 am - 3 pm</h3>
         <h3 className="text-peach">Details about 1:1 sessions, career panels, and sign-ups TBA in early February</h3>
         {workshops.map((workshop) => 
-          <Activity key={workshop.id} name={workshop.eventName} detail={workshop.eventDetail} time={workshop.startTime} linkname="Click here to join" link={workshop.zoomLink} ></Activity>)}
+          <Activity key={workshop.id} name={workshop.eventName} detail={workshop.eventDetail} time={workshop.startTime} linkname="Zoom link coming soon" link={workshop.zoomLink} inperson={workshop.inPerson}></Activity>)}
               
       </Col>
     </Row>

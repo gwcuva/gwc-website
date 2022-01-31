@@ -6,6 +6,7 @@ interface Props {
   detail?: string;
   linkname?: string;
   link?: string;
+  inperson?: string;
 }
 
 function Activity(props: Props): JSX.Element {
@@ -20,6 +21,7 @@ function Activity(props: Props): JSX.Element {
         </Col>
         <Col>
             {props.link && <a href={props.link} target="_blank" rel="noreferrer" className="text-blue interactive mb-0"><u>{props.linkname}</u> &#8599;</a>}
+            {props.inperson && <p className="text-dark-grey interactive mb-0">{props.inperson}</p>}
         </Col>
     </Row>
   );
