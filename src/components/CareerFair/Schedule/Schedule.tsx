@@ -43,12 +43,11 @@ function Schedule() {
   return (
     <Row className={`justify-content-center py-5`}>
       <Col sm={10} xs={11} className={isMobile ? "my-3" : "my-5 py-5"}>
-        <h2 className="text-orange hack">Schedule</h2>
+        <h2 className="text-orange hack">Career Panels and 1:1 sessions</h2>
         <h3 className="text-peach mono font-weight-bold">February 11th 11 am - 3 pm</h3>
-        <h3 className="text-peach">Career Panels</h3>
         {workshops.map((workshop) => 
           <Activity key={workshop.id} name={workshop.eventName} detail={workshop.eventDetail} time={workshop.startTime} linkname="Zoom link coming soon" link={workshop.zoomLink} inperson={workshop.inPerson}></Activity>)}    
-        <h3 className="text-peach">Schedule for 1:1 sessions TBA in early Feb!</h3>
+        <h3 className="text-peach mono font-weight-bold">Zoom links for 1:1 sessions coming soon!</h3>
       </Col>
     </Row>
   );

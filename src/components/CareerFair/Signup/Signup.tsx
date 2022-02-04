@@ -11,7 +11,9 @@ function Location() {
                 <h3 className="mono text-peach hack mb-4"> <a className="mono text-peach hack mb-4"
                  href="https://forms.gle/JbkndWdHQCLwDuo68" target="_blank" rel="noreferrer noopener"> <u>
                    REGISTER</u> </a> to save your spot and submit a resume </h3>
-                <h3 className="mono text-peach hack mb-4">Sign-ups for career panels and 1:1 sessions TBA in early Feb</h3>
+                   <h3 className="mono text-peach hack mb-4"> <a className="mono text-peach hack mb-4"
+                 href="https://www.signupgenius.com/go/10C0E4DADAD2FA5F9CE9-signupcf" target="_blank" rel="noreferrer noopener"> <u>
+                   SIGN UP</u> </a> for career panels and 1:1 sessions </h3> 
             </Col>
         </Row>
     </div>
