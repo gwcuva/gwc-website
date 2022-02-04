@@ -47,7 +47,7 @@ function Schedule() {
         <h3 className="text-peach mono font-weight-bold">February 11th 11 am - 3 pm</h3>
         {workshops.map((workshop) => 
           <Activity key={workshop.id} name={workshop.eventName} detail={workshop.eventDetail} time={workshop.startTime} linkname="Zoom link coming soon" link={workshop.zoomLink} inperson={workshop.inPerson}></Activity>)}    
-        <h3 className="text-peach mono font-weight-bold">Zoom links for 1:1 sessions coming soon!</h3>
+        <h3 className="text-peach mono font-weight-bold">1:1 sessions are scheduled throuhgout the day, please sign up below. Zoom links for 1:1 sessions coming soon!</h3>
       </Col>
     </Row>
   );
