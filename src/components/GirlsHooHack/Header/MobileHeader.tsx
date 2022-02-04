@@ -2,7 +2,7 @@ import {Row} from 'react-bootstrap';
 import {Col} from 'react-bootstrap';
 import SignUpCircle from '../../../assets/images/sign-up-hack-circle.svg';
 import SignUpMobile from '../../../assets/images/sign-up-mobile.svg';
-import MLHBanner from '../../../assets/images/mlh-banner.png';
+import MLHBanner from '../../../assets/images/mlh-banner1.png';
 
 interface Props {
     toggle? : () => void;

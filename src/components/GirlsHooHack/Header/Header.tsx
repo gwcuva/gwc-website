@@ -4,7 +4,8 @@ import Waves from '../../../assets/images/hack-header-desktop-wave.svg';
 import SignUpCircle from '../../../assets/images/sign-up-hack-circle.svg';
 import UVA from '../../../assets/images/uva.svg';
 import SignUpText from '../../../assets/images/sign-up-text.svg';
-import MLHBanner from '../../../assets/images/mlh-banner.png';
+import MLHBanner from '../../../assets/images/mlh-banner1.png';
+import SignupBanner from '../../../assets/images/signup-banner.png';
 
 interface Props {
   toggle? : () => void;
@@ -14,11 +15,14 @@ interface Props {
 function Header(props: Props) {
   return (
     <div id={props.id} className="container-fluid m-0 bg-turq" >
-
+        
         <Row xs={12}>
           <Col xs={10}></Col>
+          <a href="https://girls-hoo-hack-2021.devpost.com/" target="_blank" rel="noreferrer noopener">
+            <img src={SignupBanner} alt="Signup banner" width="75" height="164"/>
+          </a>
           <a href="https://mlh.io/seasons/2022/events" target="_blank" rel="noreferrer noopener">
-            <img src={MLHBanner} alt="MLH banner" width="100" height="170"/>
+            <img src={MLHBanner} alt="MLH banner" width="85" height="160"/>
           </a>
         </Row>
         
