@@ -6,6 +6,7 @@ import UVA from '../../../assets/images/uva.svg';
 import SignUpText from '../../../assets/images/sign-up-text.svg';
 import MLHBanner from '../../../assets/images/mlh-banner1.png';
 import SignupBanner from '../../../assets/images/signup-banner.png';
+import SignupBannerOrange from '../../../assets/images/signup-orange.png';
 
 interface Props {
   toggle? : () => void;
@@ -19,10 +20,14 @@ function Header(props: Props) {
         <Row xs={12}>
           <Col xs={10}></Col>
           <a href="https://girls-hoo-hack-2021.devpost.com/" target="_blank" rel="noreferrer noopener">
-            <img src={SignupBanner} alt="Signup banner" width="75" height="164"/>
+            <img className="signupbanner pr-2" src={SignupBanner} alt="Signup banner" width="80" height="155"
+            onMouseOver={e => (e.currentTarget.src = SignupBannerOrange)}
+            onMouseOut={e => (e.currentTarget.src = SignupBanner)}
+            />
+
           </a>
           <a href="https://mlh.io/seasons/2022/events" target="_blank" rel="noreferrer noopener">
-            <img src={MLHBanner} alt="MLH banner" width="85" height="160"/>
+            <img className="MLHBANNER pr-2" src={MLHBanner} alt="MLH banner" width="85" height="152"/> 
           </a>
         </Row>
         
