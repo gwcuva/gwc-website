@@ -24,7 +24,6 @@ function Header(props: Props) {
             onMouseOver={e => (e.currentTarget.src = SignupBannerOrange)}
             onMouseOut={e => (e.currentTarget.src = SignupBanner)}
             />
-
           </a>
           <a href="https://mlh.io/seasons/2022/events" target="_blank" rel="noreferrer noopener">
             <img className="MLHBANNER pr-2" src={MLHBanner} alt="MLH banner" width="85" height="152"/> 
