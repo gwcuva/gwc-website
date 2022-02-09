@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { request } from 'graphql-request';
 import { Col, Row } from 'react-bootstrap';
 import { isMobile } from 'react-device-detect';
+// import Sessions from './Sessions';
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 // import { faPlus } from '@fortawesome/free-solid-svg-icons'
 // import { faMinus } from '@fortawesome/free-solid-svg-icons'
@@ -43,11 +44,11 @@ function Schedule() {
   return (
     <Row className={`justify-content-center py-5`}>
       <Col sm={10} xs={11} className={isMobile ? "my-3" : "my-5 py-5"}>
-        <h2 className="text-orange hack">Career Panels and 1:1 sessions</h2>
-        <h3 className="text-peach mono font-weight-bold">February 11th 11 am - 3 pm</h3>
+        <h2 className="text-orange hack">Career Panels and 1:1 Sessions</h2>
+        <h3 className="text-peach mono font-weight-bold">Career Panels: February 11th 11 am - 3 pm</h3>
         {workshops.map((workshop) => 
-          <Activity key={workshop.id} name={workshop.eventName} detail={workshop.eventDetail} time={workshop.startTime} linkname="Zoom link coming soon" link={workshop.zoomLink} inperson={workshop.inPerson}></Activity>)}    
-        <h3 className="text-peach mono font-weight-bold">Zoom links for 1:1 sessions coming soon!</h3>
+          <Activity key={workshop.id} name={workshop.eventName} detail={workshop.eventDetail} time={workshop.startTime} linkname="Join Zoom" link={workshop.zoomLink} inperson={workshop.inPerson}></Activity>)}    
+        {/*<Sessions />*/}
       </Col>
     </Row>
   );
