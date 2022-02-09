@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { request } from 'graphql-request';
 import { Col, Row } from 'react-bootstrap';
 import { isMobile } from 'react-device-detect';
-import Sessions from './Sessions';
+//import Sessions from './Sessions';
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 // import { faPlus } from '@fortawesome/free-solid-svg-icons'
 // import { faMinus } from '@fortawesome/free-solid-svg-icons'
