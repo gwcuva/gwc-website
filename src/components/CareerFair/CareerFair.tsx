@@ -8,6 +8,7 @@ import FAQ from './FAQ/FAQ';
 import Sponsors from './Sponsors/Sponsors';
 import Waves from '../../assets/images/hack-header-mobile-wave.svg';
 import Footer from './Footer/Footer';
+import OneOnOneSchedule from './OneOnOneSchedule/OneOnOneSchedule';
 import {BrowserView, MobileView} from 'react-device-detect';
 
 function CareerFair() {
@@ -25,6 +26,7 @@ function CareerFair() {
         <Location />
         <Sponsors />
         <Schedule />
+        <OneOnOneSchedule />
         <Signup />
         <FAQ />
         <Footer />

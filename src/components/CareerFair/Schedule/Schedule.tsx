@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { request } from 'graphql-request';
 import { Col, Row } from 'react-bootstrap';
 import { isMobile } from 'react-device-detect';
-// import Sessions from './Sessions';
+//import Session from './Session';
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 // import { faPlus } from '@fortawesome/free-solid-svg-icons'
 // import { faMinus } from '@fortawesome/free-solid-svg-icons'
@@ -35,6 +35,7 @@ function Schedule() {
     fetchWorkshops();
   }, []);
 
+
   console.log("num events: " + workshops.length);
   for (let i = 0; i < workshops.length; i++) {
     console.log(workshops[i].eventName);
@@ -45,7 +46,7 @@ function Schedule() {
     <Row className={`justify-content-center py-5`}>
       <Col sm={10} xs={11} className={isMobile ? "my-3" : "my-5 py-5"}>
         <h2 className="text-orange hack">Career Panels and 1:1 Sessions</h2>
-        <h3 className="text-peach mono font-weight-bold">Career Panels: February 11th 11 am - 3 pm</h3>
+        <h3 className="text-peach mono font-weight-bold">Career Panels: February 11th</h3>
         {workshops.map((workshop) => 
           <Activity key={workshop.id} name={workshop.eventName} detail={workshop.eventDetail} time={workshop.startTime} linkname="Join Zoom" link={workshop.zoomLink} inperson={workshop.inPerson}></Activity>)}    
         {/*<Sessions />*/}
