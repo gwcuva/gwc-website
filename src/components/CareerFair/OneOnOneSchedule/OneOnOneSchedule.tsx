@@ -39,9 +39,7 @@ function OneOnOneSchedule() {
     <Row className={`justify-content-center pt-n5`}>
       <Col sm={10} xs={11} >
         <h3 className="text-peach mono font-weight-bold">1:1 Sessions, sign up below!</h3>
-        {oneOnOne.map((event) => 
-          <Session key={event.id} name={event.eventName} detail={event.eventDetail} time={event.startTime} linkname="Join Zoom" link={event.zoomLink} inperson={event.inPerson}></Session>)}    
-        {/*<Sessions />*/}
+          <p>Join this Teams link and navigate to the channel for the company you are meeting with: https://teams.microsoft.com/l/channel/19%3a94666252906d4437b9d3d5f6bc38da5c%40thread.tacv2/Group%2520Sessions?groupId=7558c8bb-ad7a-440b-b862-1164149cc016&tenantId=7b3480c7-3707-4873-8b77-e216733a65ac</p>
       </Col>
     </Row>
   );
