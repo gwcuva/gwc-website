@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { request } from 'graphql-request';
 import { Col, Row } from 'react-bootstrap';
 //import { isMobile } from 'react-device-detect';
-import Session from './Session';
+//import Session from './Session';
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 // import { faPlus } from '@fortawesome/free-solid-svg-icons'
 // import { faMinus } from '@fortawesome/free-solid-svg-icons'
@@ -10,7 +10,7 @@ import Session from './Session';
 //import Activity from './Activity';
 
 function OneOnOneSchedule() {
-    const [oneOnOne, setOneOnOne] = useState([{'id': '', 'eventName': '', 'eventDetail': '', 'startTime': '', 'zoomLink': '', 'inPerson': ''}]);
+    /*const [oneOnOne, setOneOnOne] = useState([{'id': '', 'eventName': '', 'eventDetail': '', 'startTime': '', 'zoomLink': '', 'inPerson': ''}]);
     // const [dropdownOpen, setDropdownOpen] = useState(false);
   
     useEffect(() => {
@@ -33,7 +33,7 @@ function OneOnOneSchedule() {
         setOneOnOne(careerFair1on1s);
       };
       fetchOneOnOne();
-    }, []);
+    }, []);*/
 
   return (
     <Row className={`justify-content-center pt-n5`}>
