@@ -13,9 +13,11 @@ import HelloWorld from '../../assets/images/hello-world.svg';
 import MobileHelloWorld from '../../assets/images/mobile-hello-world.svg';
 import Waves from '../../assets/images/main-header-wave.svg';
 import GetStarted from '../../assets/images/get started.svg';
+import ScrollButton from './BackToTop/ScrollButton'
 
 function Main() {
   return (
+    <>
     <div>
       <BrowserView>
         <Navbar />
@@ -36,6 +38,8 @@ function Main() {
         <Footer id="footer"/>
       </div>
     </div>
+    <ScrollButton/>
+    </>
   );
 }
 
