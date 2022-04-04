@@ -7,7 +7,7 @@ function About() {
   const [description, setDescription] = useState([{'id': '', 'ghhDescription': '', 'gwcDescription': ''}]);
   let ghhDescription = [];
   let gwcDescription = [];
-
+  
   useEffect(() => {
     const fetchDescriptions = async () => {
       const { hackathonAbouts } = await request(
@@ -37,13 +37,13 @@ function About() {
       <Row className={isMobile ? "" : "my-5"}>
         <Col md={4} xs={12} className={isMobile ? "my-3" : "mr-5"}>
           <h3 className="mono text-peach hack mb-4">Girls Hoo Hack</h3>
-          {ghhDescription.map((description) => 
-                    <p>{description}</p>)}
+          {ghhDescription.map((description, index) => 
+                    <p key={index}>{description}</p>)}
         </Col>
         <Col md={4} xs={12}>
           <h3 className="mono text-peach hack mb-4">GWC @ UVA</h3>
-          {gwcDescription.map((description) => 
-                    <p className="hack">{description}</p>)}
+          {gwcDescription.map((description, index) => 
+                    <p key={index}>{description}</p>)}
         </Col>
       </Row>
     </Col>
