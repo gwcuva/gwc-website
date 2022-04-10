@@ -11,7 +11,7 @@ import facebook from '../../../assets/images/facebook-f-brands.svg';
 import facebookPeach from '../../../assets/images/facebook-f-brands-peach.svg';
 import twitter from '../../../assets/images/twitter-brands.svg';
 import twitterPeach from '../../../assets/images/twitter-brands-peach.svg';
-import {Row} from 'react-bootstrap';
+import {Row, Col} from 'react-bootstrap';
 import {isMobile} from 'react-device-detect';
  
 function Footer() {
@@ -46,6 +46,15 @@ function Footer() {
           <img src={twitter} className={`${isMobile ? "footerIconMobile" : "footerIconDesktop"} normIcon`} alt="Twitter icon"/>
           <img src={twitterPeach} className={`${isMobile ? "mt-1 footerIconMobile" : "footerIconDesktop"} hovIcon`} alt="Twitter icon"/>
         </a>
+        <Col className="text-white" style={{marginLeft:50}}>
+          Contact
+          <Row className="text-white">
+            <a href="mailto:gwcuva@gmail.com" className="mono text-white interactive">gwcuva@gmail.com</a>
+          </Row>
+          <Row className="text-white"> 
+          <a href="mailto:girlshoohack@gmail.com" className="mono text-white interactive">girlshoohack@gmail.com</a>
+          </Row>
+        </Col>
       </Row>
       <Row className = {`${isMobile ? "footerMLHCodeMobile" : "footerMLHCodeDesktop"} position-absolute`}>
         <text className = "text-white p.hack">
