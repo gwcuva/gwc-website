@@ -2,7 +2,9 @@ import {Row} from 'react-bootstrap';
 import {Col} from 'react-bootstrap';
 import SignUpCircle from '../../../assets/images/sign-up-hack-circle.svg';
 import SignUpMobile from '../../../assets/images/sign-up-mobile.svg';
-import MLHBanner from '../../../assets/images/mlh-banner.png';
+import MLHBanner from '../../../assets/images/mlh-banner1.png';
+import SignupBanner from '../../../assets/images/signup-banner.png';
+
 
 interface Props {
     toggle? : () => void;
@@ -14,9 +16,14 @@ function MobileHeader(props: Props) {
         <div id={props.id} className="container-fluid bg-turq">
             <meta id="viewport" name="viewport" content="width=320; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;"></meta>
             <Row>
-                <a className="pl-5" href="https://mlh.io/seasons/2022/events" target="_blank" rel="noreferrer noopener">
-                     <img className="mlhbannermobile float-right" src={MLHBanner} alt="MLH banner"/>
+                <Col xs={12}>
+                <a className="pr-5" href="https://mlh.io/seasons/2022/events" target="_blank" rel="noreferrer noopener">
+                    <img className="mobilemlhbanner float-right" src={MLHBanner} alt="MLH banner" width="50" height="100"/>
                 </a>
+                <a className="pr-5" href="https://girls-hoo-hack-2021.devpost.com/" target="_blank" rel="noreferrer noopener">
+                    <img className="mobilesignupbanner float-right" src={SignupBanner} alt="Signup banner" width="50" height="100"/>
+                </a>
+                </Col>
             </Row>
 
             <Row className="mono text-blue pt-5 pl-4 pb-n5" style={{fontSize:13.5}}>
