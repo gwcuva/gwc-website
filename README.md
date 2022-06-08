@@ -75,7 +75,7 @@ This is where we store the fonts that we may need
 * Mara Hart
 * Neha Bagalkot
 * Lilian Zhang
-* Pragnya Pandrate
+* Pragnya Pandrate ()
 * Maya Tietz
 * Kim Do
 * Jennifer Tcheou
