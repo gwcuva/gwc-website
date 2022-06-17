@@ -54,7 +54,7 @@ function Schedule() {
   // }
 
   return (
-    <div className="container-fluid bg-hack-grey pt-4 pb-4">
+    <div className="container-fluid bg-hack-grey pt-4 pb-4" id="Schedule">
       {isMobile ? 
         <Row>
           <Col xs={12} className="ml-1">

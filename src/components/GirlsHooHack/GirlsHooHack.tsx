@@ -1,4 +1,5 @@
 import Header from './Header/Header';
+import NavbarGHH from './NavbarGHH/NavbarGHH';
 import MobileHeader from './Header/MobileHeader';
 import About from './About/About';
 import JumpStart from './JumpStart/JumpStart';
@@ -18,6 +19,7 @@ function GirlsHooHack() {
   return (
     <div className="overflow-auto">
       <BrowserView>
+        <NavbarGHH />
         <Header id="Header"/>
       </BrowserView>
       <MobileView>
