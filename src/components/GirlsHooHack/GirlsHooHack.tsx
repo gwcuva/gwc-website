@@ -1,5 +1,6 @@
 import Header from './Header/Header';
 import NavbarGHH from './NavbarGHH/NavbarGHH';
+import MobileNavbarGHH from './NavbarGHH/MobileNavbarGHHs';
 import MobileHeader from './Header/MobileHeader';
 import About from './About/About';
 import JumpStart from './JumpStart/JumpStart';
@@ -23,6 +24,7 @@ function GirlsHooHack() {
         <Header id="Header"/>
       </BrowserView>
       <MobileView>
+        <MobileNavbarGHH />
         <MobileHeader id="MobileHeader"/>
         <img src={Waves} style={{marginTop:"-215px", marginBottom:"-120px"}} width = "100%" alt="Orange wave" />
       </MobileView>
