@@ -34,13 +34,13 @@ function Prizes(): JSX.Element {
         <Col>
           {isMobile ? 
               <div>
-                <h2 className="text-orange hack">PRIZES</h2>
+                <h2 className="text-orange hack" >PRIZES</h2>
                 {prizes.map((prize) => 
                 <PrizeItem key={prize.id} name={prize.prizeName} object={prize.prizeObject} detail={prize.description} ></PrizeItem>)}
               </div>
               :
               <div>
-                <h2 className="text-orange hack pb-3">Prizes</h2>
+                <h2 className="text-orange hack pb-3" id="Prizes">Prizes</h2>
                 <Row>
                   {prizes.map((prize) => 
                     <PrizeItem key={prize.id} name={prize.prizeName} object={prize.prizeObject} detail={prize.description} ></PrizeItem>)}
