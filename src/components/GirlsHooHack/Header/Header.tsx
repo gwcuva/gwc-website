@@ -27,15 +27,15 @@ function Header(props: Props) {
 
             <Col xs={3} className="text-blue">
               <img src={UVA} alt="UVA text"/>
-              <h3>November</h3>
-              <h3>06-07</h3>
+              <h3>October</h3>
+              <h3>15-16</h3>
             </Col>
         </Row>
 
         <Row xs={12} className="mt-n5">
           <Col xs={1}></Col>
           <Col xs={3}><h1 className={isMobile ? "text-white":"text-white"}>HOO</h1></Col>
-          <Col xs={4}><h2 className={isMobile ? "text-blue":"text-blue font-weight-bold pt-4"}>2021 HYBRID HACKATHON</h2></Col>
+          <Col xs={4}><h2 className={isMobile ? "text-blue":"text-blue font-weight-bold pt-4"}>2022 HYBRID HACKATHON</h2></Col>
         </Row>
 
         <Row className="pt-0 mt-n5 pb-5">
@@ -45,7 +45,7 @@ function Header(props: Props) {
           </Col>
           <Col>
             <img className="position-absolute signUpTextDesktop" src={SignUpText} alt="Sign Up text" />
-            <a href="https://girls-hoo-hack-2021.devpost.com/" target="_blank" rel="noreferrer noopener" onClick={props.toggle}>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdP4XyRDDwPlux5zBcaM7BVx_LXkg0pTQh_ZhHu37cTsancOw/viewform" target="_blank" rel="noreferrer noopener" onClick={props.toggle}>
               <img className="position-relative" src={SignUpCircle} alt="Sign Up Circle"/>
             </a>
           </Col>
