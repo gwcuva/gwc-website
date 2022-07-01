@@ -27,7 +27,7 @@ function MobileHeader(props: Props) {
             </Row>
 
             <Row className="mono text-blue pt-5 pl-4 pb-n5" style={{fontSize:13.5}}>
-                <text><big>2021 Hybrid Hackathon</big></text>
+                <text><big>2022 Hybrid Hackathon</big></text>
             </Row>
 
             <Row xs={8} className="text-white pl-3 pt-n5">
@@ -43,7 +43,7 @@ function MobileHeader(props: Props) {
             </Row>
 
             <Row xs={10} className="text-blue pl-3 pt-n5">
-                <h3>November 06-07</h3>
+                <h3>October 15-16</h3>
             </Row>
 
             <Row>
