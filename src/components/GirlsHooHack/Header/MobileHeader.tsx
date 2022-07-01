@@ -17,8 +17,8 @@ function MobileHeader(props: Props) {
             <meta id="viewport" name="viewport" content="width=320; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;"></meta>
             <Row>
                 <Col xs={12}>
-                <a className="pr-5" href="https://mlh.io/seasons/2022/events" target="_blank" rel="noreferrer noopener">
-                    <img className="mobilemlhbanner float-right" src={MLHBanner} alt="MLH banner" width="50" height="100"/>
+                <a href="https://mlh.io/na?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2023-season&utm_content=white" target="_blank" rel="noreferrer noopener">
+                    <img className="MLHBANNER pr-2" src="https://s3.amazonaws.com/logged-assets/trust-badge/2023/mlh-trust-badge-2023-white.svg" alt="Major League Hacking 2023 Hackathon Season" width="85" height="152"/> 
                 </a>
                 <a className="pr-5" href="https://girls-hoo-hack-2021.devpost.com/" target="_blank" rel="noreferrer noopener">
                     <img className="mobilesignupbanner float-right" src={SignupBanner} alt="Signup banner" width="50" height="100"/>
@@ -49,7 +49,7 @@ function MobileHeader(props: Props) {
             <Row>
                 <Col xs={12} className="text-blue text-right">
                     <img className="position-absolute signUpTextMobile" src={SignUpMobile} alt="Sign Up text" />
-                    <a href="https://girls-hoo-hack-2021.devpost.com/" target="_blank" rel="noreferrer noopener" onClick={props.toggle}>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdP4XyRDDwPlux5zBcaM7BVx_LXkg0pTQh_ZhHu37cTsancOw/viewform" target="_blank" rel="noreferrer noopener" onClick={props.toggle}>
                         <img className="position-relative" src={SignUpCircle} height="150px" width="150px" alt="Sign Up Circle"/>
                     </a>
                 </Col>

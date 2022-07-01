@@ -45,7 +45,7 @@ function Header(props: Props) {
           </Col>
           <Col>
             <img className="position-absolute signUpTextDesktop" src={SignUpText} alt="Sign Up text" />
-            <a href="https://girls-hoo-hack-2021.devpost.com/" target="_blank" rel="noreferrer noopener" onClick={props.toggle}>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdP4XyRDDwPlux5zBcaM7BVx_LXkg0pTQh_ZhHu37cTsancOw/viewform" target="_blank" rel="noreferrer noopener" onClick={props.toggle}>
               <img className="position-relative" src={SignUpCircle} alt="Sign Up Circle"/>
             </a>
           </Col>
