@@ -1,6 +1,5 @@
 import {Row} from 'react-bootstrap'
 import Logo from '../../../assets/images/peacock-logo.svg'
-import MLHBanner from '../../../assets/images/mlh-banner1.png';
 import SignupBanner from '../../../assets/images/signup-banner.png';
 import SignupBannerOrange from '../../../assets/images/signup-orange.png';
 

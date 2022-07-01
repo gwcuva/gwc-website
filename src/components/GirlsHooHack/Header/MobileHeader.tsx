@@ -2,7 +2,6 @@ import {Row} from 'react-bootstrap';
 import {Col} from 'react-bootstrap';
 import SignUpCircle from '../../../assets/images/sign-up-hack-circle.svg';
 import SignUpMobile from '../../../assets/images/sign-up-mobile.svg';
-import MLHBanner from '../../../assets/images/mlh-banner1.png';
 import SignupBanner from '../../../assets/images/signup-banner.png';
 
 
