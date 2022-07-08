@@ -20,13 +20,15 @@ function MobileNavbarGHHs() {
 
       <Row>
         <Col xs={16}>
-          <a className={`pr-2 ${menuOpen && "hidden"}`} onClick={() => toggleModal()}>
-              <img className="mobilehamburgericon" src={HamburgerIcon} alt="HamburgerIcon" width="50" height="70"/>
-          </a>
+
+        <button className= {`pr-2 button-unstyled ${menuOpen && "hidden"}`} onClick={() => toggleModal()}>
+            <img className="mobilehamburgericon" src={HamburgerIcon} alt="HamburgerIcon" width="50" height="70"/>
+        </button>
           
-          <a className="pr-5" href="https://girls-hoo-hack-2021.devpost.com/" target="_blank" rel="noreferrer noopener">
-              <img className="mobilesignupbanner" src={SignupBanner} alt="Signup banner" width="55" height="110"/>
-          </a>
+          
+        <a className="pr-5" href="https://girls-hoo-hack-2021.devpost.com/" target="_blank" rel="noreferrer noopener">
+            <img className="mobilesignupbanner" src={SignupBanner} alt="Signup banner" width="55" height="110"/>
+        </a>
         </Col>
       </Row>
 
