@@ -259,6 +259,22 @@ p.hack {
   display: inline;
 }
 
+.footerEmailMobileColumn {
+  color: $wireless-white;
+  margin-top: 30px;
+  margin-left: 220px;
+  position: absolute;
+}
+
+.footerEmailMobile{
+  color: $wireless-white;
+  font-size: 15px;
+  border-collapse: separate;
+  border-spacing: 1px;
+  margin-top: -2px;
+  margin-left: 0px;
+}
+
 .footerMLHCodeDesktop{
   margin-top: 300px;
   margin-left: 140px;
