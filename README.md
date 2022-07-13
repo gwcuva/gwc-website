@@ -83,4 +83,3 @@ This is where we store the fonts that we may need
 * Belle Tran
 * Hannah Lee
 * Arya Ganesan
-* Hao Liu
