@@ -1,10 +1,10 @@
 import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Main from './components/Main/Main';
-import GirlsHooHack from './components/GirlsHooHack/GirlsHooHack';
+import GirlsHooHack2022 from './components/GirlsHooHack2022/GirlsHooHack';
+import GirlsHooHack2021 from './components/GirlsHooHack2021/GirlsHooHack';
 import Branding from './components/Branding/Branding';
 import CareerFair from './components/CareerFair/CareerFair';
-import NotFound from './components/NotFound';
 import Links from './components/Links/Links';
 
 function App() {
@@ -15,7 +15,7 @@ function App() {
           <Branding />
         </Route>
         <Route exact path="/hack">
-          <GirlsHooHack />
+          <GirlsHooHack2022 />
         </Route>
         <Route exact path="/">
           <Main />
@@ -27,7 +27,7 @@ function App() {
           <CareerFair />
         </Route>
         <Route path="/">
-          <NotFound />
+          <GirlsHooHack2021 />
         </Route>
       </Switch>
     </BrowserRouter>
