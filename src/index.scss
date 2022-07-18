@@ -332,3 +332,13 @@ p.hack {
 .ghhlogo {
   margin-left: 30px;
 }
+
+.submit-button {
+  border: 0px;
+  background: $tuple-turquoise;
+  color: $wireless-white;
+}
+.submit-button:hover, .submit-button:active {
+  background: $wireless-white;
+  color: $programmer-peacock;
+}
