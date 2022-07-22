@@ -55,13 +55,15 @@ function Footer() {
           <a href="mailto:girlshoohack@gmail.com" className="mono text-white interactive">girlshoohack@gmail.com</a>
           </Row>
         </Col>
-        <Col className="text-white" style={{marginLeft:50}}> 
-          <Row>
-            GHH 2021 Website: 
-          </Row>
-          <Row>
-            <a href="/hack2021" target="_blank" rel="noreferrer noopener" className="mono text-white interactive pr-5 pr-2">hack2021</a>
-          </Row>
+        <Col className="text-white" style={{marginLeft:35}}> 
+          {!isMobile && <Col className="text-white" style={{marginLeft:35}}>
+            <Row>
+              GHH 2021 Website: 
+            </Row>
+            <Row>
+              <a href="/hack2021" target="_blank" rel="noreferrer noopener" className="mono text-white interactive pr-5 pr-2">hack2021</a>
+            </Row>
+          </Col>}
         </Col>
       </Row>
       <Row className = {`${isMobile ? "footerMLHCodeMobile" : "footerMLHCodeDesktop"} position-absolute`}>
