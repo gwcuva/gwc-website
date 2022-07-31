@@ -65,12 +65,12 @@ function Footer() {
           MLH Code of Conduct 
         </a>
       </Row>
-      {isMobile && <Col className= "footerEmailMobileColumn" style={{fontSize: 16}}>
+      {isMobile && <Col className= "footerEmailMobileColumn">
           Contact
-          <Row className="footerEmailMobile" style={{fontSize: 10}}>  
+          <Row className="footerEmailMobile">  
             <a href="mailto:gwcuva@gmail.com" className="footerEmailMobile">gwcuva@gmail.com</a>
           </Row>
-          <Row className="footerEmailMobile" style={{fontSize: 10}}> 
+          <Row className="footerEmailMobile"> 
             <a href="mailto:girlshoohack@gmail.com" className="footerEmailMobile">girlshoohack@gmail.com</a>
           </Row>
         </Col>}

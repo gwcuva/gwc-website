@@ -261,18 +261,20 @@ p.hack {
 
 .footerEmailMobileColumn {
   color: $wireless-white;
+  font-size: 14px;
   margin-top: 30px;
-  margin-left: 220px;
+  margin-left: 200px;
   position: absolute;
 }
 
 .footerEmailMobile{
   color: $wireless-white;
-  font-size: 15px;
+  font-size: 12px;
   border-collapse: separate;
-  border-spacing: 1px;
-  margin-top: -2px;
+  border-spacing: 5px;
+  margin-top: 1px;
   margin-left: 0px;
+  //line-height: 20px;
 }
 
 .footerMLHCodeDesktop{
