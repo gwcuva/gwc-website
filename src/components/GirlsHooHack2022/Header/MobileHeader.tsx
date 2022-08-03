@@ -2,7 +2,6 @@ import {Row} from 'react-bootstrap';
 import {Col} from 'react-bootstrap';
 import SignUpCircle from '../../../assets/images/sign-up-hack-circle.svg';
 import SignUpMobile from '../../../assets/images/sign-up-mobile.svg';
-import SignupBanner from '../../../assets/images/signup-banner.png';
 
 
 interface Props {
@@ -14,16 +13,6 @@ function MobileHeader(props: Props) {
     return(
         <div id={props.id} className="container-fluid bg-turq">
             <meta id="viewport" name="viewport" content="width=320; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;"></meta>
-            <Row>
-                <Col xs={12}>
-                <a href="https://mlh.io/na?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2023-season&utm_content=white" target="_blank" rel="noreferrer noopener">
-                    <img className="MLHBANNER pr-2" src="https://s3.amazonaws.com/logged-assets/trust-badge/2023/mlh-trust-badge-2023-white.svg" alt="Major League Hacking 2023 Hackathon Season" width="85" height="152"/> 
-                </a>
-                <a className="pr-5" href="https://girls-hoo-hack-2021.devpost.com/" target="_blank" rel="noreferrer noopener">
-                    <img className="mobilesignupbanner float-right" src={SignupBanner} alt="Signup banner" width="50" height="100"/>
-                </a>
-                </Col>
-            </Row>
 
             <Row className="mono text-blue pt-5 pl-4 pb-n5" style={{fontSize:13.5}}>
                 <text><big>2022 Hybrid Hackathon</big></text>
