@@ -14,10 +14,11 @@ function About() {
         process.env.REACT_APP_GRAPHCMS_URL ? process.env.REACT_APP_GRAPHCMS_URL : "",
         `
           { 
-            hackathonAbouts {
+            hackathonAbouts(where: { year: 2021 }) {
               id
               ghhDescription
               gwcDescription
+              year
             }
           }
         `
