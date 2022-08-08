@@ -5,8 +5,8 @@ import { request } from 'graphql-request';
 
 function About() {
   const [description, setDescription] = useState([{'id': '', 'ghhDescription': '', 'gwcDescription': ''}]);
-  var ghhDescription: string[] = [];
-  var gwcDescription: string[] = [];
+  let ghhDescription: string[] = [];
+  let gwcDescription: string[] = [];
   
   useEffect(() => {
     const fetchDescriptions = async () => {
@@ -28,7 +28,7 @@ function About() {
     fetchDescriptions();
   }, []);
 
-  if (description.length != 0) {
+  if (description.length !== 0) {
     ghhDescription = description[0].ghhDescription.split("\n");
     gwcDescription = description[0].gwcDescription.split("\n");
   }
