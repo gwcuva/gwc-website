@@ -14,7 +14,7 @@ function Sponsors() {
         process.env.REACT_APP_GRAPHCMS_URL ? process.env.REACT_APP_GRAPHCMS_URL : "",
         `
           { 
-            hackathonSponsors {
+            hackathonSponsors(where: { year: 2022 }) {
               level
               sponsorImage {
                 url
