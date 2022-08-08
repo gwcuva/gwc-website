@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import Activity from './Activity';
+//import Activity from './Activity';
 //import { request } from 'graphql-request';
 import { isMobile } from 'react-device-detect';
 import { Row, Col } from 'react-bootstrap';
