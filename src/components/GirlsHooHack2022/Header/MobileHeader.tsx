@@ -2,6 +2,9 @@ import {Row} from 'react-bootstrap';
 import {Col} from 'react-bootstrap';
 import SignUpCircle from '../../../assets/images/sign-up-hack-circle.svg';
 import SignUpMobile from '../../../assets/images/sign-up-mobile.svg';
+import SignupBanner from '../../../assets/images/signup-banner.png';
+import React, { useEffect, useState } from 'react';
+import { request } from 'graphql-request';
 
 interface Props {
     toggle? : () => void;
