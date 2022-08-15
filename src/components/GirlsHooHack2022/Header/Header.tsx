@@ -4,7 +4,7 @@ import Waves from '../../../assets/images/hack-header-desktop-wave.svg';
 import SignUpCircle from '../../../assets/images/sign-up-hack-circle.svg';
 import UVA from '../../../assets/images/uva.svg';
 import SignUpText from '../../../assets/images/sign-up-text.svg';
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { request } from 'graphql-request';
 
 interface Props {
