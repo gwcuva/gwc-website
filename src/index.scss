@@ -263,18 +263,17 @@ p.hack {
   color: $wireless-white;
   font-size: 14px;
   margin-top: 30px;
-  margin-left: 200px;
+  margin-left: 210px;
   position: absolute;
 }
 
 .footerEmailMobile{
   color: $wireless-white;
-  font-size: 12px;
+  font-size: 14px;
   border-collapse: separate;
   border-spacing: 5px;
-  margin-top: 1px;
+  margin-top: 0.5px;
   margin-left: 0px;
-  //line-height: 20px;
 }
 
 .footerMLHCodeDesktop{
@@ -285,6 +284,20 @@ p.hack {
 .footerMLHCodeMobile{
   margin-top: 100px;
   margin-left: 25px;
+}
+
+.footerArchiveMobileRow{
+  color: $wireless-white;
+  font-size: 14px;
+  margin-top: 125px;
+  margin-left: 25px;
+  position: absolute;
+}
+
+.footerArchiveMobile{
+  color: $wireless-white;
+  font-size: 14px;
+  margin-left: 5px;
 }
 
 .hovIcon {
