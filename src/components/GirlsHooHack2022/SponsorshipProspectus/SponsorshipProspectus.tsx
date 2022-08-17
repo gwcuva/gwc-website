@@ -1,8 +1,7 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import {Row, Col} from 'react-bootstrap';
 import { isMobile } from 'react-device-detect';
 import { request } from 'graphql-request';
-import { title } from 'process';
 
 function SponsorshipProspectus(): JSX.Element {
   const [link, setLink] = useState({'year': 2022, 'url': ''});
