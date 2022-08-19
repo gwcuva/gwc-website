@@ -15,6 +15,7 @@ import SponsorshipProspectus from './SponsorshipProspectus/SponsorshipProspectus
 import {BrowserView, MobileView} from 'react-device-detect';
 import Waves from '../../assets/images/hack-header-mobile-wave.svg';
 import Footer from './Footer/Footer';
+import Newsletter from './Newsletter/Newsletter';
 
 function GirlsHooHack() {
   return (
@@ -37,6 +38,7 @@ function GirlsHooHack() {
         <FAQ />
         <Sponsors />
         <SponsorshipProspectus />
+        <Newsletter />
         <Footer />
       </div>
     </div>
