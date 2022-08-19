@@ -14,7 +14,7 @@ function Speakers(): JSX.Element {
           process.env.REACT_APP_GRAPHCMS_URL ? process.env.REACT_APP_GRAPHCMS_URL : "",
           `
             { 
-              hackathonKeynotes {
+              hackathonKeynotes(where: { year: 2021 }) {
                 id
                 name
                 bio
@@ -22,6 +22,7 @@ function Speakers(): JSX.Element {
                   url
                 }
                 linkedIn
+                year
               }
             }
           `

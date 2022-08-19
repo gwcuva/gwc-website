@@ -14,7 +14,7 @@ function FAQ() {
         process.env.REACT_APP_GRAPHCMS_URL ? process.env.REACT_APP_GRAPHCMS_URL : "",
         `
           { 
-            hackathonFaqs {
+            hackathonFaqs(where: { year: 2022 })  {
               question
               answer
             }
@@ -34,7 +34,11 @@ function FAQ() {
           <h2 className="text-orange hack">FAQ</h2>
           <Row>
             <Col md={8} xs={24}>
-              {faq.map((mem, index) => <FAQComponent key={index} Question={mem.question} Answer={mem.answer}></FAQComponent>)}
+              {faq.length===0 ? <p>Coming Soon!</p> : 
+              <div>
+                {faq.map((mem, index) => <FAQComponent key={index} Question={mem.question} Answer={mem.answer}></FAQComponent>)}
+              </div>
+              }
             </Col>
           </Row>
         </Col>

@@ -14,7 +14,7 @@ function Sponsors() {
         process.env.REACT_APP_GRAPHCMS_URL ? process.env.REACT_APP_GRAPHCMS_URL : "",
         `
           { 
-            hackathonSponsors {
+            hackathonSponsors(where: { year: 2022 }) {
               level
               sponsorImage {
                 url
@@ -46,6 +46,9 @@ function Sponsors() {
     <Row className="justify-content-center bg-hack-grey py-5" id="Sponsors">
       <Col sm={10} xs={11} className={isMobile ? "my-3" : "my-5 py-5"}>
         <h2 className="text-orange hack">Sponsors</h2>
+        {goldsponsors.length===0 && silversponsors.length===0 && othersponsors.length===0 &&
+          <p>Coming Soon!</p>
+        }
         {goldsponsors.length>0 && <h3 className="mono text-peach hack mt-5">Gold Sponsors</h3>}
         {goldsponsors.length>0 &&
         <Row className={`${!isMobile && "mt-1 mb-5"} d-flex justify-content-around`}>
