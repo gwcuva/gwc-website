@@ -8,7 +8,7 @@ function Location() {
         <Row className="bg-hack-grey justify-content-center pb-5 pt-5">
             <Col sm={10} xs={11} className={isMobile ? "ml-3" : "pl-2 ml-2"}>
                 <h2 className="text-orange font-weight-bold pb-3">Location</h2>
-                <p className="mono font-weight-bold">3 Elliewood, Charlottesville, 22903</p>
+                <p>Coming Soon!</p>
             </Col>
         </Row>
     </div>

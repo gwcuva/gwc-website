@@ -14,9 +14,10 @@ function FAQ() {
         process.env.REACT_APP_GRAPHCMS_URL ? process.env.REACT_APP_GRAPHCMS_URL : "",
         `
           { 
-            hackathonFaqs {
+            hackathonFaqs(where: { year: 2021 }) {
               question
               answer
+              year
             }
           }
         `
@@ -29,7 +30,7 @@ function FAQ() {
 
   return (
     <div>
-      <Row className="justify-content-center bg-white py-5" id="FAQ">
+      <Row className="justify-content-center bg-hack-grey py-5" id="FAQ">
         <Col md={10} xs={11} className={isMobile ? "my-3" : "my-5 py-5"}>
           <h2 className="text-orange hack">FAQ</h2>
           <Row>

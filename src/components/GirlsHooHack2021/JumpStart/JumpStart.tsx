@@ -18,11 +18,12 @@ function JumpStart() {
         process.env.REACT_APP_GRAPHCMS_URL ? process.env.REACT_APP_GRAPHCMS_URL : "",
         `
           { 
-            hackathonWorkshops {
+            hackathonWorkshops(where: { year: 2021 }) {
               id
               workshopName
               workshopDate
               description
+              year
             }
           }
         `

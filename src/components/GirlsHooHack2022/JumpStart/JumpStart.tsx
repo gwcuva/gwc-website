@@ -18,7 +18,7 @@ function JumpStart() {
         process.env.REACT_APP_GRAPHCMS_URL ? process.env.REACT_APP_GRAPHCMS_URL : "",
         `
           { 
-            hackathonWorkshops {
+            hackathonWorkshops(where: { year: 2022 }) {
               id
               workshopName
               workshopDate
@@ -90,26 +90,35 @@ function JumpStart() {
                 </Col>
                 <Col xs={2} className="d-flex justify-content-end text-peach ml-3">
                   <div onClick={() => setDropdownOpen(!dropdownOpen)} 
-                    aria-controls="collapse-workshops" aria-expanded={dropdownOpen}>
-                      {dropdownOpen ? <FontAwesomeIcon icon={faMinus}></FontAwesomeIcon> : 
-                      <FontAwesomeIcon icon={faPlus}></FontAwesomeIcon>}
-                  </div>
+                  aria-controls="collapse-workshops" aria-expanded={dropdownOpen}>
+                    {dropdownOpen ? <FontAwesomeIcon icon={faMinus}></FontAwesomeIcon> : 
+                    <FontAwesomeIcon icon={faPlus}></FontAwesomeIcon>}
+                </div>
+                  
                 </Col>
               </Row>
               <Collapse isOpened={dropdownOpen}>
-              {workshops.map((workshop) => 
-                  <Workshop key={workshop.id} name={workshop.workshopName} date={workshop.workshopDate.substring(0, workshop.workshopDate.length - 24)} detail={workshop.description} ></Workshop>)}
+              {workshops.length===0 ? <p>Coming Soon!</p> :
+              <div>
+                {workshops.map((workshop) => 
+                    <Workshop key={workshop.id} name={workshop.workshopName} date={workshop.workshopDate.substring(0, workshop.workshopDate.length - 24)} detail={workshop.description} ></Workshop>)}
+
+              </div>
+                }
               </Collapse>
             </div>
             :
             <div>
               <h3 className="text-peach mt-4">Workshops</h3>
-              <Row className="pt-2">                
-                {workshops.map((workshop) => 
-                  <Col xs={4} className="hack" key={workshop.id}>
-                    <Workshop name={workshop.workshopName} date={workshop.workshopDate.substring(0, workshop.workshopDate.length - 8)} detail={workshop.description}></Workshop>
-                  </Col>)}
-              </Row>
+                {workshops.length===0 ? <p>Coming Soon!</p> :    
+                <Row className="pt-2">
+                  {workshops.map((workshop) => 
+                    <Col xs={4} className="hack" key={workshop.id}>
+                      <Workshop name={workshop.workshopName} date={workshop.workshopDate.substring(0, workshop.workshopDate.length - 8)} detail={workshop.description}></Workshop>
+                    </Col>)}
+                </Row>  
+                }
+              
             </div>
           }
         </Col>
