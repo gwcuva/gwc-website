@@ -82,4 +82,3 @@ This is where we store the fonts that we may need
 * Sky Brodowski
 * Belle Tran
 * Hannah Lee
-* Arya Ganesan
