@@ -34,7 +34,7 @@ function Newsletter() {
                 email: emailInput.current.value,
             }
         
-            const data = await graphQLClient.request(mutation, variables);
+            await graphQLClient.request(mutation, variables);
             alert(`You have signed up for the newsletter!`)
             emailInput.current.value = "";
         }
