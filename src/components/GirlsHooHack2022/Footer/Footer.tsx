@@ -46,7 +46,7 @@ function Footer() {
           <img src={twitter} className={`${isMobile ? "footerIconMobile" : "footerIconDesktop"} normIcon`} alt="Twitter icon"/>
           <img src={twitterPeach} className={`${isMobile ? "mt-1 footerIconMobile" : "footerIconDesktop"} hovIcon`} alt="Twitter icon"/>
         </a>
-        <Col className="text-white" style={{marginLeft:50}}>
+        {!isMobile &&  <Col className="text-white" style={{marginLeft:50}}>
           Contact
           <Row className="text-white">
             <a href="mailto:gwcuva@gmail.com" className="mono text-white interactive">gwcuva@gmail.com</a>
@@ -54,15 +54,15 @@ function Footer() {
           <Row className="text-white"> 
           <a href="mailto:girlshoohack@gmail.com" className="mono text-white interactive">girlshoohack@gmail.com</a>
           </Row>
-        </Col>
-        <Col className="text-white" style={{marginLeft:50}}> 
+        </Col>}
+        {!isMobile && <Col className="text-white" style={{marginLeft:50}}> 
           <Row>
             GHH 2021 Website: 
           </Row>
           <Row>
             <a href="/hack2021" target="_blank" rel="noreferrer noopener" className="mono text-white interactive pr-5 pr-2">hack2021</a>
           </Row>
-        </Col>
+        </Col>}
       </Row>
       <Row className = {`${isMobile ? "footerMLHCodeMobile" : "footerMLHCodeDesktop"} position-absolute`}>
         <text className = "text-white p.hack">
@@ -72,6 +72,19 @@ function Footer() {
           MLH Code of Conduct 
         </a>
       </Row>
+      {isMobile && <Col className= "footerEmailMobileColumn">
+          Contact
+          <Row className="footerEmailMobile">  
+            <a href="mailto:gwcuva@gmail.com" className="footerEmailMobile" style={{fontSize: "0.7rem"}}>gwcuva@gmail.com</a>
+          </Row>
+          <Row className="footerEmailMobile"> 
+            <a href="mailto:girlshoohack@gmail.com" className="footerEmailMobile" style={{fontSize: "0.7rem"}}>girlshoohack@gmail.com</a>
+          </Row>
+      </Col>}
+      {isMobile && <Row className="footerArchiveMobileRow"> 
+          GHH 2021 Website: 
+          <a href="/hack2021" target="_blank" rel="noreferrer noopener" className="footerArchiveMobile">hack2021</a>
+      </Row>}
       <img className="w-100 position-relative" src={blueWaves} alt="Blue waves"/>
     </div>
   );

@@ -3,7 +3,7 @@ import NavbarGHH from './NavbarGHH/NavbarGHH';
 import MobileHeader from './Header/MobileHeader';
 import About from './About/About';
 import JumpStart from './JumpStart/JumpStart';
-//import Prizes from './Prizes/Prizes';
+import Prizes from './Prizes/Prizes';
 import Schedule from './Schedule/Schedule';
 import Speakers from './Speakers/Speakers';
 import Location from './Location/Location';
@@ -31,6 +31,7 @@ function GirlsHooHack() {
         <JumpStart />
         <Schedule />
         <Speakers />
+        <Prizes />
         <Location />
         <FAQ />
         <Sponsors />

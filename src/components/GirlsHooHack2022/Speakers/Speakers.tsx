@@ -14,7 +14,7 @@ function Speakers(): JSX.Element {
           process.env.REACT_APP_GRAPHCMS_URL ? process.env.REACT_APP_GRAPHCMS_URL : "",
           `
             { 
-              hackathonKeynotes {
+              hackathonKeynotes(where: { year: 2022 }) {
                 id
                 name
                 bio
@@ -55,7 +55,7 @@ function Speakers(): JSX.Element {
     }, []);
 
     return (
-    <Row className={`bg-white justify-content-center py-5`}>
+    <Row className={`bg-hack-grey justify-content-center py-5`}>
         <Col sm={10} xs={11} className={isMobile ? "my-3" : "py-5"}>
         <Row className={isMobile ? "" : "my-5"}>
             <Col>
@@ -63,24 +63,28 @@ function Speakers(): JSX.Element {
                 <div>
                     <h2 className="text-orange hack">SPEAKERS</h2>
                     {/*<h3 className="mono text-peach hack">KEYNOTE SPEAKERS</h3>*/}
-                    
-                    {keynotes.map((keynote) => 
+                    {keynotes.length===0 ? <p>Coming Soon!</p> : 
+                    <div> 
+                      {keynotes.map((keynote) => 
                       <KeynoteItem key={keynote.id} mem={keynote} />)}
+                    </div>
+                    }
 
                     {/* <h3 className="mono text-peach hack mb-4">PANELISTS</h3>
                     {panelists.map((panelist) => 
                         <PanelistItem key={panelist.id} mem={panelist} />)} */}
-
 
                 </div>
                 :
                 <div>
                     <h2 className="text-orange hack">Speakers</h2>
                     {/*<h3 className="mono text-peach hack mb-4">Keynote Speakers</h3>*/}
-                    <Row className="justify-content-center mt-5">
-                      {keynotes.map((keynote) => 
-                          <KeynoteItem key={keynote.id} mem={keynote} />)}
-                    </Row>
+                    {keynotes.length===0 ? <p>Coming Soon!</p> : 
+                      <Row className="justify-content-center mt-5">
+                        {keynotes.map((keynote) => 
+                            <KeynoteItem key={keynote.id} mem={keynote} />)}
+                      </Row>
+                    } 
 
                     {/* <h3 className="mono text-peach hack mb-4">Panelists</h3>
                     <Row>
