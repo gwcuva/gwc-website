@@ -43,9 +43,9 @@ function Sponsors() {
   });
 
   return (
-    <Row className="justify-content-center bg-hack-grey py-5" id="Sponsors">
+    <Row className="justify-content-center bg-white py-5" id="Sponsors">
       <Col sm={10} xs={11} className={isMobile ? "my-3" : "my-5 py-5"}>
-        <h2 className="text-orange hack">Sponsors</h2>
+        <h2 className="text-orange hack">{isMobile ? "SPONSORS" : "Sponsors"}</h2>
         {goldsponsors.length===0 && silversponsors.length===0 && othersponsors.length===0 &&
           <p>Coming Soon!</p>
         }

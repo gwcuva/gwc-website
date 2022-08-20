@@ -75,10 +75,10 @@ function Footer() {
       {isMobile && <Col className= "footerEmailMobileColumn">
           Contact
           <Row className="footerEmailMobile">  
-            <a href="mailto:gwcuva@gmail.com" className="footerEmailMobile">gwcuva@gmail.com</a>
+            <a href="mailto:gwcuva@gmail.com" className="footerEmailMobile" style={{fontSize: "0.7rem"}}>gwcuva@gmail.com</a>
           </Row>
           <Row className="footerEmailMobile"> 
-            <a href="mailto:girlshoohack@gmail.com" className="footerEmailMobile">girlshoohack@gmail.com</a>
+            <a href="mailto:girlshoohack@gmail.com" className="footerEmailMobile" style={{fontSize: "0.7rem"}}>girlshoohack@gmail.com</a>
           </Row>
       </Col>}
       {isMobile && <Row className="footerArchiveMobileRow"> 
