@@ -16,8 +16,8 @@ function Activity(props: Props): JSX.Element {
         </Col>
         <Col>
             <p className="mono font-weight-bold mb-0">{props.name}</p>
-            {props.detail && <p className="text-dark-grey interactive mb-0">{props.detail}</p>}
-            {props.link && <a href={props.link} target="_blank" rel="noreferrer" className="text-blue interactive mb-0"><u>{props.linkname}</u> &#8599;</a>}
+            {(props.detail && props.detail!=="") && <p className="text-dark-grey interactive mb-0">{props.detail}</p>}
+            {(props.link && props.link!=="") && <a href={props.link} target="_blank" rel="noreferrer" className="text-blue interactive mb-0"><u>{props.linkname}</u> &#8599;</a>}
         </Col>
     </Row>
   );
