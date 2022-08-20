@@ -45,7 +45,10 @@ function Newsletter() {
         <Col md={10} xs={5} className={isMobile ? "my-3" : "mr-5"}>
         <form className="mt-4 mb-4" onSubmit={signUp}>
             <input type="text" ref={emailInput} placeholder="Enter email"></input>
-            <button type="submit" className="btn btn-primary ml-3">Sign up</button>
+            {isMobile ?
+                <button type="submit" className="btn btn-primary mt-3">Sign up</button> :
+                <button type="submit" className="btn btn-primary ml-3">Sign up</button>
+            }
         </form>
         </Col>
         </Row>
