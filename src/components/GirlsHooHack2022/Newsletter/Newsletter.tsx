@@ -13,8 +13,8 @@ function Newsletter() {
         },
     });
 
-    const signUp = async (e: any) => {
-        //e.preventDefault();
+    const signUp = async (e: React.FormEvent<HTMLFormElement>) => {
+        e.preventDefault();
         console.log("sign up");
         if(emailInput && emailInput.current) {
             console.log(emailInput.current.value);
