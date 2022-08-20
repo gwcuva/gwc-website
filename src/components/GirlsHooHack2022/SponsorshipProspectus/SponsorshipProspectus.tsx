@@ -5,9 +5,9 @@ import { isMobile } from 'react-device-detect';
 function SponsorshipProspectus(): JSX.Element {
 
   return (
-    <Row className={`bg-white justify-content-center py-5`}>
+    <Row className={`bg-hack-grey justify-content-center py-5`}>
       <Col sm={10} xs={11} className={isMobile ? "my-3" : "my-5 py-5"}>
-        <h2 className="text-orange hack">Sponsorship Prospectus</h2>
+        <h2 className="text-orange hack">{isMobile ? "SPONSORSHIP PROSPECTUS" : "Sponsorship Prospectus"}</h2>
         <Row className={isMobile ? "" : "mt-4 mb-5"}>
           <Col md={10} xs={11} className={isMobile ? "my-3" : "mr-5"}>
             <p>Coming Soon!</p>

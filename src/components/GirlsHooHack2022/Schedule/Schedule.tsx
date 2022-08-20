@@ -58,9 +58,9 @@ function Schedule() {
       {isMobile ? 
         <Row>
           <Col xs={12} className="ml-1">
-            <h2 className="text-orange font-weight-bold">Schedule</h2>
+            <h2 className="text-orange font-weight-bold">SCHEDULE</h2>
 
-            <Row className="mt-4">
+            {/*<Row className="mt-4">
               <Col xs={9} className="d-flex justify-content-start">
                 <h3 className="text-peach mono font-weight-bold">Saturday, Nov 6</h3>
               </Col>
@@ -74,14 +74,14 @@ function Schedule() {
             </Row>
 
             <Collapse isOpened={open1}>
-              {/*<text>TBD</text>
+              <text>TBD</text>
               <Activity time="9am - 10am" name="Check-in" link="Join Discord"></Activity>
               <Activity time="10am - 11am" name="Opening Ceremony"></Activity>
               <Activity time="11am" name="Hacking starts" detail="Team formation"></Activity>
               <Activity time="11am - 12pm" name="Sustainability workshop"></Activity>
               <Activity time="11am - 12pm" name="How to Work from Home and Virtual Pair Programming Workshop"></Activity>
               <Activity time="12pm - 1pm" name="Intro to Hacking Workshop"></Activity>
-              <Activity time="1:30pm - 2:30pm" name="Sponsorship Fair" detail="Google Cloud, Wolfram"></Activity>*/}
+              <Activity time="1:30pm - 2:30pm" name="Sponsorship Fair" detail="Google Cloud, Wolfram"></Activity>
               <p>Coming Soon!</p>
             </Collapse>
             
@@ -99,18 +99,19 @@ function Schedule() {
             </Row>
 
             <Collapse isOpened={open2}>
-              {/* <Activity time="11am - 12pm" name="Sustainability workshop"></Activity>
+              <Activity time="11am - 12pm" name="Sustainability workshop"></Activity>
               <Activity time="11am - 12pm" name="How to Work from Home and Virtual Pair Programming Workshop"></Activity>
-              <Activity time="1pm" name="Hacking ends"></Activity> */}
+              <Activity time="1pm" name="Hacking ends"></Activity>
               <p>Coming Soon!</p>
-            </Collapse>
+      </Collapse>*/}
+            <p>Coming Soon!</p>
           </Col>
         </Row> : 
 
         <Row className="m-5 pt-5 pb-5">
           <Col md={7} sm={10} xs={12} className="ml-5">
             <h2 className="text-orange font-weight-bold">Schedule</h2>
-            {/* <h2>{events[0].eventName}</h2>
+            {/*<h2>{events[0].eventName}</h2>
             <h2>{events[0].time}</h2>
             <h3>{events[0].description}</h3>
 
@@ -120,16 +121,15 @@ function Schedule() {
 
             <h2>{events[2].eventName}</h2>
             <h2>{events[2].time}</h2>
-            <h3>{events[2].description}</h3> */}
+            <h3>{events[2].description}</h3> 
 
             <h3 className="text-peach mono font-weight-bold mt-4">Saturday, Oct 15</h3>
             <p>Coming Soon!</p>
             
-            <h3 className="text-peach mono font-weight-bold mt-5">Sunday, Oct 16</h3>
+    <h3 className="text-peach mono font-weight-bold mt-5">Sunday, Oct 16</h3>*/}
             <p>Coming Soon!</p>
           </Col>
-        </Row>
-      }
+      </Row>}
     </div>
   );
 }

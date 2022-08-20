@@ -38,9 +38,9 @@ function Newsletter() {
     };
 
   return (
-    <Row className="bg-hack-grey justify-content-center py-5"id="Newsletter">
+    <Row className="bg-ehite justify-content-center py-5"id="Newsletter">
     <Col sm={10} xs={11} className={isMobile ? "my-3" : "my-5 py-5"}>
-      <h2 className="text-orange hack" >Sign Up for Our Newsletter</h2>
+      <h2 className="text-orange hack" >{isMobile ? "SIGN UP FOR OUR NEWSLETTER" : "Sign Up for Our Newsletter"}</h2>
       <Row className={isMobile ? "" : "mt-4 mb-5"}>
         <Col md={10} xs={5} className={isMobile ? "my-3" : "mr-5"}>
         <form className="mt-4 mb-4" onSubmit={signUp}>
