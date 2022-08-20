@@ -14,7 +14,7 @@ function Newsletter() {
     });
 
     const signUp = async (e: any) => {
-        e.preventDefault();
+        //e.preventDefault();
         console.log("sign up");
         if(emailInput && emailInput.current) {
             console.log(emailInput.current.value);
@@ -38,7 +38,7 @@ function Newsletter() {
     };
 
   return (
-    <Row className="bg-ehite justify-content-center py-5"id="Newsletter">
+    <Row className="bg-white justify-content-center py-5"id="Newsletter">
         <Col sm={10} xs={11} className={isMobile ? "my-3" : "my-5 py-5"}>
             <h2 className="text-orange hack" >{isMobile ? "SIGN UP FOR OUR NEWSLETTER" : "Sign Up for Our Newsletter"}</h2>
             <Row className={isMobile ? "" : "mt-4 mb-5"}>
