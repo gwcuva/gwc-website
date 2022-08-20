@@ -10,7 +10,7 @@ import {Collapse } from 'react-collapse';
 
 function Schedule() {
   const [events, setEvents] = useState([{'eventName': '', 'link': '', 'time': '', 'description': '', 'day': 0, 'linkText': ''}]);
-  const [hackDates, setDates] = useState([{'dayOfWeek': '', 'month': '', 'date': 0}]);
+  const [dates, setDates] = useState([{'dayOfWeek': '', 'month': '', 'date': 0}]);
 
   const [open1, setOpen1] = useState(false);
   const [open2, setOpen2] = useState(false);
@@ -52,8 +52,6 @@ function Schedule() {
 
     fetchEvents();
   }, []);
-
-  let dates = hackDates;
 
   if(dates.length === 2) {
     const date1 = dates[0];
