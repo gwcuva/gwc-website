@@ -4,7 +4,7 @@ import { isMobile } from 'react-device-detect';
 import { request } from 'graphql-request';
 
 function SponsorshipProspectus(): JSX.Element {
-  const [link, setLink] = useState({'year': 2022, 'url': ''});
+  const [link, setLink] = useState({'url': ''});
 
   useEffect(() => {
     const fetchLink = async () => {
@@ -12,9 +12,8 @@ function SponsorshipProspectus(): JSX.Element {
         process.env.REACT_APP_GRAPHCMS_URL ? process.env.REACT_APP_GRAPHCMS_URL : "",
         `
           { 
-            hackathonProspectus(where: {id: "cl6wzrs102i4u0biz171xcdgs"}) {
+            hackathonProspectus(where: {year: 2022}) {
               url
-              year
             }
           }
         `
