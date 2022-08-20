@@ -10,6 +10,7 @@ import Workshop from './Workshop';
 
 function JumpStart() {
   const [workshops, setWorkshops] = useState([{'id': '', 'workshopName': '', 'workshopDate': '', 'description': ''}]);
+  const [description, setDescription] = useState([{'titleQuestion': '', 'description': ''}]);
   const [dropdownOpen, setDropdownOpen] = useState(false);
 
   useEffect(() => {
@@ -27,7 +28,20 @@ function JumpStart() {
           }
         `
       );
+      const { hackathonJumpstart } = await request(
+        process.env.REACT_APP_GRAPHCMS_URL ? process.env.REACT_APP_GRAPHCMS_URL : "",
+        `
+          { 
+            hackathonJumpstart(where: {year: 2022}) {
+              titleQuestion
+              description
+            }
+          }
+        `
+      );
+
       setWorkshops(hackathonWorkshops);
+      setDescription(hackathonJumpstart);
     };
     fetchWorkshops();
   }, []);
@@ -74,13 +88,13 @@ function JumpStart() {
     <Col sm={10} xs={11} className={isMobile ? "my-3" : "py-5"}>
       <Row className={isMobile ? "" : "my-5"}>
         <Col className="hack">
-          <h2 className="text-orange font-weight-bold">JUMPSTART</h2>
-          <h3 className="mono text-peach mt-4 mb-4">What is it?</h3>
-          <Row>
+          <h2 className="text-orange font-weight-bold">{isMobile ? "JUMPSTART" : "JumpStart"}</h2>
+          {description && <h3 className="mono text-peach mt-4 mb-4">What is it?</h3>}
+          {description && <Row>
             <Col xs={8}>
             <p>JumpStart is a beginner’s guide to hackathons. More information coming soon!</p>
             </Col>
-          </Row>
+          </Row>}
           
           {isMobile? 
             <div>
