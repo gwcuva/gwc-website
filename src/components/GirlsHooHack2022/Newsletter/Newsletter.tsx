@@ -15,9 +15,12 @@ function Newsletter() {
 
     const signUp = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
-        console.log("sign up");
         if(emailInput && emailInput.current) {
-            console.log(emailInput.current.value);
+            if(!(/[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/).test(emailInput.current.value)) {
+                alert('Not a valid email address');
+                emailInput.current.value = "";
+                return;
+            }
 
             const mutation = gql`
                 mutation CreateHackNewsletterEmails($email: String!) {
@@ -31,8 +34,8 @@ function Newsletter() {
                 email: emailInput.current.value,
             }
         
-            const data = await graphQLClient.request(mutation, variables);
-            console.log(data);
+            await graphQLClient.request(mutation, variables);
+            alert(`You have signed up for the newsletter!`)
             emailInput.current.value = "";
         }
     };
