@@ -22,7 +22,7 @@ function Header(props: Props) {
         process.env.REACT_APP_GRAPHCMS_URL ? process.env.REACT_APP_GRAPHCMS_URL : "",
         `
           { 
-            hackathonHeader(where:{id:"cl5zuxlokir6p0dk1ffeqf39p"}) {
+            hackathonHeader(where:{year:2022}) {
               year
               month
               day

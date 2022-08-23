@@ -2,6 +2,7 @@ import {Row} from 'react-bootstrap'
 import Logo from '../../../assets/images/peacock-logo.svg'
 import SignupBanner from '../../../assets/images/signup-banner.png';
 import SignupBannerOrange from '../../../assets/images/signup-orange.png';
+import mlh2022banner from '../../../assets/images/mlh-banner.png';
 
 function NavbarGHH() {
   return (
@@ -17,13 +18,13 @@ function NavbarGHH() {
       </Row>
       <Row className="banners">
           <a href="https://docs.google.com/forms/d/e/1FAIpQLSdP4XyRDDwPlux5zBcaM7BVx_LXkg0pTQh_ZhHu37cTsancOw/viewform" target="_blank" rel="noreferrer noopener">
-            <img className="signupbanner pr-2" src={SignupBanner} alt="Signup banner" width="80" height="155"
+            <img className="signupbanner" src={SignupBanner} alt="Signup banner" width="80" height="155"
             onMouseOver={e => (e.currentTarget.src = SignupBannerOrange)}
             onMouseOut={e => (e.currentTarget.src = SignupBanner)}
             />
           </a>
-          <a href="https://mlh.io/na?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2023-season&utm_content=white" target="_blank" rel="noreferrer noopener">
-            <img className="MLHBANNER pr-2" src="https://s3.amazonaws.com/logged-assets/trust-badge/2023/mlh-trust-badge-2023-white.svg" alt="Major League Hacking 2023 Hackathon Season" width="85" height="152"/> 
+          <a href="https://mlh.io/" target="_blank" rel="noreferrer noopener">
+            <img className="mlhbanner" src={mlh2022banner} alt="Major League Hacking 2022 Hackathon Season" width="100" height="170"/> 
           </a>
         </Row>
       </Row>
