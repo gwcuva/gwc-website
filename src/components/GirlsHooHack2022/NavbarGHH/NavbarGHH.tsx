@@ -5,12 +5,6 @@ import SignupBannerOrange from '../../../assets/images/signup-orange.png';
 import { useEffect, useState } from 'react';
 import { request } from 'graphql-request';
 
-interface Props {
-  toggle? : () => void;
-  id: string;
-}
-
-
 function NavbarGHH() {
 
   const [navbar, setNavbar] = useState({'registration': '', 'mlhbanner': {'url': ''}, 'mlhwebsite': ''});
