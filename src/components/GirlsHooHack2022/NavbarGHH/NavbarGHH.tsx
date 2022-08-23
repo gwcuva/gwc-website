@@ -36,14 +36,14 @@ function NavbarGHH() {
       <img src={Logo} width="208px" height="60px" alt="Girls Who Code at the University of Virginia logo"/>
       <Row>
       <Row className = "navlinks">
-        <a href="#About" className="mono text-white interactive pr-5 pr-2">About</a>
-        <a href="#Jumpstart" className="mono text-white interactive pr-5 pr-2">Jumpstart</a>
-        <a href="#Schedule" className="mono text-white interactive pr-5 pr-2">Schedule</a>
-        <a href="#Prizes" className="mono text-white interactive pr-5 pr-2">Prizes</a>
-        <a href="#Speakers" className="mono text-white interactive pr-5 pr-2">Speakers</a>
-        <a href="#Location" className="mono text-white interactive pr-5 pr-2">Location</a>
-        <a href="#FAQ" className="mono text-white interactive pr-5 pr-2">FAQ</a>
-        <a href="#Sponsors" className="mono text-white interactive pr-5 pr-2">Sponsors</a>
+        <a href="#About" className="navbartext" >About</a>
+        <a href="#Jumpstart" className="navbartext" >Jumpstart</a>
+        <a href="#Schedule" className="navbartext">Schedule</a>
+        <a href="#Prizes" className="navbartext">Prizes</a>
+        <a href="#Speakers" className="navbartext">Speakers</a>
+        <a href="#Location" className="navbartext">Location</a>
+        <a href="#FAQ" className="navbartext">FAQ</a>
+        <a href="#Sponsors" className="navbartext">Sponsors</a>
       </Row>
       <Row className="banners">
           <a href={navbar.registration} target="_blank" rel="noreferrer noopener">
