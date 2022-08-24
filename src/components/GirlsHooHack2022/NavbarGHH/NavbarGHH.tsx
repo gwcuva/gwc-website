@@ -44,6 +44,8 @@ function NavbarGHH() {
         <a href="#Location" className="navbartext">Location</a>
         <a href="#FAQ" className="navbartext">FAQ</a>
         <a href="#Sponsors" className="navbartext">Sponsors</a>
+        <a href="#SponsorshipProspectus" className="navbartext">Sponsorship</a>
+        <a href="#Newsletter" className="navbartext">Newsletter</a>
       </Row>
       <Row className="banners">
           <a href={navbar.registration} target="_blank" rel="noreferrer noopener">
