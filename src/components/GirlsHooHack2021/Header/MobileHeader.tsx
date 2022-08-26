@@ -3,7 +3,7 @@ import {Col} from 'react-bootstrap';
 import SignUpCircle from '../../../assets/images/sign-up-hack-circle.svg';
 import SignUpMobile from '../../../assets/images/sign-up-mobile.svg';
 import SignupBanner from '../../../assets/images/signup-banner.png';
-
+import mlh2022banner from '../../../assets/images/mlh-banner.png';
 
 interface Props {
     toggle? : () => void;
@@ -17,7 +17,7 @@ function MobileHeader(props: Props) {
             <Row>
                 <Col xs={12}>
                 <a href="https://mlh.io/na?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2023-season&utm_content=white" target="_blank" rel="noreferrer noopener">
-                    <img className="MLHBANNER pr-2" src="https://s3.amazonaws.com/logged-assets/trust-badge/2023/mlh-trust-badge-2023-white.svg" alt="Major League Hacking 2023 Hackathon Season" width="85" height="152"/> 
+                    <img className="mlhbannermobile" src={mlh2022banner} alt="Major League Hacking 2023 Hackathon Season" width="85" height="110"/> 
                 </a>
                 <a className="pr-5" href="https://girls-hoo-hack-2021.devpost.com/" target="_blank" rel="noreferrer noopener">
                     <img className="mobilesignupbanner float-right" src={SignupBanner} alt="Signup banner" width="50" height="100"/>

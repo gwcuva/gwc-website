@@ -25,10 +25,25 @@ function MobileNavContents(props: Props) {
           <a href="#Schedule" onClick={props.toggle} className="mono text-white interactive pr-5 pr-2" style={{fontSize: 35, fontWeight: 'bold'}}>Schedule</a>
         </Row>
         <Row className="pb-5">
+          <a href="#Prizes" onClick={props.toggle} className="mono text-white interactive pr-5 pr-2" style={{fontSize: 35, fontWeight: 'bold'}}>Prizes</a>
+        </Row>
+        <Row className="pb-5">
+          <a href="#Speakers" onClick={props.toggle} className="mono text-white interactive pr-5 pr-2" style={{fontSize: 35, fontWeight: 'bold'}}>Speakers</a>
+        </Row>
+        <Row className="pb-5">
+          <a href="#Location" onClick={props.toggle} className="mono text-white interactive pr-5 pr-2" style={{fontSize: 35, fontWeight: 'bold'}}>Location</a>
+        </Row>
+        <Row className="pb-5">
           <a href="#FAQ" onClick={props.toggle} className="mono text-white interactive pr-5 pr-2" style={{fontSize: 35, fontWeight: 'bold'}}>FAQ</a>
         </Row>
-        <Row>
+        <Row className="pb-5">
           <a href="#Sponsors" onClick={props.toggle} className="mono text-white interactive pr-5 pr-2" style={{fontSize: 35, fontWeight: 'bold'}}>Sponsors</a>
+        </Row>
+        <Row className="pb-5" >
+          <a href="#SponsorshipProspectus" onClick={props.toggle} className="mono text-white interactive pr-5 pr-2" style={{fontSize: 35, fontWeight: 'bold'}}>Sponsorship</a>
+        </Row>
+        <Row className="pb-5">
+          <a href="#Newsletter" onClick={props.toggle} className="mono text-white interactive pr-5 pr-2" style={{fontSize: 35, fontWeight: 'bold'}}>Newsletter</a>
         </Row>
       </div>
 

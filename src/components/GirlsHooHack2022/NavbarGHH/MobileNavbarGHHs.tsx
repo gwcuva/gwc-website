@@ -1,4 +1,3 @@
-import React, { useState } from 'react';
 import Logo from '../../../assets/images/peacock-logo.svg';
 import ReactModal from 'react-modal';
 import { Col, Row } from 'react-bootstrap';
@@ -6,6 +5,8 @@ import { X } from 'react-feather';
 import MobileNavContents from './MobileNavContents'
 import SignupBanner from '../../../assets/images/signup-banner.png';
 import HamburgerIcon from '../../../assets/images/hamburgericon.svg';
+import { useEffect,useState } from 'react';
+import { request } from 'graphql-request';
 
 function MobileNavbarGHHs() {
 
@@ -14,6 +15,31 @@ function MobileNavbarGHHs() {
     function toggleModal() {
       setMenuOpen(!menuOpen)
     }
+
+    const [navbar, setNavbar] = useState({'registration': '', 'mlhbanner': {'url': ''}, 'mlhwebsite': ''});
+
+    useEffect(() => {
+      const fetchNavbar = async () => {
+        const { hackathonNavbar } = await request(
+          process.env.REACT_APP_GRAPHCMS_URL ? process.env.REACT_APP_GRAPHCMS_URL : "",
+          `
+            { 
+              hackathonNavbar(where:{year:2022}) {
+                registration
+                mlhbanner{
+                  url
+                }
+                mlhwebsite
+              }
+            }
+          `
+        );
+        setNavbar(hackathonNavbar);
+      };
+  
+      fetchNavbar();
+    }, []);
+
     return (
     <nav className="bg-turq d-flex justify-content-between align-items-center">
       <img src={Logo} width="112px" height="44px" alt="Girls Who Code at the University of Virginia logo" className={menuOpen ? "hidden" : "pl-3"}/>
@@ -24,8 +50,12 @@ function MobileNavbarGHHs() {
             <img className="mobilehamburgericon" src={HamburgerIcon} alt="HamburgerIcon" width="50" height="70"/>
           </button>
           
-          <a className="pr-5" href="https://girls-hoo-hack-2021.devpost.com/" target="_blank" rel="noreferrer noopener">
-              <img className="mobilesignupbanner" src={SignupBanner} alt="Signup banner" width="55" height="110"/>
+          <a href={navbar.registration} target="_blank" rel="noreferrer noopener">
+              <img className="signupbannermobile" src={SignupBanner} alt="Signup banner" width="55" height="110"/>
+          </a>
+
+          <a href={navbar.mlhwebsite} target="_blank" rel="noreferrer noopener">
+            <img className="mlhbannermobile" src={navbar.mlhbanner.url} alt="Major League Hacking 2023 Hackathon Season" width="85" height="110"/> 
           </a>
         </Col>
       </Row>
@@ -44,7 +74,7 @@ function MobileNavbarGHHs() {
               <button className="mono text-white button-unstyled pr-2" onClick={() => toggleModal()}><X color="white" size={40}/></button>
             </Col>
             <Col xs={3}>
-              <a className="pr-5" href="https://girls-hoo-hack-2021.devpost.com/" target="_blank" rel="noreferrer noopener">
+              <a className="pr-5" href={navbar.registration} target="_blank" rel="noreferrer noopener">
                   <img className="mobilesignupbanner" src={SignupBanner} alt="Signup banner" width="55" height="110"/>
               </a>
             </Col>
