@@ -39,7 +39,7 @@ function GirlsHooHack() {
         <Sponsors />
         <SponsorshipProspectus />
         <Newsletter />
-        {/* <Footer /> */}
+        <Footer />
       </div>
     </div>
   );

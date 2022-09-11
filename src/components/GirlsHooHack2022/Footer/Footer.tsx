@@ -72,15 +72,15 @@ function Footer() {
           MLH Code of Conduct 
         </a>
       </Row>
-      {isMobile && <Col className= "footerEmailMobileColumn">
+      {isMobile && <div className= "footerEmailMobileColumn">
           Contact
-          <Row className="footerEmailMobile">  
+          <div className="footerEmailMobile">  
             <a href="mailto:gwcuva@gmail.com" className="footerEmailMobile" style={{fontSize: "0.7rem"}}>gwcuva@gmail.com</a>
-          </Row>
-          <Row className="footerEmailMobile"> 
+          </div>
+          <div className="footerEmailMobile"> 
             <a href="mailto:girlshoohack@gmail.com" className="footerEmailMobile" style={{fontSize: "0.7rem"}}>girlshoohack@gmail.com</a>
-          </Row>
-      </Col>}
+          </div>
+      </div>}
       {isMobile && <Row className="footerArchiveMobileRow"> 
           GHH 2021 Website: 
           <a href="/hack2021" target="_blank" rel="noreferrer noopener" className="footerArchiveMobile">hack2021</a>
