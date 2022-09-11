@@ -44,8 +44,8 @@ function MobileNavbarGHHs() {
     <nav className="bg-turq d-flex justify-content-between align-items-center">
       <img src={Logo} width="112px" height="44px" alt="Girls Who Code at the University of Virginia logo" className={menuOpen ? "hidden" : "pl-3"}/>
 
-      <Row>
-        <Col xs={16}>
+      <Row className='mr-0 pr-0'>
+        <Col xs={12} className='mr-0 pr-0'>
           <button className= {`pr-2 button-unstyled ${menuOpen && "hidden"}`} onClick={() => toggleModal()}>
             <img className="mobilehamburgericon" src={HamburgerIcon} alt="HamburgerIcon" width="50" height="70"/>
           </button>
@@ -55,7 +55,7 @@ function MobileNavbarGHHs() {
           </a>
 
           <a href={navbar.mlhwebsite} target="_blank" rel="noreferrer noopener">
-            <img className="mlhbannermobile" src={navbar.mlhbanner.url} alt="Major League Hacking 2023 Hackathon Season" width="85" height="110"/> 
+            <img className="mlhbannermobile pr-0 mr-0" src={navbar.mlhbanner.url} alt="Major League Hacking 2023 Hackathon Season" width="85" height="110"/> 
           </a>
         </Col>
       </Row>
