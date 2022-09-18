@@ -24,10 +24,10 @@ function CareerFair() {
       <div className="overflow-hidden">
         <About />
         <Location />
-        <Sponsors />
+        <Signup />
         <Schedule />
         <OneOnOneSchedule />
-        <Signup />
+        <Sponsors />
         <FAQ />
         <Footer />
       </div>
