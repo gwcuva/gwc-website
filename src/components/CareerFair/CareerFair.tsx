@@ -1,3 +1,4 @@
+import NavbarCF from './NavbarCF/NavbarCF';
 import Header from './Header/Header';
 import MobileHeader from './Header/MobileHeader';
 import About from './About/About';
@@ -15,6 +16,7 @@ function CareerFair() {
   return (
     <div className="overflow-auto">
       <BrowserView>
+        <NavbarCF />
         <Header id="Header"/>
       </BrowserView>
       <MobileView>
