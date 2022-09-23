@@ -50,7 +50,7 @@ function Sponsors() {
   });
 
   return (
-    <Row className={`justify-content-center bg-hack-grey py-5`}>
+    <Row className="justify-content-center bg-hack-grey py-5" id="CFSponsors">
       <Col sm={10} xs={11} className={isMobile ? "my-3" : "my-5 py-5"}>
         <h2 className="text-orange hack">Sponsors</h2>
         {goldsponsors.length>0 && <h3 className="mono text-peach hack mt-5">Gold Sponsors</h3>}
