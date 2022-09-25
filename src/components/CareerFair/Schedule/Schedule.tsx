@@ -43,7 +43,7 @@ function Schedule() {
   }
 
   return (
-    <Row className={`justify-content-center py-5`}>
+    <Row className="justify-content-center py-5" id = "CFSessions">
       <Col sm={10} xs={11} className={isMobile ? "my-3" : "my-5 py-5"}>
         <h2 className="text-orange hack">Career Panels and 1:1 Sessions</h2>
         <h3 className="text-peach mono font-weight-bold">Career Panels: February 11th</h3>
