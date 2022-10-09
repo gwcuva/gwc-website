@@ -59,7 +59,7 @@ function MobileNavbarGHHs() {
 
       <Row className='mr-0 pr-0'>
         <Col xs={12} className='mr-0 pr-0'>
-          <button className= {`pr-2 button-unstyled ${menuOpen && "hidden"}`} onClick={() => toggleModal()}>
+          <button className= {`pr-2 button-unstyled ${menuOpen && "hidden"}`} onClick={() => menuOpenHandler()}>
             <img className="mobilehamburgericon" src={HamburgerIcon} alt="HamburgerIcon" width="50" height="70"/>
           </button>
           
