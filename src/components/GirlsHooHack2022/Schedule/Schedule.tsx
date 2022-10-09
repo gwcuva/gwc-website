@@ -72,8 +72,26 @@ function Schedule() {
       return 1;
     }
     else {
+      const origa = atime;
+      const origb = btime;
+      let aftera = 0;
+      let afterb = 0;
+      if(atime.includes(':')) {
+        aftera = (parseInt(atime.substring(atime.indexOf(':'), atime.indexOf(':')+2)))/60;
+      }
+      if(btime.includes(':')) {
+        afterb = (parseInt(btime.substring(btime.indexOf(':'), btime.indexOf(':')+2)))/60;
+      }
       atime = atime.replace(/\D/g, '');
       btime = btime.replace(/\D/g, '');
+      atime = atime+aftera;
+      btime = btime+afterb;
+      if(origa.includes('12') && !origb.includes('12')) {
+        return -1;
+      }
+      else if(!origa.includes('12') && origb.includes('12')) {
+        return 1;
+      }
       return (parseInt(atime)-parseInt(btime));
     }
   });
