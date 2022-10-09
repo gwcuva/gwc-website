@@ -72,8 +72,8 @@ function Schedule() {
       return 1;
     }
     else {
-      let origa = atime;
-      let origb = btime;
+      const origa = atime;
+      const origb = btime;
       let aftera = 0;
       let afterb = 0;
       if(atime.includes(':')) {
