@@ -10,7 +10,7 @@ import Workshop from './Workshop';
 
 function JumpStart() {
   const [workshops, setWorkshops] = useState([{'id': '', 'workshopName': '', 'workshopDate': '', 'description': ''}]);
-  const [description, setDescription] = useState([{'titleQuestion': '', 'description': ''}]);
+  const [description, setDescription] = useState({'titleQuestion': '', 'description': ''});
   const [dropdownOpen, setDropdownOpen] = useState(false);
 
   useEffect(() => {
@@ -92,7 +92,7 @@ function JumpStart() {
           {description && <h3 className="mono text-peach mt-4 mb-4">What is it?</h3>}
           {description && <Row>
             <Col xs={8}>
-            <p>JumpStart is a beginner’s guide to hackathons. More information coming soon!</p>
+            <p>{description.titleQuestion} {description.description}</p>
             </Col>
           </Row>}
           
@@ -128,7 +128,8 @@ function JumpStart() {
                 <Row className="pt-2">
                   {workshops.map((workshop) => 
                     <Col xs={4} className="hack" key={workshop.id}>
-                      <Workshop name={workshop.workshopName} date={workshop.workshopDate.substring(0, workshop.workshopDate.length - 8)} detail={workshop.description}></Workshop>
+                      {console.log(workshop.workshopDate)}
+                      <Workshop name={workshop.workshopName} date={workshop.workshopDate.substring(0, workshop.workshopDate.length - 24)} detail={workshop.description}></Workshop>
                     </Col>)}
                 </Row>  
                 }
