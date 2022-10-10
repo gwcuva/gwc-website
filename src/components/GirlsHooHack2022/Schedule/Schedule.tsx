@@ -78,14 +78,20 @@ function Schedule() {
       let afterb = 0;
       if(atime.includes(':')) {
         aftera = (parseInt(atime.substring(atime.indexOf(':'), atime.indexOf(':')+2)))/60;
+        atime = atime.substring(0, atime.indexOf(':'));
+        atime = atime+aftera;
+      }
+      else {
+        atime = atime.replace(/\D/g, '');
       }
       if(btime.includes(':')) {
         afterb = (parseInt(btime.substring(btime.indexOf(':'), btime.indexOf(':')+2)))/60;
+        btime = btime.substring(0, btime.indexOf(':'));
+        btime = btime+afterb;
       }
-      atime = atime.replace(/\D/g, '');
-      btime = btime.replace(/\D/g, '');
-      atime = atime+aftera;
-      btime = btime+afterb;
+      else {
+        btime = btime.replace(/\D/g, '');
+      }
       if(origa.includes('12') && !origb.includes('12')) {
         return -1;
       }
