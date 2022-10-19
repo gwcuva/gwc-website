@@ -328,6 +328,22 @@ p.hack {
   display: block;
 }
 
+.largeSponsor {
+  transform: scale(1.4);
+}
+.largeSponsor:hover {
+  transition: transform .2s;
+  transform: scale(1.5);
+}
+.largeSponsor:active {
+  transition: transform .2s;
+  transform: scale(1.5);
+}
+
+.largeSponsorMobile {
+  transform: scale(1.0005);
+}
+
 .sponsorImage {
   transition: transform .2s;
 }

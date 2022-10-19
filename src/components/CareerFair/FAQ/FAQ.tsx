@@ -29,7 +29,7 @@ function FAQ() {
 
   return (
     <div>
-      <Row className="justify-content-center bg-hack-white py-5">
+      <Row className="justify-content-center bg-hack-white py-5" id="CFFAQ">
         <Col md={10} xs={11} className={isMobile ? "my-3" : "my-5 py-5"}>
           <h2 className="text-orange hack">FAQ</h2>
           <Row>

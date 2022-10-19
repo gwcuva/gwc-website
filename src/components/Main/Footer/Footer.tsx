@@ -26,7 +26,7 @@ function Footer(props: Props) {
             <Col md={3} sm={4} className="text-white" style={{marginBottom:60}}>
               <Links />
             </Col>
-            <Row sm={2} className="text-white">
+            <Col md={3} sm={2} className="text-white">
               <text> Although this organization has members who are 
                 University of Virginia students and may have, University
                 employees associated or engaged in its activities 
@@ -37,7 +37,7 @@ function Footer(props: Props) {
                 organization and is not responsible for the organization’s 
                 contracts, acts or omissions.
               </text>
-            </Row>
+            </Col>
           </Row>
         </Col>
       </div>
