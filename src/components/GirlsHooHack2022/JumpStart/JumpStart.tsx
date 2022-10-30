@@ -9,7 +9,7 @@ import { Collapse } from 'react-collapse';
 import Workshop from './Workshop';
 
 function JumpStart() {
-  const [workshops, setWorkshops] = useState([{'id': '', 'workshopName': '', 'workshopDate': '', 'description': ''}]);
+  const [workshops, setWorkshops] = useState([{'id': '', 'workshopName': '', 'workshopDate': '', 'description': '', 'link': '', 'linkName': ''}]);
   const [description, setDescription] = useState({'titleQuestion': '', 'description': ''});
   const [dropdownOpen, setDropdownOpen] = useState(false);
 
@@ -24,6 +24,8 @@ function JumpStart() {
               workshopName
               workshopDate
               description
+              link
+              linkName
             }
           }
         `
@@ -46,7 +48,13 @@ function JumpStart() {
     fetchWorkshops();
   }, []);
 
+  
   const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+  
+  // for(let i=0; i<workshops.length; i++) {
+  //   console.log(workshops[i].link);
+  //   console.log(workshops[i].linkName);
+  // }
 
   for (let i = 0; i < workshops.length; i++) {
     const secondDash = workshops[i].workshopDate.lastIndexOf('-');
@@ -117,7 +125,7 @@ function JumpStart() {
               {workshops.length===0 ? <p>Coming Soon!</p> :
               <div>
                 {workshops.map((workshop) => 
-                    <Workshop key={workshop.id} name={workshop.workshopName} date={workshop.workshopDate} detail={workshop.description} ></Workshop>)}
+                    <Workshop key={workshop.id} name={workshop.workshopName} date={workshop.workshopDate} detail={workshop.description} link={workshop.link} linkName={workshop.linkName}></Workshop>)}
 
               </div>
                 }
@@ -130,7 +138,7 @@ function JumpStart() {
                 <Row className="pt-2">
                   {workshops.map((workshop) => 
                     <Col xs={4} className="hack" key={workshop.id}>
-                      <Workshop name={workshop.workshopName} date={workshop.workshopDate} detail={workshop.description}></Workshop>
+                      <Workshop name={workshop.workshopName} date={workshop.workshopDate} detail={workshop.description} link={workshop.link} linkName={workshop.linkName}></Workshop>
                     </Col>)}
                 </Row>  
                 }
