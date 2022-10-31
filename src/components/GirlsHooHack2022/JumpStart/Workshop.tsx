@@ -7,7 +7,6 @@ interface Props {
 }
 
 function Workshop(props: Props): JSX.Element {
-  console.log(props.link + ", " + props.linkName);
   return (
       <div className="pb-3">
         <h4 className="hack"><b>{props.name}</b></h4>

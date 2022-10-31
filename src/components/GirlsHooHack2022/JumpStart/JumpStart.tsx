@@ -48,14 +48,8 @@ function JumpStart() {
     fetchWorkshops();
   }, []);
 
-  
   const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
   
-  // for(let i=0; i<workshops.length; i++) {
-  //   console.log(workshops[i].link);
-  //   console.log(workshops[i].linkName);
-  // }
-
   for (let i = 0; i < workshops.length; i++) {
     const secondDash = workshops[i].workshopDate.lastIndexOf('-');
     if(secondDash!== -1) {
