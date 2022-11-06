@@ -1,7 +1,8 @@
 import {Row, Col} from 'react-bootstrap';
 
 interface Props {
-  time: string;
+  starttime: string;
+  endtime: string;
   name: string;
   detail?: string;
   linkname?: string;
@@ -12,7 +13,10 @@ function Activity(props: Props): JSX.Element {
   return (
     <Row className="mb-2">
         <Col>
-            <p className="text-dark-grey mono">{props.time}</p>
+            <p className="text-dark-grey mono">{props.starttime}</p>
+        </Col>
+        <Col>
+          <p className="text-dark-grey mono">{props.endtime}</p>
         </Col>
         <Col>
             <p className="mono font-weight-bold mb-0">{props.name}</p>
