@@ -12,7 +12,7 @@ import Footer from './Footer/Footer';
 import OneOnOneSchedule from './OneOnOneSchedule/OneOnOneSchedule';
 import {BrowserView, MobileView} from 'react-device-detect';
 
-function CareerFair() {
+function CareerFair2022() {
   return (
     <div className="overflow-auto">
       <BrowserView>
@@ -37,4 +37,4 @@ function CareerFair() {
   );
 }
 
-export default CareerFair;
+export default CareerFair2022;
