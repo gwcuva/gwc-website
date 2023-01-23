@@ -10,7 +10,7 @@ import facebook from '../../../assets/images/facebook-f-brands.svg';
 import facebookPeach from '../../../assets/images/facebook-f-brands-peach.svg';
 import twitter from '../../../assets/images/twitter-brands.svg';
 import twitterPeach from '../../../assets/images/twitter-brands-peach.svg';
-import {Row} from 'react-bootstrap';
+import {Row, Col} from 'react-bootstrap';
 import {isMobile} from 'react-device-detect';
  
 function Footer() {
@@ -42,7 +42,19 @@ function Footer() {
           <img src={twitter} className={`${isMobile ? "footerIconMobile" : "footerIconDesktop"} normIcon`} alt="Twitter icon"/>
           <img src={twitterPeach} className={`${isMobile ? "mt-1 footerIconMobile" : "footerIconDesktop"} hovIcon`} alt="Twitter icon"/>
         </a>
+        {!isMobile && <Col className="text-white" style={{marginLeft:50}}> 
+          <Row>
+            GWC Career Fair 2022 Website:
+          </Row>
+          <Row>
+            <a href="/careerfair2022" target="_blank" rel="noreferrer noopener" className="mono text-white interactive pr-5 pr-2">careerfair2022</a>
+          </Row>
+        </Col>}
       </Row>
+      {isMobile && <Row className="footerArchiveMobileRow"> 
+          GWC Career Fair 2022 Website: 
+          <a href="/careerfair2022" target="_blank" rel="noreferrer noopener" className="footerArchiveMobile">careerfair2022</a>
+      </Row>}
       <img className="w-100 position-relative" src={blueWaves} alt="Blue waves"/>
     </div>
   );
