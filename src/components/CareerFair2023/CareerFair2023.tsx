@@ -8,6 +8,7 @@ import FAQ from './FAQ/FAQ';
 import Waves from '../../assets/images/hack-header-mobile-wave.svg';
 import Footer from './Footer/Footer';
 import {BrowserView, MobileView} from 'react-device-detect';
+//import Sponsors from './Sponsors/Sponsors';
 
 function CareerFair2023() {
   return (
