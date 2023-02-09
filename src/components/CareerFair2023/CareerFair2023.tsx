@@ -9,6 +9,7 @@ import Waves from '../../assets/images/hack-header-mobile-wave.svg';
 import Footer from './Footer/Footer';
 import {BrowserView, MobileView} from 'react-device-detect';
 import Sponsors from './Sponsors/Sponsors';
+import Schedule from './Schedule/Schedule';
 
 function CareerFair2023() {
   return (
@@ -25,10 +26,10 @@ function CareerFair2023() {
         <About />
         <Location />
         <Signup />
-        {/*<Schedule />*/}
+        <Schedule />
         {/*<OneOnOneSchedule />*/}
-        <FAQ />
         <Sponsors />
+        <FAQ />
         <Footer />
       </div>
     </div>
