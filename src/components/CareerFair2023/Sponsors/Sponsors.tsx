@@ -5,16 +5,23 @@ import {isMobile} from 'react-device-detect';
 import Image from 'react-bootstrap/Image';
 
 function Sponsors() {
+  /*return (
+    <Row className={`bg-hack-grey justify-content-center py-5`}>
+      <Col sm={10} xs={11} className={isMobile ? "my-3" : "my-5 py-5"}>
+        <h2 className="text-orange hack">Companies Attending</h2>
+        <h3 className="text-peach mono font-weight-bold">TBA</h3>
+      </Col>
+    </Row>*/
 
   const [sponsors, setSponsors] = useState([{'level': '', 'sponsorImage': {'url': ''}, 'sponsorName': '', 'sponsorUrl': '', 'size': ''}]);
 
   useEffect(() => {
     const fetchSponsors = async () => {
-      const { hackathonSponsors } = await request(
+      const { careerFairSponsors } = await request(
         process.env.REACT_APP_GRAPHCMS_URL ? process.env.REACT_APP_GRAPHCMS_URL : "",
         `
           { 
-            hackathonSponsors(where: { year: 2022 }) {
+            careerFairSponsors {
               level
               sponsorImage {
                 url
@@ -26,7 +33,7 @@ function Sponsors() {
           }
         `
       );
-      setSponsors(hackathonSponsors);
+      setSponsors(careerFairSponsors);
     };
 
     fetchSponsors();
@@ -46,12 +53,9 @@ function Sponsors() {
   });
 
   return (
-    <Row className="justify-content-center bg-white py-5" id="Sponsors">
+    <Row className="justify-content-center bg-hack-grey py-5" id="CFSponsors">
       <Col sm={10} xs={11} className={isMobile ? "my-3" : "my-5 py-5"}>
-        <h2 className="text-orange hack">{isMobile ? "SPONSORS" : "Sponsors"}</h2>
-        {goldsponsors.length===0 && silversponsors.length===0 && othersponsors.length===0 &&
-          <p>Coming Soon!</p>
-        }
+        <h2 className="text-orange hack">Sponsors</h2>
         {goldsponsors.length>0 && <h3 className="mono text-peach hack mt-5">Gold Sponsors</h3>}
         {goldsponsors.length>0 &&
         <Row className={`${!isMobile && "mt-1 mb-5"} d-flex justify-content-around`}>
@@ -60,11 +64,11 @@ function Sponsors() {
               <a href={sponsor.sponsorUrl} target="_blank" rel="noreferrer">
                 {isMobile ?
                   <Image 
-                    className={`${sponsor.size==="Small" ? "w-75 pb-3" : sponsor.size==="Med" ? "w-50 pb-2" : "pb-2 w-125"} mx-auto d-block pt-5 sponsorImage`} 
+                    className={`${sponsor.size!=="Small" ? "w-75 pb-3" : "w-50 pb-2"} mx-auto d-block pt-5 sponsorImage`} 
                     src={sponsor.sponsorImage.url} alt={sponsor.sponsorName} fluid
                   />
                   :
-                  <Image className={`${sponsor.size==="Small" ? "w-100 sponsorImage" : sponsor.size==="Med" ? "w-75 sponsorImage" : "largeSponsor"}`} src={sponsor.sponsorImage.url} 
+                  <Image className={`${sponsor.size!=="Small" ? "w-100" : "w-75"} sponsorImage`} src={sponsor.sponsorImage.url} 
                   alt={sponsor.sponsorName} fluid />
                 }
               </a>
@@ -80,11 +84,11 @@ function Sponsors() {
               <a href={sponsor.sponsorUrl} target="_blank" rel="noreferrer">
                 {isMobile ?
                   <Image 
-                    className={`${sponsor.size==="Small" ? "w-75 pb-3" : sponsor.size==="Med" ? "w-50 pb-2" : "pb-2 w-125"} mx-auto d-block pt-5 sponsorImage`} 
+                    className={`${sponsor.size!=="Small" ? "w-75 pb-3" : "w-50 pb-2"} mx-auto d-block pt-5 sponsorImage`} 
                     src={sponsor.sponsorImage.url} alt={sponsor.sponsorName} fluid
                   />
                   :
-                  <Image className={`${sponsor.size==="Small" ? "w-100 sponsorImage" : sponsor.size==="Med" ? "w-75 sponsorImage" : "largeSponsor"}`} src={sponsor.sponsorImage.url} 
+                  <Image className={`${sponsor.size!=="Small" ? "w-100" : "w-75"} sponsorImage`} src={sponsor.sponsorImage.url} 
                   alt={sponsor.sponsorName} fluid />
                 }
               </a>
@@ -100,11 +104,11 @@ function Sponsors() {
               <a href={sponsor.sponsorUrl} target="_blank" rel="noreferrer">
                 {isMobile ?
                   <Image 
-                    className={`${sponsor.size==="Small" ? "w-75 pb-3" : sponsor.size==="Med" ? "w-50 pb-2" : "pb-2 w-125"} mx-auto d-block pt-5 sponsorImage`} 
+                    className={`${sponsor.size!=="Small" ? "w-75 pb-3" : "w-50 pb-2"} mx-auto d-block pt-5 sponsorImage`} 
                     src={sponsor.sponsorImage.url} alt={sponsor.sponsorName} fluid
                   />
                   :
-                  <Image className={`${sponsor.size==="Small" ? "w-100 sponsorImage" : sponsor.size==="Med" ? "w-75 sponsorImage" : "largeSponsor"}`} src={sponsor.sponsorImage.url} 
+                  <Image className={`${sponsor.size!=="Small" ? "w-100" : "w-75"} sponsorImage`} src={sponsor.sponsorImage.url} 
                   alt={sponsor.sponsorName} fluid />
                 }
               </a>
@@ -112,7 +116,7 @@ function Sponsors() {
           )}
         </Row>
         }
-        {othersponsors.length>0 && <h3 className="mono text-peach hack mt-2">Partners</h3>}
+        {othersponsors.length>0 && <h3 className="mono text-peach hack mt-2">Bronze Sponsors</h3>}
         {othersponsors.length>0 &&
         <Row className={`${!isMobile && "mt-1 mb-5"} d-flex justify-content-around`}>
           {othersponsors.map((sponsor) => 
@@ -120,11 +124,11 @@ function Sponsors() {
               <a href={sponsor.sponsorUrl} target="_blank" rel="noreferrer">
                 {isMobile ?
                   <Image 
-                    className={`${sponsor.size==="Small" ? "w-75 pb-3" : sponsor.size==="Med" ? "w-50 pb-2" : "pb-2 w-125"} mx-auto d-block pt-5 sponsorImage`} 
+                    className={`${sponsor.size!=="Small" ? "w-75 pb-3" : "w-50 pb-2"} mx-auto d-block pt-5 sponsorImage`} 
                     src={sponsor.sponsorImage.url} alt={sponsor.sponsorName} fluid
                   />
                   :
-                  <Image className={`${sponsor.size==="Small" ? "w-100 sponsorImage" : sponsor.size==="Med" ? "w-75 sponsorImage" : "largeSponsor"}`} src={sponsor.sponsorImage.url} 
+                  <Image className={`${sponsor.size!=="Small" ? "w-100" : "w-75"} sponsorImage`} src={sponsor.sponsorImage.url} 
                   alt={sponsor.sponsorName} fluid />
                 }
               </a>

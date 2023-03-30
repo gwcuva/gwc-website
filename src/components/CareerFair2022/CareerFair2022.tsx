@@ -1,3 +1,4 @@
+import NavbarCF from './NavbarCF/NavbarCF';
 import Header from './Header/Header';
 import MobileHeader from './Header/MobileHeader';
 import About from './About/About';
@@ -11,10 +12,11 @@ import Footer from './Footer/Footer';
 import OneOnOneSchedule from './OneOnOneSchedule/OneOnOneSchedule';
 import {BrowserView, MobileView} from 'react-device-detect';
 
-function CareerFair() {
+function CareerFair2022() {
   return (
     <div className="overflow-auto">
       <BrowserView>
+        <NavbarCF />
         <Header id="Header"/>
       </BrowserView>
       <MobileView>
@@ -35,4 +37,4 @@ function CareerFair() {
   );
 }
 
-export default CareerFair;
+export default CareerFair2022;

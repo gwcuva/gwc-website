@@ -4,7 +4,8 @@ import Main from './components/Main/Main';
 import GirlsHooHack2022 from './components/GirlsHooHack2022/GirlsHooHack';
 import GirlsHooHack2021 from './components/GirlsHooHack2021/GirlsHooHack';
 import Branding from './components/Branding/Branding';
-import CareerFair from './components/CareerFair/CareerFair';
+import CareerFair2022 from './components/CareerFair2022/CareerFair2022';
+import CareerFair2023 from './components/CareerFair2023/CareerFair2023';
 import Links from './components/Links/Links';
 
 function App() {
@@ -23,10 +24,13 @@ function App() {
         <Route exact path="/links">
           <Links />
         </Route>
-        <Route exact path="/careerfair">
-          <CareerFair />
+        <Route exact path="/careerfair2022">
+          <CareerFair2022 />
         </Route>
-        <Route path="/">
+        <Route exact path="/careerfair">
+          <CareerFair2023 />
+        </Route>
+        <Route path="/hack2021">
           <GirlsHooHack2021 />
         </Route>
       </Switch>
