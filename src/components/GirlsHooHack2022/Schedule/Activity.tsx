@@ -13,10 +13,8 @@ function Activity(props: Props): JSX.Element {
   return (
     <Row className="mb-2">
         <Col>
-            <p className="text-dark-grey mono">{props.starttime}</p>
-        </Col>
-        <Col>
-          <p className="text-dark-grey mono">{props.endtime}</p>
+            {props.endtime && <p className="text-dark-grey mono">{props.starttime} - {props.endtime}</p>}
+            {!props.endtime && <p className="text-dark-grey mono">{props.starttime}</p>}
         </Col>
         <Col>
             <p className="mono font-weight-bold mb-0">{props.name}</p>
