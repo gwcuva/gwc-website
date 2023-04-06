@@ -10,7 +10,7 @@ import Workshop from './Workshop';
 
 function JumpStart() {
   const [workshops, setWorkshops] = useState([{'id': '', 'workshopName': '', 'workshopDate': '', 'description': ''}]);
-  const [description, setDescription] = useState([{'titleQuestion': '', 'description': ''}]);
+  const [description, setDescription] = useState({'titleQuestion': '', 'description': ''});
   const [dropdownOpen, setDropdownOpen] = useState(false);
 
   useEffect(() => {
@@ -50,37 +50,39 @@ function JumpStart() {
 
   for (let i = 0; i < workshops.length; i++) {
     const secondDash = workshops[i].workshopDate.lastIndexOf('-');
-    const year = workshops[i].workshopDate.substring(0, 4);
-    const month = months[parseInt(workshops[i].workshopDate.substring(5, secondDash))-1];
-    const dayOfMonth = workshops[i].workshopDate.substring(secondDash+1);
+    if(secondDash!== -1) {
+      const year = workshops[i].workshopDate.substring(0, 4);
+      const month = months[parseInt(workshops[i].workshopDate.substring(5, secondDash))-1];
+      const dayOfMonth = workshops[i].workshopDate.substring(secondDash+1);
 
-    const day = new Date(month + " " + dayOfMonth + ", " + year + " 23:15:30");
-    
-    switch(day.toString().substring(0, 3)) {
-      case "Sun":
-        workshops[i].workshopDate = "Sunday";
-        break;
-      case "Mon":
-        workshops[i].workshopDate = "Monday";
-        break;
-      case "Tue":
-        workshops[i].workshopDate = "Tuesday";
-        break;
-      case "Wed":
-        workshops[i].workshopDate = "Wednesday";
-        break;
-      case "Thu":
-        workshops[i].workshopDate = "Thursday";
-        break;
-      case "Fri":
-        workshops[i].workshopDate = "Friday";
-        break;
-      case "Sat":
-        workshops[i].workshopDate = "Saturday";
-        break;
+      const day = new Date(month + " " + dayOfMonth + ", " + year + " 23:15:30");
+      
+      switch(day.toString().substring(0, 3)) {
+        case "Sun":
+          workshops[i].workshopDate = "Sunday";
+          break;
+        case "Mon":
+          workshops[i].workshopDate = "Monday";
+          break;
+        case "Tue":
+          workshops[i].workshopDate = "Tuesday";
+          break;
+        case "Wed":
+          workshops[i].workshopDate = "Wednesday";
+          break;
+        case "Thu":
+          workshops[i].workshopDate = "Thursday";
+          break;
+        case "Fri":
+          workshops[i].workshopDate = "Friday";
+          break;
+        case "Sat":
+          workshops[i].workshopDate = "Saturday";
+          break;
+      }
+
+      workshops[i].workshopDate += ", " + day.toString().substring(4, 10);
     }
-
-    workshops[i].workshopDate += ", " + day.toString().substring(4, 10);
   }
 
   return (
@@ -92,7 +94,7 @@ function JumpStart() {
           {description && <h3 className="mono text-peach mt-4 mb-4">What is it?</h3>}
           {description && <Row>
             <Col xs={8}>
-            <p>JumpStart is a beginner’s guide to hackathons. More information coming soon!</p>
+            <p>{description.titleQuestion} {description.description}</p>
             </Col>
           </Row>}
           
@@ -115,7 +117,7 @@ function JumpStart() {
               {workshops.length===0 ? <p>Coming Soon!</p> :
               <div>
                 {workshops.map((workshop) => 
-                    <Workshop key={workshop.id} name={workshop.workshopName} date={workshop.workshopDate.substring(0, workshop.workshopDate.length - 24)} detail={workshop.description} ></Workshop>)}
+                    <Workshop key={workshop.id} name={workshop.workshopName} date={workshop.workshopDate} detail={workshop.description} ></Workshop>)}
 
               </div>
                 }
@@ -128,7 +130,7 @@ function JumpStart() {
                 <Row className="pt-2">
                   {workshops.map((workshop) => 
                     <Col xs={4} className="hack" key={workshop.id}>
-                      <Workshop name={workshop.workshopName} date={workshop.workshopDate.substring(0, workshop.workshopDate.length - 8)} detail={workshop.description}></Workshop>
+                      <Workshop name={workshop.workshopName} date={workshop.workshopDate} detail={workshop.description}></Workshop>
                     </Col>)}
                 </Row>  
                 }
