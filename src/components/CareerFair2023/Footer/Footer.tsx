@@ -47,13 +47,13 @@ function Footer() {
             GWC Career Fair 2022 Website:
           </Row>
           <Row>
-            <a href="/" target="_blank" rel="noreferrer noopener" className="mono text-white interactive pr-5 pr-2">careerfair2022</a>
+            <a href="/careerfair2022" target="_blank" rel="noreferrer noopener" className="mono text-white interactive pr-5 pr-2">careerfair2022</a>
           </Row>
         </Col>}
       </Row>
       {isMobile && <Row className="footerArchiveMobileRow"> 
           GWC Career Fair 2022 Website: 
-          <a href="/" target="_blank" rel="noreferrer noopener" className="footerArchiveMobile">careerfair2022</a>
+          <a href="/careerfair2022" target="_blank" rel="noreferrer noopener" className="footerArchiveMobile">careerfair2022</a>
       </Row>}
       <img className="w-100 position-relative" src={blueWaves} alt="Blue waves"/>
     </div>
