@@ -1,6 +1,7 @@
 import { Row } from 'react-bootstrap';
 import Discord from '../../../assets/images/discord-logo.svg';
 import Instagram from '../../../assets/images/instagram-logo.svg';
+import DiscordIcon from '../../../assets/images/discord-logo-binaryblue.svg';
 
 interface Props {
   toggle? : () => void;
@@ -24,7 +25,9 @@ function NavContents(props: Props) {
       </div>
       <Row className={`${props.circle ? "justify-content-center" : "justify-content-end pr-3"} mt-3`}>
         <a href="https://discord.gg/D8knkzNM8E" target="_blank" rel="noreferrer noopener" onClick={props.toggle}>
-          <img src={Discord} width="28px" alt="Discord logo"/>
+          <img src={Discord} width="28px" alt="Discord logo" 
+            onMouseOver={e => (e.currentTarget.src = DiscordIcon)}
+            onMouseOut={e => (e.currentTarget.src = Discord)}/>
         </a>
         <a href="https://instagram.com/gwcuva" target="_blank" rel="noreferrer noopener" onClick={props.toggle}>
           <img src={Instagram} width="28px" alt="Instagram logo" className="ml-4"/>
