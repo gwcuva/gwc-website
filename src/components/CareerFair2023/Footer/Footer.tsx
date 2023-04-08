@@ -49,6 +49,20 @@ function Footer() {
           <Row>
             <a href="/careerfair2022" target="_blank" rel="noreferrer noopener" className="mono text-white interactive pr-5 pr-2">careerfair2022</a>
           </Row>
+          <Row>
+          <text className = "text-white p.hack mt-3" >
+            Although this organization has members who are University of Virginia students and may have, University employees associated 
+          </text>
+          <text className = "text-white p.hack mt-3" >
+            or engaged in its activities and affairs, the organization is not a part of or an agency. It is a separate and independent 
+          </text>
+          <text className = "text-white p.hack mt-3" >
+            organization, which is responsible for and manages its own activities and affairs. The University does not direct, supervise 
+          </text>
+          <text className = "text-white p.hack mt-3" >
+          or control the organization and is not responsible for the organization’s contracts, acts or omissions.
+          </text>
+          </Row>
         </Col>}
       </Row>
       {isMobile && <Row className="footerArchiveMobileRow"> 
