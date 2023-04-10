@@ -1,6 +1,6 @@
 # GWC Website [![Netlify Status](https://api.netlify.com/api/v1/badges/1af3dfe5-cf15-4c82-8d7f-3e50bef55e74/deploy-status)](https://app.netlify.com/sites/nervous-mcclintock-efdb66/deploys)
 
-[Website Wireframe](https://www.figma.com/file/3oCYmtWALN20gRkSa5Ew7V/GWC-General-Site?node-id=0%3A1) | [GHH Wireframe](https://www.figma.com/file/fTEjRE0zxWO1uZAVK3QOn1/GWC-Mockups-2?node-id=32%3A1122) | [Brand Identity Guide](https://www.figma.com/file/eb9ExHXT0yGgo4RkK8FG65/Brand-Manual-Identity-Iterations?node-id=251%3A92)
+[Website Wireframe]([https://www.figma.com/file/3oCYmtWALN20gRkSa5Ew7V/GWC-General-Site?node-id=0%3A1](https://www.figma.com/file/5zzNZ9RQp82X1p3HqdWrWg/gwc-figma?node-id=0-1&t=QMSpTXhvpL6sXgjn-0)) | [GHH Wireframe](https://www.figma.com/file/fTEjRE0zxWO1uZAVK3QOn1/GWC-Mockups-2?node-id=32%3A1122) | [Brand Identity Guide](https://www.figma.com/file/eb9ExHXT0yGgo4RkK8FG65/Brand-Manual-Identity-Iterations?node-id=251%3A92)
 
 Figma mockups are also saved in this repository.
 
