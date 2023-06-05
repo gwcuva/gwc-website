@@ -33,6 +33,9 @@ function App() {
         <Route path="/hack2021">
           <GirlsHooHack2021 />
         </Route>
+        <Route path="/hack2022">
+          <GirlsHooHack2022 />
+        </Route>
       </Switch>
     </BrowserRouter>
   );
