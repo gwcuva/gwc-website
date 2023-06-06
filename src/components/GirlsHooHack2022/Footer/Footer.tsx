@@ -63,6 +63,14 @@ function Footer() {
             <a href="/hack2021" target="_blank" rel="noreferrer noopener" className="mono text-white interactive pr-5 pr-2">hack2021</a>
           </Row>
         </Col>}
+        {!isMobile && <Col className="text-white" style={{marginLeft:50}}> 
+          <Row>
+            GHH 2022 Website: 
+          </Row>
+          <Row>
+            <a href="/hack2022" target="_blank" rel="noreferrer noopener" className="mono text-white interactive pr-5 pr-2">hack2022</a>
+          </Row>
+        </Col>}
       </Row>
       
       
