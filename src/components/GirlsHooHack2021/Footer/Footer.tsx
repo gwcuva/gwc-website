@@ -56,14 +56,49 @@ function Footer() {
             <a href="mailto:girlshoohack@gmail.com" className="mono text-white interactive">girlshoohack@gmail.com</a>
           </Row>
         </Col> }
+        {!isMobile && <Col className="text-white" style={{marginLeft:50}}> 
+          <Row>
+            GHH 2021 Website: 
+          </Row>
+          <Row>
+            <a href="/hack2021" target="_blank" rel="noreferrer noopener" className="mono text-white interactive pr-5 pr-2">hack2021</a>
+          </Row>
+        </Col>}
+        {!isMobile && <Col className="text-white" style={{marginLeft:50}}> 
+          <Row>
+            GHH 2022 Website: 
+          </Row>
+          <Row>
+            <a href="/hack2022" target="_blank" rel="noreferrer noopener" className="mono text-white interactive pr-5 pr-2">hack2022</a>
+          </Row>
+        </Col>}
       </Row>
+      {isMobile && <Row className="footerArchiveMobileRow"> 
+          GHH 2021 Website: 
+          <a href="/hack2021" target="_blank" rel="noreferrer noopener" className="footerArchiveMobile">hack2021</a>
+      </Row>}
+      <br></br>
+      {isMobile && <Row className="footerArchiveMobileRow"> 
+          GHH 2022 Website: 
+          <a href="/hack2022" target="_blank" rel="noreferrer noopener" className="footerArchiveMobile">hack2022</a>
+      </Row>}
+      <br></br><br></br>
       <Row className = {`${isMobile ? "footerMLHCodeMobile" : "footerMLHCodeDesktop"} position-absolute`}>
-        <text className = "text-white p.hack">
+      <text className = "text-white p.hack">
         We abide by the &nbsp;
         </text>
         <a className = "footerLink text-white font-weight-bold p.hack" href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf" target="_blank" rel="noreferrer noopener"> 
           MLH Code of Conduct 
         </a>
+        <text className = "text-white p.hack mt-3" >
+            Although this organization has members who are University of Virginia students and may have, University employees associated or engaged in its activities and affairs,
+        </text>
+        <text className = "text-white p.hack mt-3" >
+            the organization is not a part of or an agency. It is a separate and independent organization, which is responsible for and manages its own activities and affairs.
+        </text>
+        <text className = "text-white p.hack mt-3" >
+            The University does not direct, supervise or control the organization and is not responsible for the organization’s contracts, acts or omissions.
+        </text>
       </Row>
       {isMobile && <Col className= "footerEmailMobileColumn">
           Contact
