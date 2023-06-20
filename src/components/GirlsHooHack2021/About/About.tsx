@@ -40,6 +40,7 @@ function About() {
           <h3 className="mono text-peach hack mb-4">Girls Hoo Hack</h3>
           {ghhDescription.map((description, index) => 
                     <p key={index}>{description}</p>)}
+          <a href="https://girls-hoo-hack-2021.devpost.com/">Link to DevPost</a>
         </Col>
         <Col md={4} xs={12}>
           <h3 className="mono text-peach hack mb-4">GWC @ UVA</h3>
