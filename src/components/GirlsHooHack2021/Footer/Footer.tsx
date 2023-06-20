@@ -73,6 +73,16 @@ function Footer() {
           </Row>
         </Col>}
       </Row>
+      {isMobile && <Row className="footerArchiveMobileRow"> 
+          GHH 2021 Website: 
+          <a href="/hack2021" target="_blank" rel="noreferrer noopener" className="footerArchiveMobile">hack2021</a>
+      </Row>}
+      <br></br>
+      {isMobile && <Row className="footerArchiveMobileRow"> 
+          GHH 2022 Website: 
+          <a href="/hack2022" target="_blank" rel="noreferrer noopener" className="footerArchiveMobile">hack2022</a>
+      </Row>}
+      <br></br><br></br>
       <Row className = {`${isMobile ? "footerMLHCodeMobile" : "footerMLHCodeDesktop"} position-absolute`}>
       <text className = "text-white p.hack">
         We abide by the &nbsp;
