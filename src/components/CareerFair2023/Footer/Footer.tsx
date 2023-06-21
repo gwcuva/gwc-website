@@ -67,7 +67,7 @@ function Footer() {
       </Row>
       {isMobile && <Row className="footerArchiveMobileRow"> 
           GWC Career Fair 2022 Website: 
-          <a href="/careerfair2022" target="_blank" rel="noreferrer noopener" className="footerArchiveMobile">careerfair2022</a>
+          <a className = "footerLink text-white font-weight-bold p.hack" href="/careerfair2022" target="_blank" rel="noreferrer noopener">careerfair2022</a>
       </Row>}
       {isMobile && <Row className="footerArchiveMobileRow" style={{marginTop: 160, fontSize: 8}}> 
       Although this organization has members who are University of Virginia students and may have, University employees associated or engaged in its activities and affairs, the organization is not a part of or an agency. It is a separate and independent organization, which is responsible for and manages its own activities and affairs. The University does not direct, supervise or control the organization and is not responsible for the organization’s contracts, acts or omissions.
