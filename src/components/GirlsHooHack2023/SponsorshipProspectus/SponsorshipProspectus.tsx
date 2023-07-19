@@ -4,7 +4,7 @@ import { isMobile } from 'react-device-detect';
 import { request } from 'graphql-request';
 
 function SponsorshipProspectus(): JSX.Element {
-  const [link, setLink] = useState({'url': ''});
+  const [link, setLink] = useState({'url': ''});//..
 
   useEffect(() => {
     const fetchLink = async () => {
