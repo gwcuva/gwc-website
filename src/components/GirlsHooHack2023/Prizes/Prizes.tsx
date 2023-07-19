@@ -1,28 +1,29 @@
-import { useEffect, useState } from 'react';
-import { request } from 'graphql-request';
+// import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
+// import { request } from 'graphql-request';
 import { Col, Row } from 'react-bootstrap';
 import { isMobile } from 'react-device-detect';
-import PrizeItem from './PrizeItem';
+// import PrizeItem from './PrizeItem';
 
 function Prizes(): JSX.Element {
-  const [prizes, setPrizes] = useState([{'id': '', 'prizeName': '', 'prizeObject': '', 'description': ''}]);
+  // const [prizes, setPrizes] = useState([{'id': '', 'prizeName': '', 'prizeObject': '', 'description': ''}]);
 
   useEffect(() => {
     const fetchPrizes = async () => {
-      const { hackathonPrizes } = await request(
-        process.env.REACT_APP_GRAPHCMS_URL ? process.env.REACT_APP_GRAPHCMS_URL : "",
-        `
-          { 
-            hackathonPrizes(where: { year: 2022 }) {
-              id
-              prizeName
-              prizeObject
-              description
-            }
-          }
-        `
-      );
-      setPrizes(hackathonPrizes);
+      // const { hackathonPrizes } = await request(
+      //   process.env.REACT_APP_GRAPHCMS_URL ? process.env.REACT_APP_GRAPHCMS_URL : "",
+      //   `
+      //     { 
+      //       hackathonPrizes(where: { year: 2022 }) {
+      //         id
+      //         prizeName
+      //         prizeObject
+      //         description
+      //       }
+      //     }
+      //   `
+      // );
+      // setPrizes(hackathonPrizes);
     };
     fetchPrizes();
   }, []);

@@ -1,49 +1,50 @@
-import React , { useEffect, useState } from 'react';
-import { request } from 'graphql-request';
+// import React , { useEffect, useState } from 'react';
+import React , { useEffect } from 'react';
+// import { request } from 'graphql-request';
 import {Row, Col} from 'react-bootstrap';
 import {isMobile} from 'react-device-detect';
-import Image from 'react-bootstrap/Image';
+// import Image from 'react-bootstrap/Image';
 
 function Sponsors() {
 
-  const [sponsors, setSponsors] = useState([{'level': '', 'sponsorImage': {'url': ''}, 'sponsorName': '', 'sponsorUrl': '', 'size': ''}]);
+  // const [sponsors, setSponsors] = useState([{'level': '', 'sponsorImage': {'url': ''}, 'sponsorName': '', 'sponsorUrl': '', 'size': ''}]);
 
   useEffect(() => {
     const fetchSponsors = async () => {
-      const { hackathonSponsors } = await request(
-        process.env.REACT_APP_GRAPHCMS_URL ? process.env.REACT_APP_GRAPHCMS_URL : "",
-        `
-          { 
-            hackathonSponsors(where: { year: 2022 }) {
-              level
-              sponsorImage {
-                url
-              }
-              sponsorName
-              sponsorUrl
-              size
-            }
-          }
-        `
-      );
-      setSponsors(hackathonSponsors);
+      // const { hackathonSponsors } = await request(
+      //   process.env.REACT_APP_GRAPHCMS_URL ? process.env.REACT_APP_GRAPHCMS_URL : "",
+      //   `
+      //     { 
+      //       hackathonSponsors(where: { year: 2022 }) {
+      //         level
+      //         sponsorImage {
+      //           url
+      //         }
+      //         sponsorName
+      //         sponsorUrl
+      //         size
+      //       }
+      //     }
+      //   `
+      // );
+      // setSponsors(hackathonSponsors);
     };
 
     fetchSponsors();
   }, []);
 
-  const goldsponsors = sponsors.filter( function (s) {
-    return s.level === "Gold"
-  });
-  const silversponsors = sponsors.filter( function (s) {
-    return s.level === "Silver"
-  });
-  const bronzesponsors = sponsors.filter( function (s) {
-    return s.level === "Bronze"
-  });
-  const othersponsors = sponsors.filter( function (s) {
-    return (s.level !== "Gold" && s.level !=="Silver" && s.level !== "Bronze");
-  });
+  // const goldsponsors = sponsors.filter( function (s) {
+  //   return s.level === "Gold"
+  // });
+  // const silversponsors = sponsors.filter( function (s) {
+  //   return s.level === "Silver"
+  // });
+  // const bronzesponsors = sponsors.filter( function (s) {
+  //   return s.level === "Bronze"
+  // });
+  // const othersponsors = sponsors.filter( function (s) {
+  //   return (s.level !== "Gold" && s.level !=="Silver" && s.level !== "Bronze");
+  // });
 
   return (
     <Row className="justify-content-center bg-white py-5" id="Sponsors">

@@ -2,16 +2,16 @@ import React, { useEffect, useState } from 'react';
 import { request } from 'graphql-request';
 import { Col, Row } from 'react-bootstrap';
 import { isMobile } from 'react-device-detect';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faPlus } from '@fortawesome/free-solid-svg-icons'
-import { faMinus } from '@fortawesome/free-solid-svg-icons'
-import { Collapse } from 'react-collapse';
-import Workshop from './Workshop';
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+// import { faPlus } from '@fortawesome/free-solid-svg-icons'
+// import { faMinus } from '@fortawesome/free-solid-svg-icons'
+// import { Collapse } from 'react-collapse';
+// import Workshop from './Workshop';
 
 function JumpStart() {
   const [workshops, setWorkshops] = useState([{'id': '', 'workshopName': '', 'workshopDate': '', 'description': '', 'link': '', 'linkName': ''}]);
   const [description, setDescription] = useState({'titleQuestion': '', 'description': ''});
-  const [dropdownOpen, setDropdownOpen] = useState(false);
+  // const [dropdownOpen, setDropdownOpen] = useState(false);
 
   useEffect(() => {
     const fetchWorkshops = async () => {

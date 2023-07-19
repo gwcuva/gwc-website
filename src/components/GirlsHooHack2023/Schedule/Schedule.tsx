@@ -1,19 +1,19 @@
 import React, {useEffect, useState} from 'react';
-import Activity from './Activity';
+// import Activity from './Activity';
 import { request } from 'graphql-request';
 import { isMobile } from 'react-device-detect';
 import { Row, Col } from 'react-bootstrap';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPlus } from '@fortawesome/free-solid-svg-icons';
-import { faMinus } from '@fortawesome/free-solid-svg-icons';
-import {Collapse } from 'react-collapse';
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import { faPlus } from '@fortawesome/free-solid-svg-icons';
+// import { faMinus } from '@fortawesome/free-solid-svg-icons';
+// import {Collapse } from 'react-collapse';
 
 function Schedule() {
   const [events, setEvents] = useState([{'eventName': '', 'link': '', 'startTime': '', 'description': '', 'day': 0, 'linkText': '', 'endTime':''}]);
   const [dates, setDates] = useState([{'dayOfWeek': '', 'month': '', 'date': 0}]);
 
-  const [open1, setOpen1] = useState(false);
-  const [open2, setOpen2] = useState(false);
+  // const [open1, setOpen1] = useState(false);
+  // const [open2, setOpen2] = useState(false);
 
   useEffect(() => {
     const fetchEvents = async () => {
@@ -103,14 +103,14 @@ function Schedule() {
     }
   });
 
-  const day1events = events.filter(function(event) {
-    if(event.day === 1) return true;
-    return false;
-  });
-  const day2events = events.filter(function(event) {
-    if(event.day === 2) return true;
-    return false;
-  });
+  // const day1events = events.filter(function(event) {
+  //   if(event.day === 1) return true;
+  //   return false;
+  // });
+  // const day2events = events.filter(function(event) {
+  //   if(event.day === 2) return true;
+  //   return false;
+  // });
 
   return (
     <div className="container-fluid bg-hack-grey pt-4 pb-4" id="Schedule">

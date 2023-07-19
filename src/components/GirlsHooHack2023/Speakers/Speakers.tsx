@@ -1,32 +1,33 @@
-import { useEffect, useState } from 'react';
-import { request } from 'graphql-request';
+// import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
+// import { request } from 'graphql-request';
 import {Row, Col} from 'react-bootstrap';
 import {isMobile} from 'react-device-detect';
-import KeynoteItem from './KeynoteItem';
+// import KeynoteItem from './KeynoteItem';
 //import PanelistItem from './PanelistItem';
 
 function Speakers(): JSX.Element {
-    const [keynotes, setKeynotes] = useState([{'id': '', 'name': '', 'image': '', 'bio': '', 'headshot': {'url': ''}, 'linkedIn': ''}]);
+    // const [keynotes, setKeynotes] = useState([{'id': '', 'name': '', 'image': '', 'bio': '', 'headshot': {'url': ''}, 'linkedIn': ''}]);
     //const [panelists, setPanelists] = useState([{'id': '', 'name': '', 'image': '', 'bio': '', 'headshot': {'url': ''}, 'linkedIn': ''}]);
     useEffect(() => {
       const fetchKeynotes = async () => {
-        const { hackathonKeynotes } = await request(
-          process.env.REACT_APP_GRAPHCMS_URL ? process.env.REACT_APP_GRAPHCMS_URL : "",
-          `
-            { 
-              hackathonKeynotes(where: { year: 2022 }) {
-                id
-                name
-                bio
-                headshot {
-                  url
-                }
-                linkedIn
-              }
-            }
-          `
-        );
-        setKeynotes(hackathonKeynotes);
+        // const { hackathonKeynotes } = await request(
+        //   process.env.REACT_APP_GRAPHCMS_URL ? process.env.REACT_APP_GRAPHCMS_URL : "",
+        //   `
+        //     { 
+        //       hackathonKeynotes(where: { year: 2022 }) {
+        //         id
+        //         name
+        //         bio
+        //         headshot {
+        //           url
+        //         }
+        //         linkedIn
+        //       }
+        //     }
+        //   `
+        // );
+        // setKeynotes(hackathonKeynotes);
       };
       fetchKeynotes();
 

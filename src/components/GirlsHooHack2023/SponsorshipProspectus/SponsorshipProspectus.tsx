@@ -1,24 +1,25 @@
-import { useEffect, useState } from 'react';
+// import { useEffect, useState } from 'react';
+import { useEffect} from 'react';
 import {Row, Col} from 'react-bootstrap';
 import { isMobile } from 'react-device-detect';
-import { request } from 'graphql-request';
+// import { request } from 'graphql-request';
 
 function SponsorshipProspectus(): JSX.Element {
-  const [link, setLink] = useState({'url': ''});//..
+  // const [link, setLink] = useState({'url': ''});//..
 
   useEffect(() => {
     const fetchLink = async () => {
-      const { hackathonProspectus } = await request(
-        process.env.REACT_APP_GRAPHCMS_URL ? process.env.REACT_APP_GRAPHCMS_URL : "",
-        `
-          { 
-            hackathonProspectus(where: {year: 2022}) {
-              url
-            }
-          }
-        `
-      );
-      setLink(hackathonProspectus);
+      // const { hackathonProspectus } = await request(
+      //   process.env.REACT_APP_GRAPHCMS_URL ? process.env.REACT_APP_GRAPHCMS_URL : "",
+      //   `
+      //     { 
+      //       hackathonProspectus(where: {year: 2022}) {
+      //         url
+      //       }
+      //     }
+      //   `
+      // );
+      // setLink(hackathonProspectus);
     };
 
     fetchLink();

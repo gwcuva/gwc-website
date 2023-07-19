@@ -1,25 +1,26 @@
-import { useEffect, useState } from 'react';
+// import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import {Row, Col} from 'react-bootstrap';
 import { isMobile } from 'react-device-detect';
-import { request } from 'graphql-request';
+// import { request } from 'graphql-request';
 
 function Location() {
   
-  const [location, setLocation] = useState({'location': ''});
+  // const [location, setLocation] = useState({'location': ''});
 
   useEffect(() => {
     const fetchLocation = async () => {
-      const { hackathonLocation } = await request(
-        process.env.REACT_APP_GRAPHCMS_URL ? process.env.REACT_APP_GRAPHCMS_URL : "",
-        `
-          { 
-            hackathonLocation(where: {year: 2022}) {
-              location
-            }
-          }
-        `
-      );
-      setLocation(hackathonLocation);
+      // const { hackathonLocation } = await request(
+      //   process.env.REACT_APP_GRAPHCMS_URL ? process.env.REACT_APP_GRAPHCMS_URL : "",
+      //   `
+      //     { 
+      //       hackathonLocation(where: {year: 2022}) {
+      //         location
+      //       }
+      //     }
+      //   `
+      // );
+      // setLocation(hackathonLocation);
     };
 
     fetchLocation();
