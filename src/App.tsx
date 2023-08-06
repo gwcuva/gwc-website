@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Main from './components/Main/Main';
+import GirlsHooHack2023 from './components/GirlsHooHack2023/GirlsHooHack';
 import GirlsHooHack2022 from './components/GirlsHooHack2022/GirlsHooHack';
 import GirlsHooHack2021 from './components/GirlsHooHack2021/GirlsHooHack';
 import Branding from './components/Branding/Branding';
@@ -16,7 +17,7 @@ function App() {
           <Branding />
         </Route>
         <Route exact path="/hack">
-          <GirlsHooHack2022 />
+          <GirlsHooHack2023 />
         </Route>
         <Route exact path="/">
           <Main />
