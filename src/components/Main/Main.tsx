@@ -14,6 +14,7 @@ import MobileHelloWorld from '../../assets/images/mobile-hello-world.svg';
 import Waves from '../../assets/images/main-header-wave.svg';
 import GetStarted from '../../assets/images/get started.svg';
 import ScrollButton from './BackToTop/ScrollButton'
+import Photos from './Photos/Photos';
 
 function Main() {
   return (
@@ -33,6 +34,7 @@ function Main() {
         <img src={isMobile ? MobileHelloWorld : HelloWorld} alt="Hello World banner" />
         <About id="about"/>
         <DiscordInvite id="discord-invite"/>
+        <Photos id="photos" />
         <img src={GetStarted} alt="Orange wave saying 'Get Started'" width="100%"/>
         <Team id="team"/>
         <Footer id="footer"/>
