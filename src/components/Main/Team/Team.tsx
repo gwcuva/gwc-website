@@ -40,7 +40,11 @@ function Team(props: Props) {
         }
       }
       setTeam(executiveMembers);
-      setBoardYears([...uniqueYears]);
+      setBoardYears([...uniqueYears].slice().sort((a, b) => {
+        const yearA = a.slice(-4);
+        const yearB = b.slice(-4);
+        return yearA.localeCompare(yearB);
+      }));
       setAcademicYear(uniqueYears.pop());
     };
 
