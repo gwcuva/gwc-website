@@ -1,7 +1,7 @@
-import React from 'react';
+// import React from 'react';
 import {Row, Col} from 'react-bootstrap';
-import Arrow from '../../../assets/images/arrow-right.svg';
-import {isMobile} from 'react-device-detect';
+// import Arrow from '../../../assets/images/arrow-right.svg';
+// import {isMobile} from 'react-device-detect';
 
 interface Props {
   id: string;
