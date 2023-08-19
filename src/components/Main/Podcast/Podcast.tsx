@@ -1,6 +1,4 @@
-import React, { useEffect, useState } from 'react';
-import { request } from 'graphql-request';
-import {Container, Row, Col} from 'react-bootstrap';
+import {Row, Col} from 'react-bootstrap';
 import Arrow from '../../../assets/images/arrow-right.svg';
 import PodcastImage from '../../../assets/images/podcast-image.jpeg';
 import GooglePodcastsLogo from '../../../assets/images/google-podcasts-logo.png';
