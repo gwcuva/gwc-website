@@ -39,6 +39,9 @@ function Team(props: Props) {
           uniqueYears.push(executiveMembers[i].academicYear)
         }
       }
+      uniqueYears = [...uniqueYears].sort((a, b) => 
+        a.slice(-4).localeCompare(b.slice(-4))
+      );
 
       const positionOrder: { [key: string]: number } = {
         "President": 1,
@@ -55,11 +58,7 @@ function Team(props: Props) {
         return (positionOrder[a["position"]] || Infinity ) - (positionOrder[b["position"]] || Infinity );
       }));
 
-      setBoardYears([...uniqueYears].slice().sort((a, b) => {
-        const yearA = a.slice(-4);
-        const yearB = b.slice(-4);
-        return yearA.localeCompare(yearB);
-      }));
+      setBoardYears([...uniqueYears]);
       setAcademicYear(uniqueYears.pop());
     };
 
