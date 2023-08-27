@@ -16,6 +16,7 @@ import Waves from '../../assets/images/main-header-wave.svg';
 import GetStarted from '../../assets/images/get started.svg';
 import ScrollButton from './BackToTop/ScrollButton'
 import Photos from './Photos/Photos';
+import Newsletter from './Newsletter/Newsletter';
 
 function Main() {
   return (
@@ -35,6 +36,7 @@ function Main() {
         <img src={isMobile ? MobileHelloWorld : HelloWorld} alt="Hello World banner" />
         <About id="about"/>
         <DiscordInvite id="discord-invite"/>
+        <Newsletter id="newsletter"/>
         <Photos id="photos" />
         <Instagram id="instagram"/>
         <img src={GetStarted} alt="Orange wave saying 'Get Started'" width="100%"/>
