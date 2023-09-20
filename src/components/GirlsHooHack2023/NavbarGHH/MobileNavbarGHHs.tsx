@@ -36,7 +36,7 @@ function MobileNavbarGHHs() {
           process.env.REACT_APP_GRAPHCMS_URL ? process.env.REACT_APP_GRAPHCMS_URL : "",
           `
             { 
-              hackathonNavbar(where:{year:2022}) {
+              hackathonNavbar(where:{year:2023}) {
                 registration
                 mlhbanner{
                   url
