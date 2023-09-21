@@ -15,6 +15,7 @@ import MobileHelloWorld from '../../assets/images/mobile-hello-world.svg';
 import Waves from '../../assets/images/main-header-wave.svg';
 import GetStarted from '../../assets/images/get started.svg';
 import ScrollButton from './BackToTop/ScrollButton'
+import Podcast from './Podcast/Podcast';
 import Photos from './Photos/Photos';
 import Newsletter from './Newsletter/Newsletter';
 
@@ -35,6 +36,7 @@ function Main() {
         <Stats id="stats"/>
         <img src={isMobile ? MobileHelloWorld : HelloWorld} alt="Hello World banner" />
         <About id="about"/>
+        <Podcast id="podcast" />
         <DiscordInvite id="discord-invite"/>
         <Newsletter id="newsletter"/>
         <Photos id="photos" />
