@@ -14,7 +14,7 @@ function About() {
         process.env.REACT_APP_GRAPHCMS_URL ? process.env.REACT_APP_GRAPHCMS_URL : "",
         `
           { 
-            hackathonAbouts(where: { year: 2022 }) {
+            hackathonAbouts(where: { year: 2023 }) {
               id
               ghhDescription
               gwcDescription
