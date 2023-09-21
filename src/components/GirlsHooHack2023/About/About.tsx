@@ -45,7 +45,7 @@ function About() {
           <div>
             {ghhDescription.map((description, index) => 
                 <p key={index}>{description}</p>)}
-            <a href="https://girls-hoo-hack-2022.devpost.com/">Link to 2023 DevPost coming soon</a>
+            <a href="https://girls-hoo-hack-2023.devpost.com/">Link to DevPost</a>
           </div>
           }
         </Col>

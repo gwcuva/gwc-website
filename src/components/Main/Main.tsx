@@ -4,6 +4,7 @@ import Navbar from './Navbar/Navbar';
 import Header from './Header/Header';
 import Stats from './Stats/Stats';
 import DiscordInvite from './DiscordInvite/DiscordInvite';
+import Instagram from './Instagram/Instagram';
 import Team from './Team/Team';
 import About from './About/About';
 import Footer from './Footer/Footer';
@@ -15,6 +16,8 @@ import Waves from '../../assets/images/main-header-wave.svg';
 import GetStarted from '../../assets/images/get started.svg';
 import ScrollButton from './BackToTop/ScrollButton'
 import Podcast from './Podcast/Podcast';
+import Photos from './Photos/Photos';
+import Newsletter from './Newsletter/Newsletter';
 
 function Main() {
   return (
@@ -35,6 +38,9 @@ function Main() {
         <About id="about"/>
         <Podcast id="podcast" />
         <DiscordInvite id="discord-invite"/>
+        <Newsletter id="newsletter"/>
+        <Photos id="photos" />
+        <Instagram id="instagram"/>
         <img src={GetStarted} alt="Orange wave saying 'Get Started'" width="100%"/>
         <Team id="team"/>
         <Footer id="footer"/>

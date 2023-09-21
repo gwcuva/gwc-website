@@ -64,6 +64,11 @@ code {
 
 .bg-hack-grey {background-color: #f7f7f7}
 
+.border-turq { border: 8px solid $tuple-turquoise }
+.border-orange { border: 8px solid $output-orange }
+.border-blue { border: 8px solid $binary-blue }
+.border-peach { border: 8px solid $pixel-peach }
+
 // MAIN SITE FONTS
 h1 {
   font-size: 136px;
@@ -416,4 +421,8 @@ p.hack {
 }
 .discordinvite:hover, .discordinvite:active {
   color: $binary-blue;
+}
+
+.newsletter:hover, .newsletter:active {
+  color: $output-orange;
 }
