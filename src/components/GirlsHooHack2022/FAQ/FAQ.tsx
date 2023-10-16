@@ -14,7 +14,7 @@ function FAQ() {
         process.env.REACT_APP_GRAPHCMS_URL ? process.env.REACT_APP_GRAPHCMS_URL : "",
         `
           { 
-            hackathonFaqs(where: { year: 2022 })  {
+            hackathonFaqs(where: { year_in: [0, 2022] })  {
               question
               answer
             }
