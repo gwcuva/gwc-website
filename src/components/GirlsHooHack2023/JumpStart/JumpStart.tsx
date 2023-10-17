@@ -2,16 +2,16 @@ import React, { useEffect, useState } from 'react';
 import { request } from 'graphql-request';
 import { Col, Row } from 'react-bootstrap';
 import { isMobile } from 'react-device-detect';
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-// import { faPlus } from '@fortawesome/free-solid-svg-icons'
-// import { faMinus } from '@fortawesome/free-solid-svg-icons'
-// import { Collapse } from 'react-collapse';
-// import Workshop from './Workshop';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faPlus } from '@fortawesome/free-solid-svg-icons'
+import { faMinus } from '@fortawesome/free-solid-svg-icons'
+import { Collapse } from 'react-collapse';
+import Workshop from './Workshop';
 
 function JumpStart() {
   const [workshops, setWorkshops] = useState([{'id': '', 'workshopName': '', 'workshopDate': '', 'description': '', 'link': '', 'linkName': ''}]);
   const [description, setDescription] = useState({'titleQuestion': '', 'description': ''});
-  // const [dropdownOpen, setDropdownOpen] = useState(false);
+  const [dropdownOpen, setDropdownOpen] = useState(false);
 
   useEffect(() => {
     const fetchWorkshops = async () => {
@@ -19,7 +19,7 @@ function JumpStart() {
         process.env.REACT_APP_GRAPHCMS_URL ? process.env.REACT_APP_GRAPHCMS_URL : "",
         `
           { 
-            hackathonWorkshops(where: { year: 2022 }) {
+            hackathonWorkshops(where: { year: 2023 }) {
               id
               workshopName
               workshopDate
@@ -34,7 +34,7 @@ function JumpStart() {
         process.env.REACT_APP_GRAPHCMS_URL ? process.env.REACT_APP_GRAPHCMS_URL : "",
         `
           { 
-            hackathonJumpstart(where: {year: 2022}) {
+            hackathonJumpstart(where: {year: 2023}) {
               titleQuestion
               description
             }
@@ -106,17 +106,17 @@ function JumpStart() {
                 <Col xs={9} className="d-flex justify-content-start">
                   <h3 className="mono text-peach mb-4">Workshops</h3>
                 </Col>
-                {/* <Col xs={2} className="d-flex justify-content-end text-peach ml-3">
+                <Col xs={2} className="d-flex justify-content-end text-peach ml-3">
                   <div onClick={() => setDropdownOpen(!dropdownOpen)} 
                   aria-controls="collapse-workshops" aria-expanded={dropdownOpen}>
                     {dropdownOpen ? <FontAwesomeIcon icon={faMinus}></FontAwesomeIcon> : 
                     <FontAwesomeIcon icon={faPlus}></FontAwesomeIcon>}
                 </div>
                   
-                </Col> */}
+                </Col>
               </Row>
-              <p>Coming Soon!</p>
-              {/* <Collapse isOpened={dropdownOpen}>
+              {/* <p>Coming Soon!</p> */}
+              <Collapse isOpened={dropdownOpen}>
               {workshops.length===0 ? <p>Coming Soon!</p> :
               <div>
                 {workshops.map((workshop) => 
@@ -124,20 +124,20 @@ function JumpStart() {
 
               </div>
                 }
-              </Collapse> */}
+              </Collapse>
             </div>
             :
             <div>
               <h3 className="text-peach mt-4">Workshops</h3>
-                <p>Coming Soon!</p>
-                {/* {workshops.length===0 ? <p>Coming Soon!</p> :    
+                {/* <p>Coming Soon!</p> */}
+                {workshops.length===0 ? <p>Coming Soon!</p> :    
                 <Row className="pt-2">
                   {workshops.map((workshop) => 
                     <Col xs={4} className="hack" key={workshop.id}>
                       <Workshop name={workshop.workshopName} date={workshop.workshopDate} detail={workshop.description} link={workshop.link} linkName={workshop.linkName}></Workshop>
                     </Col>)}
                 </Row>  
-                } */}
+                }
               
             </div>
           }
