@@ -1,19 +1,19 @@
 import React, {useEffect, useState} from 'react';
-// import Activity from './Activity';
+import Activity from './Activity';
 import { request } from 'graphql-request';
 import { isMobile } from 'react-device-detect';
 import { Row, Col } from 'react-bootstrap';
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-// import { faPlus } from '@fortawesome/free-solid-svg-icons';
-// import { faMinus } from '@fortawesome/free-solid-svg-icons';
-// import {Collapse } from 'react-collapse';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPlus } from '@fortawesome/free-solid-svg-icons';
+import { faMinus } from '@fortawesome/free-solid-svg-icons';
+import {Collapse } from 'react-collapse';
 
 function Schedule() {
   const [events, setEvents] = useState([{'eventName': '', 'link': '', 'startTime': '', 'description': '', 'day': 0, 'linkText': '', 'endTime':''}]);
   const [dates, setDates] = useState([{'dayOfWeek': '', 'month': '', 'date': 0}]);
 
-  // const [open1, setOpen1] = useState(false);
-  // const [open2, setOpen2] = useState(false);
+  const [open1, setOpen1] = useState(false);
+  const [open2, setOpen2] = useState(false);
 
   useEffect(() => {
     const fetchEvents = async () => {
@@ -21,7 +21,7 @@ function Schedule() {
         process.env.REACT_APP_GRAPHCMS_URL ? process.env.REACT_APP_GRAPHCMS_URL : "",
         `
           { 
-            hackathonEvents(where: { year: 2022 }) {
+            hackathonEvents(where: { year: 2023 }) {
               eventName
               link
               startTime
@@ -38,7 +38,7 @@ function Schedule() {
         process.env.REACT_APP_GRAPHCMS_URL ? process.env.REACT_APP_GRAPHCMS_URL : "",
         `
           { 
-            hackathonDates(where: { year: 2022 }) {
+            hackathonDates(where: { year: 2023 }) {
               dayOfWeek
               month
               date
@@ -103,14 +103,14 @@ function Schedule() {
     }
   });
 
-  // const day1events = events.filter(function(event) {
-  //   if(event.day === 1) return true;
-  //   return false;
-  // });
-  // const day2events = events.filter(function(event) {
-  //   if(event.day === 2) return true;
-  //   return false;
-  // });
+  const day1events = events.filter(function(event) {
+    if(event.day === 1) return true;
+    return false;
+  });
+  const day2events = events.filter(function(event) {
+    if(event.day === 2) return true;
+    return false;
+  });
 
   return (
     <div className="container-fluid bg-hack-grey pt-4 pb-4" id="Schedule">
@@ -118,8 +118,8 @@ function Schedule() {
         <Row>
           <Col xs={12} className="ml-1">
             <h2 className="text-orange font-weight-bold">SCHEDULE</h2>
-            <p>Coming soon!</p>
-            {/* {dates.length>0 && 
+            {/* <p>Coming soon!</p> */}
+            {dates.length>0 && 
               <Row className="mt-4">
                 <Col xs={9} className="d-flex justify-content-start">
                   <h3 className="text-peach mono font-weight-bold">{dates[0].dayOfWeek}, {dates[0].month} {dates[0].date}</h3>
@@ -163,7 +163,7 @@ function Schedule() {
                 <Activity key={index} starttime={event.startTime} endtime={event.endTime} name={event.eventName} link={event.link} linkname={event.linkText} detail={event.description} />
               )}
               {day2events.length === 0 && <p>Coming Soon!</p>}
-            </Collapse>} */}
+            </Collapse>}
           </Col>
         </Row>
 
@@ -172,8 +172,8 @@ function Schedule() {
         <Row className="m-5 pt-5 pb-5">
           <Col md={7} sm={10} xs={12} className="ml-5">
             <h2 className="text-orange font-weight-bold">Schedule</h2>
-            <p>Coming soon!</p>
-            {/* {dates.length>0 && <h3 className="text-peach mono font-weight-bold mt-4">{dates[0].dayOfWeek}, {dates[0].month} {dates[0].date}</h3>}
+            {/* <p>Coming soon!</p> */}
+            {dates.length>0 && <h3 className="text-peach mono font-weight-bold mt-4">{dates[0].dayOfWeek}, {dates[0].month} {dates[0].date}</h3>}
             {dates.length>0 && 
               day1events.map((event, index) =>
                 <Activity key={index} starttime={event.startTime} endtime={event.endTime} name={event.eventName} link={event.link} linkname={event.linkText} detail={event.description} />
@@ -187,7 +187,7 @@ function Schedule() {
                 <Activity key={index} starttime={event.startTime} endtime={event.endTime} name={event.eventName} link={event.link} linkname={event.linkText} detail={event.description} />
               )
             }
-            {(dates.length>1 && day2events.length===0) && <p>Coming Soon!</p>} */}
+            {(dates.length>1 && day2events.length===0) && <p>Coming Soon!</p>}
           </Col>
       </Row>
     }
