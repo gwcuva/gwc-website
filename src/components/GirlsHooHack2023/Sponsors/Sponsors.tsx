@@ -41,9 +41,9 @@ function Sponsors() {
   const bronzesponsors = sponsors.filter( function (s) {
     return s.level === "Bronze"
   });
-  // const othersponsors = sponsors.filter( function (s) {
-  //   return (s.level !== "Gold" && s.level !=="Silver" && s.level !== "Bronze");
-  // });
+  const othersponsors = sponsors.filter( function (s) {
+    return (s.level !== "Gold" && s.level !=="Silver" && s.level !== "Bronze");
+  });
 
   return (
     <Row className="justify-content-center bg-white py-5" id="Sponsors">
@@ -118,9 +118,9 @@ function Sponsors() {
           )}
         </Row>
         }
-        {/* <h3 className="mono text-peach hack mt-5">Partners</h3>
-        <p>Coming Soon!</p> */}
-        {/* {othersponsors.length>0 && <h3 className="mono text-peach hack mt-2">Partners</h3>}
+        {/* <h3 className="mono text-peach hack mt-5">Partners</h3> */}
+        {/* <p>Coming Soon!</p> */}
+        {othersponsors.length>0 && <h3 className="mono text-peach hack mt-2">Partners</h3>}
         {othersponsors.length>0 &&
         <Row className={`${!isMobile && "mt-1 mb-5"} d-flex justify-content-around`}>
           {othersponsors.map((sponsor) => 
@@ -139,7 +139,7 @@ function Sponsors() {
             </Col>
           )}
         </Row>
-        } */}
+        }
       </Col>
     </Row>
   );
