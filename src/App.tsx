@@ -7,6 +7,7 @@ import GirlsHooHack2021 from './components/GirlsHooHack2021/GirlsHooHack';
 import Branding from './components/Branding/Branding';
 import CareerFair2022 from './components/CareerFair2022/CareerFair2022';
 import CareerFair2023 from './components/CareerFair2023/CareerFair2023';
+import CareerFair2024 from './components/CareerFair2024/CareerFair2024';
 import Links from './components/Links/Links';
 
 function App() {
@@ -28,8 +29,11 @@ function App() {
         <Route exact path="/careerfair2022">
           <CareerFair2022 />
         </Route>
-        <Route exact path="/careerfair">
+        <Route exact path="/careerfair2023">
           <CareerFair2023 />
+        </Route>
+        <Route exact path="/careerfair">
+          <CareerFair2024 />
         </Route>
         <Route path="/hack2021">
           <GirlsHooHack2021 />
