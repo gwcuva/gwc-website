@@ -41,7 +41,7 @@ function MobileHeader(props: Props) {
             </Row>
 
             <Row xs={8} className="text-white pl-3 pt-n5">
-                <h1>GIRLS HOO</h1>
+                <h1>GIRLS WHO</h1>
             </Row>
 
             <Row xs={4} className="text-white pl-3 pt-n5">
