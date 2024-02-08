@@ -58,7 +58,7 @@ function Header(props: Props) {
 
         <Row xs={12} className="mt-n5">
           <Col xs={1}></Col>
-          <Col xs={3} className="text-white"><h1>HOO</h1></Col>
+          <Col xs={3} className="text-white"><h1>WHO</h1></Col>
           <Col xs={4}><h2 className={isMobile ? "text-blue":"text-blue font-weight-bold pt-4"}>{header.year} {header.format} CAREER FAIR</h2></Col>
           <Col xs={1}></Col>
           <Col xs={3} className="h1 pl-4 pt-4"> <a className="text-white font-weight-bold" href={header.registration} target="_blank" rel="noreferrer noopener"> <u>REGISTER</u> </a> </Col>
