@@ -83,3 +83,4 @@ This is where we store the fonts that we may need
 * Belle Tran
 * Hannah Lee
 * Shriya Dale
+* Vivian Gao
