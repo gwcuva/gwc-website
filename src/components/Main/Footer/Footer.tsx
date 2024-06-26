@@ -15,7 +15,7 @@ function Footer(props: Props) {
     <div id={props.id}>
       <img src={footerWaves} style={{transform: 'rotate(180deg)', marginBottom:-1}} alt="Orange wave"/>
       <div className="bg-orange d-flex flex-row pb-5 pt-5">
-        <Col md={isMobile ? 0 : 4}>
+        <Col md={isMobile ? 0 : 4} style={{textAlign:'center'}}>
           <img src={logo} width={isMobile ? "112px" : "208px"} height={isMobile ? "44px" : "82px"} className={isMobile ? "pl-2" : "pl-5"} alt="Girls Who Code at the University of Virginia logo"/>
         </Col>
         <Col md={10}>

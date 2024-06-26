@@ -11,7 +11,7 @@ function Newsletter(props: Props) {
   return (
     <Row id={props.id} className="justify-content-center mt-5">
       <Col lg={6} md={8} sm={10} xs={11}>
-        <a href="https://forms.gle/jvkNitwhQ932gxBy6" target="_blank" rel="noopener noreferrer">
+        <a href="https://forms.gle/jvkNitwhQ932gxBy6" target="_blank" rel="noopener noreferrer" className = "underline">
           <h4 className="text-peacock mono newsletter">
             Sign up for our newsletter <img src={Arrow} width={isMobile ? "41px" : "72px"} alt="Arrow saying Sign up for our newsletter" />
           </h4>

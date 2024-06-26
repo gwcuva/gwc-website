@@ -1,5 +1,4 @@
-import React from 'react';
-import { Col, Row } from 'react-bootstrap';
+import { Col } from 'react-bootstrap';
 import { isMobile } from 'react-device-detect';
 
 interface Props {
@@ -29,8 +28,8 @@ function Profile(props: Props) {
 
   return (
     <Col xs={6} md={4}>
-      <a href={`https://linkedin.com/in/${mem.linkedin}`} target="_blank" rel="noopener noreferrer">
-        <Row className="justify-content-center">{mem.headshot.url && <img width={isMobile ? "100px" : "156px"} height={isMobile ? "100px" : "156px"} className="circleImg" src={mem.headshot.url} alt={`Headshot of ${mem.name}`} />}</Row>
+      <a href={`https://linkedin.com/in/${mem.linkedin}`} target="_blank" rel="noopener noreferrer" className='text-center underline'>
+        <div className="justify-content-center">{mem.headshot.url && <img width={isMobile ? "100px" : "156px"} height={isMobile ? "100px" : "156px"} className="circleImg" src={mem.headshot.url} alt={`Headshot of ${mem.name}`} />}</div>
         <p className="text-peacock mt-2 mb-0 text-center">{mem.headshot.url && mem.name}</p>
         <p className="text-peacock p2 text-center">{mem.position && positions.get(mem.position)}</p>
       </a>
