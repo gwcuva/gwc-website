@@ -42,7 +42,9 @@ function Links() {
       <Col>
         {links.map((item) => 
           <Row className="mt-3 mx-2">
-            <Button className="py-3 link-button" key={item.id} href={item.link} block>{item.title}</Button>
+            <div className="d-grid gap-2">
+              <Button className="py-3 link-button" key={item.id} href={item.link}>{item.title}</Button>
+            </div>
           </Row>)}
       </Col>
     </Col>
