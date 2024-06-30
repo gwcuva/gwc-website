@@ -3,9 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^1.2.35",
-    "@fortawesome/free-solid-svg-icons": "^5.15.3",
-    "@fortawesome/react-fontawesome": "^0.1.14",
+    "@fortawesome/fontawesome-svg-core": "^6.5.2",
+    "@fortawesome/free-solid-svg-icons": "^6.5.2",
+    "@fortawesome/react-fontawesome": "^0.2.2",
     "@popperjs/core": "^2.9.2",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
@@ -41,7 +41,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "postinstall": "npx update-browserslist-db@latest"
+    "postinstall": "npx browserslist@latest --update-db"
   },
   "eslintConfig": {
     "extends": [
