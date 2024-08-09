@@ -51,7 +51,7 @@ function Header(props: Props) {
         <Row xs={12} className="pl-5">
             <Col xs={1}></Col>
             <Col md={8}><h1 className="text-white pl-5">GIRLS</h1></Col>         
-            
+          
             <Col xs={3} className="text-blue">
               <img src={UVA} alt="UVA text"/>
               <h3> {header.month} </h3>
