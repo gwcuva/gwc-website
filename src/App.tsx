@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Main from './components/Main/Main';
+import GirlsHooHack2024 from './components/GirlsHooHack2024/GirlsHooHack';
 import GirlsHooHack2023 from './components/GirlsHooHack2023/GirlsHooHack';
 import GirlsHooHack2022 from './components/GirlsHooHack2022/GirlsHooHack';
 import GirlsHooHack2021 from './components/GirlsHooHack2021/GirlsHooHack';
@@ -18,7 +19,7 @@ function App() {
           <Branding />
         </Route>
         <Route exact path="/hack">
-          <GirlsHooHack2023 />
+          <GirlsHooHack2024 />
         </Route>
         <Route exact path="/">
           <Main />
@@ -40,6 +41,9 @@ function App() {
         </Route>
         <Route path="/hack2022">
           <GirlsHooHack2022 />
+        </Route>
+        <Route path="/hack2023">
+          <GirlsHooHack2023 />
         </Route>
       </Switch>
     </BrowserRouter>
