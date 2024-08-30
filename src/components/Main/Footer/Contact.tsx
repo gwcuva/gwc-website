@@ -9,7 +9,7 @@ function Contact() {
   return (
     <div>
       <h3 className="pb-2"><strong>Contact</strong></h3>
-      <a href="mailto:gwcuva@gmail.com" className="mono text-white interactive">gwcuva@gmail.com</a>
+      <a href="mailto:gwcuva@gmail.com" className="mono text-white interactive remove-underline">gwcuva@gmail.com</a>
       <div className={isMobile ? "d-flex flex-wrap" : "d-flex flex-wrap pt-2 pl-3"}>
         <a href="https://www.instagram.com/gwcuva/" target="_blank" rel="noreferrer noopener" style={{ padding: '5px' }}>
           <img src={instagramSocial} alt="Instagram icon" className="pr-3 pb-3"/>

@@ -14,17 +14,17 @@ function NavContents(props: Props) {
       <div className={`${!props.circle && "pr-4"} pt-5 pb-3`}>
         <Row className="pb-4">
           <div className={`${props.circle ? "d-flex justify-content-center" : "d-flex justify-content-end"} w-100`}>
-            <a href='#stats' onClick={props.toggle} className="mono text-peacock interactive underline">the gap</a>
+            <a href='#stats' onClick={props.toggle} className="mono text-peacock interactive remove-underline">the gap</a>
           </div>
         </Row>
         <Row className="pb-4">
           <div className={`${props.circle ? "d-flex justify-content-center" : "d-flex justify-content-end"} w-100`}>
-            <a href='#about' onClick={props.toggle} className="mono text-peacock interactive underline">the mission</a>
+            <a href='#about' onClick={props.toggle} className="mono text-peacock interactive remove-underline">the mission</a>
           </div>
         </Row>
         <Row>
           <div className={`${props.circle ? "d-flex justify-content-center" : "d-flex justify-content-end"} w-100`}>
-            <a href='#team' onClick={props.toggle} className="mono text-peacock interactive underline">the team</a>
+            <a href='#team' onClick={props.toggle} className="mono text-peacock interactive remove-underline">the team</a>
           </div>
         </Row>
       </div>

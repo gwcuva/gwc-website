@@ -16,7 +16,7 @@ function Podcast(props: Props) {
             <Row className="justify-content-center">
                 <Col lg={6} md={8} sm={10} xs={11}>
                     <h3 className="text-turq">Stay Connected</h3>
-                    <a href="https://open.spotify.com/show/2gX38ig5BhHgdzY8NT4uZ6?si=ab0a787af61245a7" target="_blank" rel="noopener noreferrer" className = "underline">
+                    <a href="https://open.spotify.com/show/2gX38ig5BhHgdzY8NT4uZ6?si=ab0a787af61245a7" target="_blank" rel="noopener noreferrer" className = "remove-underline">
                     <h4 className="text-peacock mono discordinvite">
                         Check out our podcast <img src={Arrow} width={isMobile ? "41px" : "72px"} alt="Arrow indicating where podcast can be found" />
                     </h4>
