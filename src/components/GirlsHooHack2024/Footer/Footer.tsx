@@ -1,5 +1,4 @@
 import Contact from '../../Main/Footer/Contact'
-import footerWaves from '../../../assets/images/footer-wave.svg';
 import logo from '../../../assets/images/peacock-logo.svg';
 import {Row, Col} from 'react-bootstrap';
 import {isMobile} from 'react-device-detect';
