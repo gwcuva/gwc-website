@@ -46,7 +46,7 @@ function Header(props: Props) {
         <Row xs={12} className="pt-5"></Row>
         <Row xs={12} className="pt-5"></Row>
 
-        <img className="w-100 position-absolute ml-n3 mt-4" src={Waves} alt="Orange waves"/>
+        {/* <img className="w-100 position-absolute ml-n3 mt-4" src={Waves} alt="Orange waves"/> */}
 
         <Row xs={12} className="pl-5">
             <Col xs={1}></Col>

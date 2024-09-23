@@ -10,15 +10,15 @@ function Contact() {
     <div>
       <h3 className="pb-2"><strong>Contact</strong></h3>
       <a href="mailto:gwcuva@gmail.com" className="mono text-white interactive remove-underline">gwcuva@gmail.com</a>
-      <div className={isMobile ? "d-flex flex-wrap" : "d-flex flex-wrap pt-2 pl-3"}>
+      <div className={isMobile ? "d-flex flex-wrap align-items-center" : "d-flex flex-wrap pt-2 pl-3 align-items-center"}>
         <a href="https://www.instagram.com/gwcuva/" target="_blank" rel="noreferrer noopener" style={{ padding: '5px' }}>
-          <img src={instagramSocial} alt="Instagram icon" className="pr-3 pb-3"/>
+          <img src={instagramSocial} alt="Instagram icon" className="pb-3"/>
         </a>
         <a href="https://discord.com/invite/rKbWyuDNyG" target="_blank" rel="noreferrer noopener" style={{ padding: '5px' }}>
-          <img src={discordSocial} alt="Discord icon" className="pr-3 pb-3"/>
+          <img src={discordSocial} alt="Discord icon" className="pb-3"/>
         </a>
         <a href="https://www.facebook.com/gwcuva/" target="_blank" rel="noreferrer noopener" style={{ padding: '5px' }}>
-          <img src={facebookSocial} alt="Facebook icon" className="pr-3 pb-3"/>
+          <img src={facebookSocial} alt="Facebook icon" className="pb-3"/>
         </a>
         <a href="https://twitter.com/gwcuva" target="_blank" rel="noreferrer noopener" style={{ padding: '5px' }}>
           <img src={twitterSocial} alt="Twitter icon" className="pb-3"/>
