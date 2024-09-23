@@ -1,6 +1,5 @@
 import {Row, Col} from 'react-bootstrap';
 import {isMobile} from 'react-device-detect';
-import Waves from '../../../assets/images/hack-header-desktop-wave.svg';
 import SignUpCircle from '../../../assets/images/sign-up-hack-circle.svg';
 import UVA from '../../../assets/images/uva.svg';
 import SignUpText from '../../../assets/images/sign-up-text.svg';

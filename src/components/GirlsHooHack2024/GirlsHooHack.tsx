@@ -18,7 +18,7 @@ import Newsletter from './Newsletter/Newsletter';
 
 function GirlsHooHack() {
   return (
-    <div className="overflow-auto">
+    <div className="position-fixed">
       <BrowserView>
         <NavbarGHH />
         <Header id="Header"/>
