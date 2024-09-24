@@ -33,7 +33,7 @@ function NavbarGHH() {
 
   return (
     <nav className="bg-transparent d-flex flex-wrap justify-content-between align-items-center position Navbar"
-    style={{position: 'absolute', top: 0, width: '100%', zIndex: 1000}}>
+    style={{position: 'absolute', top: '2em', width: '100%', zIndex: 1000}}>
       <img src={Logo} width="208px" height="60px" alt="Girls Who Code at the University of Virginia logo"/>
       <Row>
       <div className = "flex-row flex-wrap d-flex navbaradjustments">
