@@ -363,11 +363,11 @@ p.hack {
 }
 
 .signupbanner{
-  margin-top:-1px;
+  margin-top:-5px;
 }
 
 .signupbannermobile{
-  margin-top:-1px;
+  margin-top:-5px;
 }
 
 .mlhbanner {
@@ -390,7 +390,6 @@ p.hack {
   top: 35px;
   z-index: 9999;
   width: 100%;
-  overflow-y: visible;
 }
 
 .navlinks {
@@ -426,10 +425,7 @@ p.hack {
 }
 
 .adjustments{
-  position: absolute;
-  top: 0;
-  left: 1200px;
-  margin: 0;
+  position: relative;
 }
 
 .ghhlogo {
@@ -464,3 +460,8 @@ p.hack {
 .remove-underline{
   text-decoration:none;
 }
+
+// useful for debugging
+// * {
+//   border: 1px solid red;
+// }
