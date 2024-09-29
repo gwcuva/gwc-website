@@ -230,6 +230,7 @@ p.hack {
   font-family: 'Roboto Mono', 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
+  text-decoration: none;
 }
 
 .signUpTextDesktop {
@@ -362,11 +363,11 @@ p.hack {
 }
 
 .signupbanner{
-  margin-top:-1px;
+  margin-top:-5px;
 }
 
 .signupbannermobile{
-  margin-top:-1px;
+  margin-top:-5px;
 }
 
 .mlhbanner {
@@ -385,21 +386,46 @@ p.hack {
 
 .Navbar {
   position: fixed;
+  left: 12px; 
+  top: 35px;
   z-index: 9999;
   width: 100%;
-  overflow-y: visible;
 }
 
 .navlinks {
-  margin-right: 300px;
   margin-top: 30px;
   margin-bottom: 30px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
+.navbaradjustments {
+  position: inherit;
+  background-color: transparent;
+  margin-top: 40px;
+  margin-right: 230px;
+  font-size: 30px;
+}
+
+.textadjustments{
+  margin-bottom: 3.5em;
+  margin-right: 6.25em;
+  flex-wrap: wrap;
+}
+
+
 .banners {
-  padding-right: 70px;
   position: fixed;
-  right: 0;
+  right: 2em;
+  top: 1em;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.adjustments{
+  position: relative;
 }
 
 .ghhlogo {
@@ -426,3 +452,16 @@ p.hack {
 .newsletter:hover, .newsletter:active {
   color: $output-orange;
 }
+
+.remove-underline:hover{
+  text-decoration: underline;
+}
+
+.remove-underline{
+  text-decoration:none;
+}
+
+// useful for debugging
+// * {
+//   border: 1px solid red;
+// }

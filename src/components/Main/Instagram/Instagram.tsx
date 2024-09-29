@@ -12,7 +12,7 @@ function Instagram(props: Props) {
   return (
     <Row id={props.id} className="justify-content-center mt-5 pt-5 mb-5 pb-5">
       <Col lg={6} md={8} sm={10} xs={10}>
-        <a href="https://www.instagram.com/gwcuva" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.instagram.com/gwcuva" target="_blank" rel="noopener noreferrer" className = "remove-underline">
           <h4 className="text-peacock mono discordinvite">
             Follow us on Instagram
           </h4>

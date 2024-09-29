@@ -15,30 +15,40 @@ function Header(props: Props) {
               backgroundPosition: "0px 50px",
               backgroundSize: "contain" }}>
 
-        <Row xs={12} className={isMobile ? "pt-3":"pt-4"}>
-          <Col xs={isMobile ? 1 : 1}></Col>
-          <h2 className={isMobile ? "text-peach ml-n3":"text-peach pl-5 ml-5"}>HELLO WORLD</h2>
-        </Row>
+    <Row xs={12} className={isMobile ? "pt-3" : "pt-4"}>
+      <Col xs={isMobile ? 1 : 1}></Col>
+      <Col>
+        <h2 className={isMobile ? "text-peach ml-n3" : "text-peach pl-5 ml-5"}>HELLO WORLD</h2>
+      </Col>
+    </Row>
 
-        <Row xs={12} className="pb-0">
-          <Col xs={2}></Col>
-          <Col xs={5}><h1 className={isMobile ? "text-white ml-n3":"text-white"}> WE'RE</h1></Col>
-        </Row>
+    <Row xs={12} className="pb-0">
+      <Col xs={2}></Col>
+      <Col xs={5}>
+        <h1 className={isMobile ? "text-white ml-n3 mt-0 mb-0" : "text-white mt-0 mb-0"}>WE'RE</h1>
+      </Col>
+    </Row>
 
-        <Row xs={3} className={isMobile ? "pt-0 mt-n4":"pt-0 mt-n5"}>
-          <Col xs={3}></Col>
-          <h1 className="text-white">MAKING</h1>
-        </Row>
+    <Row xs={12} className={isMobile ? "pt-0 mt-n4" : "pt-0 mt-n5"}>
+      <Col xs={3}></Col>
+      <Col>
+        <h1 className="text-white mt-0 mb-0">MAKING</h1>
+      </Col>
+    </Row>
 
-        <Row xs={3} className={isMobile ? "pt-0 mt-n4":"pt-0 mt-n5"}>
-          <Col xs={2}></Col>
-          <h1 className="text-white">WAVES</h1>
-        </Row>
+    <Row xs={12} className={isMobile ? "pt-0 mt-n4" : "pt-0 mt-n5"}>
+      <Col xs={2}></Col>
+      <Col>
+        <h1 className="text-white mt-0 mb-0">WAVES</h1>
+      </Col>
+    </Row>
 
-        <Row xs={3} className="mb-0">
-          <Col xs={4}></Col>
-          <Col xs={8}><h2 className={isMobile ? "text-peach pl-4":"text-peach"}>GWC AT UVA</h2></Col>
-        </Row>
+    <Row xs={12} className="mb-0">
+      <Col xs={4}></Col>
+      <Col xs={8}>
+        <h2 className={isMobile ? "text-peach pl-4" : "text-peach"}>GWC AT UVA</h2>
+      </Col>
+    </Row>
         
     </div>
   );

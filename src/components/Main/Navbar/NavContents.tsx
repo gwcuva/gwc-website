@@ -12,23 +12,31 @@ function NavContents(props: Props) {
   return (
     <div>
       <div className={`${!props.circle && "pr-4"} pt-5 pb-3`}>
-        <Row className={`${props.circle ? "justify-content-center" : "justify-content-end"} pb-4`}>
-          <a href='#stats' onClick={props.toggle} className="mono text-peacock interactive">the gap</a>
+        <Row className="pb-4">
+          <div className={`${props.circle ? "d-flex justify-content-center" : "d-flex justify-content-end"} w-100`}>
+            <a href='#stats' onClick={props.toggle} className="mono text-peacock interactive remove-underline">the gap</a>
+          </div>
         </Row>
-        <Row className={`${props.circle ? "justify-content-center" : "justify-content-end"} pb-4`}>
-          <a href='#about' onClick={props.toggle} className="mono text-peacock interactive">the mission</a>
+        <Row className="pb-4">
+          <div className={`${props.circle ? "d-flex justify-content-center" : "d-flex justify-content-end"} w-100`}>
+            <a href='#about' onClick={props.toggle} className="mono text-peacock interactive remove-underline">the mission</a>
+          </div>
         </Row>
-        <Row className={`${props.circle ? "justify-content-center" : "justify-content-end"}`}>
-          <a href='#team' onClick={props.toggle} className="mono text-peacock interactive">the team</a>
+        <Row>
+          <div className={`${props.circle ? "d-flex justify-content-center" : "d-flex justify-content-end"} w-100`}>
+            <a href='#team' onClick={props.toggle} className="mono text-peacock interactive remove-underline">the team</a>
+          </div>
         </Row>
       </div>
-      <Row className={`${props.circle ? "justify-content-center" : "justify-content-end pr-3"} mt-3`}>
-        <a href="https://discord.gg/D8knkzNM8E" target="_blank" rel="noreferrer noopener" onClick={props.toggle}>
-          <img src={Discord} width="28px" alt="Discord logo"/>
-        </a>
-        <a href="https://instagram.com/gwcuva" target="_blank" rel="noreferrer noopener" onClick={props.toggle}>
-          <img src={Instagram} width="28px" alt="Instagram logo" className="ml-4"/>
-        </a>
+      <Row className="mt-3">
+        <div className={`${props.circle ? "d-flex justify-content-center" : "d-flex justify-content-end"} w-100 pr-3`}>
+          <a href="https://discord.gg/D8knkzNM8E" target="_blank" rel="noreferrer noopener" onClick={props.toggle}>
+            <img src={Discord} width="28px" alt="Discord logo"/>
+          </a>
+          <a href="https://instagram.com/gwcuva" target="_blank" rel="noreferrer noopener" onClick={props.toggle} style={{ marginLeft: '16px' }}>
+            <img src={Instagram} width="28px" alt="Instagram logo"/>
+          </a>
+        </div>
       </Row>
     </div>
   );
