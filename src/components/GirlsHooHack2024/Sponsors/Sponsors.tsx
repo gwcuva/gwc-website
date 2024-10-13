@@ -208,5 +208,4 @@ function Sponsors() {
     </Row>
   );
 }
-
 export default Sponsors;
