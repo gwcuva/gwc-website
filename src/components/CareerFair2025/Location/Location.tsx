@@ -13,7 +13,7 @@ function Location() {
         process.env.REACT_APP_GRAPHCMS_URL ? process.env.REACT_APP_GRAPHCMS_URL : "",
         `
           { 
-            careerFairLocation(where: {year: 2023}) {
+            careerFairLocation(where: {year: 2025}) {
               id
               virtual
               inPerson

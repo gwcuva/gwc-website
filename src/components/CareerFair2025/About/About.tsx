@@ -10,7 +10,7 @@ function About() {
       <Row className={isMobile ? "" : "my-5"}>
         <Col md={4} xs={12} className={isMobile ? "my-3" : "mr-5"}>
           <h3 className="mono text-peach hack mb-4">Girls Who Code Career Fair</h3>
-          <p>The Girls Who Code Career Fair is a 4 hour Career Fair hosted by Girls Who Code at UVA that aims to help students network with companies looking for interns/part-time/full-time employees. We will have career panels and company representatives tabling for students to connect with and network.</p> 
+          <p>The Girls Who Code Career Fair is a 2 hour Career Fair hosted by Girls Who Code at UVA that aims to help students network with companies looking for interns/part-time/full-time employees. We will have career panels and company representatives tabling for students to connect with and network.</p> 
           <p>Students of all majors, years, and gender identities that are interested in tech, commerce/business, UI/UX design, game development, data science, software/hardware engineering, and more are welcome to attend.</p>
         </Col>
         <Col md={4} xs={12}>

@@ -12,7 +12,7 @@ function Signup() {
         process.env.REACT_APP_GRAPHCMS_URL ? process.env.REACT_APP_GRAPHCMS_URL : "",
         `
           { 
-            careerFairRegistration(where: {year: 2024}) {
+            careerFairRegistration(where: {year: 2025}) {
               registrationLink
             }
           }

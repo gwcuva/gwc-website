@@ -5,11 +5,9 @@ import About from './About/About';
 import Location from './Location/Location';
 import Signup from './Signup/Signup';
 import FAQ from './FAQ/FAQ';
-import Waves from '../../assets/images/hack-header-mobile-wave.svg';
 import Footer from './Footer/Footer';
 import {BrowserView, MobileView} from 'react-device-detect';
 import Sponsors from './Sponsors/Sponsors';
-import Schedule from './Schedule/Schedule';
 
 function CareerFair2025() {
   return (
@@ -25,8 +23,6 @@ function CareerFair2025() {
         <About />
         <Location />
         <Signup />
-        <Schedule />
-        {/*<OneOnOneSchedule />*/}
         <Sponsors />
         <FAQ />
         <Footer />

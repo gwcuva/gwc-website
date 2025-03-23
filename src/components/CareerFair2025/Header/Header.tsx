@@ -11,7 +11,7 @@ interface Props {
 }
 
 function Header(props: Props) {
-  const [header, setHeader] = useState({'year': 2024, 'month': '', 'day': '', 'format': '', 'registration': '', 'time': ''});
+  const [header, setHeader] = useState({'year': 2025, 'month': '', 'day': '', 'format': '', 'registration': '', 'time': ''});
 
   useEffect(() => {
     const fetchHeader = async () => {
@@ -19,7 +19,7 @@ function Header(props: Props) {
         process.env.REACT_APP_GRAPHCMS_URL ? process.env.REACT_APP_GRAPHCMS_URL : "",
         `
           { 
-            careerFairHeader(where:{year:2024}) {
+            careerFairHeader(where:{year:2025}) {
               year
               month
               day
