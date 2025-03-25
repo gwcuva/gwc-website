@@ -38,8 +38,6 @@ function Header(props: Props) {
 
   return (
     <div id={props.id} className="container-fluid m-0 bg-turq" >
-        {/* <img className="w-100 position-absolute ml-n3 mt-4" src={Waves} alt="Orange waves"/> */}
-        
         <Row xs={12} className="pt-5"></Row>
         <Row xs={12} className="pt-5"></Row>
         <Row xs={12} className="pt-5"></Row>

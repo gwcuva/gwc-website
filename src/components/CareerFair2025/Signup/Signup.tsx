@@ -30,7 +30,7 @@ function Signup() {
             <Col sm={10} xs={11} className={isMobile ? "my-3" : "my-5 py-5"}>
                 <h2 className="text-orange font-weight-bold pb-3">Registration</h2>
                 <h3 className="mono text-peach hack mb-4"> <a className="mono text-peach hack mb-4"
-                    href={registration.registrationLink} target="_blank" rel="noreferrer noopener"> <u>
+                    href="https://forms.gle/HZcyKkTsB493XBnr5" target="_blank" rel="noreferrer noopener"> <u>
                    REGISTER</u> </a> to save your spot and submit a resume </h3>
             </Col>
         </Row>
