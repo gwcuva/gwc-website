@@ -1,6 +1,5 @@
 import Contact from '../../Main/Footer/Contact'
 import GWCLogo from '../../../assets/images/peacock-logo.svg';
-import StandoutSticker from '../../../assets/images/stand-out-stickers-logo.png';
 import {Row, Col} from 'react-bootstrap';
 import {isMobile} from 'react-device-detect';
  

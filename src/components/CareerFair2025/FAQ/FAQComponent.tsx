@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { isMobile } from 'react-device-detect';
 import { Collapse } from 'react-collapse';
 import { FaPlus } from "react-icons/fa";
