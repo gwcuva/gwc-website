@@ -11,7 +11,7 @@ import Sponsors from './Sponsors/Sponsors';
 
 function CareerFair2025() {
   return (
-    <div className="overflow-auto">
+    <div className="overflow-x-hidden">
       <BrowserView>
         <NavbarCF />
         <Header id="Header"/>

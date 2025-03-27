@@ -6,7 +6,7 @@ import {isMobile} from 'react-device-detect';
  
 function Footer() {
   return (
-      <div className="bg-turq d-flex flex-row pb-5 pt-5">
+      <div className="bg-turq d-flex flex-row pb-5 pt-5 overflow-x-hidden">
         <Col md={10}>
           <Row>
             <Col md={1} sm={2} className="text-white" style={{marginBottom:60}}>

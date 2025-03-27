@@ -28,7 +28,7 @@ function FAQ() {
   }, []);
 
   return (
-    <div>
+    <div id="FAQ" className="overflow-x-hidden">
       <Row className="justify-content-center bg-hack-white py-5" id="CFFAQ">
         <Col md={10} xs={11} className={isMobile ? "my-3" : "my-5 py-5"}>
           <h2 className="text-orange hack">FAQ</h2>

@@ -1,6 +1,6 @@
 import {Row, Col} from 'react-bootstrap';
 import {isMobile} from 'react-device-detect';
-import Waves from '../../../assets/images/hack-header-desktop-wave.svg';
+// import Waves from '../../../assets/images/hack-header-desktop-wave.svg';
 import UVA from '../../../assets/images/uva.svg';
 import { useEffect, useState } from 'react';
 import { request } from 'graphql-request';
@@ -37,7 +37,7 @@ function Header(props: Props) {
   }, []);
 
   return (
-    <div id={props.id} className="container-fluid m-0 bg-turq" >
+    <div id={props.id} className="overflow-x-hidden container-fluid m-0 bg-turq" >
         <Row xs={12} className="pt-5"></Row>
         <Row xs={12} className="pt-5"></Row>
         <Row xs={12} className="pt-5"></Row>

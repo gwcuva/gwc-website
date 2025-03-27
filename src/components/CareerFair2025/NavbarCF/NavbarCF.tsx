@@ -6,16 +6,15 @@ import SignupBannerOrange from '../../../assets/images/signup-orange.png';
 function NavbarCF() {
   return (
     <nav
-      className="bg-transparent d-flex justify-content-between align-items-center position Navbar"
+      className="bg-transparent d-flex justify-content-between align-items-center position Navbar overflow-x-hidden"
       style={{
-        position: 'absolute',
         top: 0,
         width: '100%',
         zIndex: 1000,
-        overflow: 'hidden',
+        overflowX: 'hidden',  
       }}
     >
-      <div className="d-flex align-items-center" style={{ flex: 1 }}>
+      <div className="d-flex align-items-center overflow-x-hidden" style={{ flex: 1 }}>
         <img
           src={Logo}
           style={{ marginTop: '1%' }}
@@ -30,11 +29,11 @@ function NavbarCF() {
           <a href="#Location" className="navbartext" style={{ marginLeft: '20px' }}>
             Location
           </a>
-          <a href="#FAQ" className="navbartext" style={{ marginLeft: '20px' }}>
-            FAQ
-          </a>
           <a href="#Sponsors" className="navbartext" style={{ marginLeft: '20px' }}>
             Sponsors
+          </a>
+          <a href="#FAQ" className="navbartext" style={{ marginLeft: '20px' }}>
+            FAQ
           </a>
         </div>
       </div>

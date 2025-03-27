@@ -27,7 +27,7 @@ function Location() {
   }, []);
 
   return (
-    <div id="Location">
+    <div id="Location" className="overflow-x-hidden">
         <Row className="bg-white justify-content-center pb-5 pt-5">
             <Col sm={10} xs={11} className={isMobile ? "ml-3" : "pl-2 ml-2"}>
                 <h2 className="text-orange font-weight-bold pb-3">{isMobile ? "LOCATION" : "Location"}</h2>

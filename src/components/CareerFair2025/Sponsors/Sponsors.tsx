@@ -53,91 +53,93 @@ function Sponsors() {
   });
 
   return (
-    <Row className="justify-content-center bg-hack-grey py-5" id="CFSponsors">
-      <Col sm={10} xs={11} className={isMobile ? "my-3" : "my-5 py-5"}>
-        <h2 className="text-orange hack">Sponsors</h2>
-        {goldsponsors.length>0 && <h3 className="mono text-peach hack mt-5">Gold Sponsors</h3>}
-        {goldsponsors.length>0 &&
-        <Row className={`${!isMobile && "mt-1 mb-5"} d-flex justify-content-around`}>
-          {goldsponsors.map((sponsor) => 
-            <Col md={2} xs={12} className={`${isMobile ? "mx-auto" : "pt-5"} my-auto mr-3`} key={sponsor.sponsorName}>
-              <a href={sponsor.sponsorUrl} target="_blank" rel="noreferrer">
-                {isMobile ?
-                  <Image 
-                    className={`${sponsor.size!=="Small" ? "w-75 pb-3" : "w-50 pb-2"} mx-auto d-block pt-5 sponsorImage`} 
-                    src={sponsor.sponsorImage.url} alt={sponsor.sponsorName} fluid
-                  />
-                  :
-                  <Image className={`${sponsor.size!=="Small" ? "w-100" : "w-75"} sponsorImage`} src={sponsor.sponsorImage.url} 
-                  alt={sponsor.sponsorName} fluid />
-                }
-              </a>
-            </Col>
-          )}
-        </Row>
-        }
-        {silversponsors.length>0 && <h3 className="mono text-peach hack mt-2">Silver Sponsors</h3>}
-        {silversponsors.length>0 &&
-        <Row className={`${!isMobile && "mt-1 mb-5"} d-flex justify-content-around`}>
-          {silversponsors.map((sponsor) => 
-            <Col md={2} xs={12} className={`${isMobile ? "mx-auto" : "pt-5"} my-auto mr-3`} key={sponsor.sponsorName}>
-              <a href={sponsor.sponsorUrl} target="_blank" rel="noreferrer">
-                {isMobile ?
-                  <Image 
-                    className={`${sponsor.size!=="Small" ? "w-75 pb-3" : "w-50 pb-2"} mx-auto d-block pt-5 sponsorImage`} 
-                    src={sponsor.sponsorImage.url} alt={sponsor.sponsorName} fluid
-                  />
-                  :
-                  <Image className={`${sponsor.size!=="Small" ? "w-100" : "w-75"} sponsorImage`} src={sponsor.sponsorImage.url} 
-                  alt={sponsor.sponsorName} fluid />
-                }
-              </a>
-            </Col>
-          )}
-        </Row>
-        }
-        {bronzesponsors.length>0 && <h3 className="mono text-peach hack mt-2">Bronze Sponsors</h3>}
-        {bronzesponsors.length>0 &&
-        <Row className={`${!isMobile && "mt-1 mb-5"} d-flex justify-content-around`}>
-          {bronzesponsors.map((sponsor) => 
-            <Col md={2} xs={12} className={`${isMobile ? "mx-auto" : "pt-5"} my-auto mr-3`} key={sponsor.sponsorName}>
-              <a href={sponsor.sponsorUrl} target="_blank" rel="noreferrer">
-                {isMobile ?
-                  <Image 
-                    className={`${sponsor.size!=="Small" ? "w-75 pb-3" : "w-50 pb-2"} mx-auto d-block pt-5 sponsorImage`} 
-                    src={sponsor.sponsorImage.url} alt={sponsor.sponsorName} fluid
-                  />
-                  :
-                  <Image className={`${sponsor.size!=="Small" ? "w-100" : "w-75"} sponsorImage`} src={sponsor.sponsorImage.url} 
-                  alt={sponsor.sponsorName} fluid />
-                }
-              </a>
-            </Col>
-          )}
-        </Row>
-        }
-        {othersponsors.length>0 && <h3 className="mono text-peach hack mt-2">Bronze Sponsors</h3>}
-        {othersponsors.length>0 &&
-        <Row className={`${!isMobile && "mt-1 mb-5"} d-flex justify-content-around`}>
-          {othersponsors.map((sponsor) => 
-            <Col md={2} xs={12} className={`${isMobile ? "mx-auto" : "pt-5"} my-auto mr-3`} key={sponsor.sponsorName}>
-              <a href={sponsor.sponsorUrl} target="_blank" rel="noreferrer">
-                {isMobile ?
-                  <Image 
-                    className={`${sponsor.size!=="Small" ? "w-75 pb-3" : "w-50 pb-2"} mx-auto d-block pt-5 sponsorImage`} 
-                    src={sponsor.sponsorImage.url} alt={sponsor.sponsorName} fluid
-                  />
-                  :
-                  <Image className={`${sponsor.size!=="Small" ? "w-100" : "w-75"} sponsorImage`} src={sponsor.sponsorImage.url} 
-                  alt={sponsor.sponsorName} fluid />
-                }
-              </a>
-            </Col>
-          )}
-        </Row>
-        }
-      </Col>
-    </Row>
+    <div id="Sponsors" className="overflow-x-hidden">
+      <Row className="justify-content-center bg-hack-grey py-5" id="CFSponsors">
+        <Col sm={10} xs={11} className={isMobile ? "my-3" : "my-5 py-5"}>
+          <h2 className="text-orange hack">Sponsors</h2>
+          {goldsponsors.length>0 && <h3 className="mono text-peach hack mt-5">Gold Sponsors</h3>}
+          {goldsponsors.length>0 &&
+          <Row className={`${!isMobile && "mt-1 mb-5"} d-flex justify-content-around`}>
+            {goldsponsors.map((sponsor) => 
+              <Col md={2} xs={12} className={`${isMobile ? "mx-auto" : "pt-5"} my-auto mr-3`} key={sponsor.sponsorName}>
+                <a href={sponsor.sponsorUrl} target="_blank" rel="noreferrer">
+                  {isMobile ?
+                    <Image 
+                      className={`${sponsor.size!=="Small" ? "w-75 pb-3" : "w-50 pb-2"} mx-auto d-block pt-5 sponsorImage`} 
+                      src={sponsor.sponsorImage.url} alt={sponsor.sponsorName} fluid
+                    />
+                    :
+                    <Image className={`${sponsor.size!=="Small" ? "w-100" : "w-75"} sponsorImage`} src={sponsor.sponsorImage.url} 
+                    alt={sponsor.sponsorName} fluid />
+                  }
+                </a>
+              </Col>
+            )}
+          </Row>
+          }
+          {silversponsors.length>0 && <h3 className="mono text-peach hack mt-2">Silver Sponsors</h3>}
+          {silversponsors.length>0 &&
+          <Row className={`${!isMobile && "mt-1 mb-5"} d-flex justify-content-around`}>
+            {silversponsors.map((sponsor) => 
+              <Col md={2} xs={12} className={`${isMobile ? "mx-auto" : "pt-5"} my-auto mr-3`} key={sponsor.sponsorName}>
+                <a href={sponsor.sponsorUrl} target="_blank" rel="noreferrer">
+                  {isMobile ?
+                    <Image 
+                      className={`${sponsor.size!=="Small" ? "w-75 pb-3" : "w-50 pb-2"} mx-auto d-block pt-5 sponsorImage`} 
+                      src={sponsor.sponsorImage.url} alt={sponsor.sponsorName} fluid
+                    />
+                    :
+                    <Image className={`${sponsor.size!=="Small" ? "w-100" : "w-75"} sponsorImage`} src={sponsor.sponsorImage.url} 
+                    alt={sponsor.sponsorName} fluid />
+                  }
+                </a>
+              </Col>
+            )}
+          </Row>
+          }
+          {bronzesponsors.length>0 && <h3 className="mono text-peach hack mt-2">Bronze Sponsors</h3>}
+          {bronzesponsors.length>0 &&
+          <Row className={`${!isMobile && "mt-1 mb-5"} d-flex justify-content-around`}>
+            {bronzesponsors.map((sponsor) => 
+              <Col md={2} xs={12} className={`${isMobile ? "mx-auto" : "pt-5"} my-auto mr-3`} key={sponsor.sponsorName}>
+                <a href={sponsor.sponsorUrl} target="_blank" rel="noreferrer">
+                  {isMobile ?
+                    <Image 
+                      className={`${sponsor.size!=="Small" ? "w-75 pb-3" : "w-50 pb-2"} mx-auto d-block pt-5 sponsorImage`} 
+                      src={sponsor.sponsorImage.url} alt={sponsor.sponsorName} fluid
+                    />
+                    :
+                    <Image className={`${sponsor.size!=="Small" ? "w-100" : "w-75"} sponsorImage`} src={sponsor.sponsorImage.url} 
+                    alt={sponsor.sponsorName} fluid />
+                  }
+                </a>
+              </Col>
+            )}
+          </Row>
+          }
+          {othersponsors.length>0 && <h3 className="mono text-peach hack mt-2">Bronze Sponsors</h3>}
+          {othersponsors.length>0 &&
+          <Row className={`${!isMobile && "mt-1 mb-5"} d-flex justify-content-around`}>
+            {othersponsors.map((sponsor) => 
+              <Col md={2} xs={12} className={`${isMobile ? "mx-auto" : "pt-5"} my-auto mr-3`} key={sponsor.sponsorName}>
+                <a href={sponsor.sponsorUrl} target="_blank" rel="noreferrer">
+                  {isMobile ?
+                    <Image 
+                      className={`${sponsor.size!=="Small" ? "w-75 pb-3" : "w-50 pb-2"} mx-auto d-block pt-5 sponsorImage`} 
+                      src={sponsor.sponsorImage.url} alt={sponsor.sponsorName} fluid
+                    />
+                    :
+                    <Image className={`${sponsor.size!=="Small" ? "w-100" : "w-75"} sponsorImage`} src={sponsor.sponsorImage.url} 
+                    alt={sponsor.sponsorName} fluid />
+                  }
+                </a>
+              </Col>
+            )}
+          </Row>
+          }
+        </Col>
+      </Row>
+    </div>
   );
 }
 
