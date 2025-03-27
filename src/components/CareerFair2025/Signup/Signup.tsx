@@ -1,29 +1,8 @@
-import { useEffect, useState } from 'react';
 import {Row, Col} from 'react-bootstrap';
 import { isMobile } from 'react-device-detect';
-import { request } from 'graphql-request';
 
 
 function Signup() {
-  const [registration, setRegistration] = useState({'registrationLink': ''});
-  useEffect(() => {
-    const fetchRegistration = async () => {
-      const { careerFairRegistration } = await request(
-        process.env.REACT_APP_GRAPHCMS_URL ? process.env.REACT_APP_GRAPHCMS_URL : "",
-        `
-          { 
-            careerFairRegistration(where: {year: 2025}) {
-              registrationLink
-            }
-          }
-        `
-      );
-      setRegistration(careerFairRegistration);
-    };
-
-    fetchRegistration();
-  }, []);
-
   return (
     <div className="overflow-x-hidden">
         <Row className="justify-content-center pb-5 pt-5 bg-hack-grey" id = "CFRegistration">
