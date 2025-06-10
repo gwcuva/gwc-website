@@ -84,4 +84,5 @@ This is where we store the fonts that we may need
 * Hannah Lee
 * Shriya Dale
 * Vivian Gao
+* Madison Xu
 * Samriddhi Kumar
