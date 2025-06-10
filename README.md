@@ -85,3 +85,4 @@ This is where we store the fonts that we may need
 * Shriya Dale
 * Vivian Gao
 * Madison Xu
+* Samriddhi Kumar
