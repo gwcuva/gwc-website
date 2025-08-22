@@ -27,7 +27,7 @@
     "react-feather": "^2.0.9",
     "react-icons": "^4.3.1",
     "react-modal": "^3.12.1",
-    "react-router-dom": "^5.2.0",
+    "react-router-dom": "^7.5.2",
     "react-scripts": "^5.0.1",
     "sass": "^1.77.6",
     "styled-components": "^5.2.3",
